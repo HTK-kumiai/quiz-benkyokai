@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>惣菜製造業 技能評価試験 — Random Quiz</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f5f5;margin:0;padding:24px}
+main{max-width:800px;margin:auto}
+.card{background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.meta{color:#666;margin-bottom:18px}
+.question{font-size:1.45rem;line-height:1.9;min-height:150px}
+.reading{color:#777;line-height:1.7;margin-top:16px}
+.buttons{display:flex;gap:12px;margin-top:28px}
+button{flex:1;padding:14px;border:0;border-radius:10px;font-size:1rem;cursor:pointer}
+#next{background:#222;color:white}
+#back{background:#e8e8e8}
+.answer{margin-top:20px;padding:14px;border-radius:10px;background:#f0f0f0;display:none}
+.progress{margin-top:14px;color:#666;font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<div class="card">
+  <div class="meta" id="meta"></div>
+  <div class="question" id="question"></div>
+  <div class="reading" id="reading"></div>
+  <div class="answer" id="answer"></div>
+  <div class="buttons">
+    <button id="back">← Mundur</button>
+    <button id="next">Soal berikutnya →</button>
+  </div>
+  <div class="progress" id="progress"></div>
+</div>
+</main>
+<script>
+const allQuestions = [{"id": 1, "question": "あぶら で あげた ころっけ や、ごまあえ は、そうざい です。", "reading": "Abura de ageta korokke ya, gomaae wa, sōzai desu.", "answer": "○"}, {"id": 2, "question": "むした しゅうまい や、すのもの は、そうざい です。", "reading": "Mushita shūmai ya, sunomono wa, sōzai desu.", "answer": ""}, {"id": 3, "question": "にた かぼちゃ や、 ぽてとさらだ は、 そうざい です。", "reading": "Nita kabocha ya,  potetosarada wa, sōzai desu.", "answer": ""}, {"id": 4, "question": "むした じゃがいも と、さっきん した にんじん を まぜた もの は、そうざい です。", "reading": "Mushita jagaimo to, sakkin shita ninjin o mazeta mono wa, sōzai desu.", "answer": "○"}, {"id": 5, "question": "すらいす する しょくざい を かえる とき は、いちど すらいさー を あらいます。", "reading": "Suraisu suru shokuzai o kaeru toki wa, ichido suraisā o araimasu.", "answer": "○"}, {"id": 6, "question": "れいとうにく を かいとう する とき は、とれー や こんてな に いれます。", "reading": "Reitōniku o kaitō suru toki wa, torē ya kontena ni iremasu.", "answer": "○"}, {"id": 7, "question": "れいとう の えび を かいとう する とき は、とれー や こんてな に いれません。", "reading": "Reitō no ebi o kaitō suru toki wa, torē ya kontena ni iremasen.", "answer": "○"}, {"id": 8, "question": "ふくろ に はいった しょくざい を、みず の なか で かいとう する とき は、ふくろ に あな が あいて いない か かくにん します。", "reading": "", "answer": "○"}, {"id": 9, "question": "さっきんざい の のうど は、きじゅん より こく します。", "reading": "Sakkin-zai no nōdo wa, kijun yori koku shimasu.", "answer": "○"}, {"id": 10, "question": "さっきんざい の のうど は、きじゅん より うすく します。", "reading": "Sakkin-zai no nōdo wa, kijun yori usuku shimasu.", "answer": "○"}, {"id": 11, "question": "さっきんざい が ない とき は、せんざい を つかいます。", "reading": "Sakkin-zai ga nai toki wa, senzai o tsukaimasu.", "answer": "○"}, {"id": 12, "question": "しょくざい を れいぞうこ に ほかん する とき は、ようき に ふた を します。", "reading": "Shokuzai o reizōko ni hokan suru toki wa, yōki ni futa o shimasu.", "answer": "○"}, {"id": 13, "question": "ゆか や かべ は、そうじ しません。", "reading": "Yuka ya kabe wa, sōji shimasen.", "answer": "○"}, {"id": 14, "question": "つめ を、ながく のばして います。", "reading": "Tsume o, nagaku nobashite imasu.", "answer": "○"}, {"id": 15, "question": "つめ は、 いつも みじかく きって おきます。", "reading": "Tsume wa, itsumo mijikaku kitte okimasu.", "answer": "○"}, {"id": 16, "question": "つめ に、 まにきゅあ を ぬった まま しごと を しました。", "reading": "Tsume ni, manikyua o nutta mama shigoto o shimashita.", "answer": "○"}, {"id": 17, "question": "はいすいこう は、すぐ に よごれる ので、そうじ しません。", "reading": "Haisuikō wa, sugu ni yogoreru node, sōji shimasen.", "answer": "○"}, {"id": 18, "question": "ゆか に おちた しょくざい を そのまま つかいました。", "reading": "Yuka ni ochita shokuzai o sonomama tsukaimashita.", "answer": "○"}, {"id": 19, "question": "といれ から でる とき に、て を あらいません でした。", "reading": "Toire kara deru toki ni, te o araimasen deshita.", "answer": "○"}, {"id": 20, "question": "にく と やさい を きる とき は、おなじ まないた を つかいます。", "reading": "Niku to yasai o kiru toki wa, onaji manaita o tsukaimasu.", "answer": ""}, {"id": 21, "question": "ちゅうしんおんどけい を つかった あと は、 せんさー ぶぶん を せいけつ に します。", "reading": "Chūshin-ondokei o tsukatta ato wa,  sensā bubun o seiketsu ni shimasu.", "answer": ""}, {"id": 22, "question": "ほうちょう は、 は の ぶぶん だけ では なく、て で もつ ぶぶん も あらいます。", "reading": "Hōchō wa, ha no bubun dake dewa naku, te de motsu bubun mo araimasu.", "answer": ""}, {"id": 23, "question": "もりつけ さぎょう を おこなう、 せいけつ な さぎょうしつ に は、だんぼーるばこ を いれません。", "reading": "Moritsuke sagyō o okonau, seiketsu na sagyōshitsu ni wa, danbōrubako o iremasen.", "answer": "○"}, {"id": 24, "question": "さぎょうば が あつかった ので、まど を あけました。", "reading": "Sagyōba ga atsukatta node, mado o akemashita.", "answer": "○"}, {"id": 25, "question": "さぎょうちゅう に あつく なった ので、そで を まくりました。", "reading": "Sagyōchū ni atsuku natta node, sode o makurimashita.", "answer": "○"}, {"id": 26, "question": "さぎょうちゅう に あつく なった ので、 ぼうし を ぬぎました。", "reading": "Sagyōchū ni atsuku natta node, bōshi o nugimashita.", "answer": "○"}, {"id": 27, "question": "ながく つかって け が みじかく なった ぶらし を つかいました。", "reading": "Nagaku tsukatte, ke ga mijikaku natta burashi o tsukaimashita.", "answer": "○"}, {"id": 28, "question": "ふくろ に はいった しょくざい を もりつけ に つかう とき は、ふくろ の ひょうめん を しょうどく して から かいふう します。", "reading": "", "answer": "○"}, {"id": 29, "question": "そうじ よう の ぶらし が とどかない ところ は、そうじ しません。", "reading": "Sōji yō no burashi ga todokanai tokoro wa, sōji shimasen.", "answer": "○"}, {"id": 30, "question": "ころっけ を あげた とき は、ちゅうしん の おんど を はかります。", "reading": "Korokke o ageta toki wa, chūshin no ondo o hakarimasu.", "answer": "○"}, {"id": 31, "question": "ころっけ を あげた とき は、ひょうめん の おんど を はかります。", "reading": "Korokke o ageta toki wa, hyōmen no ondo o hakarimasu.", "answer": "○"}, {"id": 32, "question": "ころっけ を あげる とき は、じかん を はかりません。", "reading": "Korokke o ageru toki wa, jikan o hakarimasen.", "answer": "○"}, {"id": 33, "question": "はんばーぐ を やいた とき は、ひょうめん の おんど を はかります。", "reading": "Hanbāgu o yaita toki wa, hyōmen no ondo o hakarimasu.", "answer": "○"}, {"id": 34, "question": "こんべくしょん おーぶん の なか は、いち に よって おんど が ちがいます。", "reading": "Konbekushon ōbun no naka wa, ichi ni yotte ondo ga chigaimasu.", "answer": "○"}, {"id": 35, "question": "じょうき で ちょうり する こと を、あげる と いいます。", "reading": "Jōki de chōri suru koto o, ageru to iimasu.", "answer": "○"}, {"id": 36, "question": "ふらいやー の なか の あげかす は 、とりません。", "reading": "Furaiyā no naka no agekasu wa, torimasen.", "answer": "○"}, {"id": 37, "question": "ふらいやー へ、 いちど に たいりょう の しょくざい を いれました。", "reading": "Furaiyā e, ichido ni tairyō no shokuzai o iremashita.", "answer": "○"}, {"id": 38, "question": "ふらいやー に、 たいりょう の しょくざい を いれる と、あぶら の おんど が さがり、きんとう に かねつ できません。", "reading": "", "answer": "○"}, {"id": 39, "question": "こめ を たく とき は、 みず の りょう が たいせつ です。", "reading": "Kome o taku toki wa,  mizu no ryō ga taisetsu desu.", "answer": "○"}, {"id": 40, "question": "かねつ ちょうり を する とき は、 やけど に ちゅうい します。", "reading": "Kanetsu chōri o suru toki wa, yakedo ni chūi shimasu.", "answer": "○"}, {"id": 41, "question": "きかい から いつも と ちがう おと が したら、すぐ に きかい を とめます。", "reading": "Kikai kara itsumo to chigau oto ga shitara,  sugu ni kikai o tomemasu.", "answer": "○"}, {"id": 42, "question": "すらいさー を つかった あと は、すらいさー の は が かけて いない か かくにん します。", "reading": "Suraisā o tsukatta ato wa, suraisā no ha ga kakete inai ka kakunin shimasu.", "answer": "○"}, {"id": 43, "question": "いそいで いた ので、こうじょう の なか を はしりました。", "reading": "Isoide ita node, kōjō no naka o hashirimashita.", "answer": "○"}, {"id": 44, "question": "ゆか が ぬれて いる と、すべる ので きけん です。", "reading": "Yuka ga nurete iru to, suberu node kiken desu.", "answer": "○"}, {"id": 45, "question": "ゆか は、 ぬれて いた ほう が すべり やすくて よい です。", "reading": "Yuka wa, nurete ita hō ga suberi yasukute yoi desu.", "answer": "○"}, {"id": 46, "question": "せんざい を つかう とき は、 め に はいらない よう に ちゅうい します。", "reading": "Senzai o tsukau toki wa, me ni hairanai yō ni chūi shimasu.", "answer": "○"}, {"id": 47, "question": "しょくざい を すらいす して いる とき に、 すらいさー の かばー を はずして は いけません。", "reading": "Shokuzai o suraisu shite iru toki ni, suraisā no kabā o hazushite wa ikemasen.", "answer": "○"}, {"id": 48, "question": "すらいさー が かんぜん に ていし する まえ に、 かばー を あけました。", "reading": "Suraisā ga kanzen ni teishi suru mae ni,  kabā o akemashita.", "answer": "○"}, {"id": 49, "question": "きかい が うごいて いる とき は、 きかい に て を ふれて は いけません。", "reading": "Kikai ga ugoite iru toki wa, kikai ni te o furete wa ikemasen.", "answer": "○"}, {"id": 50, "question": "ちょうりちゅう に がす の ひ が きえて いたら、がす が もれて いる かのうせい が ある ため、ひ を つけて は いけません。", "reading": "", "answer": "○"}, {"id": 51, "question": "ちゅうしんおんどけい は、たべもの の ひょうめん の おんど を はかる きぐ です。", "reading": "Chūshin-ondokei wa, tabemono no hyōmen no ondo wo hakaru kigu desu.", "answer": "○"}, {"id": 52, "question": "けいりょうかっぷ は、かっぷ を かたむけて はかります。", "reading": "Keiryō kappu wa, kappu wo katamukete hakarimasu.", "answer": "○"}];
+let history = [];
+let position = -1;
+let unseen = new Set(allQuestions.map(q => q.id));
+
+function render() {
+  const q = allQuestions.find(x => x.id === history[position]);
+  document.getElementById('meta').textContent = 'Soal #' + q.id;
+  document.getElementById('question').textContent = q.question;
+  document.getElementById('reading').textContent = q.reading || '';
+  document.getElementById('answer').textContent = q.answer ? 'Jawaban sumber: ' + q.answer : 'Jawaban sumber tidak terbaca pada bagian kunci jawaban PDF.';
+  document.getElementById('answer').style.display = 'none';
+  document.getElementById('back').disabled = position <= 0;
+  document.getElementById('progress').textContent =
+    'Sudah muncul: ' + history.length + ' / ' + allQuestions.length;
+}
+
+function nextQuestion() {
+  if (position < history.length - 1) {
+    position++;
+    render();
+    return;
+  }
+  if (unseen.size === 0) {
+    alert('Semua soal sudah muncul dalam sesi ini.');
+    return;
+  }
+  const arr = [...unseen];
+  const id = arr[Math.floor(Math.random() * arr.length)];
+  unseen.delete(id);
+  history.push(id);
+  position++;
+  render();
+}
+
+document.getElementById('next').onclick = nextQuestion;
+document.getElementById('back').onclick = () => {
+  if (position > 0) { position--; render(); }
+};
+
+// Start with one random unseen question.
+nextQuestion();
+</script>
+</body>
+</html>
