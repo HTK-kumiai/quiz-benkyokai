@@ -2,71 +2,151 @@
   {
     "id": 1,
     "level": "shokyu",
-    "year": 2024,
-    "question": "おんしつ の なか の おんど が たかすぎるとき は、てんそう や そくそう を あけて かんき します。",
-    "reading": "Onshitsu no naka no ondo ga takasugiru toki wa, tensō ya sokusō o akete kanki shimasu.",
-    "image": "images/greenhouse_ventilation.svg",
+    "year": 2025,
+    "question": "キュウリ(きゅうり)は、かさいるいです。",
+    "reading": "Kyuri wa kasai rui desu.",
+    "image": "",
     "answer": "○",
-    "explanation": "Benar. Jika suhu di dalam rumah kaca terlalu tinggi, buka ventilasi atap (tensō) atau ventilasi samping (sokusō) untuk sirkulasi udara."
+    "explanation": "Karena dia tumbuh dari bunga, makanya disebut dengan kasai rui (jenis sayur dari buah)"
   },
   {
     "id": 2,
     "level": "shokyu",
-    "year": 2024,
-    "question": "かんすい（みずやり）は、ひ が くれて よる に なって から たっぷり おこないます。",
-    "reading": "Kansui (mizuyari) wa, hi ga kurete yoru ni natte kara tappuri okonaimasu.",
+    "year": 2025,
+    "question": "キク(きく)は、なつには しゅっかできません。",
+    "reading": "Kiku wa natsu niwa shukka dekimasen",
     "image": "",
     "answer": "×",
-    "explanation": "Salah. Penyiraman (kansui) umumnya dilakukan pada pagi hari agar kelembapan udara malam hari tidak memicu penyakit jamur tanaman."
+    "explanation": "Yo ndak tahu nanya kok nanya saya."
   },
   {
     "id": 3,
     "level": "shokyu",
-    "year": 2023,
-    "question": "のうやく を さんぷ するとき は、ますく や めがね、ぼうごふく を ちゃくよう します。",
-    "reading": "Nōyaku o sampai suru toki wa, masuku ya megane, bōgofuku o chakuyō shimasu.",
-    "image": "images/spray_equipment.svg",
+    "year": 2025,
+    "question": "ようえきさいばいは、ばいようえきで、さくもつを そだてます。",
+    "reading": "Yoeki saibai wa baiyoeki de sakumotsu wo sodatemasu",
+    "image": "",
     "answer": "○",
-    "explanation": "Benar. Saat menyemprot pestisida (nōyaku), wajib memakai masker pelindung, kacamata pengaman, sarung tangan, dan baju pelindung."
+    "explanation": "YNTTKTS."
   },
   {
     "id": 4,
     "level": "shokyu",
-    "year": 2023,
-    "question": "しゅうかく した やさい は、ちょくしゃにっこう が あたる あつい ばしょ に ほうち します。",
-    "reading": "Shūkaku shita yasai wa, chokusha-nikkō ga ataru atsui basho ni hōchi shimasu.",
+    "year": 2025,
+    "question": "しせつの なかの きおんが、いつもより たかく なりそうです。かんきを します。",
+    "reading": "Shisetsu no naka no kion ga itsumo yori takaku nari sou desu. Kanki wo shimasu.",
     "image": "",
     "answer": "×",
-    "explanation": "Salah. Sayuran yang baru dipanen harus segera ditaruh di tempat teduh/sejuk dan tidak terkena sinar matahari langsung agar tidak layu."
+    "explanation": "YNTTKTS."
   },
   {
     "id": 5,
     "level": "shokyu",
-    "year": 2022,
-    "question": "はさみ など の のうぐ は、つかいおわったら つち や よごれ を おとして ていれ します。",
-    "reading": "Hasami nado no nōgu wa, tsukaiowattara tsuchi ya yogore o otoshite teire shimasu.",
+    "year": 2025,
+    "question": "ずじょうかんすいは、てんてきかんすいチューブ(ちゅーぶ)をつかいます。",
+    "reading": "Zujou kansui wa tenteki kansui chubu wo tsukaimasu.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Gunting pangkas dan alat pertanian lainnya setelah digunakan harus dibersihkan dari tanah/getah untuk mencegah karat dan penularan hama penyakit."
+    "explanation": "YNTTKTS."
   },
   {
-    "id": 101,
-    "level": "senmonkyu",
-    "year": 2024,
-    "question": "ようえきさいばい（すいこうさいばい）に おいて、ばいようえき の EC（でんきでんどうど）と pH の かんり は きわめて じゅうよう です。",
-    "reading": "Yōeki saibai (suikō saibai) ni oite, baiyōeki no EC (denki dendōdo) to pH no kanri wa kiwamete jūyō desu.",
+    "id": 6,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "しせつさいばいでは、なつに だんぼうを します。",
+    "reading": "Shisetsu saibai dewa natsu ni danbou wo shimasu.",
+    "image": "",
+    "answer": "x",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 7,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【7】ホウレンソウ(ほうれんそう)は、くさたけで、しゅうかくのじきを きめます。",
+    "reading": "Horenso wa kusatake de shuukaku no jiki wo kimemasu.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Pada budidaya hidroponik/larutan nutrisi, pengukuran dan pengendalian nilai EC (kepekatan nutrisi) serta pH larutan sangat penting bagi pertumbuhan akar tanaman."
+    "explanation": "YNTTKTS."
   },
   {
-    "id": 102,
-    "level": "senmonkyu",
-    "year": 2023,
-    "question": "ひるま の おんしつない の にさんかたんそ（CO2）のうど は、こうごうせい に よって しぜんかい より たかく なります。",
-    "reading": "Hiruma no onshitsunai no nisanka tanso (CO2) nōdo wa, kōgōsei ni yotte shizenkai yori takaku narimasu.",
+    "id": 8,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【8】にほんは、おんたいきこうの ところが すくないです。",
+    "reading": "Nihon wa ontai kikou no tokoro ga sukunai desu.",
+    "image": "",
+    "answer": "x",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 9,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【9】にほんは、やまが おおくて、のうちが すくないです。",
+    "reading": "Nihon wa yama ga ookute nouchi ga sukunai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 10,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【10】こううんを します。つちの つうきせいが よくなります。",
+    "reading": "Kouun wo shimasu. Tsuchi no tsuukisei ga yoku narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 11,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さくもつは、ねから、ようぶんや すいぶんを\nきゅうしゅう します。",
+    "reading": "Sakumotsu wa ne kara youbun ya suibun wo kyuushuu shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": ""
+  },
+  {
+    "id": 12,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "はなは、えいようきかんです。",
+    "reading": "Hana wa eiyou kikan desu.",
     "image": "",
     "answer": "×",
-    "explanation": "Salah. Pada siang hari, tanaman melakukan fotosintesis secara aktif sehingga konsentrasi CO2 di dalam rumah kaca yang tertutup justru akan menurun (menjadi lebih rendah daripada udara luar) jika tidak dilakukan ventilasi atau injeksi CO2."
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "なたねかすは、ゆうきしつひりょうです。",
+    "reading": "Natane kasu wa yuukishitsu hiryou desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pokoknya kalau ada nama-nama tumbuhan begini udah bisa dipastiin dia yukishitsu hiryo (pupuk organik)."
+  },
+  {
+    "id": 14,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さっちゅうざいで、ざっそうを ぼうじょします。",
+    "reading": "Sacchuuzai de zassou wo boujo shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sacchuzai dipakai untuk membasmi serangga, bukan rumput."
+  },
+  {
+    "id": 15,
+    "level": "senmonkyu",
+    "year": 2024,
+    "question": "蒸散は葉の気孔から水分を放出することです。",
+    "reading": "Jousan wa ha no kikou kara suibun wo houtshutsu suru koto desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": ""
   }
 ]

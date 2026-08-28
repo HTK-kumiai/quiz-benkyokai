@@ -52,25 +52,31 @@ async function getQuestionsForCategory(catId) {
     if (!cat) return [];
 
     const localData = localStorage.getItem(cat.storageKey);
-    if (localData) {
-        try {
-            const parsed = JSON.parse(localData);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-                return parsed;
-            }
-        } catch (e) {
-            console.error("Gagal parse localStorage:", e);
-        }
-    }
 
     try {
-        const response = await fetch(cat.file);
+        // JSON di GitHub Pages adalah sumber utama; query unik menghindari cache lama.
+        const response = await fetch(`${cat.file}?v=${Date.now()}`, { cache: "no-store" });
         if (!response.ok) throw new Error("HTTP " + response.status);
         const data = await response.json();
+        if (!Array.isArray(data) || data.length === 0) {
+            throw new Error("Format JSON tidak valid");
+        }
         localStorage.setItem(cat.storageKey, JSON.stringify(data));
         return data;
     } catch (err) {
-        console.warn(`Gagal memuat ${cat.file} via fetch. Memakai fallback default.`, err);
+        console.warn(`Gagal memuat ${cat.file} via fetch. Mencoba data tersimpan.`, err);
+
+        // Tetap bisa dipakai saat offline atau ketika GitHub Pages belum tersedia.
+        if (localData) {
+            try {
+                const parsed = JSON.parse(localData);
+                if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+            } catch (storageErr) {
+                console.error("Gagal parse localStorage:", storageErr);
+            }
+        }
+
+        console.warn(`Data tersimpan tidak tersedia. Memakai fallback default untuk ${cat.file}.`);
         const fallbackData = getDefaultFallbackForCategory(catId);
         localStorage.setItem(cat.storageKey, JSON.stringify(fallbackData));
         return fallbackData;
