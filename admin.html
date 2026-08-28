@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kelola Bank Soal — 技能評価試験</title>
+        <link rel="stylesheet" href="admin.css" />
+    </head>
+    <body>
+        <!-- Lock Screen / Login Overlay (Melindungi dari Anak Magang) -->
+        <div id="auth-overlay" class="auth-overlay">
+            <div class="auth-card">
+                <div class="auth-icon">🔒</div>
+                <h2>Akses Terbatas Pengelola</h2>
+                <p>Masukkan PIN Administrator untuk mengelola bank soal kuis.</p>
+                <form id="auth-form" class="auth-form" onsubmit="handleAuthSubmit(event)">
+                    <input
+                        type="password"
+                        id="auth-pin-input"
+                        placeholder="Masukkan PIN Admin"
+                        autocomplete="current-password"
+                        required
+                        autofocus
+                    />
+                    <div id="auth-error-msg" class="auth-error">PIN yang Anda masukkan salah!</div>
+                    <div class="auth-actions">
+                        <button type="submit" class="btn-auth-submit">Buka Kunci Dashboard</button>
+                        <a href="index.html" class="btn-auth-back">⬅️ Kembali ke Halaman Kuis</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container" id="admin-main-content">
+            <!-- Header Section -->
+            <header class="admin-header">
+                <div class="header-top">
+                    <div class="header-title-wrap">
+                        <h1>⚙️ Kelola Bank Soal</h1>
+                        <p>Ubah, tambah, atau hapus soal kuis untuk setiap bidang, tingkatan (level), dan tahun.</p>
+                    </div>
+                    <div class="header-actions-right">
+                        <button class="btn-header" onclick="openChangePasswordModal()" title="Ubah PIN Akses Pengelola">
+                            🔑 Ganti PIN
+                        </button>
+                        <button class="btn-header" onclick="logoutAdmin()" title="Kunci Dashboard">
+                            🔒 Keluar
+                        </button>
+                        <a href="index.html" class="btn-header btn-back-quiz">
+                            ⬅️ Buka Halaman Kuis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category Selector in Admin -->
+                <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border-color); display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <label style="font-weight: 700; font-size: 0.92rem; color: #334155;">Pilih Bidang:</label>
+                    <select id="admin-category-select" class="filter-select" style="font-weight: 700; font-size: 1rem; color: #1e40af; background: #eff6ff; border-color: #bfdbfe;" onchange="switchAdminCategory(this.value)">
+                        <option value="sozai-kako">🍱 惣菜製造業 (Sozai Kako)</option>
+                        <option value="shisetsu-engei">🌱 施設園芸 (Shisetsu Engei)</option>
+                    </select>
+                </div>
+
+                <!-- Stats Summary -->
+                <div class="stats-summary">
+                    <div class="stat-card">
+                        <span class="label">Total Soal Bidang Ini</span>
+                        <span class="value" id="stat-total">0</span>
+                    </div>
+                    <div class="stat-card true-stat">
+                        <span class="label">Soal Benar (○)</span>
+                        <span class="value" id="stat-true">0</span>
+                    </div>
+                    <div class="stat-card false-stat">
+                        <span class="label">Soal Salah (×)</span>
+                        <span class="value" id="stat-false">0</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Toolbar Section -->
+            <section class="toolbar-card">
+                <div class="search-filter-group">
+                    <input
+                        type="text"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="🔍 Cari nomor, teks Jepang, romaji, atau penjelasan..."
+                    />
+                    <!-- Filter Level -->
+                    <select id="filter-level" class="filter-select">
+                        <option value="all">Semua Level</option>
+                        <option value="shokyu">🔰 初級 (Shokyu)</option>
+                        <option value="senmonkyu">⭐ 専門級 (Senmonkyu)</option>
+                    </select>
+                    <!-- Filter Tahun -->
+                    <select id="filter-year" class="filter-select">
+                        <option value="all">Semua Tahun</option>
+                        <!-- Diisi dinamis oleh admin.js -->
+                    </select>
+                    <!-- Filter Kunci Jawaban -->
+                    <select id="filter-answer" class="filter-select">
+                        <option value="all">Semua Kunci</option>
+                        <option value="○">○ (BENAR)</option>
+                        <option value="×">✕ (SALAH)</option>
+                    </select>
+                </div>
+
+                <div class="action-buttons-group">
+                    <button class="btn btn-primary" onclick="openAddModal()">
+                        ➕ Tambah Soal Baru
+                    </button>
+                    <button class="btn btn-success" onclick="exportQuestionsJSON()" title="Unduh file JSON untuk bidang ini">
+                        💾 Unduh JSON
+                    </button>
+                    <label class="btn btn-secondary" title="Unggah file JSON untuk bidang ini">
+                        📂 Impor JSON
+                        <input type="file" id="import-file-input" accept=".json" style="display: none;" />
+                    </label>
+                    <button class="btn btn-danger" onclick="resetToDefault()" title="Kembalikan bidang ini ke soal bawaan">
+                        🔄 Reset Default
+                    </button>
+                </div>
+            </section>
+
+            <!-- Questions Table Area -->
+            <main class="table-card">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 70px; text-align: center;">No.</th>
+                                <th>Pertanyaan & Penjelasan</th>
+                                <th style="width: 140px;">Kategori & Level</th>
+                                <th style="width: 120px;">Kunci</th>
+                                <th style="width: 150px;">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="questions-tbody">
+                            <!-- Diisi secara dinamis oleh admin.js -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="empty-state" class="empty-state" style="display: none;">
+                    <h3>Tidak ada soal yang ditemukan</h3>
+                    <p>Coba ubah kata kunci pencarian atau filter di atas.</p>
+                </div>
+            </main>
+        </div>
+
+        <!-- Modal Form Tambah / Edit Soal -->
+        <div class="modal-backdrop" id="modal-form">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h2 id="modal-title">Tambah Soal Baru</h2>
+                    <button class="btn-close-modal" onclick="closeModal()">&times;</button>
+                </div>
+                <form id="question-form">
+                    <div class="modal-body">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+                            <div class="form-group">
+                                <label for="form-id">Nomor ID Soal <span style="color:red;">*</span></label>
+                                <input type="number" id="form-id" class="form-control" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="form-level">Tingkatan / Level <span style="color:red;">*</span></label>
+                                <select id="form-level" class="form-control" required>
+                                    <option value="shokyu">🔰 初級 (Shokyu)</option>
+                                    <option value="senmonkyu">⭐ 専門級 (Senmonkyu)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-year">Tahun Soal <span style="color:red;">*</span></label>
+                                <input type="number" id="form-year" class="form-control" placeholder="2024" min="2000" max="2099" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-question">Teks Pertanyaan (Bahasa Jepang / Hiragana / Kanji) <span style="color:red;">*</span></label>
+                            <textarea id="form-question" class="form-control" rows="3" placeholder="Contoh pertanyaan dalam huruf Jepang..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-reading">Cara Baca / Romaji (Opsional)</label>
+                            <input type="text" id="form-reading" class="form-control" placeholder="Contoh cara baca romaji..." />
+                        </div>
+
+                        <!-- Gambar Soal (Opsional) -->
+                        <div class="form-group">
+                            <label>Gambar / Ilustrasi Soal (Opsional)</label>
+                            <div class="image-input-container">
+                                <div style="display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;">
+                                    <input
+                                        type="text"
+                                        id="form-image"
+                                        class="form-control"
+                                        placeholder="Path file (contoh: images/foto1.jpg) atau link URL"
+                                        style="flex: 1; min-width: 200px;"
+                                        oninput="handleImageInputManual(this.value)"
+                                    />
+                                    <label class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 12px; cursor: pointer;">
+                                        📁 Pilih File
+                                        <input type="file" id="form-image-file" accept="image/*" style="display: none;" onchange="handleImageFileUpload(event)" />
+                                    </label>
+                                </div>
+                                <div id="form-image-preview-wrap" class="image-preview-wrap" style="display: none;">
+                                    <img id="form-image-preview" class="form-img-preview" src="" alt="Pratinjau Gambar" />
+                                    <div>
+                                        <button type="button" class="btn-remove-img" onclick="clearFormImage()">❌ Hapus Gambar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Kunci Jawaban yang Benar <span style="color:red;">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="form-answer" id="answer-true" value="○" checked />
+                                    <span>○ BENAR (Maru)</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="form-answer" id="answer-false" value="×" />
+                                    <span>✕ SALAH (Batsu)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-explanation">Penjelasan / Terjemahan (Bahasa Indonesia)</label>
+                            <textarea id="form-explanation" class="form-control" rows="3" placeholder="Contoh penjelasan singkat mengenai materi soal..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Batal</button>
+                        <button type="submit" class="btn btn-primary">💾 Simpan Perubahan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal Ganti PIN / Password -->
+        <div class="modal-backdrop" id="modal-password">
+            <div class="modal-card" style="max-width: 440px;">
+                <div class="modal-header">
+                    <h2>🔑 Ganti PIN Administrator</h2>
+                    <button class="btn-close-modal" onclick="closeChangePasswordModal()">&times;</button>
+                </div>
+                <form id="password-form" onsubmit="handleChangePasswordSubmit(event)">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="pwd-current">PIN Saat Ini</label>
+                            <input type="password" id="pwd-current" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd-new">PIN Baru</label>
+                            <input type="password" id="pwd-new" class="form-control" placeholder="Minimal 4 karakter" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd-confirm">Konfirmasi PIN Baru</label>
+                            <input type="password" id="pwd-confirm" class="form-control" required />
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeChangePasswordModal()">Batal</button>
+                        <button type="submit" class="btn btn-primary">Simpan PIN Baru</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Floating Toast Notification -->
+        <div id="toast" class="toast"></div>
+
+        <script src="admin.js"></script>
+    </body>
+</html>
