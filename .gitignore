@@ -1,5 +1,6 @@
 .DS_Store
-._*
+._* 
+*.swp
 .env
 .env.*
 !.env.example

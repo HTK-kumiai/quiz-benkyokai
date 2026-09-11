@@ -16,6 +16,16 @@ export function isSupabaseConfigured() {
     return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 }
 
+export function getSupabaseStatus() {
+    if (!isSupabaseConfigured()) {
+        return { ready: false, message: "Belum dikonfigurasi" };
+    }
+    if (!clientFactory || !supabase) {
+        return { ready: false, message: "Library Supabase belum termuat" };
+    }
+    return { ready: true, message: "Konfigurasi dan library siap" };
+}
+
 export function assertSupabaseReady() {
     if (!isSupabaseConfigured()) {
         throw new Error("Supabase belum dikonfigurasi. Isi public/config/supabase.config.js terlebih dahulu.");
@@ -105,6 +115,62 @@ export async function insertScore(record) {
     const client = assertSupabaseReady();
     const { error } = await client.from("scores").insert(record);
     if (error) throw error;
+}
+
+export async function fetchQuestionBank(categoryId) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("question_bank")
+        .select("id, level, year, question, reading, image, answer, explanation")
+        .eq("category_id", categoryId)
+        .order("id", { ascending: true });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function replaceQuestionBank(categoryId, questions) {
+    const client = assertSupabaseReady();
+    const rows = questions.map((question) => ({
+        id: Number(question.id),
+        category_id: categoryId,
+        level: question.level,
+        year: Number(question.year),
+        question: question.question || "",
+        reading: question.reading || "",
+        image: question.image || "",
+        answer: question.answer,
+        explanation: question.explanation || "",
+        updated_at: new Date().toISOString(),
+    }));
+
+    if (rows.length > 0) {
+        const { error } = await client
+            .from("question_bank")
+            .upsert(rows, { onConflict: "category_id,id" });
+        if (error) throw error;
+    }
+
+    const { data: existingRows, error: existingError } = await client
+        .from("question_bank")
+        .select("id")
+        .eq("category_id", categoryId);
+    if (existingError) throw existingError;
+
+    const keepIds = new Set(rows.map((row) => row.id));
+    const idsToDelete = (existingRows || [])
+        .map((row) => row.id)
+        .filter((id) => !keepIds.has(id));
+
+    if (idsToDelete.length > 0) {
+        const { error } = await client
+            .from("question_bank")
+            .delete()
+            .eq("category_id", categoryId)
+            .in("id", idsToDelete);
+        if (error) throw error;
+    }
+
+    return rows.length;
 }
 
 export async function fetchOwnScores(userId) {

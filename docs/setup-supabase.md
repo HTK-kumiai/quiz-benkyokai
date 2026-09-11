@@ -1,10 +1,10 @@
-# Setup Supabase untuk GitHub Pages
+# Setup Supabase untuk Cloudflare Pages
 
 Panduan ini sesuai dengan struktur proyek saat ini per 3 September 2026.
 
 Tujuan setup ini:
 
-- `public/` di-host di GitHub Pages
+- `public/` di-host di Cloudflare Pages
 - login user memakai Supabase Auth
 - skor tersimpan di Supabase
 - admin login memakai akun Supabase biasa yang ditandai `is_admin = true`
@@ -63,7 +63,7 @@ export const SUPABASE_ANON_KEY = "your-anon-key";
 
 ## 6. Buat User Pertama
 
-Karena mode ini aman untuk GitHub Pages, pembuatan user tidak dilakukan dari browser admin.
+Karena aplikasi menggunakan deployment statis Cloudflare Pages, pembuatan user tidak dilakukan dari browser admin.
 
 Caranya:
 
@@ -104,23 +104,17 @@ node server/app-server.js
 4. Selesaikan kuis untuk memastikan skor masuk
 5. Login admin dari halaman admin untuk memastikan tab skor bisa dibuka
 
-## 9. Deploy ke GitHub Pages
+## 9. Deploy ke Cloudflare Pages
 
-Workflow deploy sudah ada di [/.github/workflows/deploy-pages.yml](/Users/dwikiprayoga24/1 Projects/sozai-kako/souzai-kako/.github/workflows/deploy-pages.yml:1).
+Atur project Cloudflare Pages dengan konfigurasi berikut:
 
-Langkahnya:
+- Root directory: root repository
+- Build command: `bash scripts/cloudflare-build.sh`
+- Output directory: `public`
 
-1. Push repo ke GitHub
-2. Di repo GitHub, buka **Settings** → **Pages**
-3. Pada bagian **Build and deployment**, pilih **GitHub Actions**
-4. Push ke branch `main`
-5. GitHub akan deploy folder `public/` ke Pages
+Build command akan memvalidasi seluruh bank soal sebelum folder `public/` dipublikasikan.
 
-Karena asset dan data di frontend sekarang memakai path relatif, project ini aman dipasang di subpath seperti:
-
-```text
-https://username.github.io/nama-repo/
-```
+Setelah deployment, tambahkan URL Cloudflare Pages ke **Supabase → Authentication → URL Configuration** sebagai **Site URL** dan **Redirect URL**.
 
 ## 10. Troubleshooting
 
@@ -136,7 +130,7 @@ https://username.github.io/nama-repo/
 - pastikan `is_admin = true`
 - pastikan SQL schema dan RLS sudah dijalankan
 
-### Kategori atau soal tidak muncul di GitHub Pages
+### Kategori atau soal tidak muncul di Cloudflare Pages
 
 - cek file `public/data/question-bank/categories.json`
 - jalankan `./scripts/validate-question-bank.sh`

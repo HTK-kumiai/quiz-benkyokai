@@ -1,6 +1,6 @@
 # Souzai Kako
 
-Mode utama proyek ini sekarang adalah frontend statis di GitHub Pages dengan autentikasi dan penyimpanan skor memakai Supabase.
+Mode utama proyek ini sekarang adalah frontend statis di Cloudflare Pages dengan autentikasi dan penyimpanan skor memakai Supabase.
 
 ## Struktur Folder
 
@@ -8,7 +8,7 @@ Mode utama proyek ini sekarang adalah frontend statis di GitHub Pages dengan aut
 - `public/assets/` — CSS, JavaScript, dan gambar
 - `public/data/question-bank/` — bank soal JSON yang diakses frontend
 - `data/` — data lokal untuk mode server/dev lama
-- `server/` — server Node.js lokal untuk testing tanpa GitHub Pages
+- `server/` — server Node.js lokal untuk testing tanpa Cloudflare Pages
 - `scripts/` — utilitas konversi dan builder soal
 - `docs/` — dokumentasi dan template
 - `source/` — file sumber mentah seperti Excel
@@ -20,8 +20,14 @@ Mode utama proyek ini sekarang adalah frontend statis di GitHub Pages dengan aut
 
 ### Produksi
 
-- host `public/` di GitHub Pages
+- host `public/` di Cloudflare Pages
 - pakai Supabase untuk login dan skor
+
+Pengaturan Cloudflare Pages:
+
+- Build command: `bash scripts/cloudflare-build.sh`
+- Output directory: `public`
+- Root directory: root repository
 
 Panduan:
 

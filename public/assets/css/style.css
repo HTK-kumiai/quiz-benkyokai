@@ -861,6 +861,31 @@ main {
     border: 1px solid #fecaca;
 }
 
+.score-save-status {
+    margin: 16px auto 0;
+    max-width: 520px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.score-save-status:empty {
+    display: none;
+}
+
+.score-save-status.success {
+    background: #ecfdf5;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.score-save-status.warning {
+    background: #fffbeb;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
 .btn-login {
     width: 100%;
     padding: 14px;

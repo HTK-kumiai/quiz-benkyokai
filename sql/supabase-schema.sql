@@ -41,13 +41,83 @@ create table if not exists public.scores (
   timestamp timestamptz not null default now()
 );
 
+create table if not exists public.question_bank (
+  id integer not null,
+  category_id text not null,
+  level text not null check (level in ('shokyu', 'senmonkyu')),
+  year integer not null check (year between 2000 and 2100),
+  question text not null,
+  reading text not null default '',
+  image text not null default '',
+  answer text not null check (answer in ('○', '×')),
+  explanation text not null default '',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key (category_id, id)
+);
+
 create index if not exists idx_scores_user_id on public.scores(user_id);
 create index if not exists idx_scores_timestamp on public.scores(timestamp desc);
 create index if not exists idx_profiles_username on public.profiles(username);
 create index if not exists idx_profiles_is_admin on public.profiles(is_admin);
+create index if not exists idx_question_bank_category on public.question_bank(category_id);
+create index if not exists idx_question_bank_category_level on public.question_bank(category_id, level);
 
 alter table public.profiles enable row level security;
 alter table public.scores enable row level security;
+alter table public.question_bank enable row level security;
+
+grant select on public.question_bank to authenticated;
+grant insert, update, delete on public.question_bank to authenticated;
+
+drop policy if exists "question_bank_select_authenticated" on public.question_bank;
+create policy "question_bank_select_authenticated"
+  on public.question_bank
+  for select
+  to authenticated
+  using (true);
+
+drop policy if exists "question_bank_insert_admin" on public.question_bank;
+create policy "question_bank_insert_admin"
+  on public.question_bank
+  for insert
+  to authenticated
+  with check (
+    exists (
+      select 1 from public.profiles p
+      where p.id = auth.uid() and p.is_admin = true
+    )
+  );
+
+drop policy if exists "question_bank_update_admin" on public.question_bank;
+create policy "question_bank_update_admin"
+  on public.question_bank
+  for update
+  to authenticated
+  using (
+    exists (
+      select 1 from public.profiles p
+      where p.id = auth.uid() and p.is_admin = true
+    )
+  )
+  with check (
+    exists (
+      select 1 from public.profiles p
+      where p.id = auth.uid() and p.is_admin = true
+    )
+  );
+
+drop policy if exists "question_bank_delete_admin" on public.question_bank;
+create policy "question_bank_delete_admin"
+  on public.question_bank
+  for delete
+  to authenticated
+  using (
+    exists (
+      select 1 from public.profiles p
+      where p.id = auth.uid() and p.is_admin = true
+    )
+  );
 
 -- RLS membatasi baris; izin kolom mencegah user menaikkan hak admin sendiri.
 revoke insert, update on public.profiles from public, anon, authenticated;

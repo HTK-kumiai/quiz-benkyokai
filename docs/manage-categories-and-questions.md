@@ -133,7 +133,9 @@ Field yang dipakai:
 - Kartu bidang di halaman depan dibuat otomatis dari `categories.json`
 - Dropdown bidang di admin juga dibuat otomatis dari file yang sama
 - Hitungan jumlah soal di kartu akan mengikuti isi file JSON bidang
-- Edit soal di admin saat ini tetap tersimpan di `localStorage` browser, bukan menulis balik ke repo
+- Setelah schema `question_bank` dibuat di Supabase dan sinkronisasi awal dilakukan, edit soal dari admin otomatis disimpan ke Supabase.
+- `localStorage` dan file JSON tetap dipakai sebagai fallback jika Supabase tidak tersedia.
+- Gunakan tab **Setup** → **Sinkronkan Semua Soal** untuk migrasi awal seluruh bank soal JSON ke Supabase.
 
 ## Jika Ingin Menambah Banyak Soal Sekaligus
 

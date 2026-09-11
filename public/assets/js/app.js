@@ -1,5 +1,6 @@
 import {
     fetchOwnScores,
+    fetchQuestionBank,
     getCurrentSessionProfile,
     insertScore,
     isSupabaseConfigured,
@@ -179,7 +180,7 @@ async function getScoreRecords() {
 }
 
 async function saveScoreRecord(record) {
-    if (!currentUser) return;
+    if (!currentUser) return false;
     try {
         await insertScore({
             user_id: currentUser.id,
@@ -195,8 +196,10 @@ async function saveScoreRecord(record) {
             percentage: record.percentage,
             timestamp: record.timestamp,
         });
+        return true;
     } catch (e) {
-        console.error('Gagal simpan skor:', e);
+        console.error("Gagal simpan skor:", e);
+        return false;
     }
 }
 
@@ -221,6 +224,18 @@ async function getQuestionsForCategory(catId) {
     if (!cat) return [];
 
     const localData = localStorage.getItem(cat.storageKey);
+
+    if (currentUser && isSupabaseConfigured()) {
+        try {
+            const remoteData = await fetchQuestionBank(catId);
+            if (remoteData.length > 0) {
+                localStorage.setItem(cat.storageKey, JSON.stringify(remoteData));
+                return remoteData;
+            }
+        } catch (err) {
+            console.warn(`Gagal memuat bank soal ${catId} dari Supabase.`, err);
+        }
+    }
 
     try {
         const response = await fetch(`${cat.fileUrl}?v=${Date.now()}`, { cache: "no-store" });
@@ -607,6 +622,7 @@ async function showResults() {
         `${cat ? cat.shortName : ""} • ${levelName} • ${yearName}`;
 
     // Simpan skor ke database
+    let scoreSaved = false;
     if (currentUser) {
         const record = {
             username: currentUser.username,
@@ -621,7 +637,15 @@ async function showResults() {
             percentage: pct,
             timestamp: new Date().toISOString(),
         };
-        await saveScoreRecord(record);
+        scoreSaved = await saveScoreRecord(record);
+    }
+
+    const scoreSaveStatus = document.getElementById("score-save-status");
+    if (scoreSaveStatus) {
+        scoreSaveStatus.className = scoreSaved ? "score-save-status success" : "score-save-status warning";
+        scoreSaveStatus.textContent = scoreSaved
+            ? "✅ Skor berhasil disimpan ke riwayat akun Anda."
+            : "⚠️ Skor belum berhasil disimpan. Silakan hubungi admin atau coba lagi nanti.";
     }
 
 

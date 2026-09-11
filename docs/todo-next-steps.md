@@ -2,7 +2,7 @@
 
 Tanggal acuan: 4 September 2026.
 
-Dokumen ini berisi hal-hal yang masih perlu kamu lakukan sendiri agar proyek siap dipakai penuh di GitHub Pages + Supabase.
+Dokumen ini berisi hal-hal yang masih perlu kamu lakukan sendiri agar proyek siap dipakai penuh di Cloudflare Pages + Supabase.
 
 ## 1. Setup Supabase
 
@@ -25,8 +25,8 @@ Dokumen ini berisi hal-hal yang masih perlu kamu lakukan sendiri agar proyek sia
 - Pastikan login Email aktif.
 - Jika ingin login langsung tanpa verifikasi email, matikan **Confirm email**.
 - Buka **Authentication** → **URL Configuration**.
-- Isi `Site URL` dengan URL GitHub Pages final.
-- Tambahkan URL GitHub Pages yang sama ke `Redirect URLs`.
+- Isi `Site URL` dengan URL Cloudflare Pages final.
+- Tambahkan URL Cloudflare Pages yang sama ke `Redirect URLs`.
 
 ## 4. Buat Akun User dan Admin
 
@@ -47,18 +47,18 @@ Dokumen ini berisi hal-hal yang masih perlu kamu lakukan sendiri agar proyek sia
 - Login sebagai admin.
 - Pastikan tab **Riwayat Skor** bisa membaca semua skor.
 
-## 6. Deploy GitHub Pages
+## 6. Deploy Cloudflare Pages
 
-- Push repo ini ke GitHub.
-- Buka **Settings** → **Pages** di repo GitHub.
-- Pada **Build and deployment**, pilih **GitHub Actions**.
-- Pastikan workflow [/.github/workflows/deploy-pages.yml](/Users/dwikiprayoga24/1 Projects/sozai-kako/souzai-kako/.github/workflows/deploy-pages.yml:1) berjalan sukses.
-- Buka URL GitHub Pages hasil deploy.
+- Hubungkan repository ke Cloudflare Pages.
+- Gunakan build command `bash scripts/cloudflare-build.sh`.
+- Gunakan output directory `public`.
+- Pastikan build selesai tanpa error.
+- Buka URL Cloudflare Pages hasil deploy.
 
 ## 7. Verifikasi Produksi
 
-- Tes login user di GitHub Pages.
-- Tes login admin di GitHub Pages.
+- Tes login user di Cloudflare Pages.
+- Tes login admin di Cloudflare Pages.
 - Pastikan kategori muncul semua.
 - Pastikan file soal bisa dimuat.
 - Pastikan submit skor berhasil masuk ke Supabase.

@@ -1,7 +1,10 @@
 import {
     fetchAllScoresForAdmin,
+    fetchQuestionBank,
     getCurrentSessionProfile,
+    getSupabaseStatus,
     isSupabaseConfigured,
+    replaceQuestionBank,
     signInWithEmail,
     signOutUser,
 } from "./supabase-client.js";
@@ -96,8 +99,10 @@ function setupAdminEvents() {
 function updateSetupStatus() {
     const supabaseStatus = document.getElementById("setup-supabase-status");
     const adminStatus = document.getElementById("setup-admin-status");
+    const status = getSupabaseStatus();
     if (supabaseStatus) {
-        supabaseStatus.textContent = isSupabaseConfigured() ? "Siap" : "Belum dikonfigurasi";
+        supabaseStatus.textContent = status.message;
+        supabaseStatus.style.color = status.ready ? "#15803d" : "#b45309";
     }
     if (adminStatus) {
         adminStatus.textContent = currentAdminProfile
@@ -206,6 +211,36 @@ async function switchAdminCategory(catId) {
 
 async function loadQuestionsForCategory(catId) {
     const cat = CATEGORIES[catId];
+    try {
+        const remoteQuestions = await fetchQuestionBank(catId);
+        if (remoteQuestions.length > 0) {
+            questions = normalizeQuestions(remoteQuestions);
+            localStorage.setItem(cat.storageKey, JSON.stringify(questions));
+            return;
+        }
+    } catch (err) {
+        console.warn(`Bank soal ${catId} dari Supabase belum tersedia:`, err);
+    }
+
+    questions = await loadStaticQuestionsForCategory(catId);
+    localStorage.setItem(cat.storageKey, JSON.stringify(questions));
+}
+
+function normalizeQuestions(loadedQuestions) {
+    return loadedQuestions.map((q, idx) => ({
+        id: q.id || idx + 1,
+        level: q.level || "shokyu",
+        year: q.year ? Number(q.year) : 2024,
+        question: q.question || "",
+        reading: q.reading || "",
+        image: q.image || "",
+        answer: q.answer || "○",
+        explanation: q.explanation || "",
+    }));
+}
+
+async function loadStaticQuestionsForCategory(catId) {
+    const cat = CATEGORIES[catId];
     const localData = localStorage.getItem(cat.storageKey);
     let loadedQuestions = null;
 
@@ -230,17 +265,49 @@ async function loadQuestionsForCategory(catId) {
         }
     }
 
-    questions = loadedQuestions.map((q, idx) => ({
-        id: q.id || idx + 1,
-        level: q.level || "shokyu",
-        year: q.year ? Number(q.year) : 2024,
-        question: q.question || "",
-        reading: q.reading || "",
-        image: q.image || "",
-        answer: q.answer || "○",
-        explanation: q.explanation || "",
-    }));
-    localStorage.setItem(cat.storageKey, JSON.stringify(questions));
+    return normalizeQuestions(loadedQuestions);
+}
+
+async function syncCurrentQuestionBank() {
+    if (!currentAdminProfile?.is_admin) {
+        showToast("🔒 Login admin diperlukan.");
+        return;
+    }
+    try {
+        const count = await replaceQuestionBank(currentAdminCategory, questions);
+        localStorage.setItem(CATEGORIES[currentAdminCategory].storageKey, JSON.stringify(questions));
+        showToast(`☁️ ${count} soal berhasil disimpan ke Supabase.`);
+    } catch (err) {
+        showToast(`❌ Gagal menyimpan bank soal: ${err.message}`);
+    }
+}
+
+async function syncAllQuestionBanks() {
+    if (!currentAdminProfile?.is_admin) {
+        showToast("🔒 Login admin diperlukan.");
+        return;
+    }
+    const button = document.getElementById("sync-all-question-banks");
+    if (button) {
+        button.disabled = true;
+        button.textContent = "☁️ Menyinkronkan...";
+    }
+    try {
+        let total = 0;
+        for (const category of categoryList) {
+            const staticQuestions = await loadStaticQuestionsForCategory(category.id);
+            total += await replaceQuestionBank(category.id, staticQuestions);
+        }
+        await switchAdminCategory(currentAdminCategory);
+        showToast(`✅ Semua bidang tersimpan ke Supabase (${total} soal).`);
+    } catch (err) {
+        showToast(`❌ Sinkronisasi gagal: ${err.message}`);
+    } finally {
+        if (button) {
+            button.disabled = false;
+            button.textContent = "☁️ Sinkronkan Semua Soal";
+        }
+    }
 }
 
 function persistQuestions() {
@@ -248,6 +315,11 @@ function persistQuestions() {
     localStorage.setItem(cat.storageKey, JSON.stringify(questions));
     populateYearFilter();
     updateStats();
+    if (currentAdminProfile?.is_admin) {
+        replaceQuestionBank(currentAdminCategory, questions)
+            .then(() => showToast("☁️ Perubahan soal tersimpan di Supabase."))
+            .catch((err) => showToast(`⚠️ Soal tersimpan lokal, tetapi gagal ke Supabase: ${err.message}`));
+    }
 }
 
 function updateStats() {
@@ -615,3 +687,5 @@ window.deleteQuestion = deleteQuestion;
 window.exportQuestionsJSON = exportQuestionsJSON;
 window.importQuestionsJSON = importQuestionsJSON;
 window.resetToDefault = resetToDefault;
+window.syncCurrentQuestionBank = syncCurrentQuestionBank;
+window.syncAllQuestionBanks = syncAllQuestionBanks;

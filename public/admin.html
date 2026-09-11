@@ -133,7 +133,7 @@
                 <div style="padding: 24px;">
                     <h2 style="margin-top: 0;">Setup Supabase</h2>
                     <p style="color: #64748b; line-height: 1.7;">
-                        Untuk mode GitHub Pages yang aman, panel admin ini hanya memakai <code>anon key</code>.
+                        Untuk deployment statis Cloudflare Pages yang aman, panel admin ini hanya memakai <code>anon key</code>.
                         Karena itu, pembuatan user tidak dilakukan dari browser admin, tetapi lewat Supabase Auth Dashboard
                         atau alur signup terpisah.
                     </p>
@@ -157,6 +157,17 @@
                             3. User login dari halaman kuis memakai email + password.
                             4. Skor tersimpan ke tabel <code>scores</code> dan admin bisa melihatnya di tab Riwayat Skor.
                         </p>
+                    </div>
+
+                    <div style="margin-top: 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px;">
+                        <strong>Bank soal terpusat</strong>
+                        <p style="color: #475569; line-height: 1.7;">
+                            Setelah schema `question_bank` dibuat di Supabase, gunakan tombol ini untuk mengunggah bank soal JSON saat ini.
+                            Setelah tersinkron, user login akan membaca soal dari Supabase.
+                        </p>
+                        <button id="sync-all-question-banks" class="btn btn-primary" onclick="syncAllQuestionBanks()">
+                            ☁️ Sinkronkan Semua Soal
+                        </button>
                     </div>
                 </div>
             </main>
