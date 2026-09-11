@@ -4,10 +4,51 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>技能評価試験 — Quiz Latihan Evaluasi Keterampilan</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <main>
+        <!-- 0. Halaman Login User -->
+        <div id="screen-login" class="login-overlay">
+            <div class="login-card">
+                <div class="login-logo">📝</div>
+                <h2>技能評価試験</h2>
+                <p class="login-subtitle">Quiz Latihan Evaluasi Keterampilan</p>
+                <form id="user-login-form" class="login-form" onsubmit="handleUserLogin(event)">
+                    <div class="login-field">
+                        <label for="login-username">Email</label>
+                        <input
+                            type="email"
+                            id="login-username"
+                            placeholder="Masukkan email Anda"
+                            autocomplete="email"
+                            required
+                            autofocus
+                        />
+                    </div>
+                    <div class="login-field">
+                        <label for="login-password">Password</label>
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Masukkan password Anda"
+                            autocomplete="current-password"
+                            required
+                        />
+                    </div>
+                    <div id="login-error" class="login-error">Email atau password salah!</div>
+                    <button type="submit" class="btn-login">Masuk →</button>
+                </form>
+                <p class="login-note">Gunakan akun Supabase Anda. Jika belum punya akun, minta admin membuatkannya di Supabase.</p>
+            </div>
+        </div>
+
+        <main style="display:none;" id="main-app">
+            <!-- User info bar -->
+            <div class="user-topbar">
+                <span class="user-topbar-name">👤 <span id="topbar-username">-</span></span>
+                <button class="btn-user-logout" onclick="handleUserLogout()">🚪 Keluar</button>
+            </div>
+
             <!-- 1. Halaman Depan: Pemilihan Bidang Pekerjaan -->
             <section id="screen-categories">
                 <div class="hero-header">
@@ -18,38 +59,8 @@
                     </p>
                 </div>
 
-                <div class="category-grid">
-                    <!-- Bidang 1: Sozai Kako -->
-                    <div class="category-card" onclick="openCategoryConfig('sozai-kako')">
-                        <div>
-                            <div class="cat-top">
-                                <span class="cat-icon">🍱</span>
-                                <span class="cat-count-badge" id="count-sozai-kako">56 Soal</span>
-                            </div>
-                            <h2 class="cat-title">惣菜製造業</h2>
-                            <div class="cat-subtitle">Sozai Kako (Pengolahan Makanan)</div>
-                            <p class="cat-desc">
-                                Latihan seputar higienitas makanan, sanitasi pabrik, sterilisasi, teknik penggorengan/pengukusan, HACCP, dan keselamatan kerja.
-                            </p>
-                        </div>
-                        <button class="btn-start-cat">Pilih Bidang Ini &rarr;</button>
-                    </div>
-
-                    <!-- Bidang 2: Shisetsu Engei -->
-                    <div class="category-card" onclick="openCategoryConfig('shisetsu-engei')">
-                        <div>
-                            <div class="cat-top">
-                                <span class="cat-icon">🌱</span>
-                                <span class="cat-count-badge" id="count-shisetsu-engei">7 Soal</span>
-                            </div>
-                            <h2 class="cat-title">施設園芸</h2>
-                            <div class="cat-subtitle">Shisetsu Engei (Hortikultura Greenhouse)</div>
-                            <p class="cat-desc">
-                                Latihan budidaya tanaman pertanian dalam rumah kaca, sirkulasi suhu/ventilasi, penyiraman, pemupukan, pestisida, dan hidroponik.
-                            </p>
-                        </div>
-                        <button class="btn-start-cat">Pilih Bidang Ini &rarr;</button>
-                    </div>
+                <div class="category-grid" id="category-grid">
+                    <!-- Diisi dinamis oleh app.js -->
                 </div>
             </section>
 
@@ -165,6 +176,48 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 4. Halaman Skor Akhir -->
+            <section id="screen-results" style="display: none;">
+                <div class="results-card">
+                    <div class="results-header">
+                        <div class="results-trophy" id="results-trophy">🏆</div>
+                        <h2 class="results-title" id="results-title">Kuis Selesai!</h2>
+                        <p class="results-subtitle" id="results-subtitle">Semua soal telah dikerjakan</p>
+                    </div>
+
+                    <div class="results-score-circle-wrap">
+                        <div class="results-score-circle" id="results-score-circle">
+                            <span class="results-score-value" id="results-score-pct">0%</span>
+                            <span class="results-score-label">Nilai</span>
+                        </div>
+                    </div>
+
+                    <div class="results-stats-grid">
+                        <div class="results-stat-item correct-stat">
+                            <span class="results-stat-num" id="results-correct">0</span>
+                            <span class="results-stat-lbl">✅ Benar</span>
+                        </div>
+                        <div class="results-stat-item wrong-stat">
+                            <span class="results-stat-num" id="results-wrong">0</span>
+                            <span class="results-stat-lbl">❌ Salah</span>
+                        </div>
+                        <div class="results-stat-item total-stat">
+                            <span class="results-stat-num" id="results-total">0</span>
+                            <span class="results-stat-lbl">📋 Total Soal</span>
+                        </div>
+                    </div>
+
+                    <div class="results-meta">
+                        <span id="results-meta-info"></span>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn-results-retry" onclick="launchQuiz()">🔄 Ulangi Kuis Ini</button>
+                        <button class="btn-results-home" onclick="backToCategories()">🏠 Pilih Bidang Lain</button>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Lightbox Zoom Modal untuk Gambar Soal -->
@@ -175,6 +228,7 @@
             </div>
         </div>
 
-        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script type="module" src="./assets/js/app.js"></script>
     </body>
 </html>

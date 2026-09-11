@@ -1,0 +1,19 @@
+services:
+  souzai-kako-app:
+    build:
+      context: .
+    container_name: souzai-kako-app
+    restart: unless-stopped
+    ports:
+      - "9090:3000"
+
+  cloudflared:
+    profiles: ["public"]
+    image: cloudflare/cloudflared:latest
+    container_name: souzai-kako-cloudflared
+    restart: unless-stopped
+    depends_on:
+      - souzai-kako-app
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}

@@ -1,0 +1,9 @@
+.git
+.gitignore
+.DS_Store
+archive
+docs
+source
+scripts
+README.md
+

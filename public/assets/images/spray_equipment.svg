@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#f8fafc" rx="12"/>
+  
+  <text x="250" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
+    【農薬散布の保護具 (Alat Pelindung Diri Pestisida)】
+  </text>
+  
+  <!-- Item 1: Goggles / Glasses -->
+  <g transform="translate(60, 60)">
+    <rect width="100" height="130" fill="#ffffff" stroke="#e2e8f0" rx="10"/>
+    <!-- Glasses graphic -->
+    <ellipse cx="35" cy="55" rx="18" ry="14" fill="#bae6fd" stroke="#0284c7" stroke-width="3"/>
+    <ellipse cx="65" cy="55" rx="18" ry="14" fill="#bae6fd" stroke="#0284c7" stroke-width="3"/>
+    <line x1="45" y1="55" x2="55" y2="55" stroke="#0284c7" stroke-width="3"/>
+    <text x="50" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">めがね</text>
+    <text x="50" y="120" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#64748b">(Kacamata)</text>
+  </g>
+
+  <!-- Item 2: Mask -->
+  <g transform="translate(190, 60)">
+    <rect width="100" height="130" fill="#ffffff" stroke="#e2e8f0" rx="10"/>
+    <!-- Mask graphic -->
+    <path d="M 25,60 Q 50,40 75,60 Q 50,85 25,60 Z" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+    <circle cx="50" cy="60" r="10" fill="#cbd5e1"/>
+    <text x="50" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">ますく</text>
+    <text x="50" y="120" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#64748b">(Masker)</text>
+  </g>
+
+  <!-- Item 3: Protective Suit / Gloves -->
+  <g transform="translate(320, 60)">
+    <rect width="120" height="130" fill="#ffffff" stroke="#e2e8f0" rx="10"/>
+    <!-- Suit graphic -->
+    <path d="M 35,40 L 85,40 L 95,80 L 75,80 L 75,55 L 45,55 L 45,80 L 25,80 Z" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+    <text x="60" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">ぼうごふく / てぶくろ</text>
+    <text x="60" y="120" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#64748b">(Baju Pelindung / Sarung Tangan)</text>
+  </g>
+
+  <!-- Bottom Tip -->
+  <rect x="50" y="215" width="400" height="60" fill="#ecfdf5" stroke="#a7f3d0" rx="8"/>
+  <text x="250" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#065f46">
+    ✔ 安全のために、完全な装備を着用します。
+  </text>
+  <text x="250" y="258" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#047857">
+    (Wajib memakai APD lengkap untuk keselamatan kerja penyemprotan)
+  </text>
+</svg>
