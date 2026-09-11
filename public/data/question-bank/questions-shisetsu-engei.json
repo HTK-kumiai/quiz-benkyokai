@@ -148,5 +148,1215 @@
     "image": "",
     "answer": "○",
     "explanation": ""
+  },
+  {
+    "id": 16,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "にほんは、ねったいきこうのところがおおいです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pernyataan pada sumber ditandai ×."
+  },
+  {
+    "id": 17,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "にほん　の　こくど　は　やま　が　おおく、のうち　が　すくない　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang memiliki banyak gunung dan sedikit lahan pertanian."
+  },
+  {
+    "id": 18,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "にほん　には　はる　なつ　あき　ふゆ　が　あります。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Jepang terdapat musim semi, musim panas, musim gugur dan musim salju."
+  },
+  {
+    "id": 19,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "にほん　の　いなさく　は　ほとんど　が　じかまきさいばい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Penanaman padi di Jepang kebanyakan sistem menanam langsung di ladang."
+  },
+  {
+    "id": 20,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "ゆういん　は　こみあった　は　を　のぞく　さぎょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Yuuin adalah pekerjaan membuang daun yang mbulet."
+  },
+  {
+    "id": 21,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "もとごえ　は　さくもつ　を　うえ　つける　まえに　あたえるひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Motogoe adalah pupuk yang diberikan sebelum menanam."
+  },
+  {
+    "id": 22,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "りゅうあん　は　ゆうきしつ　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Amonium sulfat merupakan pupuk organik."
+  },
+  {
+    "id": 23,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "トラクター　は　すいでん　や　はたけ　を　たがやす　のにつかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Traktor digunakan untuk membajak sawah, ladang, dan lainnya."
+  },
+  {
+    "id": 24,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "きかい　さぎょう　の　まえに　のうぎょう　きかい　をてんけん　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin pertanian diperiksa sebelum digunakan."
+  },
+  {
+    "id": 25,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "のうやく　は　こうか　が　なければ　なんかい　でもしよう　できます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jika pestisida tidak berpengaruh, maka boleh digunakan berkali-kali."
+  },
+  {
+    "id": 26,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "ねんりょう　を　いれる　とき　は　のうぎょう　きかい　のエンジン　を　とめます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin pertanian diberhentikan ketika hendak mengisi bahan bakar."
+  },
+  {
+    "id": 27,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "チューリップ、ゆり　は　まいとし　しゅし　を　まいてさいばい　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tulip dan Yuri ditanam dengan menanam biji/benih setiap tahunnya."
+  },
+  {
+    "id": 28,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "よくせい　さいばい　は　ふつう　さいばい　よりしゅうかく　じき　を　はやく　する　ことです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Yokusei Saibai adalah penanaman yang mempercepat masa panen dibandingkan penanaman biasa."
+  },
+  {
+    "id": 29,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "ガラス　おんしつ　は　まいとし　ガラス　を　とりかえます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kaca pada rumah kaca diganti setiap tahunnya."
+  },
+  {
+    "id": 30,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "れんとうがた　ハウス　は　むね　が　つながった　ハウス　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rentougata house adalah rumah yang menyambung bagian tengahnya."
+  },
+  {
+    "id": 31,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "ふしょくふ　は　おもに　ハウスない　の　ほおん　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Fushokufu umumnya digunakan untuk menjaga suhu di dalam house."
+  },
+  {
+    "id": 32,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "だんぼう　そうち　は　ハウスない　を　ひやす　そうち　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Danbo adalah perangkat untuk mendinginkan bagian dalam house."
+  },
+  {
+    "id": 33,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "かんき　の　もくてき　は　ハウスない　の　おんど　をさげる　こと　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tujuan ventilasi adalah menurunkan suhu di dalam house."
+  },
+  {
+    "id": 34,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "ようえきさいばい　は　みず　と　ひりょう　を　どうじにあたえます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Youeki Saibai dapat menggunakan air dan pupuk secara bersamaaan."
+  },
+  {
+    "id": 35,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "マルチング　は　つち　を　かんそう　させる　ために　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mulsa (mulching) dilakukan untuk mengeringkan tanah."
+  },
+  {
+    "id": 36,
+    "level": "shokyu",
+    "year": 2015,
+    "question": "しせつ　の　なか　は　しつど　が　ひくく　なりやすい　ので、びょうき　が　でにくいです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di dalam fasilitas kelembapan mudah menurun, penyakit sulit muncul."
+  },
+  {
+    "id": 37,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん　は　ほとんど　が　ねったい　きこう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Hampir seluruh wilayah di Jepang adalah tropis."
+  },
+  {
+    "id": 38,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん　の　こくど　は　なんぼく　に　ながい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang melintang panjang dari selatan ke utara."
+  },
+  {
+    "id": 39,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん　の　いなさく　は　なえ　を　そだて、たうえ　を　する　のが　おおい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya beras di Jepang, banyak dilakukan dengan cara menumbuhkan bibit, kemudian menanamnya di ladang."
+  },
+  {
+    "id": 40,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ついひ　は　さくもつ　を　うえる　まえに　あたえる　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tsuihi adalah pupuk yang diberikan sebelum menanam."
+  },
+  {
+    "id": 41,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "こううん　は　つち　を　ほりかえす　こと　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kouun adalah kegiatan membajak tanah."
+  },
+  {
+    "id": 42,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "なたねかす　は　ゆうきしつ　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Biji bunga Natane merupakan pupuk organik."
+  },
+  {
+    "id": 43,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "さっきんざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Disinfektan digunakan untuk membasmi serangga (hama)."
+  },
+  {
+    "id": 44,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "きかい　の　てんけん　は　かならず　エンジン　をかけたまま　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin harus dibiarkan menyala ketika melakukan pengecekan."
+  },
+  {
+    "id": 45,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "きかい　に　ねんりょう　を　いれる　ときは　ちかくにひ　の　ない　こと　を　たしかめます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Periksa sekitar ada api atau tidak ketika akan mengisi bahan bakar ke mesin."
+  },
+  {
+    "id": 46,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "のうやく　の　さんぷ　は　かぜ　の　つよい　とき　が　いい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Penyebaran pestisida baiknya dilakukan pada saat angin kencang."
+  },
+  {
+    "id": 47,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "いちご　は　しゅし（たね）を　まいて　さいばい　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Budidaya stroberi dilakukan dengan cara menaburkan bijinya."
+  },
+  {
+    "id": 48,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "きゅうり　は　かさいるい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mentimun adalah jenis sayur-buah."
+  },
+  {
+    "id": 49,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ガラス　おんしつ　は　ひかり　を　とうし　やすい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rumah kaca mudah dilalui oleh cahaya."
+  },
+  {
+    "id": 50,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "やね　が　ひとつ　の　ハウス　を　れんとうがた　と　いいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "House yang atapnya hanya satu disebut rentougata hausu."
+  },
+  {
+    "id": 51,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "かんれいしゃ　は　ひかり　を　すくなく　する　とき　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kanreisha digunakan untuk mengurangi cahaya."
+  },
+  {
+    "id": 52,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "だんぼう　そうち　は　ハウスない　を　あかるく　する　そうち　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Perangkat danbou merupakan perangkat untuk menerangi bagian dalam house."
+  },
+  {
+    "id": 53,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "しぜんかんき　は　かんきせん　を　まわし、そと　の　くうき　を　いれる　やりかた　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Shizen-kanki adalah metode menyalakan kipas angin dan memasukkan udara dari luar."
+  },
+  {
+    "id": 54,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ようえき　さいばい　は　みず　と　ひりょう　を　どうじ　にあたえる　こと　が　できます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dapat memberikan pupuk dan air secara bersamaan pada youseki saibai."
+  },
+  {
+    "id": 55,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "マルチング　は　つち　を　よく　かんそう　させる　ために　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mulching digunakan untuk mengeringkan tanah."
+  },
+  {
+    "id": 56,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ざっそう　は　しゅし（たね）が　おちる　まえに　とります。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rumput liar dihilangkan sebelum benihnya jatuh."
+  },
+  {
+    "id": 57,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん　は　ほとんど　が　ねったい　きこう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang, kebanyakan tanahnya beriklim hangat."
+  },
+  {
+    "id": 58,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん　の　こめ　は　しゅうりょう　が　おおい　ひんしゅ　をちゅうしん　に　つくっています。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya beras di Jepang berpusat pada banyaknya jumlah panen."
+  },
+  {
+    "id": 59,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん　の　こくど　は　なんぼく　に　ながい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Negara Jepang melintang panjang dari utara ke selatan."
+  },
+  {
+    "id": 60,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "もとごえ　は　さくもつ　を　うえる　まえにあたえる　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Motogoe adalah pupuk yang diberikan sebelum menanam tanaman."
+  },
+  {
+    "id": 61,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "さくもつ　は　ね　から　ようぶん　や　すいぶん　を　とっています。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tanaman menyerap nutrisi dan air dari akar."
+  },
+  {
+    "id": 62,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "なたねかす　は　かがく　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ampas Natane adalah pupuk kimia."
+  },
+  {
+    "id": 63,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "さっちゅうざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Insektisida digunakan untuk mencegah hama (cacing)."
+  },
+  {
+    "id": 64,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きかい　の　てんけん　は　かならず　エンジン　を　かけた　まま　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala."
+  },
+  {
+    "id": 65,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きかい　に　ねんりょう　を　いれる　とき　は　ちかくに　ひ　の　ないこと　を　たしかめます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Memeriksa apakah ada api atau tidak di sekitar ketika mengisi bahan bakar mesin."
+  },
+  {
+    "id": 66,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "のうやく　の　さんぷ　は　まわり　に　とびちらない　ようにまきます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Penaburan pestisida diusahakan tidak sampai terbang ke sekitar."
+  },
+  {
+    "id": 67,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "トマト　は　なえ　を　うえて　さいばい　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tomat dibudidaya dengan menanam tunasnya."
+  },
+  {
+    "id": 68,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きく　は　きゅうこん　を　うえて　そだてます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bunga Krisan dibudidaya dengan menanam umbinya."
+  },
+  {
+    "id": 69,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ガラス　おんしつ　は　ひかり　を　とおし　やすい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rumah kaca mudah dilalui oleh cahaya."
+  },
+  {
+    "id": 70,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "やね　が　ひとつ　の　ハウス　を　れんとうがた　と　いいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Rumah kaca yang atapnya hanya satu disebut dengan rentougata."
+  },
+  {
+    "id": 71,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "くろい　かんれいしゃ　は　ひかり　を　すくなく　するためにつかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kanreisha hitam digunakan untuk mengurangi cahaya yang masuk."
+  },
+  {
+    "id": 72,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "だんぼう　そうち　は　ハウス　の　なか　をあかる　する　もの　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Perangkat danbou digunakan untuk menerangi dalam rumah kaca."
+  },
+  {
+    "id": 73,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きょうせいかんき　は　しせつ　の　まど　を　あけて　くうき　の　いれかえ　を　する　やりかた　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kyousei kanki adalah cara ventilasi dengan memasukkan udara ke dalam ruangan dengan membuka jendela."
+  },
+  {
+    "id": 74,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ようえき　さいばい　は　みず　と　ひりょう　を　どうじ　に　あたえる　こと　が　できます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Air dan pupuk dapat diberikan bersamaan dalam youeki saibai."
+  },
+  {
+    "id": 75,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "しせつ　の　なか　に　ざっそう　の　たね　を　もちこまない　ように　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Usahakan tidak membawa bibit gulma ke dalam fasilitas."
+  },
+  {
+    "id": 76,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "マルチ　は　つち　を　よく　かんそう　させるために　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mulsa digunakan untuk mengeringkan tanah."
+  },
+  {
+    "id": 77,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほんは　やまが　おおくて、のうち　は　すくない　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang mempunyai banyak gunung dan sedikit lahan."
+  },
+  {
+    "id": 78,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん　には　はる　なつ　あき　の　３つの　きせつ　だけがあります。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Musim di Jepang hanya ada 3, musim semi, musim panas dan musim gugur."
+  },
+  {
+    "id": 79,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん　の　いなさく　は　あじ　の　よい　ひんしゅ　のさいばい　が　ひろがっています。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya beras di Jepang, jenis yang rasanya enaklah yang tersebar."
+  },
+  {
+    "id": 80,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "もとごえ　は　さくもつ　の　せいいくちゅう　に　あたえるひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Motogoe adalah pupuk yang diberikan pada pertengahan pertumbuhan."
+  },
+  {
+    "id": 81,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "さくもつ　は　ね　から　ようぶん　や　すいぶん　を　とっています。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tanaman menyerap nutrisi dan cairan dari akar."
+  },
+  {
+    "id": 82,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "なたねかす　は　ゆうきしつ　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Biji bunga Natane merupakan pupuk organik."
+  },
+  {
+    "id": 83,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "さっちゅうざい　は　がいちゅう　の　ほうじょ　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Insektisida digunakan untuk mengendalikan serangga (hama)."
+  },
+  {
+    "id": 84,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きかい　の　てんけん　は　かならず　エンジン　をかけた　まま　します。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pada saat pemeriksaan mesin, kondisi mesin harus tetap menyala."
+  },
+  {
+    "id": 85,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きかい　に　あわない　ねんりょうゆを　つかうとこしょうする　げんいん　に　なります。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Penggunaan bahan bakar yang tidak sesuai dengan mesin menjadi penyebab kerusakan mesin."
+  },
+  {
+    "id": 86,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "のうやく　は　かぜ　の　つよい　ときに　まきます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Penyemprotan pestisida dilakukan pada saat angin kencang."
+  },
+  {
+    "id": 87,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きく　は　きゅうこん　を　うえて　そだてます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bunga Krisan dibubidayakan dengan menanam umbinya."
+  },
+  {
+    "id": 88,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "キュウリ　は　かさいるい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mentimun adalah jenis sayur-buah."
+  },
+  {
+    "id": 89,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ガラス　おんしつ　は　そとからの　ひかり　が　はいりにくい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sinar matahari sulit menembus ruangan kaca."
+  },
+  {
+    "id": 90,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "やね　が　ひとつ　の　ハウス　を　れんとう　がた　と　いいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "House yang atapnya satu saja disebut rentou gata."
+  },
+  {
+    "id": 91,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "くろい　かんれいしゃ　は　ひかり　を　すくなく　するため　につかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kanreisha hitam digunakan untuk mengurangi cahaya."
+  },
+  {
+    "id": 92,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "だんぼう　そうち　は　ハウス　ない　をあかるく　する　そうち　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Perangkat danbou merupakan perangkat untuk menerangkan ruangan house."
+  },
+  {
+    "id": 93,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "しぜん　かんき　は　かんきせん　を　まわし、そとの　くうき　を　いれる　やりかた　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Shizen-kanki adalah menyalakan kipas angin kemudian memasukkan udara dari luar."
+  },
+  {
+    "id": 94,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ようえき　さいばい　は　つち　を　つかわない　さいばい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Youeki saibai adalah metode yang tidak menggunakan tanah."
+  },
+  {
+    "id": 95,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "マルチング　は　つち　を　よく　かんそう　させるためにつかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mulching digunakan untuk mengeringkan tanah dengan baik."
+  },
+  {
+    "id": 96,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ハウス　の　なかに　ざっそう　の　しゅし　をもちこまない　ように　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jangan sampai membawa benih gulma ke dalam house."
+  },
+  {
+    "id": 97,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "にほん　は　やま　が　すくなく　のうち／はたけ　がおおい　くに　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang adalah negara yang banyak ladangnya tetapi gunungnya sedikit."
+  },
+  {
+    "id": 98,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "は　や　くき　は　えいよう　きかん　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Daun dan tangkai disebut organ vegetatif."
+  },
+  {
+    "id": 99,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "せいし　は　よぶん　な　はな　を　とる　こと　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Seishi adalah pemangkasan bunga yang tidak perlu."
+  },
+  {
+    "id": 100,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "にほん　の　つち　は　さんせい　の　つち　が　おおい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang memiliki banyak tanah yang bersifat asam."
+  },
+  {
+    "id": 101,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "Tシャツ　で　のうやく　を　まいても　いい　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh menyebarkan pestisida dengan mengenakan T-shirt."
+  },
+  {
+    "id": 102,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "なたねかす　は　かがく　ひりょう　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ampas Natane adalah pupuk kimia."
+  },
+  {
+    "id": 103,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "さっきんざい　は　びょうき　の　よぼう　に　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Anti-bakteri digunakan untuk mencegah penyakit."
+  },
+  {
+    "id": 104,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "のうやく　を　つかったら 、きろく　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mencatat setelah menggunakan pestisida."
+  },
+  {
+    "id": 105,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "きかい　を　つかうとき、さぎょうの　まえに　つかいかた　を　よく　りかい　します。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika menggunakan mesin, pahamilah cara menggunakannya sebelum bekerja."
+  },
+  {
+    "id": 106,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "キュウリ　は、かさいるいです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mentimun adalah jenis sayur-buah."
+  },
+  {
+    "id": 107,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "せっかん　が　みじかい　なえ　は　わるい　なえ　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bibit yang tangkainya pendek merupakan bibit yang buruk."
+  },
+  {
+    "id": 108,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "プラスチックハウス　は　ガラス　の　おんしつです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Rumah plastik adalah ruang hangat yang terbuat dari kaca."
+  },
+  {
+    "id": 109,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "ばら　は　かぼく　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mawar adalah pohon berbunga."
+  },
+  {
+    "id": 110,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "マルチフイルム　は　いろ　で　こうか　が　ちがいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Efek film mulsa berbeda tergantung warnanya."
+  },
+  {
+    "id": 111,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "しぜんかんき　は　かんきせん　を　まわして、しせつ　の　なか　を　かんき　する　こと　です。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Shizen-kanki adalah penggunaan kipas ventilasi untuk memberikan ventilasi pada bagian dalam suatu fasilitas."
+  },
+  {
+    "id": 112,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "たんとうがた　ハウス　は　やね　が　ひとつ　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tantougata hausu atapnya hanya satu."
+  },
+  {
+    "id": 113,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "なす　は　つぎき　なえ　を　つかっては　いけません。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jangan gunakan penyambungan bibit untuk terong."
+  },
+  {
+    "id": 114,
+    "level": "shokyu",
+    "year": 2023,
+    "question": "マルチング　は　つち　の　うえ　を　プラスチックフイルム　など　で　おおう　こと　です。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mulching adalah proses menutupi bagian atas taman dengan film plastik, dll."
+  },
+  {
+    "id": 115,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "きかいに　あわない　ねんりょうを　つかうと　こしょうするげんいんに　なります。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin akan rusak jika diberikan bahan bakar yang tidak sesuai."
+  },
+  {
+    "id": 116,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "にほんでは、コメ（こめ）の　しょうひりょうが　まいとしふえています。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jumlah konsumsi beras di Jepang setiap tahun semakin banyak."
+  },
+  {
+    "id": 117,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "ひりょうの　３ようそ とは、ちっそ、リンさん、カルシウムです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tiga unsur pupuk adalah nitrogen, asam fosfor, dan kalsium."
+  },
+  {
+    "id": 118,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "れんさくとは、おなじ　はたけに、おなじ　しゅるいの　さくもつをつづけて　つくることです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rensaku adalah menanam jenis tumbuhan yang sama di satu lahan melanjutkan tanaman sebelumnya."
+  },
+  {
+    "id": 119,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "ついひは、なえを　うえつける　まえに、はたけに　まく　ひりょうです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tsuihi adalah pupuk yang diberikan ke lahan sebelum menanam tunas."
+  },
+  {
+    "id": 120,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "よくせいさいばいでは、ふつうさいばいよりも　おそい　じきにしゅうかく できます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Yokusei Saibai dapat dipanen lebih lambat daripada futsuu saibai."
+  },
+  {
+    "id": 121,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "りゅうあん（りゅうさんアンモニウム）は、ゆうきしつ　ひりょうです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ryuuan (ammonium gabungan) adalah pupuk organik."
+  },
+  {
+    "id": 122,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "のうやくを　しようしたときは、しようぼに　きろくします。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika menggunakan pestisida, harus dicatatan ke buku penggunaan."
+  },
+  {
+    "id": 123,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "きかいの　そうさは、とりあつかい　せつめいしょを　よむなどして、さぎょう まえに　よく　りかいして から　おこないます.",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Untuk pengoperasian mesin, diperlukan untuk membaca buku panduan dengan benar sebelumnya."
+  },
+  {
+    "id": 124,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "にほんの　いなさくは　あじの　よい　ひんしゅの　さいばいがひろがっています。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Jepang, tersebar luas budidaya beras yang rasanya lezat."
+  },
+  {
+    "id": 125,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "もとごえは　さくもつの　せいいく　とちゅうに　あたえるひりょうです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Motogoe adalah pupuk yang diberikan di pertengahan budidaya tanaman."
+  },
+  {
+    "id": 126,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "しゅしを　まいたあと、つちを　かけることをふくどと　いいます。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengubur dengan tanah setelah menanam benih disebut dengan fukudo."
+  },
+  {
+    "id": 127,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "なたねかすは　ゆうきしつ ひりょうです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Natanekasu adalah pupuk organik."
+  },
+  {
+    "id": 128,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "さっきんざいは　がいちゅうの　ぼうじょに　つかいます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Disinfektan digunakan untuk membasmi serangga hama."
+  },
+  {
+    "id": 129,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "きかいの　てんけんは　かならず　エンジンを　かけたままします。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala."
+  },
+  {
+    "id": 130,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "のうやくは　かぜが　つよい　ときに　まきます。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pestisida ditaburkan ketika angin berhembus kencang."
+  },
+  {
+    "id": 131,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "ようえきさいばいは、うねたてがひつようです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Youeki Saibai diharuskan membuat bedengan."
+  },
+  {
+    "id": 132,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "しせつさいばいでも　ほおんします。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya dalam ruang juga harus mempertahankan suhu."
+  },
+  {
+    "id": 133,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "のうやくを　さんぷするときは　Tシャツを　きても　よいです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh mengenakan T-shirt ketika menaburkan pestisida."
+  },
+  {
+    "id": 134,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "トマトは　かさいるいです。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tomat adalah jenis sayur-buah."
+  },
+  {
+    "id": 135,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "マルチングで　はくしょくフィルムは　ちおんに　こうかがある。",
+    "reading": "",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dalam mulching, film putih berpengaruh terhadap suhu tanah."
+  },
+  {
+    "id": 136,
+    "level": "shokyu",
+    "year": 2000,
+    "question": "わきめが　のびると　いいです。",
+    "reading": "",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tunas ketek boleh dipanjangkan."
   }
 ]

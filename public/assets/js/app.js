@@ -24,6 +24,7 @@ let CATEGORIES = {};
 let currentCategory = null;
 let selectedLevel = "shokyu";
 let selectedYear = "all";
+let selectedQuestionCount = 20;
 let rawCategoryQuestions = [];
 let allQuestions = []; // Soal yang sudah difilter
 let history = [];
@@ -263,9 +264,11 @@ async function openCategoryConfig(catId) {
 
     selectedLevel = "shokyu";
     selectedYear = "all";
+    selectedQuestionCount = 20;
 
     renderLevelOptions();
     renderYearOptions();
+    renderQuestionCountOptions();
     updateConfigSummary();
 }
 
@@ -273,6 +276,7 @@ function selectLevel(level) {
     selectedLevel = level;
     renderLevelOptions();
     renderYearOptions();
+    renderQuestionCountOptions();
     updateConfigSummary();
 }
 
@@ -322,7 +326,28 @@ function renderYearOptions() {
 function selectYear(yr) {
     selectedYear = yr;
     renderYearOptions();
+    renderQuestionCountOptions();
     updateConfigSummary();
+}
+
+function renderQuestionCountOptions() {
+    const container = document.getElementById("question-count-container");
+    if (!container) return;
+    const available = getFilteredQuestions().length;
+    container.innerHTML = "";
+    [10, 20, 40, "all"].forEach((count) => {
+        const value = count === "all" ? "all" : String(count);
+        const pill = document.createElement("button");
+        pill.className = "year-pill" + (String(selectedQuestionCount) === value ? " selected" : "");
+        pill.textContent = count === "all" ? `📚 Semua (${available})` : `📝 ${count} soal`;
+        pill.disabled = count !== "all" && available < count;
+        pill.onclick = () => {
+            selectedQuestionCount = count;
+            renderQuestionCountOptions();
+            updateConfigSummary();
+        };
+        container.appendChild(pill);
+    });
 }
 
 function updateConfigSummary() {
@@ -335,14 +360,18 @@ function updateConfigSummary() {
 
     const levelText = selectedLevel === "shokyu" ? "初級 (Shokyu)" : "専門級 (Senmonkyu)";
     const yearText = selectedYear === "all" ? "Semua Tahun" : "Tahun " + selectedYear;
-    detailEl.textContent = `${levelText} • ${yearText}`;
+    const sessionText = selectedQuestionCount === "all" ? `Semua ${matched.length} soal` : `${Math.min(selectedQuestionCount, matched.length)} soal acak`;
+    detailEl.textContent = `${levelText} • ${yearText} • ${sessionText}`;
 
     if (matched.length === 0) {
         btnLaunch.disabled = true;
         btnLaunch.textContent = "Belum Ada Soal untuk Kriteria Ini";
     } else {
         btnLaunch.disabled = false;
-        btnLaunch.innerHTML = `🚀 Mulai Latihan Kuis (${matched.length} Soal) &rarr;`;
+        const sessionCount = selectedQuestionCount === "all"
+            ? matched.length
+            : Math.min(selectedQuestionCount, matched.length);
+        btnLaunch.innerHTML = `🚀 Mulai Latihan Kuis (${sessionCount} Soal) &rarr;`;
     }
 }
 
@@ -359,7 +388,11 @@ function getFilteredQuestions() {
 // MULAI KUIS
 // ============================================================
 function launchQuiz() {
-    allQuestions = getFilteredQuestions();
+    const matched = getFilteredQuestions();
+    allQuestions = [...matched].sort(() => Math.random() - 0.5);
+    if (selectedQuestionCount !== "all") {
+        allQuestions = allQuestions.slice(0, Number(selectedQuestionCount));
+    }
     if (allQuestions.length === 0) {
         alert("Tidak ada soal yang cocok dengan pilihan level dan tahun tersebut.");
         return;
