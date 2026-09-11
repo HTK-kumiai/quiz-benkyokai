@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sozai-kako",
+    "title": "惣菜製造業",
+    "name": "🍱 惣菜製造業 (Sozai Kako)",
+    "shortName": "🍱 惣菜製造業",
+    "subtitle": "Sozai Kako (Pengolahan Makanan)",
+    "description": "Latihan seputar higienitas makanan, sanitasi pabrik, sterilisasi, teknik penggorengan/pengukusan, HACCP, dan keselamatan kerja.",
+    "icon": "🍱",
+    "filename": "questions-sozai-kako.json"
+  },
+  {
+    "id": "shisetsu-engei",
+    "title": "施設園芸",
+    "name": "🌱 施設園芸 (Shisetsu Engei)",
+    "shortName": "🌱 施設園芸",
+    "subtitle": "Shisetsu Engei (Hortikultura Greenhouse)",
+    "description": "Latihan budidaya tanaman pertanian dalam rumah kaca, sirkulasi suhu/ventilasi, penyiraman, pemupukan, pestisida, dan hidroponik.",
+    "icon": "🌱",
+    "filename": "questions-shisetsu-engei.json"
+  },
+  {
+    "id": "kensetsu",
+    "title": "建設施工",
+    "name": "🏗️ 建設施工 (Kensetsu)",
+    "shortName": "🏗️ 建設施工",
+    "subtitle": "Kensetsu (Konstruksi / Pengerjaan Konstruksi)",
+    "description": "Latihan pengerjaan konstruksi bangunan, keselamatan kerja di lapangan, penggunaan alat berat, pembacaan gambar kerja, dan standar mutu konstruksi.",
+    "icon": "🏗️",
+    "filename": "questions-kensetsu.json"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "キュウリ(きゅうり)は、かさいるいです。",
+    "reading": "Kyuri wa kasai rui desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena dia tumbuh dari bunga, makanya disebut dengan kasai rui (jenis sayur dari buah)"
+  },
+  {
+    "id": 2,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "キク(きく)は、なつには しゅっかできません。",
+    "reading": "Kiku wa natsu niwa shukka dekimasen",
+    "image": "",
+    "answer": "×",
+    "explanation": "Yo ndak tahu nanya kok nanya saya."
+  },
+  {
+    "id": 3,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ようえきさいばいは、ばいようえきで、さくもつを そだてます。",
+    "reading": "Yoeki saibai wa baiyoeki de sakumotsu wo sodatemasu",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 4,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "しせつの なかの きおんが、いつもより たかく なりそうです。かんきを します。",
+    "reading": "Shisetsu no naka no kion ga itsumo yori takaku nari sou desu. Kanki wo shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 5,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ずじょうかんすいは、てんてきかんすいチューブ(ちゅーぶ)をつかいます。",
+    "reading": "Zujou kansui wa tenteki kansui chubu wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 6,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "しせつさいばいでは、なつに だんぼうを します。",
+    "reading": "Shisetsu saibai dewa natsu ni danbou wo shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 7,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【7】ホウレンソウ(ほうれんそう)は、くさたけで、しゅうかくのじきを きめます。",
+    "reading": "Horenso wa kusatake de shuukaku no jiki wo kimemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 8,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【8】にほんは、おんたいきこうの ところが すくないです。",
+    "reading": "Nihon wa ontai kikou no tokoro ga sukunai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 9,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【9】にほんは、やまが おおくて、のうちが すくないです。",
+    "reading": "Nihon wa yama ga ookute nouchi ga sukunai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 10,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "【10】こううんを します。つちの つうきせいが よくなります。",
+    "reading": "Kouun wo shimasu. Tsuchi no tsuukisei ga yoku narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "YNTTKTS."
+  },
+  {
+    "id": 11,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さくもつは、ねから、ようぶんや すいぶんを\nきゅうしゅう します。",
+    "reading": "Sakumotsu wa ne kara youbun ya suibun wo kyuushuu shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": ""
+  },
+  {
+    "id": 12,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "はなは、えいようきかんです。",
+    "reading": "Hana wa eiyou kikan desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "なたねかすは、ゆうきしつひりょうです。",
+    "reading": "Natane kasu wa yuukishitsu hiryou desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pokoknya kalau ada nama-nama tumbuhan begini udah bisa dipastiin dia yukishitsu hiryo (pupuk organik)."
+  },
+  {
+    "id": 14,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さっちゅうざいで、ざっそうを ぼうじょします。",
+    "reading": "Sacchuuzai de zassou wo boujo shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sacchuzai dipakai untuk membasmi serangga, bukan rumput."
+  },
+  {
+    "id": 15,
+    "level": "senmonkyu",
+    "year": 2024,
+    "question": "蒸散は葉の気孔から水分を放出することです。",
+    "reading": "Jousan wa ha no kikou kara suibun wo houtshutsu suru koto desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": ""
+  }
+]

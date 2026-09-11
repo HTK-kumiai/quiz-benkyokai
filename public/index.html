@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>技能評価試験 — Quiz Latihan Evaluasi Keterampilan</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- 0. Halaman Login User -->
+        <div id="screen-login" class="login-overlay">
+            <div class="login-card">
+                <div class="login-logo">📝</div>
+                <h2>技能評価試験</h2>
+                <p class="login-subtitle">Quiz Latihan Evaluasi Keterampilan</p>
+                <form id="user-login-form" class="login-form" onsubmit="handleUserLogin(event)">
+                    <div class="login-field">
+                        <label for="login-username">Email</label>
+                        <input
+                            type="email"
+                            id="login-username"
+                            placeholder="Masukkan email Anda"
+                            autocomplete="email"
+                            required
+                            autofocus
+                        />
+                    </div>
+                    <div class="login-field">
+                        <label for="login-password">Password</label>
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Masukkan password Anda"
+                            autocomplete="current-password"
+                            required
+                        />
+                    </div>
+                    <div id="login-error" class="login-error">Email atau password salah!</div>
+                    <button type="submit" class="btn-login">Masuk →</button>
+                </form>
+                <p class="login-note">Gunakan akun Supabase Anda. Jika belum punya akun, minta admin membuatkannya di Supabase.</p>
+            </div>
+        </div>
+
+        <main style="display:none;" id="main-app">
+            <!-- User info bar -->
+            <div class="user-topbar">
+                <span class="user-topbar-name">👤 <span id="topbar-username">-</span></span>
+                <button class="btn-user-logout" onclick="handleUserLogout()">🚪 Keluar</button>
+            </div>
+
+            <!-- 1. Halaman Depan: Pemilihan Bidang Pekerjaan -->
+            <section id="screen-categories">
+                <div class="hero-header">
+                    <span class="hero-badge" id="hero-badge-title">技能評価試験 練習クイズ</span>
+                    <h1 class="hero-title">Pilih Bidang Pekerjaan</h1>
+                    <p class="hero-subtitle">
+                        Pilih bidang kejuruan yang sesuai dengan pekerjaan magang Anda untuk memulai latihan soal evaluasi keterampilan:
+                    </p>
+                </div>
+
+                <div class="category-grid" id="category-grid">
+                    <!-- Diisi dinamis oleh app.js -->
+                </div>
+            </section>
+
+            <!-- 2. Halaman Pengaturan Level & Tahun Soal (Tampil setelah memilih bidang) -->
+            <section id="screen-config" style="display: none;">
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-title-group">
+                            <h2 id="config-cat-title">🍱 惣菜製造業</h2>
+                            <p>Tentukan tingkatan ujian dan tahun soal yang ingin Anda pelajari:</p>
+                        </div>
+                        <button class="btn-change-cat" onclick="backToCategories()">
+                            ← Ganti Bidang
+                        </button>
+                    </div>
+
+                    <!-- Pilihan Level -->
+                    <div class="section-label">
+                        <span>1. Pilih Tingkatan / Level Ujian:</span>
+                    </div>
+                    <div class="level-grid">
+                        <div class="level-option selected" id="opt-level-shokyu" onclick="selectLevel('shokyu')">
+                            <div class="level-badge">🔰 初級 (Shokyu)</div>
+                            <div class="level-desc">Tingkat Dasar (Ujian Evaluasi Tahun ke-1 / Magang 1 ke 2)</div>
+                        </div>
+                        <div class="level-option" id="opt-level-senmonkyu" onclick="selectLevel('senmonkyu')">
+                            <div class="level-badge">⭐ 専門級 (Senmonkyu)</div>
+                            <div class="level-desc">Tingkat Menengah / Spesialis (Ujian Tahun ke-3 / Tokutei Ginou)</div>
+                        </div>
+                    </div>
+
+                    <!-- Pilihan Tahun Soal -->
+                    <div class="section-label">
+                        <span>2. Pilih Tahun Soal (Periode Ujian):</span>
+                    </div>
+                    <div class="year-grid" id="year-options-container">
+                        <!-- Diisi secara dinamis oleh JavaScript -->
+                    </div>
+
+                    <!-- Ringkasan & Tombol Mulai -->
+                    <div class="config-summary">
+                        <span class="summary-text" id="config-summary-text">
+                            Tersedia: <span class="summary-count" id="config-question-count">0 Soal</span>
+                        </span>
+                        <span style="font-size: 0.85rem; color: #64748b;" id="config-summary-detail"></span>
+                    </div>
+
+                    <button class="btn-launch-quiz" id="btn-start-quiz" onclick="launchQuiz()">
+                        🚀 Mulai Latihan Kuis Sekarang &rarr;
+                    </button>
+                </div>
+            </section>
+
+            <!-- 3. Halaman Kuis Interaktif (Awalnya tersembunyi) -->
+            <section id="screen-quiz" style="display: none;">
+                <div class="card">
+                    <div class="header-bar">
+                        <div class="header-left">
+                            <button class="btn-change-cat" onclick="backToConfig()" title="Ganti level atau tahun soal">
+                                ⚙️ Ganti Filter
+                            </button>
+                            <span class="badge-cat-active" id="quiz-cat-name">🍱 惣菜製造業</span>
+                            <span class="badge-level-year" id="quiz-level-year-badge">🔰 初級 • 2024</span>
+                            <span class="badge-id" id="meta">Soal #...</span>
+                        </div>
+                        <div class="score-stats">
+                            <span class="stat-badge stat-correct" id="stat-correct">Benar: 0</span>
+                            <span class="stat-badge stat-wrong" id="stat-wrong">Salah: 0</span>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question">Memuat soal...</div>
+
+                    <!-- Gambar Soal (Jika ada gambar) -->
+                    <div id="question-image-wrap" class="question-image-wrap" style="display: none;">
+                        <img id="question-image" class="question-image" src="" alt="Ilustrasi Soal" onclick="openImageLightbox(this.src)" />
+                        <div class="image-zoom-hint">🔍 Klik gambar untuk memperbesar</div>
+                    </div>
+
+                    <div class="reading" id="reading"></div>
+
+                    <!-- Pilihan Jawaban Interaktif -->
+                    <div class="choice-container">
+                        <button class="choice-btn" id="btn-true" onclick="selectAnswer('○')">
+                            <span class="symbol">○</span>
+                            <span>BENAR</span>
+                        </button>
+                        <button class="choice-btn" id="btn-false" onclick="selectAnswer('×')">
+                            <span class="symbol">✕</span>
+                            <span>SALAH</span>
+                        </button>
+                    </div>
+
+                    <!-- Feedback Hasil -->
+                    <div class="feedback-box" id="feedback">
+                        <div class="feedback-title" id="feedback-title"></div>
+                        <div class="feedback-explanation" id="feedback-explanation"></div>
+                    </div>
+
+                    <!-- Tombol Navigasi -->
+                    <div class="nav-buttons">
+                        <button class="nav-btn" id="back">← Mundur</button>
+                        <button class="nav-btn" id="next">Maju →</button>
+                    </div>
+
+                    <div class="footer-info">
+                        <span id="progress">Sudah muncul: 0 / 0</span>
+                        <button class="btn-reset" onclick="resetSession()">🔄 Reset Sesi Kuis</button>
+                    </div>
+
+                    <div class="keyboard-hints">
+                        Shortcut Keyboard: [1 / O] Benar &bull; [2 / X] Salah &bull; [&rarr;] Maju &bull; [&larr;] Mundur
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Halaman Skor Akhir -->
+            <section id="screen-results" style="display: none;">
+                <div class="results-card">
+                    <div class="results-header">
+                        <div class="results-trophy" id="results-trophy">🏆</div>
+                        <h2 class="results-title" id="results-title">Kuis Selesai!</h2>
+                        <p class="results-subtitle" id="results-subtitle">Semua soal telah dikerjakan</p>
+                    </div>
+
+                    <div class="results-score-circle-wrap">
+                        <div class="results-score-circle" id="results-score-circle">
+                            <span class="results-score-value" id="results-score-pct">0%</span>
+                            <span class="results-score-label">Nilai</span>
+                        </div>
+                    </div>
+
+                    <div class="results-stats-grid">
+                        <div class="results-stat-item correct-stat">
+                            <span class="results-stat-num" id="results-correct">0</span>
+                            <span class="results-stat-lbl">✅ Benar</span>
+                        </div>
+                        <div class="results-stat-item wrong-stat">
+                            <span class="results-stat-num" id="results-wrong">0</span>
+                            <span class="results-stat-lbl">❌ Salah</span>
+                        </div>
+                        <div class="results-stat-item total-stat">
+                            <span class="results-stat-num" id="results-total">0</span>
+                            <span class="results-stat-lbl">📋 Total Soal</span>
+                        </div>
+                    </div>
+
+                    <div class="results-meta">
+                        <span id="results-meta-info"></span>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn-results-retry" onclick="launchQuiz()">🔄 Ulangi Kuis Ini</button>
+                        <button class="btn-results-home" onclick="backToCategories()">🏠 Pilih Bidang Lain</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Lightbox Zoom Modal untuk Gambar Soal -->
+        <div id="image-lightbox-modal" class="lightbox-modal" onclick="closeImageLightbox()">
+            <button class="btn-close-lightbox" onclick="closeImageLightbox()">&times;</button>
+            <div class="lightbox-img-wrap" onclick="event.stopPropagation()">
+                <img id="lightbox-img" class="lightbox-img" src="" alt="Gambar Diperbesar" />
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script type="module" src="./assets/js/app.js"></script>
+    </body>
+</html>
