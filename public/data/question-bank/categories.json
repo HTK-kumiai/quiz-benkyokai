@@ -58,5 +58,15 @@
     "description": "Latihan budidaya tanaman ladang dan sayuran, pengolahan tanah, pembibitan, pemupukan, pengairan, pestisida, panen, dan keselamatan kerja pertanian.",
     "icon": "🥬",
     "filename": "questions-hatasaku-yasai.json"
+  },
+  {
+    "id": "kunsei",
+    "title": "くん製",
+    "name": "🐟 くん製 (Kunsei)",
+    "shortName": "🐟 くん製",
+    "subtitle": "Kunsei (Pengasapan Hasil Laut)",
+    "description": "Latihan pengolahan hasil laut dengan metode pengasapan, bahan baku ikan, pembekuan, pengeringan, daya simpan, kemasan, dan sanitasi pabrik.",
+    "icon": "🐟",
+    "filename": "questions-kunsei.json"
   }
 ]

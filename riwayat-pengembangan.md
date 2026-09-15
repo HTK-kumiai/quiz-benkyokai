@@ -55,6 +55,13 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Memasukkan 83 soal Hatasaku Yasai level `shokyu` dari sumber 2020-2024.
 - Mengisi `reading`, `answer`, dan `explanation` untuk seluruh soal Hatasaku Yasai setelah dikonfirmasi.
 - Memindahkan sumber Hatasaku Yasai dari `soal-asli/` ke `sudah-proses/`.
+- Menambahkan 100 soal Kensetsu level `shokyu` ke `public/data/question-bank/questions-kensetsu.json`.
+- Memasukkan tambahan soal Kensetsu dari sumber 2020 dan 2025 setelah dikonfirmasi user.
+- Memindahkan sumber Kensetsu tambahan dari `soal-asli/` ke `sudah-proses/`.
+- Menambahkan kategori `kunsei` ke manifest bank soal.
+- Menambahkan file `public/data/question-bank/questions-kunsei.json`.
+- Memasukkan 35 soal Kunsei level `senmonkyu` dari sumber 2025 setelah dikonfirmasi user.
+- Memindahkan sumber Kunsei dari `soal-asli/` ke `sudah-proses/`.
 - Mengisi `reading` dan `answer` untuk seluruh soal Shisetsu Engei Kinoko setelah dikonfirmasi.
 - Mengekstrak gambar soal 2022 tentang bagian `かさ` ke `public/assets/images/kinoko_2022_q19.png`.
 - Membuat `butuh-konfirmasi.md` sebagai catatan kerja konfirmasi reading, jawaban, dan transkripsi.
@@ -203,15 +210,16 @@ order by category_id;
 
 Jumlah saat ini di file JSON lokal:
 
-- `kensetsu`: 495
+- `kensetsu`: 595
 - `rakuno`: 148
 - `hatasaku-yasai`: 83
 - `shisetsu-engei`: 136
 - `shisetsu-engei-kinoko`: 106
 - `sozai-kako`: 56
-- Total: 1024 soal
+- `kunsei`: 35
+- Total: 1159 soal
 
-Setelah deploy penambahan Shisetsu Engei Kinoko, Rakuno, dan Hatasaku Yasai:
+Setelah deploy penambahan Shisetsu Engei Kinoko, Rakuno, Hatasaku Yasai, tambahan Kensetsu, dan Kunsei:
 
 1. Push perubahan ke branch `main`.
 2. Tunggu deployment Cloudflare Pages selesai.
@@ -229,13 +237,14 @@ order by category_id;
 
 Hasil yang diharapkan:
 
-- `kensetsu`: 495
+- `kensetsu`: 595
 - `rakuno`: 148
 - `hatasaku-yasai`: 83
 - `shisetsu-engei`: 136
 - `shisetsu-engei-kinoko`: 106
 - `sozai-kako`: 56
-- Total: 1024 soal
+- `kunsei`: 35
+- Total: 1159 soal
 
 ### Menjalankan dan Restart Docker
 

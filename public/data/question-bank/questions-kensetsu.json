@@ -4948,5 +4948,1005 @@
     "image": "",
     "answer": "×",
     "explanation": "Jika pekerjaan akan dilakukan di pinggir jalan atau di depan rumah pribadi, untuk menjamin keselamatan pihak ketiga seperti orang yang lewat, akan ditempatkan petugas pengatur lalu lintas dan area kerja akan ditandai dengan kerucut berwarna sebelum pekerjaan dimulai."
+  },
+  {
+    "id": 496,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "けんせつ きかい の うんてんせき のなか は ヘルメットを かぶらなくても よい です。",
+    "reading": "Kensetsu kikai no untenseki no naka ha herumetto wo kaburanakutemo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di dalam kursi pengemudi mesin konstruksi boleh tidak memakai helm."
+  },
+  {
+    "id": 497,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "しごと が しやすく じこ から からだ を まもる ふく を きます。",
+    "reading": "Shigoto ga shiyasuku jiko kara karada wo mamoru fuku wo kimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengenakan pakaian yang mudah dipakai kerja dan bisa melindungi diri dari kecelakaan."
+  },
+  {
+    "id": 498,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい の つかい かた を まちがえる と じこ や けが をすること が あります。",
+    "reading": "Kikai no tsukai kata wo machigaeru to jiko ya kega wo suru koto ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika melakukan kesalahan dalam penggunaan mesin, ada kalanya timbul kecelakaan atau terluka."
+  },
+  {
+    "id": 499,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "あしば が よければ ３てん しじ で きかい に のり おり しなくても よいです。",
+    "reading": "Ashiba ga yokereba santen shiji de kikai ni nori ori shinakutemo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Dalam pekerjaan perakitan perancah (ashiba), naik turun pada mesin boleh tidak melakukan 3 titik topangan (san ten shiji)."
+  },
+  {
+    "id": 500,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "エンジン オイル は ビストン の うごき を なめらかに します。",
+    "reading": "Enjin oiru ha bisuton no ugoki wo namerakani shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin (engine) akan memperhalus pergerakan piston."
+  },
+  {
+    "id": 501,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "けんせつ きかい の エンジン には ２ サイクル しき の ガソリン エンジン が おおい です。",
+    "reading": "Kensetsu kikai no enjin ni ha ni saikuru shiki no gasorin enjin ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pada mesin konstruksi ada banyak mesin bensin yang berjenis 2 tak."
+  },
+  {
+    "id": 502,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい の メータ が うごかなく なった とき は すぐ に きかい を てんけん します。",
+    "reading": "Kikai no meeta ga ugokanaku natta toki ha sugu ni kikai wo tenken shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika meteran mesin tidak bergerak, segera lakukan pemeriksaan mesin."
+  },
+  {
+    "id": 503,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "「さぎょう しゅうりょう ご てんけん」は ほうりつ で きめられて います。",
+    "reading": "\"Sagyou shuuryou go tenken\" ha houritsu de kimerarete imasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "\"Pemeriksaan setelah pekerjaan\" ditentukan dalam undang-undang."
+  },
+  {
+    "id": 504,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケット の した で てんけん する とき、あんぜん しちゅう で パケット を ささえます。",
+    "reading": "Baketto no shita de tenken suru toki, anzen shichuu de paketto wo sasaemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika memeriksa bagian bawah bucket, bucketnya ditopang dengan tiang keamanan."
+  },
+  {
+    "id": 505,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "てんけん や じしゅ けんさ の きろく は ほぞん する ひつよう が ありません。",
+    "reading": "Tenken ya jishu kensa no kiroku ha hozon suru hitsuyou ga arimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak perlu menyimpan catatan pemeriksaan dan pemeriksaan mandiri."
+  },
+  {
+    "id": 506,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ゆあつ さどうゆ に ごみ が はいる と きかい が こうしょう する とき が あります。",
+    "reading": "Yuatsu sadouyu ni gomi ga hairu to kikai ga koushou suru toki ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika sampah masuk ke oli hidrolik, ada kalanya mesin mengalami kerusakan."
+  },
+  {
+    "id": 507,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "たばこ を すいながら きかい に ねんりょう を いれます。",
+    "reading": "Tabako wo suinagara kikai ni nenryou wo iremasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengisi bahan bakar pada mesin sambil merokok."
+  },
+  {
+    "id": 508,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい の のりょく を こえる さぎょう を してはいけません。",
+    "reading": "Kikai no noryoku wo koeru sagyou wo shite ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin tidak boleh bekerja melebihi kemampuannya."
+  },
+  {
+    "id": 509,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい を てんけん して いじょう が あった とき せきにんしゃ に ほうこく し、なに を する か しじ を うけます。",
+    "reading": "Kikai wo tenken shite ijou ga atta toki sekininsha ni houkoku shi, nani wo suru ka shiji wo ukemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika melakukan pemeriksaan pada mesin dan terdapat keanehan, laporkan kepada penanggung jawab dan terima instruksi tentang apa yang harus dilakukan."
+  },
+  {
+    "id": 510,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケット など の うごき は エンジン を うごかす まえに かくにん します。",
+    "reading": "Baketto nado no ugoki wa enjin wo ugokasu mae ni kakunin shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sebelum menggerakkan mesin, bucket dan lainnya dicek terlebih dahulu."
+  },
+  {
+    "id": 511,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "さぎょう が おわったら、きかい を きめられた ばしょ まで いどう させて ちゅうしゃ します。",
+    "reading": "Sagyou ga owattara, kikai wo kimerareta basho made idou sasete chuusha shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika sudah selesai bekerja, pindahkan mesin ke tempat yang ditentukan untuk diparkirkan."
+  },
+  {
+    "id": 512,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "すべて の けんせつ きかい が やわらかな じめん でも さぎょう が できます。",
+    "reading": "Subete no kensetsu kikai ga yawarakana jimen demo sagyou ga dekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Semua mesin konstruksi dapat bekerja di permukaan tanah yang lunak."
+  },
+  {
+    "id": 513,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "さぎょう ばしょ が まち の なか でも バケット など で さぎょう ばしょ を かこいません。",
+    "reading": "Sagyou basho ga machi no naka demo baketto nado de sagyou basho wo kakoimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Meskipun tempat kerja di dalam kota, tempat kerja tidak ditutup/dibatasi dengan bucket atau yang lainnya."
+  },
+  {
+    "id": 514,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケット は、パケット を とりかえて いろいろな さぎょう に つかえます。",
+    "reading": "Baketto wa, paketto wo torikaete iroirona sagyou ni tsukaemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bucket dapat dipakai untuk berbagai pekerjaan dengan mengganti attachment/perlengkapannya."
+  },
+  {
+    "id": 515,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "あんぜん かくにん は め で みる こと だけ で おこないます。",
+    "reading": "Anzen kakunin ha me de miru koto dake de okonaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pengecekan keselamatan dilaksanakan hanya dengan apa yang dilihat oleh mata."
+  },
+  {
+    "id": 516,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ときどき ですが ヘルメット を かぶらないで きかい を うんてん します。",
+    "reading": "Tokidoki desuga herumetto wo kaburanaide kikai wo unten shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kadang-kadang tidak memakai helm pada saat mengendarai mesin."
+  },
+  {
+    "id": 517,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "さぎょう しゅうりょう ご、つぎ に うんてん する ひと の ため に エンジンキー を つけた まま に します。",
+    "reading": "Sagyou shuuryou go, tsugi ni unten suru hito no tame ni enjinkii wo tsuketa mama ni shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Setelah pekerjaan selesai, kunci dibiarkan terpasang untuk orang yang akan mengendarai selanjutnya."
+  },
+  {
+    "id": 518,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "やぶれた さぎょう ふく を きて いる と けが を する こと があります。",
+    "reading": "Yabureta sagyou fuku wo kite iru to kega wo suru koto gaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika memakai pakaian kerja yang robek, bisa jadi terluka."
+  },
+  {
+    "id": 519,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ディーゼル エンジン の ねんりょう は ガソリン です。",
+    "reading": "Diizeru enjin no nenryou ha gasorin desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan bakar mesin diesel adalah bensin."
+  },
+  {
+    "id": 520,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "けんせつ きかい の うんてん しゃ は、エンジン を とめないで うんてんせき を はなれてはいけません。",
+    "reading": "Kensetsu kikai no unten sha ha, enjin wo tomenaide untenseki wo hanarete haikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Seorang pengemudi mesin konstruksi tidak boleh meninggalkan kursi pengemudi tanpa mematikan mesin."
+  },
+  {
+    "id": 521,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "げんば で てんけん を する とき、ブレーキ や あんぜん ロック は かけません。",
+    "reading": "Genba de tenken wo suru toki, bureeki ya anzen rokku ha kakemasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ketika melakukan pemeriksaan di tempat kerja, tidak menggunakan kunci keselamatan dan tidak mengerem."
+  },
+  {
+    "id": 522,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい は せいび を しなくても よい です。",
+    "reading": "Kikai ha seibi wo shinakutemo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh tidak merawat mesin."
+  },
+  {
+    "id": 523,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "おおく の けんせつ きかい が ４ サイクル しき の ディーゼル エンジン を つかっています。",
+    "reading": "Ooku no kensetsu kikai ga yon saikuru shiki no diizeru enjin wo tsukatteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kebanyakan mesin konstruksi menggunakan mesin diesel 4 tak."
+  },
+  {
+    "id": 524,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "けいしゃち で きかい を とめて てんけん する とき、わどめ を つかいます。",
+    "reading": "Keishachi de kikai wo tomete tenken suru toki, wadome wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggunakan ganjal ban ketika melakukan pemeriksaan mesin di medan miring."
+  },
+  {
+    "id": 525,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "はじめて の きかいですが、とりあつかい せつめいしょ を よまないで うんてん しました。",
+    "reading": "Hajimete no kikaidesuga, toriatsukai setsumeisho wo yomanaide unten shimashita.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengemudikan mesin pertama kali tanpa membaca buku panduan instruksi manual."
+  },
+  {
+    "id": 526,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい を ていし した とき、バケット など は あげた まま に します。",
+    "reading": "Kikai wo teishi shita toki, baketto nado ha ageta mama ni shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ketika mematikan mesin, bucket dan yang lainnya dibiarkan dalam posisi terangkat."
+  },
+  {
+    "id": 527,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい の ちょうし が わるかった ので、すぐに せきにんしゃ に ほうこく し、べつ の きかい に のりかえて うんてん しました。",
+    "reading": "Kikai no choushi ga warukatta node, suguni sekininsha ni houkoku shi, betsu no kikai ni norikaete unten shimashita.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena kondisi mesin buruk, segera melapor ke penanggung jawab, lalu mengendarai mesin yang lain."
+  },
+  {
+    "id": 528,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい の うんてん ちゅう に メータ が うごかなく なった とき すぐ に あんぜん な ばしょ で きかい を とめます。",
+    "reading": "Kikai no unten chuu ni meeta ga ugokanaku natta toki sugu ni anzen na basho de kikai wo tomemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika sedang mengendarai mesin dan meteran tidak bergerak, secepatnya matikan mesin di tempat yang aman."
+  },
+  {
+    "id": 529,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "くっさく さぎょう に きかい は つかいません。",
+    "reading": "Kussaku sagyou ni kikai ha tsukaimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pekerjaan pengerukan tidak menggunakan mesin."
+  },
+  {
+    "id": 530,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい は のうりょく を こえる さぎょう を してはいけません。",
+    "reading": "Kikai ha nouryoku wo koeru sagyou wo shite ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin tidak boleh bekerja melebihi kemampuannya."
+  },
+  {
+    "id": 531,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "きかい は つかいかた が きまって いる ので、それいがい の さぎょう に つかっては いけません。",
+    "reading": "Kikai ha tsukaikata ga kimatte iru node, soreigai no sagyou ni tsukatte ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena mesin telah ditentukan cara pakainya, maka tidak boleh dipakai bekerja untuk selain itu."
+  },
+  {
+    "id": 532,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "あんぜん かくにん は め で みる こと だけ で おこないます。",
+    "reading": "Anzen kakunin ha me de miru koto dake de okonaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pengecekan keselamatan dilaksanakan hanya dengan apa yang dilihat oleh mata."
+  },
+  {
+    "id": 533,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "やま の しゃめん を きかい で のぼる とき は、まっすぐに のぼります。",
+    "reading": "Yama no shamen wo kikai de noboru toki ha, massuguni noborimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika menaiki medan miring dengan mesin, melaju lurus."
+  },
+  {
+    "id": 534,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケット は ブーム パケット を たかく あげて そうこう します。",
+    "reading": "Baketto ha buumu paketto wo takaku agete soukou shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengendarai mesin dengan mengangkat bucket dan boom tinggi-tinggi."
+  },
+  {
+    "id": 535,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ダンプトラックを ひくい ばしょ に おくと、バックホウ に よる つみこみ さぎょう が しやすく なります。",
+    "reading": "Danputorakku wo hikui basho ni okuto, bakkuhou ni yoru tsumikomi sagyou ga shiyasuku narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Apabila dump truck diparkir di tempat yang rendah, pekerjaan pemuatan dengan backhoe akan menjadi lebih mudah."
+  },
+  {
+    "id": 536,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ときどき ですが、ヘルメット を つけないで きかい を うんてん します。",
+    "reading": "Tokidoki desuga, herumetto wo tsukenaide kikai wo unten shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Terkadang mengendarai mesin tanpa mengenakan helm."
+  },
+  {
+    "id": 537,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "やぶれた さぎょうふく は、けが の げんいん に なります。",
+    "reading": "Yabureta sagyoufuku ha, kega no genin ni narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Baju kerja yang robek adalah penyebab kecelakaan."
+  },
+  {
+    "id": 538,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "「うんてん ぎのう こうしゅう」または「とくべつ きょういく」の しゅうりょうしょう が しごと で きかい を うんてん する とき の しかく に なります。",
+    "reading": "\"Unten ginou koushuu\"mataha\"tokubetsu kyouiku\"no shuuryoushou ga shigoto de kikai wo unten suru toki no shikaku ni narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sertifikat penyelesaian pelatihan keterampilan pengoperasian atau pendidikan khusus menjadi kualifikasi untuk mengoperasikan mesin saat bekerja."
+  },
+  {
+    "id": 539,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジン を ていし する まえ に は、アイドリング を おこないます。",
+    "reading": "Enjin wo teishi suru mae ni ha, aidoringu wo okonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin dijadikan idling sebelum diberhentikan."
+  },
+  {
+    "id": 540,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい に は、おもに ４ サイクル しき の ディーゼル エンジン が つかわれて います。",
+    "reading": "Kikai ni ha, omoni yon saikuru shiki no diizeru enjin ga tsukawarete imasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kebanyakan mesin konstruksi menggunakan mesin diesel 4 tak."
+  },
+  {
+    "id": 541,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジンオイル に は、ピストン の うごき を なめらか に する やくめ が あります。",
+    "reading": "Enjinoiru ni ha, pisuton no ugoki wo nameraka ni suru yakume ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin berperan melicinkan pergerakan piston."
+  },
+  {
+    "id": 542,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "オルタネーター は でんき を おこす そうち です。",
+    "reading": "Orutaneetaa ha denki wo okosu souchi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Alternator adalah perangkat untuk menghasilkan listrik."
+  },
+  {
+    "id": 543,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい は せいび しなくても あんぜん に こうりつ よく うごかす こと が できます。",
+    "reading": "Kikai ha seibi shinakutemo anzen ni kouritsu yoku ugokasu koto ga dekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dapat beroperasi dengan aman dan efisien walau tidak dirawat."
+  },
+  {
+    "id": 544,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "バケット の した で てんけん を する とき は あんぜん しちゅう を つかいます。",
+    "reading": "Baketto no shita de tenken wo suru toki ha anzen shichuu wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggunakan tiang pengaman ketika memeriksa bagian bawah bucket."
+  },
+  {
+    "id": 545,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "けいしゃち で てんけん を しなければ ならない ばあい、かならず はどめ や わどめ を します。",
+    "reading": "Keishachi de tenken wo shinakereba naranai baai, kanarazu hadome ya wadome wo shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika harus melakukan pemeriksaan di medan miring, harus memasang penahan/ganjal roda."
+  },
+  {
+    "id": 546,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう そうち の うごき を エンジン しどう まえ に てんけん しました。",
+    "reading": "Sagyou souchi no ugoki wo enjin shidou mae ni tenken shimashita.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengecek pergerakan peralatan kerja sebelum menyalakan mesin."
+  },
+  {
+    "id": 547,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "はじめて の きかい を うんてん する とき、とりあつかい せつめいしょ を よく よみ、うんてん しどう を うけます。",
+    "reading": "Hajimete no kikai wo unten suru toki, toriatsukai setsumeisho wo yoku yomi, unten shidou wo ukemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sebelum mengoperasikan mesin pertama kali, membaca panduan dan menerima bimbingan terlebih dahulu."
+  },
+  {
+    "id": 548,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい は てんけん しなくても こしょう しません。",
+    "reading": "Kikai ha tenken shinakutemo koshou shimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin tidak akan rusak walau tidak diperiksa."
+  },
+  {
+    "id": 549,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい の さぎょう かいし まえ てんけん は ひつよう ありません。",
+    "reading": "Kikai no sagyou kaishi mae tenken ha hitsuyou arimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak perlu melakukan pengecekan sebelum mulai menggunakan mesin kerja."
+  },
+  {
+    "id": 550,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい の けいき が さどう しない とき は、さぎょう しゅうりょう ご に てんけん します。",
+    "reading": "Kikai no keiki ga sadou shinai toki ha, sagyou shuuryou go ni tenken shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Apabila meteran mesin tidak bergerak, dicek setelah pekerjaan selesai."
+  },
+  {
+    "id": 551,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう しゅうりょう ご、つぎ に うんてん する ひと の ため に エンジン を かけた まま に します。",
+    "reading": "Sagyou shuuryou go, tsugi ni unten suru hito no tame ni enjin wo kaketa mama ni shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Setelah menyelesaikan pekerjaan, mesin tetap dinyalakan karena akan dipakai orang berikutnya."
+  },
+  {
+    "id": 552,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "すべて の きかい が やわらかな じめん で こうりつ よく さぎょう が できます。",
+    "reading": "Subete no kikai ga yawarakana jimen de kouritsu yoku sagyou ga dekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Semua mesin dapat bekerja dengan efisien di permukaan tanah yang lembek."
+  },
+  {
+    "id": 553,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ユアツ ショベル は おもに おしど さぎょう に つかわれます。",
+    "reading": "Yuatsu shoberu ha omoni oshido sagyou ni tsukawaremasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Shovel hidrolik biasanya dipakai untuk pekerjaan mendorong tanah."
+  },
+  {
+    "id": 554,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ユアツ ショベル の バケット ツース に、ワイヤ を かけて にもつ を つる こと は ほうりつ で きんし されています。",
+    "reading": "Yuatsu shoberu no baketto tsuusu ni, waiya wo kakete nimotsu wo tsuru koto ha houritsu de kinshi sareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggantung barang dengan mengaitkan wire pada bucket tooth shovel hidrolik dilarang oleh undang-undang."
+  },
+  {
+    "id": 555,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ユアツ ショベル の バケット が トラック の うんてん せき の うえ を つうか する やりかた で どしゃ を つみこみます。",
+    "reading": "Yuatsu shoberu no baketto ga torakku no unten seki no ue wo tsuuka suru yarikata de dosha wo tsumikomimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Memuat tanah ke truk dengan cara bucket shovel hidrolik melewati atas kursi pengemudi truk."
+  },
+  {
+    "id": 556,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "しゃりょうけい けんせつきかい とう を うんてん する ばあい、ヘルメット や あんぜん ようぐを つけ、ふくそう を ととのえて、きかい を うんてん します。",
+    "reading": "Sharyoukei kensetsukikai tou wo unten suru baai, herumetto ya anzen yougu wo tsuke, fukusou wo totonoete, kikai wo unten shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika akan mengoperasikan mesin konstruksi kendaraan dan sejenisnya, mengenakan helm dan perlengkapan keselamatan serta merapikan pakaian."
+  },
+  {
+    "id": 557,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ヘルメット や あんぜん ようぐ を つけて、うんてん します。",
+    "reading": "Herumetto ya anzen yougu wo tsukete, unten shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengemudi dengan mengenakan helm dan peralatan keselamatan."
+  },
+  {
+    "id": 558,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ヘルメット を つける とき は、あごひも の しめつけ を します。",
+    "reading": "Herumetto wo tsukeru toki ha, agohimo no shimetsuke wo shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengencangkan tali dagu ketika mengenakan helm."
+  },
+  {
+    "id": 559,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう かいし（じょうしゃ）まえ に しゅうい の あんぜん かくにん を します。",
+    "reading": "Sagyou kaishi(jousha)mae ni shuui no anzen kakunin wo shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Memastikan keamanan sekitar sebelum melakukan pekerjaan (naik mesin)."
+  },
+  {
+    "id": 560,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい の のりおり は かならず ３ てん しじ（りょうて と かたあし、または かたて と りょうあし）で おこないます。",
+    "reading": "Kikai no noriori ha kanarazu san ten shiji(ryoute to kataashi, mataha katate to ryouashi)de okonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Naik-turun mesin harus dengan tiga titik topangan (kedua tangan dan satu kaki, atau satu tangan dan kedua kaki)."
+  },
+  {
+    "id": 561,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう を する とき、うんてんせき でない ところ に、ひと を のせて も いい です。",
+    "reading": "Sagyou wo suru toki, untenseki denai tokoro ni, hito wo nosete mo ii desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Ketika bekerja, boleh menaikkan orang ke tempat yang bukan kursi pengemudi."
+  },
+  {
+    "id": 562,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "けんせつ きかい の うんてんしゃ は、エンジン を かけた まま、うんてんせき を はなれて は いけません。",
+    "reading": "Kensetsu kikai no untensha ha, enjin wo kaketa mama, untenseki wo hanarete ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pengemudi mesin konstruksi tidak boleh meninggalkan kursi pengemudi dalam keadaan mesin menyala."
+  },
+  {
+    "id": 563,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ブレーキ や バケット など は、じめん に さげて おかなくて も よい です。",
+    "reading": "Bureeki ya baketto nado ha, jimen ni sagete okanakute mo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Brake dan bucket boleh tidak diturunkan menyentuh tanah."
+  },
+  {
+    "id": 564,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう レバー は すべて ちゅうりつ に して、ロック を します。",
+    "reading": "Sagyou rebaa ha subete chuuritsu ni shite, rokku wo shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Semua lever kerja dinetralkan lalu dikunci."
+  },
+  {
+    "id": 565,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジン ていし ちゅう は、さぎょう レバー を そうさ して も よい です。",
+    "reading": "Enjin teishi chuu ha, sagyou rebaa wo sousa shite mo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh menggerakkan lever kerja ketika mesin sedang mati."
+  },
+  {
+    "id": 566,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ブルドーザー は トラクタ に ブレード を とりつけた きかい で、おおきい ブルドーザー は くっさく さぎょう に、ちいさい ブルドーザー は おしど や せいち さぎょう など に つかわれます。",
+    "reading": "Burudoozaa ha torakuta ni bureedo wo toritsuketa kikai de, ookii burudoozaa ha kussaku sagyou ni, chiisai burudoozaa ha oshido ya seichi sagyou nado ni tsukawaremasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Buldozer adalah traktor yang dipasangi blade; buldozer besar digunakan untuk pengerukan, sedangkan buldozer kecil untuk mendorong tanah dan meratakan tanah."
+  },
+  {
+    "id": 567,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "バックホウ は おもに じめん よりも した の くっさく に つかわれて、ユアツ ショベル の なか で もっとも よく みかける きかい です。",
+    "reading": "Bakkuhou ha omoni jimen yorimo shita no kussaku ni tsukawarete, yuatsu shoberu no naka de mottomo yoku mikakeru kikai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Backhoe biasanya dipakai untuk mengeruk di bawah permukaan tanah dan paling sering ditemukan di antara shovel hidrolik."
+  },
+  {
+    "id": 568,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ローディングショベル は おもに じめん に ある どしゃ や がんせき の つみこみ さぎょう に つかわれます。",
+    "reading": "Roodingushoberu ha omoni jimen ni aru dosha ya ganseki no tsumikomi sagyou ni tsukawaremasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Loading shovel biasanya digunakan untuk memuat tanah/pasir atau batu yang ada di tanah."
+  },
+  {
+    "id": 569,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ローラ は、どしゃ や アスファルト など を くっさく する さぎょう に つかわれる きかい です。",
+    "reading": "Roora ha, dosha ya asufaruto nado wo kussaku suru sagyou ni tsukawareru kikai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Roller adalah mesin konstruksi yang digunakan untuk mengeruk tanah atau aspal."
+  },
+  {
+    "id": 570,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ローラ の エンジン は ４ サイクル です。",
+    "reading": "Roora no enjin ha yon saikuru desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin roller adalah 4 tak."
+  },
+  {
+    "id": 571,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ローラ の エンジン の ねんりょう は ディーゼル エンジン だけ です。",
+    "reading": "Roora no enjin no nenryou ha diizeru enjin dake desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin roller hanya berbahan bakar diesel."
+  },
+  {
+    "id": 572,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "けんせつ きかい に は おもに ４ サイクル しき で すいれいしき の ディーゼル エンジン が つかわれています。",
+    "reading": "Kensetsu kikai ni ha omoni yon saikuru shiki de suireishiki no diizeru enjin ga tsukawareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kebanyakan mesin konstruksi menggunakan mesin diesel 4 tak berpendingin air."
+  },
+  {
+    "id": 573,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ディーゼル エンジン の ねんりょう は ガソリン です。",
+    "reading": "Diizeru enjin no nenryou ha gasorin desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan bakar mesin diesel adalah bensin."
+  },
+  {
+    "id": 574,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ねんりょう に みず が まじる（みず が はいる）と、エンジン の ちょうし が わるく なる ので、みず が まじらない ように ちゅうい する ひつよう が あります。",
+    "reading": "Nenryou ni mizu ga majiru(mizu ga hairu)to, enjin no choushi ga waruku naru node, mizu ga majiranai youni chuui suru hitsuyou ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Apabila bahan bakar bercampur air (air masuk), keadaan mesin akan memburuk, sehingga perlu berhati-hati agar tidak tercampur air."
+  },
+  {
+    "id": 575,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "げんば で の てんけん、せいび は どこ で やっても かまいません。",
+    "reading": "Genba de no tenken, seibi ha doko de yattemo kamaimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pengecekan dan perawatan di lapangan boleh dilakukan di mana saja."
+  },
+  {
+    "id": 576,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょうちゅう は かならず ヘルメット を かぶります。",
+    "reading": "Sagyouchuu ha kanarazu herumetto wo kaburimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Selama bekerja, selalu kenakan helm."
+  },
+  {
+    "id": 577,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう の しゅるい が かわっても、おなじ しゅるい の てぶくろ を つかいます。",
+    "reading": "Sagyou no shurui ga kawattemo, onaji shurui no tebukuro wo tsukaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Menggunakan sarung tangan jenis yang sama meskipun jenis pekerjaannya berbeda."
+  },
+  {
+    "id": 578,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい を とめる とき、バケット は じめん に おろします。",
+    "reading": "Kikai wo tomeru toki, baketto ha jimen ni oroshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menurunkan bucket ke tanah saat menghentikan mesin."
+  },
+  {
+    "id": 579,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "うんてんせき から おりる とき、とびおり しても よいです。",
+    "reading": "Untenseki kara oriru toki, tobiori shitemo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh melompat turun saat turun dari kursi pengemudi."
+  },
+  {
+    "id": 580,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジン には、ディーゼルエンジン と ガソリンエンジン が あります。",
+    "reading": "Enjin ni ha, diizeruenjin to gasorinenjin ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin ada dua jenis: mesin diesel dan mesin bensin."
+  },
+  {
+    "id": 581,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジンオイル には、ピストン の うごき を なめらか に する やくめ が あります。",
+    "reading": "Enjinoiru ni ha, pisuton no ugoki wo nameraka ni suru yakume ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin berperan melancarkan pergerakan piston."
+  },
+  {
+    "id": 582,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい は せいび を しなくても、あんぜん に うごかす こと が できます。",
+    "reading": "Kikai ha seibi wo shinakutemo, anzen ni ugokasu koto ga dekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dapat dioperasikan dengan aman tanpa perawatan."
+  },
+  {
+    "id": 583,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "エンジン を うごかす まえ に れいきゃくすい の りょう は てんけんしません。",
+    "reading": "Enjin wo ugokasu mae ni reikyakusui no ryou ha tenkenshimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak memeriksa jumlah air pendingin sebelum menyalakan mesin."
+  },
+  {
+    "id": 584,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい を ひとまわり しながら、かくぶぶん を よく てんけんします。",
+    "reading": "Kikai wo hitomawari shinagara, kakububun wo yoku tenkenshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Memeriksa semua bagian sambil mengelilingi mesin."
+  },
+  {
+    "id": 585,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "グリース ガン を つかって、グリース を ほきゅう します。",
+    "reading": "Guriisu gan wo tsukatte, guriisu wo hokyuu shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggunakan grease gun untuk memasukkan grease."
+  },
+  {
+    "id": 586,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ねんりょう を ほきゅう するとき、エンジン は とめます。",
+    "reading": "Nenryou wo hokyuu surutoki, enjin ha tomemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mematikan mesin saat memasok bahan bakar."
+  },
+  {
+    "id": 587,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい を うごかす とき、うごかす ほうこう だけ の あんぜん を かくにん すれば じゅうぶん です。",
+    "reading": "Kikai wo ugokasu toki, ugokasu houkou dake no anzen wo kakunin sureba juubun desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat menggerakkan mesin, cukup memastikan keamanan hanya pada arah pergerakan."
+  },
+  {
+    "id": 588,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい の のうりょく を こえる さぎょう を しては いけません。",
+    "reading": "Kikai no nouryoku wo koeru sagyou wo shiteha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dilarang melakukan pekerjaan yang melampaui kemampuan mesin."
+  },
+  {
+    "id": 589,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "はじめて の きかい でも、とりあつかい せつめいしょ を よまないで うんてんします。",
+    "reading": "Hajimete no kikai demo, toriatsukai setsumeisho wo yomanaide untenshimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Meskipun pertama kali menggunakan mesin, mengoperasikannya tanpa membaca manual pengoperasian."
+  },
+  {
+    "id": 590,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい の メーター が うごかない とき も、そのまま さぎょうします。",
+    "reading": "Kikai no meetaa ga ugokanai toki mo, sonomama sagyoushimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tetap melanjutkan pekerjaan bahkan ketika meteran mesin tidak bergerak."
+  },
+  {
+    "id": 591,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "さぎょう ばしょ に、しごと に かんけいない ひと が はいって きても さぎょう を つづけます。",
+    "reading": "Sagyou basho ni, shigoto ni kankeinai hito ga haitte kitemo sagyou wo tsuzukemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tetap melanjutkan pekerjaan meskipun orang yang tidak terkait pekerjaan masuk ke area kerja."
+  },
+  {
+    "id": 592,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい は つかいかた が きまっている ので、それ いがい の さぎょう に つかって は いけません。",
+    "reading": "Kikai ha tsukaikata ga kimatteiru node, sore igai no sagyou ni tsukatte ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena cara penggunaan mesin sudah ditentukan, tidak boleh digunakan untuk pekerjaan selain itu."
+  },
+  {
+    "id": 593,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "きかい は きゅう はっしん、きゅう ブレーキ など の らんぼう な うんてん を して も よい です。",
+    "reading": "Kikai ha kyuu hasshin, kyuu bureeki nado no ranbou na unten wo shite mo yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin boleh dioperasikan secara kasar seperti start mendadak dan rem mendadak."
+  },
+  {
+    "id": 594,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "バックホウ の バケット が ダンプトラック の うんてんせき の うえ を とおる やりかた で どしゃ を つみこみます。",
+    "reading": "Bakkuhou no baketto ga danputorakku no untenseki no ue wo tooru yarikata de dosha wo tsumikomimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengangkut tanah dengan cara menggerakkan bucket backhoe melewati atas kursi pengemudi dump truck."
+  },
+  {
+    "id": 595,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "バックホウ の バケット の つめ に ワイヤ を かけて にもつ を つって は いけません。",
+    "reading": "Bakkuhou no baketto no tsume ni waiya wo kakete nimotsu wo tsutte ha ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dilarang mengaitkan wire pada ujung bucket backhoe untuk mengangkat barang."
   }
 ]

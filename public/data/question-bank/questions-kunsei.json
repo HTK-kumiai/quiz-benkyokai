@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工食品の原料になる魚介藻類は、種類が多い。",
+    "reading": "Suisan kakou shokuhin no genryou ni naru gyokai sourui wa, shurui ga ooi.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ikan dan lumut yang menjadi bahan pangan pengolahan hasil laut jenisnya ada banyak."
+  },
+  {
+    "id": 2,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚介類の脂肪には、EPAが含まれていない。",
+    "reading": "Gyokairui no shibou ni wa, EPA ga fukumarete inai.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Lemak pada jenis ikan tidak mengandung EPA."
+  },
+  {
+    "id": 3,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚肉に含まれるたんぱく質は、酵素作用によって分解されやすい。",
+    "reading": "Gyoniku ni fukumareru tanpakushitsu wa, kouso sayou ni yotte bunkai sareyasui.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Protein yang terkandung dalam daging ikan mudah dipecah oleh kerja enzim."
+  },
+  {
+    "id": 4,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚が死んでも、魚の筋肉は変化しない。",
+    "reading": "Sakana ga shindemo, sakana no kinniku wa henka shinai.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Otot dalam ikan tidak akan berubah meski sudah mati."
+  },
+  {
+    "id": 5,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚介類は、季節や場所によって獲れる量が変わる。",
+    "reading": "Gyokairui wa, kisetsu ya basho ni yotte toreru ryou ga kawaru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jumlah hewan laut yang bisa diambil berubah tergantung musim dan tempat."
+  },
+  {
+    "id": 6,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚肉の成分は、貯蔵中に変化する。",
+    "reading": "Gyoniku no seibun wa, chozou chuu ni henka suru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Komponen daging ikan berubah dalam masa penyimpanan."
+  },
+  {
+    "id": 7,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚体の選別は、機械でできないので、必ず人の手と目で行う。",
+    "reading": "Gyotai no senbetsu wa, kikai de dekinai node, kanarazu hito no te to me de okonau.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Penyortiran daging ikan yang tidak bisa dengan mesin, harus dilakukan dengan tangan dan mata."
+  },
+  {
+    "id": 8,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "大出刃包丁は、小さい魚を捌く時だけ使う。",
+    "reading": "Oodeba bouchou wa, chiisai sakana wo sabaku toki dake tsukau.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pisau Odeba hanya digunakan ketika memotong ikan kecil."
+  },
+  {
+    "id": 9,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "魚介藻類を加工すると、保存性を向上させることができる。",
+    "reading": "Gyokai sourui wo kakou suru to, hozonsei wo koujou saseru koto ga dekiru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Lama penyimpanan hewan laut dapat ditingkatkan dengan mengolahnya."
+  },
+  {
+    "id": 10,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水分の多い魚肉は、冷凍してもすぐに腐る。",
+    "reading": "Suibun no ooi gyoniku wa, reitou shite mo sugu ni kusaru.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Daging ikan dengan banyak kandungan air segera membusuk bahkan setelah dibekukan."
+  },
+  {
+    "id": 11,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工食品は、水分活性を下げることで、保存性が高くなる。",
+    "reading": "Suisan kakou shokuhin wa, suibun kassei wo sageru koto de, hozonsei ga takaku naru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Masa penyimpanan pangan olahan hasil laut dapat meningkat hanya dengan mengurangi kadar air."
+  },
+  {
+    "id": 12,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工食品は、脂質が酸化すると、品質が良くなる。",
+    "reading": "Suisan kakou shokuhin wa, shishitsu ga sanka suru to, hinshitsu ga yoku naru.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Apabila kadar lemak pangan olahan hasil laut mengalami oksidasi, kualitas akan meningkat."
+  },
+  {
+    "id": 13,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "冷凍された原料の、冷凍の方法は、製品の品質に影響する。",
+    "reading": "Reitou sareta genryou no, reitou no houhou wa, seihin no hinshitsu ni eikyou suru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Metode pembekuan untuk bahan yang dibekukan berpengaruh pada kualitas produk."
+  },
+  {
+    "id": 14,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "冷凍温度が高い魚肉は、解凍した時に、ドリップが出にくくなる。",
+    "reading": "Reitou ondo ga takai gyoniku wa, kaitou shita toki ni, dorippu ga denikuku naru.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Daging ikan dengan suhu pembekuan tinggi setelah dicairkan tidak mudah mengeluarkan tetesan."
+  },
+  {
+    "id": 15,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "鮮度の良い魚の表皮は、光沢がある。",
+    "reading": "Sendo no yoi sakana no hyouhi wa, koutaku ga aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kulit permukaan ikan dengan kesegaran yang bagus itu mengkilap."
+  },
+  {
+    "id": 16,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工場では、おいしい製品が作れば、安全でなくても良い。",
+    "reading": "Suisan kakouba de wa, oishii seihin ga tsukureba, anzen de nakutemo yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di dalam pabrik pengolahan hasil ikan, tidak harus aman apabila bisa membuat produk yang lezat."
+  },
+  {
+    "id": 17,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "従業員が、外から食中毒細菌や異物を持ち込むことがある。",
+    "reading": "Juugyouin ga, soto kara shokuchuudoku saikin ya ibutsu wo mochikomu koto ga aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ada kalanya karyawan membawa bakteri keracunan makanan atau benda asing dari luar."
+  },
+  {
+    "id": 18,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "手袋をつける前には手洗いはしなくても良い。",
+    "reading": "Tebukuro wo tsukeru mae ni wa, tearai wa shinakutemo yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak perlu mencuci tangan sebelum mengenakan sarung tangan."
+  },
+  {
+    "id": 19,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "毎日使う機械や器具は、洗わなくて良い。",
+    "reading": "Mainichi tsukau kikai ya kigu wa, arawanakute yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak perlu mencuci mesin atau alat yang digunakan setiap hari."
+  },
+  {
+    "id": 20,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工場を衛生的に管理して、製品への二次汚染を防ぐことが大切である。",
+    "reading": "Suisan kakouba wo eiseiteki ni kanri shite, seihin e no niji osen wo fusegu koto ga taisetsu de aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Penting untuk mencegah polusi kedua terhadap produk dengan pengelolaan kebersihan pabrik pengolahan hasil laut."
+  },
+  {
+    "id": 21,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん煙を食品にかけると、食品の風味や保存性がよくなる。",
+    "reading": "Kunen wo shokuhin ni kakeru to, shokuhin no fuumi ya hozonsei ga yoku naru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Rasa dan daya simpan makanan akan menjadi lebih baik jika diasapkan."
+  },
+  {
+    "id": 22,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん製の方法には、冷くん方や温くん方がある。",
+    "reading": "Kunsei no houhou ni wa, reikunhou ya onkunhou ga aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Terdapat dua metode dalam pengasapan, yaitu metode reikun dan onkun."
+  },
+  {
+    "id": 23,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "温くん方で製造した製品は、水分が少ないので、常温で長い期間貯蔵できる。",
+    "reading": "Onkunhou de seizou shita seihin wa, suibun ga sukunai node, jouon de nagai kikan chozou dekiru.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Produk pangan yang diproduksi dengan metode onkun dapat disimpan lama karena kadar airnya sedikit."
+  },
+  {
+    "id": 24,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水分の多いくん製品を、長い期間貯蔵する時は、凍結する。",
+    "reading": "Suibun no ooi kunseihin wo, nagai kikan chozou suru toki wa, touketsu suru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Produk asapan yang punya kadar air banyak akan membeku jika disimpan dalam waktu lama."
+  },
+  {
+    "id": 25,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん製品は、真空包装することができない。",
+    "reading": "Kunseihin wa, shinkuu housou suru koto ga dekinai.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Produk asapan tidak dapat dimasukkan wadah vakum."
+  },
+  {
+    "id": 26,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん煙室の中の温度を、調整できるくん煙装置はない。",
+    "reading": "Kunenshitsu no naka no ondo wo, chousei dekiru kunen souchi wa nai.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak ada peralatan yang bisa mengatur suhu di dalam ruangan pengasapan."
+  },
+  {
+    "id": 27,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "脂肪が少ない原料は、脂肪が多い原料に比べて、乾燥に時間がかかる。",
+    "reading": "Shibou ga sukunai genryou wa, shibou ga ooi genryou ni kurabete, kansou ni jikan ga kakaru.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan baku yang lemaknya sedikit lebih lama kering dibandingkan bahan yang lemaknya banyak."
+  },
+  {
+    "id": 28,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん製に使うくん材は、樹脂が少ない広葉樹が適している。",
+    "reading": "Kunsei ni tsukau kunzai wa, jushi ga sukunai kouyouju ga tekishite iru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bahan pengasapan untuk produk asapan biasanya menggunakan pohon daun lebar yang lemak pohonnya sedikit."
+  },
+  {
+    "id": 29,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "くん製品の保存性が良くなるのは、くん煙の殺菌作用や酸化防止作用による。",
+    "reading": "Kunseihin no hozonsei ga yoku naru no wa, kunen no sakkin sayou ya sanka boushi sayou ni yoru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Membaiknya daya simpan produk asap tergantung fungsi disinfeksi atau pencegahan oksidasi."
+  },
+  {
+    "id": 30,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "スモークサーモンは、サケをくん製した水産加工食品である。",
+    "reading": "Sumooku saamon wa, sake wo kunsei shita suisan kakou shokuhin de aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Smoke salmon adalah produk hasil laut yang berupa ikan sake asap."
+  },
+  {
+    "id": 31,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工場では、安全でなくても良い。",
+    "reading": "Suisan kakouba de wa, anzen de nakutemo yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di pabrik pengolahan hasil laut, asalkan bisa membuat produk yang lezat, tidak harus aman."
+  },
+  {
+    "id": 32,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "従業員が、外から食中毒細菌や異物を持ち込むことがある。",
+    "reading": "Juugyouin ga, soto kara shokuchuudoku saikin ya ibutsu wo mochikomu koto ga aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karyawan dapat membawa bakteri penyebab keracunan makanan atau benda asing dari luar."
+  },
+  {
+    "id": 33,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "手袋をつける前には、手洗いはしなくても良い。",
+    "reading": "Tebukuro wo tsukeru mae ni wa, tearai wa shinakutemo yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sebelum memakai sarung tangan, tidak perlu mencuci tangan."
+  },
+  {
+    "id": 34,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "毎日使う機械や器具は、洗わなくて良い。",
+    "reading": "Mainichi tsukau kikai ya kigu wa, arawanakute yoi.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dan peralatan yang digunakan setiap hari tidak perlu dicuci."
+  },
+  {
+    "id": 35,
+    "level": "senmonkyu",
+    "year": 2025,
+    "question": "水産加工場を衛生的に管理して、製品への二次汚染を防ぐことが大切である。",
+    "reading": "Suisan kakouba wo eiseiteki ni kanri shite, seihin e no niji osen wo fusegu koto ga taisetsu de aru.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Penting untuk mengelola pabrik pengolahan hasil laut secara higienis dan mencegah kontaminasi sekunder pada produk."
+  }
+]
