@@ -1,0 +1,1482 @@
+[
+  {
+    "id": 1,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にほん の きた と みなみ は きこう が おなじ です。",
+    "reading": "Nihon no kita to minami wa kikou ga onaji desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Cuaca di bagian utara dan selatan Jepang itu sama."
+  },
+  {
+    "id": 2,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にほん は やま が すくなく さくもつ を つくる とち が おおい です。",
+    "reading": "Nihon wa yama ga sukunaku sakumotsu wo tsukuru tochi ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang punya sedikit pegunungan, dan punya banyak lahan untuk bercocok tanam."
+  },
+  {
+    "id": 3,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ほっかいどう から おきなわけん まで にほん ぜんこく で いね（こめ） が つくられて います。",
+    "reading": "Hokkaidou kara okinawaken made nihon zenkoku de ine (kome) ga tsukurarete imasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Beras di buat di seluruh Jepang, dari Hokkaido hingga Okinawa."
+  },
+  {
+    "id": 4,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にほん の ちくさん けいえい は ちいさな けいえい で、きぼ かくだい が すすんで いません。",
+    "reading": "Nihon no chikusan keiei wa chiisana keiei de, kibo kakudai ga susunde imasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Managemen peternakan di Jepang berskala kecil yang tidak akan berkembang."
+  },
+  {
+    "id": 5,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "うし は 4つ の い を もっています。",
+    "reading": "Ushi wa yottsu no i wo motteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sapi memiliki 4 lambung."
+  },
+  {
+    "id": 6,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "あさ げんき でも ゆうがた には びょうき に なる こと が あるので、 かちく を よく かんさつ する こと が たいせつ です。",
+    "reading": "Asa genki demo yuugata niha byouki ni naru koto ga aru node, kachiku wo yoku kansatsu suru koto ga taisetsu desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Meskipun pagi sehat, bisa jadi sore hari sakit, sehingga penting untuk mengamati ternak dengan cermat."
+  },
+  {
+    "id": 7,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "かちく に いじょう を みつけても、すぐ に のうじょうぬし や のうじょうちょう に しらせる ひつよう は ありません。",
+    "reading": "Kachiku ni ijou wo mitsuketemo, sugu ni noujou nushi ya noujou chou ni shiraseru hitsuyou wa arimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak perlu memberitahu pemilik peternakan atau kepala peternakan ketika menemukan keanehan pada hewan ternak."
+  },
+  {
+    "id": 8,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "かちく の ふんにょう は たいせつ な ひりょう と なります。",
+    "reading": "Kachiku no fun'nyou wa taisetsu na hiryou to narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kotoran dari ternak bisa menjadi pupuk yang penting."
+  },
+  {
+    "id": 9,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にゅうぎゅう は こ うし を うまなくても、 ぎゅうにゅう を しぼる こと が できます。",
+    "reading": "Nyuugyuu wa ko ushi wo umanakutemo, gyuunyuu wo shiboru koto ga dekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah dapat diperah walau tidak melahirkan."
+  },
+  {
+    "id": 10,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ミルキングパーラー は、ぼくそう などの しゅうかく さぎょう に つかう きかい の こと です。",
+    "reading": "Mirukingu paaraa wa, bokusou nado no shuukaku sagyou ni tsukau kikai no koto desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Milking parlor adalah alat/mesin untuk pekerjaan memanen rumput kering, dll."
+  },
+  {
+    "id": 11,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ぎゅうしゃ の せいそう は、１しゅうかん に １ど ぐらい で よい です。",
+    "reading": "Gyuusha no seisou wa, isshuukan ni ichido gurai de yoi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pembersihan kandang sapi cukup seminggu sekali saja."
+  },
+  {
+    "id": 12,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "がいぶ の ひと が ちくしゃ に きたら、 はきもの を しょうどく して から ちくしゃ に はいって もらいます。",
+    "reading": "Gaibu no hito ga chikusha ni kitara, hakimono wo shoudoku shite kara chikusha ni haitte moraimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika orang luar datang ke kandang sapi, sepatunya didisinfeksi dahulu sebelum masuk."
+  },
+  {
+    "id": 13,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ホルスタインしゅ は、なつ の あつさ に つよい かちく です。",
+    "reading": "Horusutain shu wa, natsu no atsusa ni tsuyoi kachiku desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jenis Holstein merupakan ternak yang kuat terhadap panasnya musim panas."
+  },
+  {
+    "id": 14,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にゅうぎゅう は、はつじょう する と えさ を よく たべます。",
+    "reading": "Nyuugyuu wa, hatsujou suru to esa wo yoku tabemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah akan banyak makan ketika birahi."
+  },
+  {
+    "id": 15,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にほん では、にゅうぎゅう の こうはい は、ほとんど が じんこう じゅせい で おこなわれます。",
+    "reading": "Nihon dewa, nyuugyuu no kouhai wa, hotondo ga jinkou jusei de okonawaremasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Jepang, fertilisasi sapi kebanyakan dilakukan dengan bantuan manusia."
+  },
+  {
+    "id": 16,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ホルスタイン の りそうてき な にんしん・しゅっさん の かいすう は、１ねん に １かい です。",
+    "reading": "Horusutain no risou teki na ninshinshussan no kaisuu wa, ichinen ni ikkai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sapi Holstein idealnya hamil dan melahirkan setahun sekali."
+  },
+  {
+    "id": 17,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "ぶんべん が ちかづく と にゅうぼう が おおきく なってきます。",
+    "reading": "Bunben ga chikazuku to nyuubou ga ookiku nattekimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat waktu melahirkan semakin dekat, payudara sapi membesar."
+  },
+  {
+    "id": 18,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "にゅうぎゅう には、 はいごうーしりょう だけ を たべさせます。",
+    "reading": "Nyuugyuu niwa, haigou shiryou dake wo tabesasemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah hanya diberi makan pakan campuran."
+  },
+  {
+    "id": 19,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "うまれたて の こうし には、 しゅっさん して すぐ に でる しょにゅう を たくさん のませます。",
+    "reading": "Umaretate no koushi niwa, shussan shite sugu ni deru shonyuu wo takusan nomasemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Anak sapi yang baru lahir diberi ASI yang pertama kali keluar setelah melahirkan."
+  },
+  {
+    "id": 20,
+    "level": "shokyu",
+    "year": 2013,
+    "question": "さくにゅう きぐ は、 さくにゅう の まえ と あと に みずあらいし、しょうどく を おこないます。",
+    "reading": "Sakunyuu kigu wa, sakunyuu no mae to ato ni mizuaraishi, shoudoku wo okonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Peralatan perah, dicuci dan disterilkan sebelum dan sesudah pemerahan."
+  },
+  {
+    "id": 21,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にほん の のうち は、ほとんど が はたけ です。",
+    "reading": "Nihon no nouchi wa, hotondo ga hatake desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Lahan di Jepang kebanyakan sawah."
+  },
+  {
+    "id": 22,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にほん は、きた と みなみ で、 きこう が おなじ です。",
+    "reading": "Nihon wa, kita to minami de, kikou ga onaji desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di Jepang cuaca di utara dan selatan itu sama."
+  },
+  {
+    "id": 23,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にほん の こめ（いなさく） は、あじ の よい ひんしゅう を ちゅうしん に さいばい しています。",
+    "reading": "Nihon no kome (inasaku) wa, aji no yoi hinshuu wo chuushin ni saibai shiteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya beras Jepang diutamakan pada jenis yang rasanya enak."
+  },
+  {
+    "id": 24,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にほんで かって いる おもな かちく で おおい のは、うし、ひつじ、にわとり の 3つ です。",
+    "reading": "Nihonde katte iru omo na kachiku de ooi nowa, ushi, hitsuji, niwatori no mittsu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "3 jenis ternak di Jepang kebanyakan adalah sapi, domba, dan ayam."
+  },
+  {
+    "id": 25,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "かちく の いじょう を みつけたら、すぐ に ほうこく します。",
+    "reading": "Kachiku no ijou wo mitsuketara, sugu ni houkoku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika menemukan keanehan pada ternak, segera melapor."
+  },
+  {
+    "id": 26,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "たいひ は、くうき が はいらない ように して ふんにょう を はっこう させます。",
+    "reading": "Taihi wa, kuuki ga hairanai youni shite fun'nyou wo hakkou sasemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pupuk kompos merupakan kotoran yang difermentasi dengan mengusahakan udara tidak masuk."
+  },
+  {
+    "id": 27,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "うし の 「い」は、３つ です。",
+    "reading": "Ushi no i wa, mittsu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Lambung sapi ada 3."
+  },
+  {
+    "id": 28,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "らくのう よう の のうこうしりょう で いちばん おおく つかう のは トウモロコシ です。",
+    "reading": "Rakunou you no noukoushiryou de ichiban ooku tsukau noha toumorokoshi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pakan konsentrat khusus ternak yang paling banyak digunakan adalah jagung."
+  },
+  {
+    "id": 29,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "ウォーターカップ は、さくにゅうよう の きぐ です。",
+    "reading": "Wotaa kappu wa, sakunyuuyou no kigu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Water cup adalah alat yang digunakan khusus untuk memerah susu."
+  },
+  {
+    "id": 30,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "バルククーラー は、しぼった ちち を ちょぞう する れいぞうこ です。",
+    "reading": "Barukukuuraa wa, shibotta chichi wo chozou suru reizouko desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bulk cooler adalah tempat pendingin untuk menampung susu yang telah diperah."
+  },
+  {
+    "id": 31,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にゅうぎゅう １とう １とう の にゅうしつ には、さ が あります。",
+    "reading": "Nyuugyuu ittou ittou no nyuushitsu niwa, sa ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pada tempat pemerahan susu, terdapat jarak pada masing masing sapi perah."
+  },
+  {
+    "id": 32,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "ひと が ぎゅうしゃ に はいる のに、しょうどく の ひつよう は ありません。",
+    "reading": "Hito ga gyuusha ni hairu noni, shoudoku no hitsuyou wa arimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tidak penting untuk melakukan disinfeksi pada orang yang mau masuk ke kandang sapi."
+  },
+  {
+    "id": 33,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にゅうぎゅう が とおる つうろ は すべらない ように します。",
+    "reading": "Nyuugyuu ga tooru tsuuro wa suberanai you ni shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jalur lewat sapi perah dibuat agar tidak licin."
+  },
+  {
+    "id": 34,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "なつ の じき、 せんぷうき などで、ぎゅうしゃ を すずしく します。",
+    "reading": "Natsu no jiki, senpuuki nado de, gyuusha wo suzushiku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pada musim panas, kandang sapi dibuat sejuk dengan menggunakan kipas angin."
+  },
+  {
+    "id": 35,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にほん の にゅうぎゅう で もっとも おおい しゅるい は ジャージしゅ です。",
+    "reading": "Nihon no nyuugyuu de mottomo ooi shurui wa jaaji shu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jenis sapi perah yang paling banyak di Jepang adalah jenis Jersey."
+  },
+  {
+    "id": 36,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "うし には、そしりょう （かんそう、サイレージ など）が ひつよう です。",
+    "reading": "Ushi niwa, soshiryou (kansou, saireeji nado) ga hitsuyou desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Untuk sapi, pakan kasar juga penting (silage kering, dll.)."
+  },
+  {
+    "id": 37,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "うし は はつじょう すると しょくよく が ふえます。",
+    "reading": "Ushi wa hatsujou suru to shokuyoku ga fuemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jika sapi sedang birahi, maka nafsu makannya meningkat."
+  },
+  {
+    "id": 38,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にゅうぎゅう の にんしん きかん は やく １８０にち です。",
+    "reading": "Nyuugyuu no ninshin kikan wa yaku hyaku hachijuu nichi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jangka waktu sapi perah mengandung adalah sekitar 180 hari."
+  },
+  {
+    "id": 39,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "ほうぼく は、ぎゅうしゃない で かう やりかた です。",
+    "reading": "Houboku wa, gyuushanai de kau yarikata desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Merumput adalah cara memelihara di kandang sapi."
+  },
+  {
+    "id": 40,
+    "level": "shokyu",
+    "year": 2016,
+    "question": "にゅうぼうえん の よぼう には、ディッピング が たいせつ です。",
+    "reading": "Nyuubouen no yobou niwa, dippingu ga taisetsu desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Untuk mencegah dari peradangan payudara, penting untuk melakukan dipping."
+  },
+  {
+    "id": 41,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん は やま が すくなく、のうち が おおい です。",
+    "reading": "Nihon wa yama ga sukunaku, nouchi ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang memiliki gunung yang sedikit, ladang yang banyak."
+  },
+  {
+    "id": 42,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん には はる なつ あき ふゆ が あります。",
+    "reading": "Nihon niwa haru natsu aki fuyu ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang memiliki musim semi, panas, gugur, salju."
+  },
+  {
+    "id": 43,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん の いなさく は なえ を そだて、 たうえ を する のが おおい です。",
+    "reading": "Nihon no inasaku wa nae wo sodate, taue wo suru noga ooi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Budidaya padi di Jepang kebanyakan ditumbuhkan bibitnya sebelum ditanam."
+  },
+  {
+    "id": 44,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん で かっている かちく は うし と ぶた だけ です。",
+    "reading": "Nihon de katteiru kachiku wa ushi to buta dake desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Peternakan di Jepang hanya sapi dan babi saja."
+  },
+  {
+    "id": 45,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "たいひ は はたけ に のづみ して つくります。",
+    "reading": "Taihi wa hatake ni nozumi shite tsukurimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kompos dibuat dengan cara ditumpuk di ladang."
+  },
+  {
+    "id": 46,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "うし の いじょう を みつけたら、すぐ に ほうこく します。",
+    "reading": "Ushi no ijou wo mitsuketara, sugu ni houkoku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika menemukan keanehan pada sapi, segera melapor."
+  },
+  {
+    "id": 47,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "サイレージ は ぼくそう など の はっこう させた しりょう です。",
+    "reading": "Saireeji wa bokusou nado no hakkou saseta shiryou desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Silage adalah pakan rumput kering yang difermentasi."
+  },
+  {
+    "id": 48,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "うし の 「い」には、２つ あります。",
+    "reading": "Ushi no i niwa, futatsu arimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Lambung pada sapi ada 2."
+  },
+  {
+    "id": 49,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "カーフハッチ は しぼった ちち を ひやす きぐ です。",
+    "reading": "Kaafuhatchi wa shibotta chichi wo hiyasu kigu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kandang anak sapi adalah tempat untuk medinginkan susu yang telah diperah."
+  },
+  {
+    "id": 50,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "まえしぼり は ストリップ カップ で します。",
+    "reading": "Maeshibori wa sutorippu kappu de shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Perahan susu awal menggunakan strip cup."
+  },
+  {
+    "id": 51,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "しゅっか された ぎゅうにゅう は ひんしつ を しらべます。",
+    "reading": "Shukka sareta gyuunyuu wa hinshitsu wo shirabemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Susu sapi yang dikirimkan, kualitasnya diperiksa."
+  },
+  {
+    "id": 52,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "みず の のみば は いつも きれいに します。",
+    "reading": "Mizu no nomiba wa itsumo kireini shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Air pada tempat minum selalu dibersihkan."
+  },
+  {
+    "id": 53,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ぎゅうしゃ に はいる ときは しょうどく しません。",
+    "reading": "Gyuusha ni hairu tokiha shoudoku shimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pada saat masuk ke kandang sapi, tidak perlu melakukan disinfeksi."
+  },
+  {
+    "id": 54,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にほん の ぎゅうにゅう で もっとも おいしい ひんしゅ は ジャージーしゅ です。",
+    "reading": "Nihon no gyuunyuu de mottomo oishii hinshu wa jaajii shu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jenis sapi Jersey merupakan susu sapi Jepang yang paling enak."
+  },
+  {
+    "id": 55,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ホルスタインしゅ の にんしん きかん は やく 280にち です。",
+    "reading": "Horusutain shu no ninshin kikan wa yaku nihyaku hachijuu nichi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jangka waktu hamil sapi jenis Holstein sekitar 280 hari."
+  },
+  {
+    "id": 56,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "うし の はつじょう は いちねん に いっかい だけ です。",
+    "reading": "Ushi no hatsujou wa ichinen ni ikkai dake desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Perkawinan sapi dilakukan hanya setahun sekali."
+  },
+  {
+    "id": 57,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ほうぼく は ぼくそうち などで うしを はなして、 かう やりかた です。",
+    "reading": "Houboku wa bokusouchi nado de ushi wo hanashite, kau yarikata desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Merumput adalah cara ternak dengan melepas sapi pada lahan rumput, dll."
+  },
+  {
+    "id": 58,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "にゅうぼうえん は あし の びょうき です。",
+    "reading": "Nyuubouen wa ashi no byouki desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Peradangan payudara adalah penyakit pada kaki."
+  },
+  {
+    "id": 59,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ぶんべん は やく ２かげつ まえ から ちちしぼり を やめます。",
+    "reading": "Bunben wa yaku nikagetsu mae kara chichishibori wo yamemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sekitar 2 bulan sebelum melahirkan berhenti memerah susu."
+  },
+  {
+    "id": 60,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ディッピング を した あと、かみたおる で にゅうとう を ふきません。",
+    "reading": "Dippingu wo shita ato, kamitaoru de nyuutou wo fukimasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Setelah dipping, puting susu tidak dilap dengan lap kertas."
+  },
+  {
+    "id": 61,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん は ほとんど が ねったい きこう です。",
+    "reading": "Nihon wa hotondo ga nettai kikou desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sebagian besar Jepang beriklim tropis."
+  },
+  {
+    "id": 62,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん の こくど は なんぼく に ながい です。",
+    "reading": "Nihon no kokudo wa nanboku ni nagai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tanah Jepang memanjang dari utara ke selatan."
+  },
+  {
+    "id": 63,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん では きぼ の おおきい のうじょう が ふえてきます。",
+    "reading": "Nihon dewa kibo no ookii noujou ga fuetekimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Jepang ladang berskala besar semakin bertambah."
+  },
+  {
+    "id": 64,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん で かう おもな かちく は うし、ぶた、にわとり の みっつ です。",
+    "reading": "Nihon de kau omona kachiku wa ushi, buta, niwatori no mittsu desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Jepang terdapat tiga ternak utama yaitu sapi."
+  },
+  {
+    "id": 65,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "しょうどくえき は じかん が たつと こうか が あがります。",
+    "reading": "Shoudokueki wa jikan ga tatsuto kouka ga agarimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Efektifitas desinfektan meningkat dari waktu ke waktu."
+  },
+  {
+    "id": 66,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "かちく の いじょう を みつけたら すぐに ようす を しらせます。",
+    "reading": "Kachiku no ijou wo mitsuketara suguni yousu wo shirasemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat menemukan keadaan yang tidak biasa pada ternak segera lapor kondisinya."
+  },
+  {
+    "id": 67,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "たいひ は かちく の ふんにょう を はっこうさせて つくります。",
+    "reading": "Taihi wa kachiku no funnyou wo hakkou sasete tsukurimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kompos dibuat dari kotoran ternak."
+  },
+  {
+    "id": 68,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ぼくそう は のうこう しりょう として つかいます。",
+    "reading": "Bokusou wa noukou shiryou toshite tsukaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Rumput digunakan untuk pakan ternak konsentrat."
+  },
+  {
+    "id": 69,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "うし の い は にんげん と おなじ ひとつ です。",
+    "reading": "Ushi no i wa ningen to onaji hitotsu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Perut sapi sama seperti perut manusia."
+  },
+  {
+    "id": 70,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ばるくくーら は しょうどくえき を いれて おくもの です。",
+    "reading": "Barukukuura wa shoudokueki wo irete okumono desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "(Bulk Cooler) Tanki pendingin adalah tempat untuk menyimpan cairan disinfektan."
+  },
+  {
+    "id": 71,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "なつば は、だんぼうそうち を おき、ぎゅうしゃない を あたためます。",
+    "reading": "Natsuba wa, danbousouchi wo oki, gyuushanai wo atatamemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat musim panas siapkan penghangat untuk menghangatkan bagian dalam kandang."
+  },
+  {
+    "id": 72,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "しゅっかされた ちち は ひんしつ を しらべます。",
+    "reading": "Shukkasareta chichi wa hinshitsu wo shirabemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "kualitas susu yang dikirim."
+  },
+  {
+    "id": 73,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "うし の つうろ は すべる ように します。",
+    "reading": "Ushi no tsuuro wa suberu you ni shimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Lorong untuk sapi dibuat menjadi licin."
+  },
+  {
+    "id": 74,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にほん の ぎゅうにゅう で もっとも おおい のは ジャージ しゅです。",
+    "reading": "Nihon no gyuunyuu de mottomo ooi nowa jaaji shudesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Susu sapi di jepang kebanyakan berasal dari jenis sapi Jersey."
+  },
+  {
+    "id": 75,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "うし の はつじょう は いちねん に いっかい です。",
+    "reading": "Ushi no hatsujou wa ichinen ni ikkai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Birahi sapi terjadi satu kali dalam setahun."
+  },
+  {
+    "id": 76,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "うし の はんしょく は じんこうじゅせい が できません。",
+    "reading": "Ushi no hanshoku wa jinkoujusei ga dekimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pengembang biakan sapi tidak bisa melalui inseminasi buatan."
+  },
+  {
+    "id": 77,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ほうぼく は ぎゅうしゃ の なかで うし を つないで かう やりかた です。",
+    "reading": "Houboku wa gyuusha no nakade ushi wo tsunaide kau yarikata desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi akan diikat di dalam kandang saat pemberian pakan."
+  },
+  {
+    "id": 78,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ぶんべん の やく 60 にち まえから ちち を しぼるの を やめます。",
+    "reading": "Bunben no yaku rokujuu nichi maekara chichi wo shiboruno wo yamemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pemerahan susu dihentikan sejak 60 hari sebelum sapi melahirkan."
+  },
+  {
+    "id": 79,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "にゅうぼうえん は でんせん しません。",
+    "reading": "Nyuubouen wa densen shimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Penyakit mastitis tidak menular."
+  },
+  {
+    "id": 80,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "びょうき を ふせぐ ため ワクチン を つかいます。",
+    "reading": "Byouki wo fusegu tame wakuchin wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggunakan vaksin untuk mencegah penyakit."
+  },
+  {
+    "id": 81,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にほん の こくど は、なんぼく に ながく のびています。",
+    "reading": "Nihon no kokudo wa, nanboku ni nagaku nobiteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bentuk negara Jepang itu melintang dari utara ke selatan."
+  },
+  {
+    "id": 82,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にほん は、さんち より のうち が おおいです。",
+    "reading": "Nihon wa, sanchi yori nouchi ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang banyak tanah pertanian dari pada area produksi."
+  },
+  {
+    "id": 83,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にほんに は、2つの きせつ が あります。",
+    "reading": "Nihon-ni wa, futatsu no kisetsu ga arimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di Jepang ada 2 musim."
+  },
+  {
+    "id": 84,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にほんで は、しようきぼ の かくだい は すすんでいません。",
+    "reading": "Nihon dewa, shiyoukibo no kakudai wa susundeimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di Jepang Usaha Skala Kecil (UMKM) nya tidak berkembang."
+  },
+  {
+    "id": 85,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "はっこうちゅう の たいひ は おんど が あがります。",
+    "reading": "Hakkou chuu no taihi wa ondo ga agarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kompos yang dalam masa fermentasi suhunya akan menurun."
+  },
+  {
+    "id": 86,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "かちく に、あつさ と さむさ の たいさく は いらないです。",
+    "reading": "Kachiku ni, atsusa to samusa no taisaku wa iranaidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pada hewan ternak tidak diperlukan pengukuran dingin dan panas."
+  },
+  {
+    "id": 87,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "かちく の いじょう を みつけたら、すぐに ようす を しらせます。",
+    "reading": "Kachiku no ijou wo mitsuketara, suguni yousu wo shirasemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kalau menemukan keanehan pada hewan ternak, segera laporkan kondisinya."
+  },
+  {
+    "id": 88,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ぎゅうしゃで は、しきりょう に オガクス（おがくす）を つかいます。",
+    "reading": "Gyuusha dewa, shikiryou ni ogakusu (ogakusu) wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Di Kandang sapi pemakaian alas dengan serbuk gergaji."
+  },
+  {
+    "id": 89,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "うまれた ばかり の こうしに は、そしりょう を おおく あたえます。",
+    "reading": "Umareta bakari no koushini wa, soshiryou wo ooku ataemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pada anak sapi yang baru saja lahir memberi banyak serat."
+  },
+  {
+    "id": 90,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "サイロ（さいろ）は、しぼった ちち を ひやし、ためて おく ものです。",
+    "reading": "Sairo (sairo) wa, shibotta chichi wo hiyashi, tamete oku mono desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Silo yaitu sesuatu untuk menyimpan dan mendinginkan susu yang sudah di perah."
+  },
+  {
+    "id": 91,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ウォーターカップ（うぉ一た一かっぷ）は びょうきから にゅうぼう を まもります。",
+    "reading": "Wotaa kappu (wotaa kappu) wa byouki kara nyuubou wo mamorimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Water Cup untuk menjaga puting payudara dari penyakit."
+  },
+  {
+    "id": 92,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にゅうぎゅう[とう] とうの にゅうしつに は、ちがい が あります。",
+    "reading": "Nyuugyuu [tou] tou no nyuushitsu niwa, chigai ga arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pada sapi perah (dll) ada perbedaan pada kualitas susu."
+  },
+  {
+    "id": 93,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "すいそうは、いつも きれいに して おきます。",
+    "reading": "Suisouha, itsumo kireini shite okimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Selalu bersihkan tangki air."
+  },
+  {
+    "id": 94,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にほん の にゅうぎゅうで もっとも おおい しゅるい は ブラウンスイス（ぶら うんすいす）しゅです。",
+    "reading": "Nihon no nyuugyuu de mottomo ooi shurui wa buraun suisu (buraun suisu) shu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jenis sapi perah yang banyak ada di Jepang yaitu jenis sapi perah Brown Swiss."
+  },
+  {
+    "id": 95,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "うし は はつじょう する と、にゅうりょう が へります。",
+    "reading": "Ushi wa hatsujou suru to, nyuuryou ga herimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sapi yang sedang birahi, hasil susunya berkurang."
+  },
+  {
+    "id": 96,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にゅうぎゅう の にんしん きかん は、やく150 にち です。",
+    "reading": "Nyuugyuu no ninshin kikan wa, yaku hyaku gojuu nichi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jangka waktu hamil sapi perah yaitu sekitar 150 hari."
+  },
+  {
+    "id": 97,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にゅうぼうえん は、うし から うし に かんせん しません。",
+    "reading": "Nyuubouen wa, ushi kara ushi ni kansen shimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Peradangan payudara tidak menginfeksi dari sapi ke sapi."
+  },
+  {
+    "id": 98,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ほうぼく は ぎゅうしゃ の なか で つないで かうやりかた です。",
+    "reading": "Houboku wa gyuusha no naka de tsunaide kauyarikata desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Menggembala adalah cara untuk mengikat dan memberi makan sapi di dalam kandang sapi."
+  },
+  {
+    "id": 99,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ぶんべん の やく 30 にち まえ から は ちち を しぼるの を やめます。",
+    "reading": "Bunben no yaku sanjuu nichi mae kara wa chichi wo shiboruno wo yamemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemerahan susu di 30 hari sebelum melahirkan itu tidak dilakukan."
+  },
+  {
+    "id": 100,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "びょうき を ふせぐ ため、よぼうせっしゅ を おこないます。",
+    "reading": "Byouki wo fusegu tame, yobousesshu wo okonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Untuk mencegah penyakit, dilaksakanan vaksinasi."
+  },
+  {
+    "id": 101,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "にほん は、 やま が すくなく、 のうち が おおいです。",
+    "reading": "Nihon wa, yama ga sukunaku, nouchi ga ooidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang memiliki pegunungan yang sedikit dan lahan pertanian yang banyak."
+  },
+  {
+    "id": 102,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "にほん には、 ４つ の きせつ が あり ます。",
+    "reading": "Nihon niha, yottsu no kisetsu ga ari masu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang memiliki 4 musim."
+  },
+  {
+    "id": 103,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "にほん で かう おもな かちく は うし、ぶた、にわとり の ３つ です。",
+    "reading": "Nihon de kau omona kachiku wa ushi, buta, niwatori no mittsu desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Hewan ternak yang utama di Jepang ada 3 jenis (sapi, babi, dan ayam)."
+  },
+  {
+    "id": 104,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "はっこうちゅう の たいひ は おんど が さがります。",
+    "reading": "Hakkouchuu no taihi wa ondo ga sagarimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kompos yang dalam masa fermentasi suhunya akan menurun."
+  },
+  {
+    "id": 105,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "しりょう を たべない かちく が いたら、すぐ しらせます。",
+    "reading": "Shiryou wo tabenai kachiku ga itara, sugu shirasemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika ada hewan ternak yang tidak memakan pakannya, segera lapor."
+  },
+  {
+    "id": 106,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "うし は い が ４つ あります。",
+    "reading": "Ushi wa i ga yottsu arimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sapi memiliki 4 lambung."
+  },
+  {
+    "id": 107,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "うし の ひずめ は のびても、けずって は いけません。",
+    "reading": "Ushi no hizume wa nobitemo, kezutte wa ikemasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kuku sapi tidak boleh dipotong walaupun memanjang."
+  },
+  {
+    "id": 108,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "バルククーラ は しぼった ぎゅうにゅう を ため、ひやす ものです。",
+    "reading": "Barukukuura wa shibotta gyuunyuu wo tame, hiyasu monodesu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bulk cooler adalah alat untuk menyimpan dan mendinginkan susu hasil perahan."
+  },
+  {
+    "id": 109,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "ウォーターカップ（うぉーたーかっぷ） は にゅうぼう を けが から まもります。",
+    "reading": "Wotaa kappu (wotaa kappu) wa nyuubou wo kega kara mamorimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Water cup melindungi puting susu sapi dari luka."
+  },
+  {
+    "id": 110,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "にほん で かう にゅうぎゅう で もっとも おおい のは、 ジャージ （じゃーじ）しゅ です。",
+    "reading": "Nihon de kau nyuugyuu de mottomo ooi noha, jaaji (jaaji) shu desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi yang diternak di Jepang yang paling banyak adalah jenis Jersey."
+  },
+  {
+    "id": 111,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "にゅうぎゅう の にんしんきかん は やく １００にち です。",
+    "reading": "Nyuugyuu no ninshinkikan wa yaku hyaku nichi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Masa hamil sapi adalah sekitar 100 hari."
+  },
+  {
+    "id": 112,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "うし は はつじょう する と、 おちつき が なくなります。",
+    "reading": "Ushi wa hatsujou suru to, ochitsuki ga nakunarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat masa birahi, sapi tidak bisa tenang."
+  },
+  {
+    "id": 113,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "ちち の しぼりすぎ を して は いけません。",
+    "reading": "Chichi no shiborisugi wo shite wa ikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Tidak boleh melakukan pemerasan susu sapi berlebihan."
+  },
+  {
+    "id": 114,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "ほうぼく は、 ぎゅうしゃ の なか で つないで かう ほうほう です。",
+    "reading": "Houboku wa, gyuusha no naka de tsunaide kau houhou desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Merumput adalah cara beternak sapi dengan mengikatnya di kandang."
+  },
+  {
+    "id": 115,
+    "level": "shokyu",
+    "year": 2021,
+    "question": "ぶんべん の やく ３０にち まえ は ちち の しぼり は やめます。",
+    "reading": "Bunben no yaku sanjuu nichi mae wa chichi no shibori wa yamemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemerahan susu di 30 hari sebelum masa melahirkan itu tidak dilakukan."
+  },
+  {
+    "id": 116,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんユーラシアたいりくのひがしにあるしまぐにです。",
+    "reading": "Nihon wa yuurashia tairiku no higashi ni aru shimaguni desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang adalah negara kepulauan yang terletak di bagian timur Eurasia."
+  },
+  {
+    "id": 117,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんはやまがすくなくて、のうちがおおいです。",
+    "reading": "Nihon wa yama ga sukunakute, nouchi ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jepang pegunungannya sedikit dan lahan pertaniannya banyak."
+  },
+  {
+    "id": 118,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんのかちくはおもにうし、ぶた、にわとりです。",
+    "reading": "Nihon no kachiku wa omoni ushi, buta, niwatori desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Peternakan di Jepang umumnya adalah sapi, babi, dan ayam."
+  },
+  {
+    "id": 119,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんではいっこあたりのしいくしているうし、ぶた、にわとりのかずがまいとしへっています。",
+    "reading": "Nihon dewa, ikko atari no shiiku shiteiru ushi, buta, niwatori no kazu ga maitoshi hetteimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jumlah sapi, babi, dan ayam yang diternak di Jepang semakin berkurang."
+  },
+  {
+    "id": 120,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんはかちくのしりょうをたくさんゆにゅうしています。",
+    "reading": "Nihon wa kachiku no shiryou wo takusan yunyuu shiteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang mengimpor banyak pakan hewan ternak."
+  },
+  {
+    "id": 121,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にほんでしいくしているにゅうぎゅうはジャージーしゅがおおいです。",
+    "reading": "Nihon de shiiku shiteiru nyuugyuu wa Jaajii shu ga ooi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi yang diternak di Jepang kebanyakan adalah jenis Jersey."
+  },
+  {
+    "id": 122,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "けんこうなうしのたいおんは42°Cぐらいです。",
+    "reading": "Kenkouna ushi no taion wa yonjuu ni do gurai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Suhu badan sapi yang sehat sekitar 42°C."
+  },
+  {
+    "id": 123,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "サイレージはぼくそうなどをかわかしたしりょうです。",
+    "reading": "Saireeji wa bokusou nado wo kawakashita shiryou desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Silage adalah pakan yang merupakan rumput yang dikeringkan."
+  },
+  {
+    "id": 124,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "けいさんぎゅうはしゅっさんしたことがあるうしです。",
+    "reading": "Keisan gyuu wa shussan shita koto ga aru ushi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Keisan gyuu adalah istilah untuk sapi yang pernah melahirkan."
+  },
+  {
+    "id": 125,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "ミルキングパーラはしぼったぎゅうにゅうをひやすきかいです。",
+    "reading": "Mirukinggu paara wa shibotta gyuunyuu wo hiyasu kikai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Milking parlor adalah alat untuk mendinginkan susu yang telah diperah."
+  },
+  {
+    "id": 126,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "にゅうぎゅうはぶんべんをして、６かげつぐらいからぎゅうにゅうをおおくだします。",
+    "reading": "Nyuugyuu wa bunben wo shite, roku kagetsu gurai kara gyuunyuu wo ooku dashimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah mengeluarkan banyak susu mulai dari 6 bulan setelah melahirkan."
+  },
+  {
+    "id": 127,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "さくにゅうはぎゅうにゅうをしぼることです。",
+    "reading": "Sakunyuu wa gyuunyuu wo shiboru koto desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sakunyuu adalah kegiatan memerah susu sapi."
+  },
+  {
+    "id": 128,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "のうじょうにはいるときに、くるまのタイヤなどをしょうどくします。",
+    "reading": "Noujou ni hairu toki ni, kuruma no Taiya nado wo shoudoku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika memasuki peternakan, ban mobil didisinfeksi terlebih dahulu."
+  },
+  {
+    "id": 129,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "さくにゅうのまえに、さくにゅうきぐるいをてんけんします。",
+    "reading": "Sakunyuu no mae ni, sakunyuu kigu rui wo tenken shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Peralatan pemerahan dicek sebelum melakukan pemerahan."
+  },
+  {
+    "id": 130,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "はいごうしりょう、だいずかすなどはそしりょうです。",
+    "reading": "Haigou shiryou, daizu kasu nado wa soshiryou desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pakan campuran dan ampas kedelai adalah pakan kasar."
+  },
+  {
+    "id": 131,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "こうしはうまれたとき、すぐげりやはいえんになります。ですから、きれいにしいくします。",
+    "reading": "Koushi wa umareta toki, sugu geri ya haien ni narimasu. Desukara, kirei ni shiiku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sapi yang baru lahir rentan terkena diare dan radang paru. Sehingga, perlu diternak dengan bersih."
+  },
+  {
+    "id": 132,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "なつのあついとき、ホルスタインしゅはげんきです。",
+    "reading": "Natsu no atsui toki, Horusutain shu wa genki desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi Holstein sehat-sehat saja terhadap panasnya musim panas."
+  },
+  {
+    "id": 133,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "こうしにウォーターカップでしりょうをあげます。",
+    "reading": "Koushi ni wootaakappu de shiryou wo agemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Anak sapi diberi pakan menggunakan water cup."
+  },
+  {
+    "id": 134,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "しょさんぎゅうは、はじめてぶんべんしたうしです。",
+    "reading": "Shosan gyuu wa, hajimete bunben shita ushi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Shosan gyuu adalah sapi yang baru pertama melahirkan."
+  },
+  {
+    "id": 135,
+    "level": "shokyu",
+    "year": 2024,
+    "question": "ぎゅうしゃにはいるときに、ながぐつやさぎょうふくなどをしょうどくします。",
+    "reading": "Gyuusha ni hairu toki ni, nagagutsu ya sagyou fuku nado wo shoudoku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sebelum masuk ke kandang, sepatu boot dan baju kerja didisinfeksi terlebih dahulu."
+  },
+  {
+    "id": 136,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にゅうぎゅうは、ぶんべんを して ８かげつぐらいに、ぎゅうにゅうを おおく だします。",
+    "reading": "Nyuugyuu wa, bunben wo shite hachi kagetsu gurai ni, gyuunyuu wo ooku dashimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah mengeluarkan banyak susu 8 bulan setelah melahirkan."
+  },
+  {
+    "id": 137,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "しりょうそうこには、やちょうや ネズミ（ねずみ）が はいらない ように ちゅういします。",
+    "reading": "Shiryou souko niwa, yachou ya nezumi (nezumi) ga hairanai you ni chuui shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Hati-hati jangan sampai burung liar atau tikus masuk ke gudang pangan."
+  },
+  {
+    "id": 138,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ミルキングパーラ（みるきんぐぱーら）は、さくにゅうする ところです。",
+    "reading": "Mirukingu paara (mirukingu paara) wa, sakunyuu suru tokoro desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Milking parlor adalah tempat memerah susu."
+  },
+  {
+    "id": 139,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にゅうようぎゅうは、にくを つくる ための うしです。",
+    "reading": "Nyuuyou gyuu wa, niku wo tsukuru tame no ushi desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Sapi perah adalah sapi untuk diambil dagingnya."
+  },
+  {
+    "id": 140,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "なつの あついとき、ホルスタイン（ほるすたいん）しゅは、にゅうりょうが すくなく なります。",
+    "reading": "Natsu no atsui toki, Horusutain (horusutain) shu wa, nyuuryou ga sukunaku narimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Susu sapi Holstein menurun jumlahnya di hari yang panas musim panas."
+  },
+  {
+    "id": 141,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ウォーターカップ（うぉーたーかっぷ）は、ぎゅうにゅうを つめたくする きかいです。",
+    "reading": "Wotaa kappu (wotaa kappu) wa, gyuunyuu wo tsumetaku suru kikai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Water cup adalah mesin untuk mendinginkan susu."
+  },
+  {
+    "id": 142,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ぎゅうしゃに はいるとき、ながぐつや さぎょうふくなどを しょうどくします。",
+    "reading": "Gyuusha ni hairu toki, nagagutsu ya sagyou fuku nado wo shoudoku shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika masuk kandang sapi, sepatu boot harus disterilkan."
+  },
+  {
+    "id": 143,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にほんは、おんたいきこうの ところが すくないです。",
+    "reading": "Nihon wa, ontai kikou no tokoro ga sukunai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Wilayah iklim hangat di Jepang itu sedikit."
+  },
+  {
+    "id": 144,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にほんは、やまが おおくて、のうちが すくないです。",
+    "reading": "Nihon wa, yama ga ookute, nouchi ga sukunai desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang itu banyak gunungnya dan sedikit ladangnya."
+  },
+  {
+    "id": 145,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にほんは、トウモロコシ（とうもろこし）などの しりょうを がいこくから たくさん ゆにゅうしています。",
+    "reading": "Nihon wa, toumorokoshi (toumorokoshi) nado no shiryou wo gaikoku kara takusan yunyuu shiteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jepang mengimpor banyak pangan seperti jagung dari luar negeri."
+  },
+  {
+    "id": 146,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "にほんの らくのうは、かぞくけいえいが いちばん おおいです。",
+    "reading": "Nihon no rakunou wa, kazoku keiei ga ichiban ooi desu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Peternakan susu di Jepang paling banyak dikelola oleh keluarga."
+  },
+  {
+    "id": 147,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "けんこうな うしの たいおんは、41℃ぐらいです。",
+    "reading": "Kenkou na ushi no taion wa, yonjuu ichi do gurai desu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Suhu sapi sehat adalah sekitar 41 derajat C."
+  },
+  {
+    "id": 148,
+    "level": "shokyu",
+    "year": 2025,
+    "question": "ルーメン（るーめん）で、びせいぶつが しりょうを ぶんかいします。",
+    "reading": "Ruumen (ruumen) de, biseibutsu ga shiryou wo bunkai shimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mikroorganisme di Rumen memecah pakan."
+  }
+]

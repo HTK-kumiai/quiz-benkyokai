@@ -20,6 +20,16 @@
     "filename": "questions-shisetsu-engei.json"
   },
   {
+    "id": "shisetsu-engei-kinoko",
+    "title": "施設園芸きのこ",
+    "name": "🍄 施設園芸きのこ (Shisetsu Engei Kinoko)",
+    "shortName": "🍄 施設園芸きのこ",
+    "subtitle": "Shisetsu Engei Kinoko (Hortikultura Greenhouse - Jamur)",
+    "description": "Latihan budidaya jamur, media tanam, inokulasi, sterilisasi, ventilasi fasilitas, pemakaian mesin, pestisida, dan dasar hortikultura.",
+    "icon": "🍄",
+    "filename": "questions-shisetsu-engei-kinoko.json"
+  },
+  {
     "id": "kensetsu",
     "title": "建設施工",
     "name": "🏗️ 建設施工 (Kensetsu)",
@@ -28,5 +38,25 @@
     "description": "Latihan pengerjaan konstruksi bangunan, keselamatan kerja di lapangan, penggunaan alat berat, pembacaan gambar kerja, dan standar mutu konstruksi.",
     "icon": "🏗️",
     "filename": "questions-kensetsu.json"
+  },
+  {
+    "id": "rakuno",
+    "title": "酪農",
+    "name": "🐄 酪農 (Rakuno)",
+    "shortName": "🐄 酪農",
+    "subtitle": "Rakuno (Peternakan Sapi Perah)",
+    "description": "Latihan peternakan sapi perah, pemerahan susu, pakan, kesehatan ternak, reproduksi, kebersihan kandang, dan dasar pertanian Jepang.",
+    "icon": "🐄",
+    "filename": "questions-rakuno.json"
+  },
+  {
+    "id": "hatasaku-yasai",
+    "title": "畑作・野菜",
+    "name": "🥬 畑作・野菜 (Hatasaku Yasai)",
+    "shortName": "🥬 畑作・野菜",
+    "subtitle": "Hatasaku Yasai (Tanaman Ladang dan Sayuran)",
+    "description": "Latihan budidaya tanaman ladang dan sayuran, pengolahan tanah, pembibitan, pemupukan, pengairan, pestisida, panen, dan keselamatan kerja pertanian.",
+    "icon": "🥬",
+    "filename": "questions-hatasaku-yasai.json"
   }
 ]

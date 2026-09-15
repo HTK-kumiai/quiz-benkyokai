@@ -1,6 +1,6 @@
 # Riwayat Pengembangan
 
-Tanggal pembaruan terakhir: 11 September 2026
+Tanggal pembaruan terakhir: 15 September 2026
 
 ## Ringkasan Kondisi
 
@@ -14,6 +14,10 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
   - Sozai Kako: 56 soal
   - Shisetsu Engei: 136 soal
   - Kensetsu: 495 soal
+- Menambahkan kategori bank soal baru:
+  - Shisetsu Engei Kinoko: 106 soal
+  - Rakuno: 148 soal
+  - Hatasaku Yasai: 83 soal
 - Menjalankan pemeriksaan syntax JavaScript tanpa error.
 - Menjalankan validator bank soal; ketiga bank soal aktif lulus validasi.
 - Memastikan fitur utama yang tersedia:
@@ -38,6 +42,23 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Memverifikasi deployment Cloudflare Pages: user dapat login, menyelesaikan kuis, dan skor berhasil masuk ke Supabase.
 - Memverifikasi login admin dan tampilan riwayat skor dari Cloudflare Pages.
 - Memverifikasi aplikasi dari perangkat atau browser yang berbeda.
+- Menambahkan kategori `shisetsu-engei-kinoko` ke manifest bank soal.
+- Menambahkan file `public/data/question-bank/questions-shisetsu-engei-kinoko.json`.
+- Memasukkan 106 soal Shisetsu Engei Kinoko level `shokyu` dari sumber 2018-2022.
+- Menambahkan kategori `rakuno` ke manifest bank soal.
+- Menambahkan file `public/data/question-bank/questions-rakuno.json`.
+- Memasukkan 148 soal Rakuno level `shokyu` dari sumber 2013, 2016, 2018, 2019, 2020, 2021, 2024, dan 2025.
+- Mengisi `reading`, `answer`, dan `explanation` untuk seluruh soal Rakuno setelah dikonfirmasi.
+- Memindahkan sumber Rakuno dari `soal-asli/` ke `sudah-proses/`.
+- Menambahkan kategori `hatasaku-yasai` ke manifest bank soal.
+- Menambahkan file `public/data/question-bank/questions-hatasaku-yasai.json`.
+- Memasukkan 83 soal Hatasaku Yasai level `shokyu` dari sumber 2020-2024.
+- Mengisi `reading`, `answer`, dan `explanation` untuk seluruh soal Hatasaku Yasai setelah dikonfirmasi.
+- Memindahkan sumber Hatasaku Yasai dari `soal-asli/` ke `sudah-proses/`.
+- Mengisi `reading` dan `answer` untuk seluruh soal Shisetsu Engei Kinoko setelah dikonfirmasi.
+- Mengekstrak gambar soal 2022 tentang bagian `かさ` ke `public/assets/images/kinoko_2022_q19.png`.
+- Membuat `butuh-konfirmasi.md` sebagai catatan kerja konfirmasi reading, jawaban, dan transkripsi.
+- Memvalidasi seluruh bank soal setelah penambahan kategori baru.
 - Tidak ada file yang dihapus secara permanen.
 
 ## Yang Belum Dilakukan
@@ -50,34 +71,264 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 
 ### Supabase
 
-- Pastikan schema dan RLS dari `sql/supabase-schema.sql` sudah dijalankan.
-- Pastikan akun admin memiliki `is_admin = true` di tabel `profiles`.
-- Pastikan URL Cloudflare Pages sudah masuk ke Site URL dan Redirect URLs Supabase.
+- Schema dan RLS dari `sql/supabase-schema.sql` sudah dijalankan.
+- Akun admin sudah berhasil digunakan untuk login dan mengakses dashboard.
+- URL Cloudflare Pages sudah berhasil digunakan dalam pengujian produksi.
 - Pastikan tidak ada `service_role` key yang pernah dimasukkan ke frontend.
 
 ### Pengelolaan Bank Soal
 
-- Schema `question_bank` perlu dijalankan di project Supabase.
-- Sinkronisasi awal perlu dijalankan sekali dari dashboard admin.
+- Schema `question_bank` sudah dijalankan di project Supabase.
+- Sinkronisasi awal seluruh bank soal sudah berhasil dilakukan.
 - Setelah migrasi, perubahan soal admin akan disimpan ke Supabase; JSON lokal tetap menjadi fallback.
 
 ### Penanganan Error
 
-- Jika penyimpanan skor ke Supabase gagal, hasil kuis tetap ditampilkan tanpa pesan yang jelas kepada user.
+- Status penyimpanan skor sudah ditampilkan pada halaman hasil kuis.
+- Retry otomatis dan tombol simpan ulang masih belum tersedia.
 - Belum ada automated test untuk login, alur kuis, penyimpanan skor, dan akses admin.
 
 ### Dokumentasi dan Deployment
 
-- Konfigurasi Cloudflare Pages perlu dipastikan menggunakan build command `bash scripts/cloudflare-build.sh` dan output directory `public`.
+- Konfigurasi Cloudflare Pages menggunakan build command `bash scripts/cloudflare-build.sh` dan output directory `public`.
+- Setelah deploy perubahan bank soal lokal, admin perlu menjalankan sinkronisasi ulang dari tab **Setup** agar kategori/soal baru masuk ke Supabase.
 
 ## Prioritas Berikutnya
 
-1. Jalankan migrasi awal bank soal melalui dashboard admin.
-2. Periksa isi tabel `question_bank` setelah sinkronisasi.
-3. Pastikan user membaca soal dari Supabase setelah migrasi.
-4. Tambahkan notifikasi jika penyimpanan skor gagal.
-5. Pastikan konfigurasi Cloudflare Pages memakai build command dan output directory yang benar.
-6. Tambahkan automated test dasar untuk login, kuis, penyimpanan skor, dan akses admin.
+1. Tambahkan automated test dan CI untuk validasi kode, bank soal, serta alur utama.
+2. Tambahkan backup dan audit perubahan bank soal.
+3. Tingkatkan dashboard admin dengan pagination, filter tanggal, dan export skor.
+4. Tambahkan reset password dan penanganan sesi kedaluwarsa.
+5. Tambahkan retry serta tombol simpan ulang jika penyimpanan skor gagal.
+6. Uji RLS Supabase secara berkala dengan akun user biasa dan admin.
+
+## Rencana Penyempurnaan Berikutnya
+
+### 1. Automated Test dan CI
+
+- Jalankan validasi JSON, syntax check JavaScript, dan pemeriksaan build secara otomatis sebelum deployment.
+- Tambahkan pengujian untuk filter soal, perhitungan skor, login, penyimpanan skor, dan akses admin.
+
+### 2. Backup dan Audit Bank Soal
+
+- Sediakan export `question_bank` ke JSON atau CSV.
+- Simpan backup sebelum sinkronisasi besar.
+- Catat admin, waktu, dan jenis perubahan soal.
+
+### 3. Peningkatan Dashboard Admin
+
+- Tambahkan pagination untuk daftar soal dan riwayat skor.
+- Tambahkan filter rentang tanggal pada riwayat skor.
+- Tambahkan export riwayat skor ke CSV.
+- Tampilkan preview dan ringkasan sebelum import atau sinkronisasi.
+
+### 4. Peningkatan Autentikasi
+
+- Tambahkan alur reset password.
+- Tangani sesi Supabase yang kedaluwarsa dengan pesan yang jelas.
+- Tambahkan indikator loading dan cegah submit login berulang.
+
+### 5. Keandalan Penyimpanan Skor
+
+- Tambahkan retry otomatis ketika koneksi sementara gagal.
+- Sediakan tombol untuk mencoba menyimpan skor kembali.
+- Tampilkan status skor yang berhasil atau belum berhasil disimpan.
+
+### 6. Keamanan Supabase
+
+- Uji bahwa user biasa hanya dapat membaca soal dan skor miliknya.
+- Uji bahwa hanya admin yang dapat mengubah `question_bank`.
+- Pastikan `service_role key`, password, dan token tidak masuk repository.
+
+## Panduan Operasional
+
+### Push Perubahan ke GitHub
+
+Jalankan perintah dari root repository:
+
+```bash
+cd /mnt/data/1-Projects/sozai-kako/souzai-kako
+git status
+git add .
+git commit -m "Deskripsi singkat perubahan"
+git push origin main
+```
+
+Setelah push, cek deployment baru di Cloudflare Pages dan lakukan hard refresh:
+
+- Windows/Linux: `Ctrl + Shift + R`
+- macOS: `Cmd + Shift + R`
+
+Jangan commit `service_role key`, password, token Cloudflared, atau secret lainnya.
+
+### Testing Development Lokal
+
+Jalankan server lokal:
+
+```bash
+cd /mnt/data/1-Projects/sozai-kako/souzai-kako
+node server/app-server.js
+```
+
+Buka:
+
+```text
+http://localhost:3000/
+http://localhost:3000/admin.html
+```
+
+Pemeriksaan sebelum push:
+
+```bash
+node --check public/assets/js/app.js
+node --check public/assets/js/admin.js
+node --check public/assets/js/supabase-client.js
+bash scripts/validate-question-bank.sh
+bash scripts/cloudflare-build.sh
+```
+
+### Sinkronisasi Bank Soal
+
+1. Login ke `/admin.html` sebagai admin.
+2. Buka tab **Setup**.
+3. Klik **Sinkronkan Semua Soal**.
+4. Verifikasi jumlah data di Supabase.
+
+```sql
+select category_id, count(*) as jumlah_soal
+from public.question_bank
+group by category_id
+order by category_id;
+```
+
+Jumlah saat ini di file JSON lokal:
+
+- `kensetsu`: 495
+- `rakuno`: 148
+- `hatasaku-yasai`: 83
+- `shisetsu-engei`: 136
+- `shisetsu-engei-kinoko`: 106
+- `sozai-kako`: 56
+- Total: 1024 soal
+
+Setelah deploy penambahan Shisetsu Engei Kinoko, Rakuno, dan Hatasaku Yasai:
+
+1. Push perubahan ke branch `main`.
+2. Tunggu deployment Cloudflare Pages selesai.
+3. Login ke `/admin.html` sebagai admin di URL produksi.
+4. Buka tab **Setup**.
+5. Klik **Sinkronkan Semua Soal**.
+6. Cek jumlah data di Supabase:
+
+```sql
+select category_id, count(*) as jumlah_soal
+from public.question_bank
+group by category_id
+order by category_id;
+```
+
+Hasil yang diharapkan:
+
+- `kensetsu`: 495
+- `rakuno`: 148
+- `hatasaku-yasai`: 83
+- `shisetsu-engei`: 136
+- `shisetsu-engei-kinoko`: 106
+- `sozai-kako`: 56
+- Total: 1024 soal
+
+### Menjalankan dan Restart Docker
+
+Jalankan aplikasi dan rebuild image:
+
+```bash
+docker compose up -d --build
+docker compose ps
+```
+
+Restart aplikasi tanpa rebuild:
+
+```bash
+docker compose restart souzai-kako-app
+```
+
+Update kode dari GitHub lalu rebuild:
+
+```bash
+git pull
+docker compose up -d --build
+```
+
+Jalankan Cloudflared bersama aplikasi:
+
+```bash
+docker compose --profile public up -d --build
+docker compose logs -f cloudflared
+```
+
+Lihat log dan hentikan service:
+
+```bash
+docker compose logs -f souzai-kako-app
+docker compose ps
+docker compose down
+```
+
+Jika port bentrok, ubah mapping port di `compose.yaml`, misalnya dari `9090:3000` menjadi `9091:3000`, lalu jalankan ulang container.
+
+### Cloudflare Pages
+
+Pengaturan deployment:
+
+- Root directory: root repository
+- Build command: `bash scripts/cloudflare-build.sh`
+- Output directory: `public`
+
+Setiap push ke branch `main` memicu deployment baru. Jika build gagal, periksa hasil validasi bank soal di detail deployment Cloudflare.
+
+### Perubahan Schema Supabase
+
+Jalankan `sql/supabase-schema.sql` hanya ketika ada perubahan struktur database atau policy. Setelah menjalankannya:
+
+1. Pastikan tabel dan RLS tidak error.
+2. Uji login user dan admin.
+3. Uji penyimpanan skor.
+4. Uji pembacaan dan sinkronisasi `question_bank`.
+
+### Troubleshooting dan Pemulihan
+
+Jika soal tidak muncul:
+
+- Pastikan deployment Cloudflare terbaru berstatus **Success**.
+- Pastikan tabel `question_bank` berisi data.
+- Pastikan user sudah login.
+- Jalankan validator bank soal.
+- Lakukan hard refresh.
+- Periksa browser console.
+
+Jika sinkronisasi gagal:
+
+- Pastikan schema terbaru sudah dijalankan.
+- Pastikan akun memiliki `is_admin = true`.
+- Pastikan URL Supabase dan anon key benar.
+- Periksa policy RLS `question_bank`.
+- Gunakan JSON lokal sebagai fallback sementara.
+
+Jika Docker bermasalah:
+
+```bash
+docker compose ps
+docker compose logs --tail=100 souzai-kako-app
+docker compose logs --tail=100 cloudflared
+```
+
+Untuk membatalkan commit yang sudah dipush, gunakan `git revert` agar riwayat tetap aman:
+
+```bash
+git log --oneline -5
+git revert <commit-id>
+git push origin main
+```
 
 ## Langkah Aktivasi Bank Soal Terpusat
 
