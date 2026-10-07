@@ -4,6 +4,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>技能評価試験 — Quiz Latihan Evaluasi Keterampilan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
@@ -38,7 +41,37 @@
                     <div id="login-error" class="login-error">Email atau password salah!</div>
                     <button type="submit" class="btn-login">Masuk →</button>
                 </form>
-                <p class="login-note">Gunakan akun Supabase Anda. Jika belum punya akun, minta admin membuatkannya di Supabase.</p>
+                <p class="login-note">Belum punya akun? <button type="button" class="link-button" onclick="showSignupScreen()">Daftar dengan kode undangan</button><br />Silakan hubungi sensei kumiai.</p>
+            </div>
+        </div>
+
+        <div id="screen-signup" class="login-overlay" style="display: none;">
+            <div class="login-card">
+                <div class="login-logo">📝</div>
+                <h2>Daftar Akun</h2>
+                <p class="login-subtitle">Isi nama asli dan kode undangan grup Anda</p>
+                <form id="user-signup-form" class="login-form" onsubmit="handleUserSignup(event)">
+                    <div class="login-field">
+                        <label for="signup-name">Nama asli</label>
+                        <input type="text" id="signup-name" placeholder="Nama lengkap sesuai identitas" autocomplete="name" required maxlength="100" />
+                    </div>
+                    <div class="login-field">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Masukkan email Anda" autocomplete="email" required />
+                    </div>
+                    <div class="login-field">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Minimal 6 karakter" autocomplete="new-password" minlength="6" required />
+                    </div>
+                    <div class="login-field">
+                        <label for="signup-invite">Kode undangan</label>
+                        <input type="text" id="signup-invite" placeholder="Contoh: UJIAN-115-KENSETU" required maxlength="80" />
+                    </div>
+                    <div id="signup-error" class="login-error"></div>
+                    <button type="submit" class="btn-login">Daftar akun</button>
+                </form>
+                <p class="login-note">Akun baru harus disetujui admin sebelum dapat digunakan.</p>
+                <button type="button" class="link-button" onclick="showLoginScreen()">← Kembali ke login</button>
             </div>
         </div>
 
@@ -67,57 +100,50 @@
             <!-- 2. Halaman Pengaturan Level & Tahun Soal (Tampil setelah memilih bidang) -->
             <section id="screen-config" style="display: none;">
                 <div class="config-card">
-                    <div class="config-header">
-                        <div class="config-title-group">
-                            <h2 id="config-cat-title">🍱 惣菜製造業</h2>
-                            <p>Tentukan tingkatan ujian dan tahun soal yang ingin Anda pelajari:</p>
+                    <div class="config-step" id="config-step-level">
+                        <div class="config-header">
+                            <div class="config-title-group">
+                                <span class="config-eyebrow">LANGKAH 01</span>
+                                <h2 id="config-cat-title">🍱 惣菜製造業</h2>
+                                <p>Pilih tingkatan ujian yang ingin Anda pelajari.</p>
+                            </div>
+                            <button class="btn-change-cat" onclick="backToCategories()">← Ganti Bidang</button>
                         </div>
-                        <button class="btn-change-cat" onclick="backToCategories()">
-                            ← Ganti Bidang
-                        </button>
-                    </div>
 
-                    <!-- Pilihan Level -->
-                    <div class="section-label">
-                        <span>1. Pilih Tingkatan / Level Ujian:</span>
-                    </div>
-                    <div class="level-grid">
-                        <div class="level-option selected" id="opt-level-shokyu" onclick="selectLevel('shokyu')">
-                            <div class="level-badge">🔰 初級 (Shokyu)</div>
-                            <div class="level-desc">Tingkat Dasar (Ujian Evaluasi Tahun ke-1 / Magang 1 ke 2)</div>
+                        <div class="section-label"><span>Pilih Tingkatan / Level Ujian</span></div>
+                        <div class="level-grid">
+                            <div class="level-option selected" id="opt-level-shokyu" role="button" tabindex="0" onclick="selectLevel('shokyu')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectLevel('shokyu'); }">
+                                <div class="level-badge">🔰 初級 (Shokyu)</div>
+                                <div class="level-desc">Tingkat Dasar (Ujian Evaluasi Tahun ke-1 / Magang 1 ke 2)</div>
+                            </div>
+                            <div class="level-option" id="opt-level-senmonkyu" role="button" tabindex="0" onclick="selectLevel('senmonkyu')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectLevel('senmonkyu'); }">
+                                <div class="level-badge">⭐ 専門級 (Senmonkyu)</div>
+                                <div class="level-desc">Tingkat Menengah / Spesialis (Ujian Tahun ke-3 / Tokutei Ginou)</div>
+                            </div>
                         </div>
-                        <div class="level-option" id="opt-level-senmonkyu" onclick="selectLevel('senmonkyu')">
-                            <div class="level-badge">⭐ 専門級 (Senmonkyu)</div>
-                            <div class="level-desc">Tingkat Menengah / Spesialis (Ujian Tahun ke-3 / Tokutei Ginou)</div>
+
+                        <button class="btn-config-next" type="button" onclick="showYearStep()">Lanjut pilih tahun →</button>
+                    </div>
+
+                    <div class="config-step" id="config-step-year" style="display: none;">
+                        <div class="config-header">
+                            <div class="config-title-group">
+                                <span class="config-eyebrow">LANGKAH 02</span>
+                                <h2>Pilih Tahun Soal</h2>
+                                <p>Pilih periode ujian yang ingin Anda gunakan untuk latihan.</p>
+                            </div>
+                            <button class="btn-change-cat" onclick="showLevelStep()">← Kembali</button>
                         </div>
-                    </div>
 
-                    <!-- Pilihan Tahun Soal -->
-                    <div class="section-label">
-                        <span>2. Pilih Tahun Soal (Periode Ujian):</span>
-                    </div>
-                    <div class="year-grid" id="year-options-container">
-                        <!-- Diisi secara dinamis oleh JavaScript -->
-                    </div>
+                        <div class="year-list" id="year-options-container" role="radiogroup" aria-label="Pilih tahun soal"></div>
 
-                    <div class="section-label">
-                        <span>3. Jumlah Soal dalam Satu Sesi:</span>
-                    </div>
-                    <div class="year-grid" id="question-count-container">
-                        <!-- Diisi dinamis: 10, 20, 40, atau semua soal -->
-                    </div>
+                        <div class="config-summary">
+                            <span class="summary-text">Tersedia: <span class="summary-count" id="config-question-count">0 Soal</span></span>
+                            <span id="config-summary-detail"></span>
+                        </div>
 
-                    <!-- Ringkasan & Tombol Mulai -->
-                    <div class="config-summary">
-                        <span class="summary-text" id="config-summary-text">
-                            Tersedia: <span class="summary-count" id="config-question-count">0 Soal</span>
-                        </span>
-                        <span style="font-size: 0.85rem; color: #64748b;" id="config-summary-detail"></span>
+                        <button class="btn-launch-quiz" id="btn-start-quiz" onclick="launchQuiz()">🚀 Mulai Latihan Kuis &rarr;</button>
                     </div>
-
-                    <button class="btn-launch-quiz" id="btn-start-quiz" onclick="launchQuiz()">
-                        🚀 Mulai Latihan Kuis Sekarang &rarr;
-                    </button>
                 </div>
             </section>
 
@@ -139,7 +165,20 @@
                         </div>
                     </div>
 
-                    <div class="question" id="question">Memuat soal...</div>
+                    <div class="quiz-progress-panel">
+                        <div class="quiz-progress-copy">
+                            <span class="quiz-eyebrow">LATIHAN BERJALAN</span>
+                            <span class="quiz-progress-label" id="progress-label">0 dari 0 soal</span>
+                        </div>
+                        <div class="quiz-progress-track" role="progressbar" aria-label="Progress kuis" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+                            <div class="quiz-progress-value" id="quiz-progress-value"></div>
+                        </div>
+                    </div>
+
+                    <section class="quiz-content-panel japanese-panel" aria-labelledby="japanese-panel-label">
+                        <span class="quiz-panel-label" id="japanese-panel-label">BAHASA JEPANG</span>
+                        <div class="question" id="question">Memuat soal...</div>
+                    </section>
 
                     <!-- Gambar Soal (Jika ada gambar) -->
                     <div id="question-image-wrap" class="question-image-wrap" style="display: none;">
@@ -147,40 +186,43 @@
                         <div class="image-zoom-hint">🔍 Klik gambar untuk memperbesar</div>
                     </div>
 
-                    <div class="reading" id="reading"></div>
+                    <section class="quiz-content-panel reading-panel" aria-labelledby="reading-panel-label">
+                        <span class="quiz-panel-label" id="reading-panel-label">CARA BACA</span>
+                        <div class="reading" id="reading"></div>
+                    </section>
 
-                    <!-- Pilihan Jawaban Interaktif -->
-                    <div class="choice-container">
-                        <button class="choice-btn" id="btn-true" onclick="selectAnswer('○')">
-                            <span class="symbol">○</span>
-                            <span>BENAR</span>
-                        </button>
-                        <button class="choice-btn" id="btn-false" onclick="selectAnswer('×')">
-                            <span class="symbol">✕</span>
-                            <span>SALAH</span>
-                        </button>
+                    <section class="quiz-content-panel meaning-panel" aria-labelledby="meaning-panel-label">
+                        <span class="quiz-panel-label" id="meaning-panel-label">ARTI</span>
+                        <div class="meaning" id="meaning"></div>
+                    </section>
+
+                    <!-- Kontrol kuis fixed di bawah layar -->
+                    <div class="quiz-controls-dock">
+                        <div class="choice-container">
+                            <button class="choice-btn" id="btn-true" onclick="selectAnswer('○')">
+                                <span class="symbol">○</span>
+                                <span>BENAR</span>
+                            </button>
+                            <button class="choice-btn" id="btn-false" onclick="selectAnswer('×')">
+                                <span class="symbol">✕</span>
+                                <span>SALAH</span>
+                            </button>
+                        </div>
+
+                        <!-- Tombol Navigasi -->
+                        <div class="nav-buttons">
+                            <button class="nav-btn" id="back">← Mundur</button>
+                            <button class="nav-btn" id="next">Maju →</button>
+                        </div>
                     </div>
 
                     <!-- Feedback Hasil -->
                     <div class="feedback-box" id="feedback">
+                        <span class="quiz-panel-label">KOREKSI</span>
                         <div class="feedback-title" id="feedback-title"></div>
                         <div class="feedback-explanation" id="feedback-explanation"></div>
                     </div>
 
-                    <!-- Tombol Navigasi -->
-                    <div class="nav-buttons">
-                        <button class="nav-btn" id="back">← Mundur</button>
-                        <button class="nav-btn" id="next">Maju →</button>
-                    </div>
-
-                    <div class="footer-info">
-                        <span id="progress">Sudah muncul: 0 / 0</span>
-                        <button class="btn-reset" onclick="resetSession()">🔄 Reset Sesi Kuis</button>
-                    </div>
-
-                    <div class="keyboard-hints">
-                        Shortcut Keyboard: [1 / O] Benar &bull; [2 / X] Salah &bull; [&rarr;] Maju &bull; [&larr;] Mundur
-                    </div>
                 </div>
             </section>
 

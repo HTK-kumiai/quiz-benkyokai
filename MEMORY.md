@@ -1,6 +1,6 @@
 # Memory Proyek - Souzai Kako
 
-Tanggal catatan: 15 September 2026
+Tanggal catatan: 7 Oktober 2026
 
 ## Lokasi Repo
 
@@ -16,11 +16,11 @@ Repo aktif:
   - `sozai-kako`: 56 soal
   - `shisetsu-engei`: 136 soal
   - `shisetsu-engei-kinoko`: 106 soal
-  - `kensetsu`: 595 soal
+  - `kensetsu`: 695 soal
   - `rakuno`: 148 soal
   - `hatasaku-yasai`: 83 soal
   - `kunsei`: 35 soal
-  - total lokal: 1159 soal
+  - total lokal: 1259 soal
 - Kategori `rakuno` sudah ditambahkan ke `public/data/question-bank/categories.json`.
 - File soal Rakuno sudah dibuat:
   - `public/data/question-bank/questions-rakuno.json`
@@ -56,10 +56,14 @@ Repo aktif:
   - semua `reading`, `answer`, dan `explanation` dimasukkan dari hasil konfirmasi user di `butuh-konfirmasi.md`.
 - File sumber Kunsei sudah dipindahkan dari `soal-asli/` ke `sudah-proses/`:
   - `kunsei_2025_senmonkyu.docx`
-- `soal-asli/` saat ini kosong setelah pemrosesan Kunsei.
+- Tambahan Kensetsu 2017-2020 sudah dimasukkan:
+  - 100 soal level `shokyu`, ID 596-695
+  - tahun sumber: 2017, 2018, 2019, dan 2020
+  - sumber sudah dipindahkan ke `sudah-proses/`
+- `soal-asli/` saat ini kosong setelah pemrosesan Kensetsu 2017-2020.
 - File konfirmasi:
   - `butuh-konfirmasi.md`
-  - saat ini berisi tabel final konfirmasi Kunsei dengan kolom soal, terjemahan, reading, answer, dan catatan.
+  - berisi tabel final Kunsei dan tabel review tambahan Kensetsu 2017-2020 dengan kolom soal, terjemahan, reading, answer, dan catatan.
 - Workflow dan aturan format reading sudah ditambahkan ke `AGENTS.md`.
 
 ## Validasi Terakhir
@@ -75,7 +79,7 @@ Hasil:
 
 - semua question bank valid
 - `public/` siap dipublish
-- total lokal setelah tambahan Kunsei: 1159 soal
+- total lokal setelah tambahan Kensetsu 2017-2020: 1259 soal
 
 ## Deploy Nanti
 
@@ -92,14 +96,14 @@ Setelah deploy perubahan bank soal lokal, admin perlu:
 
 Jumlah yang diharapkan setelah sinkronisasi saat ini:
 
-- `kensetsu`: 595
+  - `kensetsu`: 695
 - `rakuno`: 148
 - `hatasaku-yasai`: 83
 - `shisetsu-engei`: 136
 - `shisetsu-engei-kinoko`: 106
 - `sozai-kako`: 56
 - `kunsei`: 35
-- total: 1159 soal
+  - total: 1259 soal
 
 ## Catatan Workflow
 

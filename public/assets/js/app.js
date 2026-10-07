@@ -4,6 +4,7 @@ import {
     getCurrentSessionProfile,
     insertScore,
     isSupabaseConfigured,
+    signUpWithInvite,
     signInWithEmail,
     signOutUser,
 } from "./supabase-client.js";
@@ -25,7 +26,6 @@ let CATEGORIES = {};
 let currentCategory = null;
 let selectedLevel = "shokyu";
 let selectedYear = "all";
-let selectedQuestionCount = 20;
 let rawCategoryQuestions = [];
 let allQuestions = []; // Soal yang sudah difilter
 let history = [];
@@ -58,7 +58,15 @@ function renderCategoryCards() {
     categoryList.forEach((cat) => {
         const card = document.createElement("div");
         card.className = "category-card";
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
         card.onclick = () => openCategoryConfig(cat.id);
+        card.onkeydown = (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openCategoryConfig(cat.id);
+            }
+        };
         card.innerHTML = `
             <div>
                 <div class="cat-top">
@@ -93,6 +101,14 @@ async function checkUserSession() {
     try {
         currentUser = await getCurrentSessionProfile();
         if (currentUser) {
+            if (!currentUser.is_admin && currentUser.approval_status !== "approved") {
+                await signOutUser().catch(() => {});
+                showLoginScreen();
+                showLoginError(currentUser.approval_status === "rejected"
+                    ? "Pendaftaran Anda belum disetujui. Silakan hubungi sensei kumiai."
+                    : "Pendaftaran Anda masih menunggu persetujuan admin.");
+                return;
+            }
             sessionStorage.setItem("quiz_current_user", JSON.stringify(currentUser));
             showMainApp();
             return;
@@ -101,11 +117,6 @@ async function checkUserSession() {
         console.error("Gagal memeriksa session user:", e);
     }
     showLoginScreen();
-}
-
-function showLoginScreen() {
-    document.getElementById("screen-login").style.display = "flex";
-    document.getElementById("main-app").style.display = "none";
 }
 
 function showLoginError(message) {
@@ -135,6 +146,12 @@ async function handleUserLogin(event) {
         await signInWithEmail(usernameInput, passwordInput);
         currentUser = await getCurrentSessionProfile();
         if (!currentUser) throw new Error("Profil user tidak ditemukan.");
+        if (!currentUser.is_admin && currentUser.approval_status !== "approved") {
+            await signOutUser().catch(() => {});
+            throw new Error(currentUser.approval_status === "rejected"
+                ? "Pendaftaran Anda belum disetujui. Silakan hubungi sensei kumiai."
+                : "Pendaftaran Anda masih menunggu persetujuan admin.");
+        }
         sessionStorage.setItem("quiz_current_user", JSON.stringify(currentUser));
         errorEl.style.display = "none";
         document.getElementById("login-username").value = "";
@@ -148,6 +165,46 @@ async function handleUserLogin(event) {
         submitBtn.textContent = "Masuk →";
         document.getElementById("login-password").value = "";
     }
+}
+
+async function handleUserSignup(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = document.getElementById("signup-name").value.trim();
+    const email = document.getElementById("signup-email").value.trim();
+    const password = document.getElementById("signup-password").value;
+    const inviteCode = document.getElementById("signup-invite").value.trim();
+    const errorEl = document.getElementById("signup-error");
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Mendaftarkan...";
+    errorEl.style.display = "none";
+    try {
+        await signUpWithInvite(email, password, name, inviteCode);
+        await signOutUser().catch(() => {});
+        form.reset();
+        showLoginScreen();
+        showLoginError("Pendaftaran berhasil. Silakan tunggu persetujuan admin sebelum login.");
+    } catch (e) {
+        errorEl.textContent = e.message || "Pendaftaran gagal.";
+        errorEl.style.display = "block";
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Daftar akun";
+    }
+}
+
+function showSignupScreen() {
+    document.getElementById("screen-login").style.display = "none";
+    document.getElementById("screen-signup").style.display = "flex";
+    const invite = new URLSearchParams(window.location.search).get("invite");
+    if (invite) document.getElementById("signup-invite").value = invite;
+}
+
+function showLoginScreen() {
+    document.getElementById("screen-signup").style.display = "none";
+    document.getElementById("screen-login").style.display = "flex";
+    document.getElementById("main-app").style.display = "none";
 }
 
 async function handleUserLogout() {
@@ -279,20 +336,31 @@ async function openCategoryConfig(catId) {
 
     selectedLevel = "shokyu";
     selectedYear = "all";
-    selectedQuestionCount = 20;
 
     renderLevelOptions();
     renderYearOptions();
-    renderQuestionCountOptions();
+    showLevelStep();
     updateConfigSummary();
 }
 
 function selectLevel(level) {
     selectedLevel = level;
+    selectedYear = "all";
     renderLevelOptions();
     renderYearOptions();
-    renderQuestionCountOptions();
     updateConfigSummary();
+}
+
+function showLevelStep() {
+    document.getElementById("config-step-level").style.display = "block";
+    document.getElementById("config-step-year").style.display = "none";
+}
+
+function showYearStep() {
+    renderYearOptions();
+    updateConfigSummary();
+    document.getElementById("config-step-level").style.display = "none";
+    document.getElementById("config-step-year").style.display = "block";
 }
 
 function renderLevelOptions() {
@@ -322,47 +390,32 @@ function renderYearOptions() {
 
     const sortedYears = Array.from(yearsSet).sort((a, b) => b - a);
 
-    const allPill = document.createElement("button");
-    allPill.className = "year-pill" + (selectedYear === "all" ? " selected" : "");
-    allPill.innerHTML = `🌟 Semua Tahun (${levelQuestions.length})`;
-    allPill.onclick = () => selectYear("all");
-    container.appendChild(allPill);
+    const allOption = document.createElement("button");
+    allOption.type = "button";
+    allOption.className = "year-option" + (selectedYear === "all" ? " selected" : "");
+    allOption.setAttribute("role", "radio");
+    allOption.setAttribute("aria-checked", String(selectedYear === "all"));
+    allOption.innerHTML = `<span class="year-option-mark">🌟</span><span><strong>Semua Tahun</strong><small>${levelQuestions.length} soal tersedia</small></span>`;
+    allOption.onclick = () => selectYear("all");
+    container.appendChild(allOption);
 
     sortedYears.forEach((yr) => {
         const count = levelQuestions.filter((q) => Number(q.year) === yr).length;
-        const pill = document.createElement("button");
-        pill.className = "year-pill" + (selectedYear === String(yr) ? " selected" : "");
-        pill.innerHTML = `📅 Tahun ${yr} (${count})`;
-        pill.onclick = () => selectYear(String(yr));
-        container.appendChild(pill);
+        const option = document.createElement("button");
+        option.type = "button";
+        option.className = "year-option" + (selectedYear === String(yr) ? " selected" : "");
+        option.setAttribute("role", "radio");
+        option.setAttribute("aria-checked", String(selectedYear === String(yr)));
+        option.innerHTML = `<span class="year-option-mark">📅</span><span><strong>Tahun ${yr}</strong><small>${count} soal tersedia</small></span>`;
+        option.onclick = () => selectYear(String(yr));
+        container.appendChild(option);
     });
 }
 
 function selectYear(yr) {
     selectedYear = yr;
     renderYearOptions();
-    renderQuestionCountOptions();
     updateConfigSummary();
-}
-
-function renderQuestionCountOptions() {
-    const container = document.getElementById("question-count-container");
-    if (!container) return;
-    const available = getFilteredQuestions().length;
-    container.innerHTML = "";
-    [10, 20, 40, "all"].forEach((count) => {
-        const value = count === "all" ? "all" : String(count);
-        const pill = document.createElement("button");
-        pill.className = "year-pill" + (String(selectedQuestionCount) === value ? " selected" : "");
-        pill.textContent = count === "all" ? `📚 Semua (${available})` : `📝 ${count} soal`;
-        pill.disabled = count !== "all" && available < count;
-        pill.onclick = () => {
-            selectedQuestionCount = count;
-            renderQuestionCountOptions();
-            updateConfigSummary();
-        };
-        container.appendChild(pill);
-    });
 }
 
 function updateConfigSummary() {
@@ -375,7 +428,7 @@ function updateConfigSummary() {
 
     const levelText = selectedLevel === "shokyu" ? "初級 (Shokyu)" : "専門級 (Senmonkyu)";
     const yearText = selectedYear === "all" ? "Semua Tahun" : "Tahun " + selectedYear;
-    const sessionText = selectedQuestionCount === "all" ? `Semua ${matched.length} soal` : `${Math.min(selectedQuestionCount, matched.length)} soal acak`;
+    const sessionText = `Semua ${matched.length} soal`;
     detailEl.textContent = `${levelText} • ${yearText} • ${sessionText}`;
 
     if (matched.length === 0) {
@@ -383,10 +436,7 @@ function updateConfigSummary() {
         btnLaunch.textContent = "Belum Ada Soal untuk Kriteria Ini";
     } else {
         btnLaunch.disabled = false;
-        const sessionCount = selectedQuestionCount === "all"
-            ? matched.length
-            : Math.min(selectedQuestionCount, matched.length);
-        btnLaunch.innerHTML = `🚀 Mulai Latihan Kuis (${sessionCount} Soal) &rarr;`;
+        btnLaunch.innerHTML = `🚀 Mulai Latihan Kuis (${matched.length} Soal) &rarr;`;
     }
 }
 
@@ -405,9 +455,6 @@ function getFilteredQuestions() {
 function launchQuiz() {
     const matched = getFilteredQuestions();
     allQuestions = [...matched].sort(() => Math.random() - 0.5);
-    if (selectedQuestionCount !== "all") {
-        allQuestions = allQuestions.slice(0, Number(selectedQuestionCount));
-    }
     if (allQuestions.length === 0) {
         alert("Tidak ada soal yang cocok dengan pilihan level dan tahun tersebut.");
         return;
@@ -418,7 +465,7 @@ function launchQuiz() {
     // Sembunyikan semua layar lain
     document.getElementById("screen-config").style.display = "none";
     document.getElementById("screen-results").style.display = "none";
-    document.getElementById("screen-quiz").style.display = "block";
+    document.getElementById("screen-quiz").style.display = "flex";
 
     document.getElementById("quiz-cat-name").textContent = cat.shortName;
     const levelName = selectedLevel === "shokyu" ? "🔰 初級" : "⭐ 専門級";
@@ -438,6 +485,7 @@ function backToConfig() {
     document.getElementById("screen-quiz").style.display = "none";
     document.getElementById("screen-results").style.display = "none";
     document.getElementById("screen-config").style.display = "block";
+    showLevelStep();
     updateConfigSummary();
 }
 
@@ -476,6 +524,8 @@ function render() {
     document.getElementById("meta").textContent = `Soal #${q.id} ${q.year ? `(${q.year})` : ""}`;
     document.getElementById("question").textContent = q.question;
     document.getElementById("reading").textContent = q.reading || "";
+    const meaning = document.getElementById("meaning");
+    if (meaning) meaning.textContent = q.explanation || "Arti belum tersedia.";
 
     const imgWrap = document.getElementById("question-image-wrap");
     const imgEl = document.getElementById("question-image");
@@ -511,8 +561,25 @@ function render() {
     }
 
     document.getElementById("back").disabled = position <= 0;
-    document.getElementById("progress").textContent =
-        "Sudah muncul: " + history.length + " / " + allQuestions.length;
+    const progressText = "Sudah muncul: " + history.length + " / " + allQuestions.length;
+    const progressFooter = document.getElementById("progress");
+    if (progressFooter) progressFooter.textContent = progressText;
+    const progressLabel = document.getElementById("progress-label");
+    const progressTrack = document.querySelector(".quiz-progress-track");
+    const progressValue = document.getElementById("quiz-progress-value");
+    const progressPercent = allQuestions.length > 0
+        ? Math.round((history.length / allQuestions.length) * 100)
+        : 0;
+    if (progressLabel) {
+        progressLabel.textContent = `${history.length} dari ${allQuestions.length} soal`;
+    }
+    if (progressTrack) {
+        progressTrack.setAttribute("aria-valuemax", String(allQuestions.length));
+        progressTrack.setAttribute("aria-valuenow", String(history.length));
+    }
+    if (progressValue) {
+        progressValue.style.width = `${progressPercent}%`;
+    }
 
     updateScoreStats();
 }
@@ -690,7 +757,7 @@ function applyAnswerVisuals(q, choice, isCorrect) {
 
     feedbackExplanation.innerHTML = `<strong>Kunci Jawaban: ${
         q.answer === "○" ? "○ (BENAR)" : "✕ (SALAH)"
-    }</strong><br>${q.explanation || ""}`;
+    }</strong>`;
     feedback.style.display = "block";
 }
 
@@ -903,6 +970,8 @@ window.checkUserSession = checkUserSession;
 window.showLoginScreen = showLoginScreen;
 window.showMainApp = showMainApp;
 window.handleUserLogin = handleUserLogin;
+window.handleUserSignup = handleUserSignup;
+window.showSignupScreen = showSignupScreen;
 window.handleUserLogout = handleUserLogout;
 window.getScoreRecords = getScoreRecords;
 window.saveScoreRecord = saveScoreRecord;
@@ -910,6 +979,8 @@ window.updateCategoryCounts = updateCategoryCounts;
 window.getQuestionsForCategory = getQuestionsForCategory;
 window.openCategoryConfig = openCategoryConfig;
 window.selectLevel = selectLevel;
+window.showLevelStep = showLevelStep;
+window.showYearStep = showYearStep;
 window.renderLevelOptions = renderLevelOptions;
 window.renderYearOptions = renderYearOptions;
 window.selectYear = selectYear;

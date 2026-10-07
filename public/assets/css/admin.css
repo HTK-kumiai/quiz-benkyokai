@@ -207,6 +207,27 @@ body {
     cursor: pointer;
 }
 
+.invite-form {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr 120px auto;
+    gap: 10px;
+    margin: 18px 0 12px;
+}
+
+.invite-form .form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: .95rem;
+}
+
+@media (max-width: 760px) {
+    .invite-form {
+        grid-template-columns: 1fr;
+    }
+}
+
 .action-buttons-group {
     display: flex;
     gap: 10px;

@@ -5948,5 +5948,1005 @@
     "image": "",
     "answer": "○",
     "explanation": "Dilarang mengaitkan wire pada ujung bucket backhoe untuk mengangkat barang."
+  },
+  {
+    "id": 596,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "車両系建設機械等を運転する場合、ヘルメットや安全用具をつけ、服装をととのえて、機械を運転します。",
+    "reading": "sharyoukeikensetsukikainadowountensurubaai, herumettoyaanzenyouguwotsuke, fukusouwototonoete, kikaiwountenshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ketika akan mengoperasikan mesin konstruksi dan lain-lain, kenakan helm, perlengkapan keselamatan, dan pakaian yang sesuai."
+  },
+  {
+    "id": 597,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ヘルメットや安全用具をつけて、運転します。",
+    "reading": "herumettoyaanzenyouguwotsukete, untenshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengoperasikan mesin dengan mengenakan helm dan perlengkapan keselamatan."
+  },
+  {
+    "id": 598,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ヘルメットをつけるときは、あごひものしめつけをします。",
+    "reading": "herumettowotsukerutokiha, agohimonoshimetsukewoshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kencangkan tali dagu ketika mengenakan helm."
+  },
+  {
+    "id": 599,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "作業開始（乗車）前に周囲の安全確認をします。",
+    "reading": "sagyoukaishi(jousha)maenishuuinoanzenkakuninwoshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pastikan keamanan sekitar sebelum memulai pekerjaan (naik mesin)."
+  },
+  {
+    "id": 600,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "機械の乗り降りは必ず３点支持（両手と片足、または片手と両足）で行います。",
+    "reading": "kikainonoriorihakanarazusantenshiji(ryoutetokataashi, matahakatatetoryouashi)deokonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Naik dan turun dari mesin harus selalu menggunakan tiga titik tumpuan (kedua tangan dan satu kaki, atau satu tangan dan kedua kaki)."
+  },
+  {
+    "id": 601,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "作業をするとき、運転席でないところに、人を乗せてもいいです。",
+    "reading": "sagyouwosurutoki, untensekidenaitokoroni, ninwonosetemoiidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat bekerja, boleh membawa orang di tempat yang bukan kursi pengemudi."
+  },
+  {
+    "id": 602,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "建設機械の運転者は、エンジンをかけたまま、運転席を離れてはいけません。",
+    "reading": "kensetsukikainountenshaha, enjinwokaketamama, untensekiwohanaretehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pengemudi mesin konstruksi tidak boleh meninggalkan kursi pengemudi ketika mesin masih menyala."
+  },
+  {
+    "id": 603,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ブレーキやバケットなどは、地面に下げておかなくてもよいです。",
+    "reading": "bureekiyabakettonadoha, jimennisageteokanakutemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Rem, bucket, dan bagian lainnya tidak perlu diturunkan ke tanah."
+  },
+  {
+    "id": 604,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "作業レバーはすべて中立にして、ロックをします。",
+    "reading": "sagyourebaahasubetechuuritsunishite, rokkuwoshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Semua tuas kerja dinetralkan lalu dikunci."
+  },
+  {
+    "id": 605,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "エンジン停止中は、作業レバーを操作してもよいです。",
+    "reading": "enjinteishichuuha, sagyourebaawosousashitemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tuas kerja boleh dioperasikan ketika mesin sedang berhenti."
+  },
+  {
+    "id": 606,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ブルドーザーはトラクタにブレードを取り付けた機械で、大きいブルドーザーは掘削作業に、小さいブルドーザーは押土や整地作業などに使われます。",
+    "reading": "burudoozaahatorakutanibureedowotoritsuketakikaide, ookiiburudoozaahakussakusagyouni, chiisaiburudoozaahaoudoyaseichisagyounadonitsukawaremasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Buldozer adalah mesin berupa traktor yang dipasangi blade. Buldozer besar digunakan untuk penggalian, sedangkan buldozer kecil untuk mendorong dan meratakan tanah."
+  },
+  {
+    "id": 607,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "バックホウは主に地面よりも下の掘削に使われて、油圧ショベルの中でもっともよくみかける機械です。",
+    "reading": "bakkuhouhaomonijimenyorimoshitanokussakunitsukawarete, yuatsushoberunonakademottomoyokumikakerukikaidesu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Backhoe terutama digunakan untuk menggali di bawah permukaan tanah dan merupakan mesin yang paling sering dijumpai di antara shovel hidrolik."
+  },
+  {
+    "id": 608,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ローディングショベルは主に地面にある土砂や岩石の積み込み作業に使われます。",
+    "reading": "roodingushoberuhaomonijimenniarudoshayagansekinotsumikomisagyounitsukawaremasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Loading shovel terutama digunakan untuk memuat tanah dan batu yang berada di permukaan tanah."
+  },
+  {
+    "id": 609,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ローラは、土砂やアスファルトなどを掘削する作業に使われる機械です。",
+    "reading": "rooraha, doshayaasufarutonadowokussakusurusagyounitsukawarerukikaidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Roller adalah mesin yang digunakan untuk menggali tanah, aspal, dan sebagainya."
+  },
+  {
+    "id": 610,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ローラのエンジンは４サイクルです。",
+    "reading": "rooranoenjinhayon saikurudesu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin roller adalah mesin empat tak."
+  },
+  {
+    "id": 611,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ローラのエンジンの燃料はディーゼルエンジンだけです。",
+    "reading": "rooranoenjinnonenryouhadiizeruenjindakedesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan bakar mesin roller hanya diesel."
+  },
+  {
+    "id": 612,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "建設機械には主に４サイクル式で水冷式のディーゼルエンジンが使われています。",
+    "reading": "kensetsukikainihaomoniyon saikurushikidesuireishikinodiizeruenjingatsukawareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin konstruksi terutama menggunakan mesin diesel empat tak dengan pendingin air."
+  },
+  {
+    "id": 613,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "ディーゼルエンジンの燃料はガソリンです。",
+    "reading": "diizeruenjinnonenryouhagasorindesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan bakar mesin diesel adalah bensin."
+  },
+  {
+    "id": 614,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "燃料に水が混じる（水が入る）と、エンジンの調子が悪くなるので、水が混じらないように注意する必要があります。",
+    "reading": "nenryounimizugamajiru(mizugairu)to, enjinnochoushigawarukunarunode, mizugamajiranaiyounichuuisuruhitsuyougaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika air tercampur ke dalam bahan bakar, kondisi mesin memburuk sehingga harus berhati-hati agar air tidak tercampur."
+  },
+  {
+    "id": 615,
+    "level": "shokyu",
+    "year": 2017,
+    "question": "現場での点検、整備はどこでやってもかまいません。",
+    "reading": "genbadenotenken, seibihadokodeyattemokamaimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan dan perawatan di lapangan boleh dilakukan di mana saja."
+  },
+  {
+    "id": 616,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "ときどきですが、ヘルメットをつけないで機械を運転します。",
+    "reading": "tokidokidesuga, herumettowotsukenaidekikaiwountenshimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kadang-kadang mengoperasikan mesin tanpa memakai helm."
+  },
+  {
+    "id": 617,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "破れた作業服は、けがの原因になります。",
+    "reading": "yaburetasagyoufukuha, keganogen'inninarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pakaian kerja yang robek dapat menyebabkan cedera."
+  },
+  {
+    "id": 618,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "「運転技能講習」または「特別教育」の修了証が仕事で機械を運転するときの資格になります。",
+    "reading": "(untenginoukoushuu)mataha(tokubetsukyouiku)noshuuryoushougashigotodekikaiwountensurutokinoshikakuninarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Sertifikat pelatihan keterampilan pengoperasian atau pendidikan khusus menjadi kualifikasi untuk mengoperasikan mesin dalam pekerjaan."
+  },
+  {
+    "id": 619,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "エンジンを停止する前には、アイドリングを行います。",
+    "reading": "enjinwoteishisurumaeniha, aidoringuwookonaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Lakukan idling sebelum mematikan mesin."
+  },
+  {
+    "id": 620,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "機械には、主に４サイクル式のディーゼルエンジンが使われています。",
+    "reading": "kikainiha, omoniyon saikurushikinodiizeruenjingatsukawareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin konstruksi terutama menggunakan mesin diesel empat tak."
+  },
+  {
+    "id": 621,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "エンジンオイルには、ピストンの動きをなめらかにする役目があります。",
+    "reading": "enjin'oiruniha, pisutonnougokiwonamerakanisuruyakumegaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin berfungsi melancarkan gerakan piston."
+  },
+  {
+    "id": 622,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "オルタネーターは電気を起こす装置です。",
+    "reading": "orutaneetaahadenkiwookosusouchidesu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Alternator adalah alat untuk menghasilkan listrik."
+  },
+  {
+    "id": 623,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "機械は整備しなくても安全に効率よく動かすことができます。",
+    "reading": "kikaihaseibishinakutemoanzennikouritsuyokuugokasukotogadekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dapat dioperasikan dengan aman dan efisien tanpa perawatan."
+  },
+  {
+    "id": 624,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "バケットの下で点検をするときは安全支柱を使います。",
+    "reading": "bakettonoshitadetenkenwosurutokihaanzenshichuuwotsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Gunakan tiang pengaman saat memeriksa bagian bawah bucket."
+  },
+  {
+    "id": 625,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "傾斜地で点検をしなければならない場合、必ず歯止めや輪止めをします。",
+    "reading": "keishachidetenkenwoshinakerebanaranaibaai, kanarazuhadomeyawatomewoshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika harus memeriksa mesin di medan miring, selalu pasang ganjal roda."
+  },
+  {
+    "id": 626,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "作業装置の動きをエンジン始動前に点検しました。",
+    "reading": "sagyousouchinougokiwoenjinshidoumaenitenkenshimashita.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saya memeriksa gerakan peralatan kerja sebelum menyalakan mesin."
+  },
+  {
+    "id": 627,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "はじめての機械を運転するとき、取扱説明書をよく読み、運転指導を受けます。",
+    "reading": "hajimetenokikaiwountensurutoki, toriatsukaisetsumeishowoyokuyomi, untenshidouwoukemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat mengoperasikan mesin untuk pertama kali, baca manual dengan baik dan terima pengarahan pengoperasian."
+  },
+  {
+    "id": 628,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "機械は点検しなくても故障しません。",
+    "reading": "kikaihatenkenshinakutemokoshoushimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin tidak akan rusak meskipun tidak diperiksa."
+  },
+  {
+    "id": 629,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "機械の作業開始前点検は必要ありません。",
+    "reading": "kikainosagyoukaishimaetenkenhahitsuyouarimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan sebelum memulai pekerjaan mesin tidak diperlukan."
+  },
+  {
+    "id": 630,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "機械の計器が作動しないときは、作業終了後に点検します。",
+    "reading": "kikainokeikigasadoushinaitokiha, sagyoushuuryounochinitenkenshimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jika meteran mesin tidak berfungsi, periksa setelah pekerjaan selesai."
+  },
+  {
+    "id": 631,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "作業終了後、次に運転する人のためにエンジンをかけたままにします。",
+    "reading": "sagyoushuuryounochi, tsuginiuntensuruninnotamenienjinwokaketamamanishimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Setelah pekerjaan selesai, mesin dibiarkan menyala untuk orang yang akan mengoperasikannya berikutnya."
+  },
+  {
+    "id": 632,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "すべての機械が軟らかな地面で効率よく作業ができます。",
+    "reading": "subetenokikaigayaharakanajimendekouritsuyokusagyougadekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Semua mesin dapat bekerja dengan efisien di tanah yang lunak."
+  },
+  {
+    "id": 633,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "油圧ショベルは主に押土作業に使われます。",
+    "reading": "yuatsushoberuhaomonioudosagyounitsukawaremasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Shovel hidrolik terutama digunakan untuk pekerjaan mendorong tanah."
+  },
+  {
+    "id": 634,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "油圧ショベルのバケットツースに、ワイヤをかけて荷物をつることは法律で禁止されています。",
+    "reading": "yuatsushoberunobakettotsuusuni, waiyawokaketenimotsuwotsurukotohahouritsudekinshisareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Menggantung barang dengan kawat pada gigi bucket shovel hidrolik dilarang oleh hukum."
+  },
+  {
+    "id": 635,
+    "level": "shokyu",
+    "year": 2018,
+    "question": "油圧ショベルのバケットがトラックの運転席の上を通過するやりかたで土砂を積み込みます。",
+    "reading": "yuatsushoberunobakettogatorakkunountensekinouewotsuukasuruyarikatadedoshawotsumikomimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Memuat tanah dengan cara bucket shovel hidrolik melewati atas kursi pengemudi truk."
+  },
+  {
+    "id": 636,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "作業中は必ずヘルメットをかぶります。",
+    "reading": "sagyouchuuhakanarazuherumettowokaburimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Selama bekerja, selalu kenakan helm."
+  },
+  {
+    "id": 637,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "作業の種類が変わっても、同じ種類の手袋を使います。",
+    "reading": "sagyounoshuruigakawattemo, onajishuruinotebukurowotsukaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tetap menggunakan jenis sarung tangan yang sama meskipun jenis pekerjaan berubah."
+  },
+  {
+    "id": 638,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械を止めるとき、バケットは地面に下ろします。",
+    "reading": "kikaiwoyamerutoki, bakettohajimennikudaroshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Turunkan bucket ke tanah saat menghentikan mesin."
+  },
+  {
+    "id": 639,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "運転席から降りるとき、とびおりしてもよいです。",
+    "reading": "untensekikaraorirutoki, tobiorishitemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Boleh melompat turun dari kursi pengemudi."
+  },
+  {
+    "id": 640,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "エンジンには、ディーゼルエンジンとガソリンエンジンがあります。",
+    "reading": "enjinniha, diizeruenjintogasorin'enjingaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Ada mesin diesel dan mesin bensin."
+  },
+  {
+    "id": 641,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "エンジンオイルには、ピストンの動きをなめらかにする役目があります。",
+    "reading": "enjin'oiruniha, pisutonnougokiwonamerakanisuruyakumegaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin berfungsi melancarkan gerakan piston."
+  },
+  {
+    "id": 642,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械は整備をしなくても、安全に動かすことができます。",
+    "reading": "kikaihaseibiwoshinakutemo, anzenniugokasukotogadekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dapat dioperasikan dengan aman tanpa perawatan."
+  },
+  {
+    "id": 643,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "エンジンを動かす前に冷却水の量は点検しません。",
+    "reading": "enjinwougokasumaenireikyakusuinoryouhatenkenshimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jumlah air pendingin tidak perlu diperiksa sebelum menyalakan mesin."
+  },
+  {
+    "id": 644,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械をひとまわりしながら、各部分をよく点検します。",
+    "reading": "kikaiwohitomawarishinagara, kakububunwoyokutenkenshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Periksa setiap bagian dengan mengelilingi mesin."
+  },
+  {
+    "id": 645,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "グリースガンを使って、グリースを補給します。",
+    "reading": "guriisuganwotsukatte, guriisuwohokyuushimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Gunakan grease gun untuk menambahkan grease."
+  },
+  {
+    "id": 646,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "燃料を補給するとき、エンジンは止めます。",
+    "reading": "nenryouwohokyuusurutoki, enjinhatomemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Matikan mesin saat mengisi bahan bakar."
+  },
+  {
+    "id": 647,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械を動かすとき、動かす方向だけの安全を確認すれば十分です。",
+    "reading": "kikaiwougokasutoki, ugokasuhoukoudakenoanzenwokakuninsurebajuubundesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat menggerakkan mesin, cukup memastikan keamanan hanya pada arah gerak."
+  },
+  {
+    "id": 648,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械の能力をこえる作業をしてはいけません。",
+    "reading": "kikainonouryokuwokoerusagyouwoshitehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dilarang melakukan pekerjaan yang melampaui kemampuan mesin."
+  },
+  {
+    "id": 649,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "はじめての機械でも、取扱説明書を読まないで運転します。",
+    "reading": "hajimetenokikaidemo, toriatsukaisetsumeishowoyomanaideuntenshimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengoperasikan mesin untuk pertama kali tanpa membaca manual."
+  },
+  {
+    "id": 650,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械のメーターが動かないときも、そのまま作業します。",
+    "reading": "kikainomeetaagaugokanaitokimo, sonomamasagyoushimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tetap bekerja meskipun meteran mesin tidak bergerak."
+  },
+  {
+    "id": 651,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "作業場所に、仕事に関係ない人が入ってきても作業を続けます。",
+    "reading": "sagyoubatokoroni, shigotonikankeinainingaitsutsutekitemosagyouwotsuzukemasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Tetap bekerja meskipun orang yang tidak berkaitan masuk ke area kerja."
+  },
+  {
+    "id": 652,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械は使い方が決まっているので、それ以外の作業に使ってはいけません。",
+    "reading": "kikaihatsukaikatagakimatteirunode, soreigainosagyounitsukattehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena cara penggunaan mesin sudah ditentukan, mesin tidak boleh digunakan untuk pekerjaan lain."
+  },
+  {
+    "id": 653,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "機械は急発進、急ブレーキなどの乱暴な運転をしてもよいです。",
+    "reading": "kikaihakyuuhasshin, kyuubureekinadonoranbounauntenwoshitemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin boleh dioperasikan secara kasar, seperti start dan pengereman mendadak."
+  },
+  {
+    "id": 654,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "バックホウのバケットがダンプトラックの運転席の上を通るやりかたで土砂を積み込みます。",
+    "reading": "bakkuhounobakettogadanputorakkunountensekinouewotouruyarikatadedoshawotsumikomimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Memuat tanah dengan cara bucket backhoe melewati atas kursi pengemudi dump truck."
+  },
+  {
+    "id": 655,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "バックホウのバケットのつめにワイヤをかけて荷物をつってはいけません。",
+    "reading": "bakkuhounobakettonotsumeniwaiyawokaketenimotsuwotsuttehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Dilarang mengaitkan kawat pada ujung bucket backhoe untuk mengangkat barang."
+  },
+  {
+    "id": 656,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "建設機械の運転席の中はヘルメットをかぶらなくてもよいです。",
+    "reading": "kensetsukikainountensekinonakahaherumettowokaburanakutemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Di dalam kursi pengemudi mesin konstruksi boleh tidak memakai helm."
+  },
+  {
+    "id": 657,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "仕事がしやすく事故から体をまもる服を着ます。",
+    "reading": "shigotogashiyasukujikokarakaradawomamorufukuwochakumasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kenakan pakaian yang memudahkan pekerjaan dan melindungi tubuh dari kecelakaan."
+  },
+  {
+    "id": 658,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械の使い方をまちがえると事故やけがをすることがあります。",
+    "reading": "kikainotsukaikatawomachigaerutojikoyakegawosurukotogaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Kesalahan penggunaan mesin dapat menyebabkan kecelakaan atau cedera."
+  },
+  {
+    "id": 659,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "足場がよければ３点支持で機械に乗り降りしなくてもよいです。",
+    "reading": "ashibagayokerebasantenshijidekikaininoriorishinakutemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Jika pijakannya baik, tidak perlu menggunakan tiga titik tumpuan saat naik dan turun dari mesin."
+  },
+  {
+    "id": 660,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "エンジンオイルはピストンの動きをなめらかにします。",
+    "reading": "enjin'oiruhapisutonnougokiwonamerakanishimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Oli mesin melancarkan gerakan piston."
+  },
+  {
+    "id": 661,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "建設機械のエンジンには２サイクル式のガソリンエンジンが多いです。",
+    "reading": "kensetsukikainoenjinnihani saikurushikinogasorin'enjingaooidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin konstruksi banyak menggunakan mesin bensin dua tak."
+  },
+  {
+    "id": 662,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械のメータが動かなくなったときはすぐに機械を点検します。",
+    "reading": "kikainomeetagaugokanakunattatokihasugunikikaiwotenkenshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika meteran mesin berhenti bergerak, segera periksa mesin."
+  },
+  {
+    "id": 663,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "「作業終了後点検」は法律で決められています。",
+    "reading": "(sagyoushuuryounochitenken)hahouritsudekimerareteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "“Pemeriksaan setelah pekerjaan selesai” ditetapkan oleh undang-undang."
+  },
+  {
+    "id": 664,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケットの下で点検するとき、安全支柱でバケットを支えます。",
+    "reading": "bakettonoshitadetenkensurutoki, anzenshichuudebakettowosasaemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat memeriksa bagian bawah bucket, topang bucket dengan tiang pengaman."
+  },
+  {
+    "id": 665,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "点検や自主検査の記録は保存する必要がありません。",
+    "reading": "tenkenyajishukensanokirokuhahozonsuruhitsuyougaarimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Catatan pemeriksaan dan inspeksi mandiri tidak perlu disimpan."
+  },
+  {
+    "id": 666,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "油圧作動油にごみが入ると機械が故障するときがあります。",
+    "reading": "yuatsusadouaburanigomigairutokikaigakoshousurutokigaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika kotoran masuk ke oli hidrolik, mesin dapat mengalami kerusakan."
+  },
+  {
+    "id": 667,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "たばこを吸いながら機械に燃料を入れます。",
+    "reading": "tabakowosuinagarakikaininenryouwoiremasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengisi bahan bakar mesin sambil merokok."
+  },
+  {
+    "id": 668,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械の能力をこえる作業をしてはいけません。",
+    "reading": "kikainonouryokuwokoerusagyouwoshitehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin tidak boleh digunakan untuk pekerjaan yang melampaui kemampuannya."
+  },
+  {
+    "id": 669,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械を点検して異常があったとき責任者に報告し、何をするか指示を受けます。",
+    "reading": "kikaiwotenkenshiteijougaattatokisekininshanihoukokushi, naniwosurukashijiwoukemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika ditemukan kelainan saat memeriksa mesin, laporkan kepada penanggung jawab dan ikuti instruksi."
+  },
+  {
+    "id": 670,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケットなどの動きはエンジンを動かす前に確認します。",
+    "reading": "bakettonadonougokihaenjinwougokasumaenikakuninshimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Periksa gerakan bucket dan bagian lain sebelum menyalakan mesin."
+  },
+  {
+    "id": 671,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "作業が終わったら、機械を決められた場所まで移動させて駐車します。",
+    "reading": "sagyougaowattara, kikaiwokimeraretabashomadeidousasetechuushashimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Setelah pekerjaan selesai, pindahkan dan parkirkan mesin di tempat yang ditentukan."
+  },
+  {
+    "id": 672,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "すべての建設機械が軟らかな地面でも作業ができます。",
+    "reading": "subetenokensetsukikaigayaharakanajimendemosagyougadekimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Semua mesin konstruksi dapat bekerja di tanah yang lunak."
+  },
+  {
+    "id": 673,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "作業場所が町の中でもバケットなどで作業場所を囲いません。",
+    "reading": "sagyoubatokorogamachinonakademobakettonadodesagyoubatokorowokakoimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Meskipun tempat kerja berada di kota, area kerja tidak perlu dikelilingi dengan bucket atau lainnya."
+  },
+  {
+    "id": 674,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケットは、バケットを取りかえていろいろな作業に使えます。",
+    "reading": "bakettoha, bakettowotorikaeteiroironasagyounitsukaemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Bucket dapat diganti sehingga digunakan untuk berbagai pekerjaan."
+  },
+  {
+    "id": 675,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "安全確認は目で見ることだけで行います。",
+    "reading": "anzenkakuninhamedemirukotodakedeokonaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan keselamatan dilakukan hanya dengan melihat."
+  },
+  {
+    "id": 676,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ときどきですがヘルメットをかぶらないで機械を運転します。",
+    "reading": "tokidokidesugaherumettowokaburanaidekikaiwountenshimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Kadang-kadang mengoperasikan mesin tanpa memakai helm."
+  },
+  {
+    "id": 677,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "作業終了後、次に運転する人のためにエンジンキーをつけたままにします。",
+    "reading": "sagyoushuuryounochi, tsuginiuntensuruninnotamenienjinkiiwotsuketamamanishimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Setelah pekerjaan selesai, kunci mesin dibiarkan terpasang untuk pengemudi berikutnya."
+  },
+  {
+    "id": 678,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "破れた作業服を着ているとけがをすることがあります。",
+    "reading": "yaburetasagyoufukuwokiteirutokegawosurukotogaarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mengenakan pakaian kerja yang robek dapat menyebabkan cedera."
+  },
+  {
+    "id": 679,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ディーゼルエンジンの燃料はガソリンです。",
+    "reading": "diizeruenjinnonenryouhagasorindesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Bahan bakar mesin diesel adalah bensin."
+  },
+  {
+    "id": 680,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "建設機械の運転者は、エンジンを止めないで運転席を離れてはいけません。",
+    "reading": "kensetsukikainountenshaha, enjinwotomenaideuntensekiwohanaretehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Pengemudi mesin konstruksi tidak boleh meninggalkan kursi pengemudi tanpa mematikan mesin."
+  },
+  {
+    "id": 681,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "現場で点検をするとき、ブレーキや安全ロックはかけません。",
+    "reading": "genbadetenkenwosurutoki, bureekiyaanzenrokkuhakakemasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat memeriksa mesin di lapangan, rem dan kunci keselamatan tidak perlu dipasang."
+  },
+  {
+    "id": 682,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械は整備をしなくてもよいです。",
+    "reading": "kikaihaseibiwoshinakutemoyoidesu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin tidak perlu dirawat."
+  },
+  {
+    "id": 683,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "多くの建設機械が４サイクル式のディーゼルエンジンを使っています。",
+    "reading": "ookunokensetsukikaigayon saikurushikinodiizeruenjinwotsukatteimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Banyak mesin konstruksi menggunakan mesin diesel empat tak."
+  },
+  {
+    "id": 684,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "傾斜地で機械を止めて点検するとき、輪止めを使います。",
+    "reading": "keishachidekikaiwotometetenkensurutoki, watomewotsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Gunakan ganjal roda saat menghentikan dan memeriksa mesin di medan miring."
+  },
+  {
+    "id": 685,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "はじめての機械ですが、取扱説明書を読まないで運転しました。",
+    "reading": "hajimetenokikaidesuga, toriatsukaisetsumeishowoyomanaideuntenshimashita.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mengoperasikan mesin untuk pertama kali tanpa membaca manual."
+  },
+  {
+    "id": 686,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械を停止したとき、バケットなどは上げたままにします。",
+    "reading": "kikaiwoteishishitatoki, bakettonadohaagetamamanishimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Saat menghentikan mesin, bucket dan bagian lainnya dibiarkan terangkat."
+  },
+  {
+    "id": 687,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械の調子が悪かったので、すぐに責任者に報告し、別の機械に乗りかえて運転しました。",
+    "reading": "kikainochoushigawarukattanode, sugunisekininshanihoukokushi, betsunokikaininorikaeteuntenshimashita.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena kondisi mesin buruk, segera laporkan kepada penanggung jawab dan gunakan mesin lain."
+  },
+  {
+    "id": 688,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械の運転中にメータが動かなくなったときすぐに安全な場所で機械を止めます。",
+    "reading": "kikainountenchuunimeetagaugokanakunattatokisugunianzennabashodekikaiwotomemasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika meteran berhenti saat mesin berjalan, segera hentikan mesin di tempat yang aman."
+  },
+  {
+    "id": 689,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "掘削作業に機械は使いません。",
+    "reading": "kussakusagyounikikaihatsukaimasen.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin tidak digunakan untuk pekerjaan penggalian."
+  },
+  {
+    "id": 690,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械は能力をこえる作業をしてはいけません。",
+    "reading": "kikaihanouryokuwokoerusagyouwoshitehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Mesin tidak boleh digunakan untuk pekerjaan yang melampaui kemampuannya."
+  },
+  {
+    "id": 691,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "機械は使い方が決まっているので、それ以外の作業に使ってはいけません。",
+    "reading": "kikaihatsukaikatagakimatteirunode, soreigainosagyounitsukattehaikemasen.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Karena cara penggunaan mesin sudah ditentukan, mesin tidak boleh digunakan untuk pekerjaan lain."
+  },
+  {
+    "id": 692,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "安全確認は目で見ることだけで行います。",
+    "reading": "anzenkakuninhamedemirukotodakedeokonaimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Pemeriksaan keselamatan dilakukan hanya dengan melihat."
+  },
+  {
+    "id": 693,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "山の斜面を機械で登るときは、まっすぐに登ります。",
+    "reading": "yamanoshamenwokikaidenoborutokiha, massuguninoborimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Saat menaiki lereng gunung dengan mesin, naiklah lurus."
+  },
+  {
+    "id": 694,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バケットはブームを高く上げて走行します。",
+    "reading": "bakettohabuumuwotakakuagetesoukoushimasu.",
+    "image": "",
+    "answer": "×",
+    "explanation": "Mesin dijalankan dengan boom dan bucket diangkat tinggi."
+  },
+  {
+    "id": 695,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ダンプトラックを低い場所に置くと、バックホウによる積み込み作業がしやすくなります。",
+    "reading": "danputorakkuwohikuibashoniokuto, bakkuhouniyorutsumikomisagyougashiyasukunarimasu.",
+    "image": "",
+    "answer": "○",
+    "explanation": "Jika dump truck ditempatkan di tempat rendah, pekerjaan pemuatan dengan backhoe menjadi lebih mudah."
   }
 ]

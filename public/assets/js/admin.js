@@ -1,5 +1,7 @@
 import {
     fetchAllScoresForAdmin,
+    fetchPendingProfilesForAdmin,
+    fetchInviteGroupsForAdmin,
     fetchQuestionBank,
     getCurrentSessionProfile,
     getSupabaseStatus,
@@ -7,6 +9,9 @@ import {
     replaceQuestionBank,
     signInWithEmail,
     signOutUser,
+    updateProfileApproval,
+    createInviteGroup,
+    updateInviteGroupActive,
 } from "./supabase-client.js";
 import { buildCategoryMap, getImageUrl, loadCategories } from "./category-config.js";
 
@@ -94,6 +99,7 @@ function setupAdminEvents() {
     document.getElementById("import-file-input")?.addEventListener("change", importQuestionsJSON);
     document.getElementById("search-score-input")?.addEventListener("input", () => renderScoresTable());
     document.getElementById("filter-score-category")?.addEventListener("change", () => renderScoresTable());
+    document.getElementById("invite-form")?.addEventListener("submit", handleInviteSubmit);
 }
 
 function updateSetupStatus() {
@@ -172,7 +178,7 @@ async function logoutAdmin() {
 
 async function switchAdminTab(tab) {
     currentAdminTab = tab;
-    ["soal", "setup", "scores"].forEach((t) => {
+    ["soal", "setup", "scores", "users", "invites"].forEach((t) => {
         const btn = document.getElementById("tab-btn-" + t);
         if (btn) btn.classList.toggle("active", t === tab);
     });
@@ -180,9 +186,13 @@ async function switchAdminTab(tab) {
     const panelSoal = document.getElementById("tab-panel-soal");
     const panelSetup = document.getElementById("tab-panel-setup");
     const panelScores = document.getElementById("tab-panel-scores");
+    const panelUsers = document.getElementById("tab-panel-users");
+    const panelInvites = document.getElementById("tab-panel-invites");
     if (panelSoal) panelSoal.style.display = tab === "soal" ? "" : "none";
     if (panelSetup) panelSetup.style.display = tab === "setup" ? "" : "none";
     if (panelScores) panelScores.style.display = tab === "scores" ? "" : "none";
+    if (panelUsers) panelUsers.style.display = tab === "users" ? "" : "none";
+    if (panelInvites) panelInvites.style.display = tab === "invites" ? "" : "none";
 
     const categoryWrap = document.querySelector("#admin-category-select")?.parentElement;
     const statsWrap = document.querySelector(".stats-summary");
@@ -196,6 +206,152 @@ async function switchAdminTab(tab) {
         updateSetupStatus();
     } else if (tab === "scores") {
         await renderScoresTable();
+    } else if (tab === "users") {
+        await renderProfilesTable();
+    } else if (tab === "invites") {
+        await renderInvitesTable();
+    }
+}
+
+async function renderInvitesTable() {
+    const tbody = document.getElementById("invites-tbody");
+    const emptyState = document.getElementById("empty-invites-state");
+    if (!tbody || !currentAdminProfile?.is_admin) return;
+    try {
+        const [invites, profiles] = await Promise.all([
+            fetchInviteGroupsForAdmin(),
+            fetchPendingProfilesForAdmin(),
+        ]);
+        const usageByGroup = profiles.reduce((usage, profile) => {
+            if (profile.approval_status === "pending" || profile.approval_status === "approved") {
+                usage[profile.group_name] = (usage[profile.group_name] || 0) + 1;
+            }
+            return usage;
+        }, {});
+        tbody.innerHTML = "";
+        if (!invites.length) {
+            tbody.style.display = "none";
+            emptyState.style.display = "block";
+            return;
+        }
+        tbody.style.display = "";
+        emptyState.style.display = "none";
+        invites.forEach((invite) => {
+            const tr = document.createElement("tr");
+            const created = invite.created_at
+                ? new Date(invite.created_at).toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" })
+                : "—";
+            const appPath = window.location.pathname.replace(/admin\.html$/, "index.html");
+            const link = `${window.location.origin}${appPath}?invite=${encodeURIComponent(invite.code)}`;
+            const status = invite.active
+                ? '<span style="color:#15803d;font-weight:700;">Aktif</span>'
+                : '<span style="color:#b91c1c;font-weight:700;">Ditutup</span>';
+            tr.innerHTML = `<td><strong>${escapeHtml(String(invite.code || "—"))}</strong><br><small>${escapeHtml(link)}</small></td>
+                <td>${escapeHtml(String(invite.group_name || "—"))}</td>
+                <td>${usageByGroup[invite.group_name] || 0} / ${Number(invite.max_users) || 0}</td>
+                <td>${status}</td><td style="font-size:.85rem;">${created}</td>
+                <td><button class="btn ${invite.active ? "btn-danger" : "btn-success"}" data-action="toggle">${invite.active ? "Tutup" : "Aktifkan"}</button>
+                <button class="btn btn-secondary" data-action="copy">Salin Link</button></td>`;
+            tr.querySelector('[data-action="toggle"]').addEventListener("click", async () => {
+                try {
+                    await updateInviteGroupActive(invite.id, !invite.active);
+                    showToast(invite.active ? "Undangan ditutup." : "Undangan diaktifkan.");
+                    await renderInvitesTable();
+                } catch (error) {
+                    showToast(`Gagal mengubah undangan: ${error.message}`);
+                }
+            });
+            tr.querySelector('[data-action="copy"]').addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(link);
+                    showToast("🔗 Link undangan disalin.");
+                } catch (error) {
+                    showToast("Gagal menyalin link. Salin link yang tampil di tabel.");
+                }
+            });
+            tbody.appendChild(tr);
+        });
+    } catch (error) {
+        tbody.innerHTML = `<tr><td colspan="6">Gagal memuat undangan: ${escapeHtml(error.message)}</td></tr>`;
+    }
+}
+
+function generateInviteCode() {
+    const random = Math.random().toString(36).slice(2, 8).toUpperCase();
+    return `UJIAN-${new Date().getFullYear()}-${random}`;
+}
+
+async function handleInviteSubmit(event) {
+    event.preventDefault();
+    if (!currentAdminProfile?.is_admin) {
+        showToast("🔒 Login admin diperlukan.");
+        return;
+    }
+    const button = event.target.querySelector('button[type="submit"]');
+    const groupName = document.getElementById("invite-group-name").value.trim();
+    const code = (document.getElementById("invite-code").value.trim() || generateInviteCode()).toUpperCase();
+    const maxUsers = Number(document.getElementById("invite-max-users").value);
+    if (!groupName || !Number.isInteger(maxUsers) || maxUsers < 1) {
+        showToast("Isi grup dan kuota dengan benar.");
+        return;
+    }
+    button.disabled = true;
+    try {
+        await createInviteGroup({ code, groupName, maxUsers });
+        event.target.reset();
+        document.getElementById("invite-max-users").value = "12";
+        showToast(`✅ Undangan ${code} berhasil dibuat.`);
+        await renderInvitesTable();
+    } catch (error) {
+        showToast(`Gagal membuat undangan: ${error.message}`);
+    } finally {
+        button.disabled = false;
+    }
+}
+
+async function renderProfilesTable() {
+    const tbody = document.getElementById("profiles-tbody");
+    const emptyState = document.getElementById("empty-profiles-state");
+    if (!tbody || !currentAdminProfile?.is_admin) return;
+    try {
+        const profiles = await fetchPendingProfilesForAdmin();
+        tbody.innerHTML = "";
+        if (!profiles.length) {
+            tbody.style.display = "none";
+            emptyState.style.display = "block";
+            return;
+        }
+        tbody.style.display = "";
+        emptyState.style.display = "none";
+        profiles.forEach((profile) => {
+            const statusLabels = { pending: "Menunggu", approved: "Disetujui", rejected: "Ditolak" };
+            const statusColors = { pending: "#b45309", approved: "#15803d", rejected: "#b91c1c" };
+            const tr = document.createElement("tr");
+            const created = profile.created_at ? new Date(profile.created_at).toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" }) : "—";
+            const actions = profile.is_admin
+                ? `<span style="color:#64748b;font-size:.85rem;">Admin</span>`
+                : profile.approval_status === "approved"
+                ? `<button class="btn btn-danger" data-action="reject">Tolak</button>`
+                : `<button class="btn btn-success" data-action="approve">Setujui</button>`;
+            tr.innerHTML = `<td><strong>${escapeHtml(profile.name || "—")}</strong></td>
+                <td>${escapeHtml(profile.email || "—")}</td>
+                <td>${escapeHtml(profile.group_name || "—")}</td>
+                <td style="font-weight:700;color:${statusColors[profile.approval_status] || "#475569"};">${statusLabels[profile.approval_status] || profile.approval_status}</td>
+                <td style="font-size:.85rem;">${created}</td><td>${actions}</td>`;
+            tr.querySelector("button")?.addEventListener("click", async () => {
+                const nextStatus = profile.approval_status === "approved" ? "rejected" : "approved";
+                try {
+                    await updateProfileApproval(profile.id, nextStatus);
+                    showToast(nextStatus === "approved" ? "✅ User disetujui." : "User ditolak.");
+                    await renderProfilesTable();
+                } catch (error) {
+                    showToast(`Gagal memperbarui user: ${error.message}`);
+                }
+            });
+            tbody.appendChild(tr);
+        });
+    } catch (error) {
+        tbody.innerHTML = `<tr><td colspan="6">Gagal memuat pendaftar: ${escapeHtml(error.message)}</td></tr>`;
     }
 }
 
@@ -268,6 +424,17 @@ async function loadStaticQuestionsForCategory(catId) {
     return normalizeQuestions(loadedQuestions);
 }
 
+async function fetchBundledQuestionsForCategory(catId) {
+    const cat = CATEGORIES[catId];
+    const response = await fetch(`${cat.fileUrl}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Gagal memuat ${cat.filename}: HTTP ${response.status}`);
+    const loadedQuestions = await response.json();
+    if (!Array.isArray(loadedQuestions) || loadedQuestions.length === 0) {
+        throw new Error(`File ${cat.filename} kosong atau tidak valid.`);
+    }
+    return normalizeQuestions(loadedQuestions);
+}
+
 async function syncCurrentQuestionBank() {
     if (!currentAdminProfile?.is_admin) {
         showToast("🔒 Login admin diperlukan.");
@@ -295,7 +462,8 @@ async function syncAllQuestionBanks() {
     try {
         let total = 0;
         for (const category of categoryList) {
-            const staticQuestions = await loadStaticQuestionsForCategory(category.id);
+            const staticQuestions = await fetchBundledQuestionsForCategory(category.id);
+            localStorage.setItem(category.storageKey, JSON.stringify(staticQuestions));
             total += await replaceQuestionBank(category.id, staticQuestions);
         }
         await switchAdminCategory(currentAdminCategory);
@@ -689,3 +857,4 @@ window.importQuestionsJSON = importQuestionsJSON;
 window.resetToDefault = resetToDefault;
 window.syncCurrentQuestionBank = syncCurrentQuestionBank;
 window.syncAllQuestionBanks = syncAllQuestionBanks;
+window.renderInvitesTable = renderInvitesTable;

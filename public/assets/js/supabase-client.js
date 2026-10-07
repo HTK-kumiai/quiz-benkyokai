@@ -48,7 +48,34 @@ export function normalizeProfile(authUser, profile = {}) {
         username: profile.username || deriveUsernameFromEmail(email),
         name: profile.name || authUser?.user_metadata?.name || deriveUsernameFromEmail(email),
         is_admin: Boolean(profile.is_admin),
+        approval_status: profile.approval_status || "pending",
+        group_name: profile.group_name || "",
     };
+}
+
+export async function signUpWithInvite(email, password, name, inviteCode) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client.auth.signUp({
+        email,
+        password,
+        options: {
+            data: { name },
+        },
+    });
+    if (error) throw error;
+    if (!data.session) {
+        throw new Error("Pendaftaran berhasil, tetapi sesi belum tersedia. Pastikan Confirm email dimatikan di Supabase.");
+    }
+
+    const { error: registrationError } = await client.rpc("register_with_invite", {
+        p_code: inviteCode,
+        p_name: name,
+    });
+    if (registrationError) {
+        await client.auth.signOut().catch(() => {});
+        throw registrationError;
+    }
+    return data.user;
 }
 
 export async function signInWithEmail(email, password) {
@@ -75,7 +102,7 @@ export async function fetchOwnProfile(userId) {
     const client = assertSupabaseReady();
     const { data, error } = await client
         .from("profiles")
-        .select("id, email, username, name, is_admin")
+        .select("id, email, username, name, is_admin, approval_status, group_name")
         .eq("id", userId)
         .maybeSingle();
     if (error) throw error;
@@ -99,7 +126,7 @@ export async function ensureOwnProfile(authUser) {
     const { data, error } = await client
         .from("profiles")
         .upsert(profilePayload, { onConflict: "id" })
-        .select("id, email, username, name, is_admin")
+        .select("id, email, username, name, is_admin, approval_status, group_name")
         .single();
     if (error) throw error;
     return normalizeProfile(authUser, data);
@@ -192,4 +219,57 @@ export async function fetchAllScoresForAdmin() {
         .order("timestamp", { ascending: false });
     if (error) throw error;
     return data || [];
+}
+
+export async function fetchPendingProfilesForAdmin() {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("profiles")
+        .select("id, email, username, name, is_admin, group_name, approval_status, created_at, approved_at")
+        .order("created_at", { ascending: true });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function updateProfileApproval(userId, approvalStatus) {
+    const client = assertSupabaseReady();
+    const { error } = await client
+        .from("profiles")
+        .update({
+            approval_status: approvalStatus,
+            approved_at: approvalStatus === "approved" ? new Date().toISOString() : null,
+        })
+        .eq("id", userId);
+    if (error) throw error;
+}
+
+export async function fetchInviteGroupsForAdmin() {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("invite_groups")
+        .select("id, code, group_name, max_users, active, created_at")
+        .order("created_at", { ascending: false });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function createInviteGroup({ code, groupName, maxUsers }) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client.rpc("create_invite_group", {
+        p_code: code,
+        p_group_name: groupName,
+        p_max_users: maxUsers,
+    });
+    if (error) throw error;
+    return data;
+}
+
+export async function updateInviteGroupActive(id, active) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client.rpc("set_invite_group_active", {
+        p_id: id,
+        p_active: active,
+    });
+    if (error) throw error;
+    return data;
 }

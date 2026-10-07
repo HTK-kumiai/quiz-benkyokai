@@ -73,7 +73,64 @@ Caranya:
 
 Saat user pertama kali login, aplikasi akan otomatis membuat baris profilnya di tabel `profiles`.
 
-## 7. Jadikan Akun Sebagai Admin
+### Import User Batch
+
+Untuk membuat banyak user sekaligus, gunakan script lokal:
+
+```bash
+node scripts/import-supabase-users.mjs --dry-run data/users-import.example.csv
+```
+
+Jika hasil dry run sudah benar, jalankan import sungguhan dengan `service_role key` dari Supabase:
+
+```bash
+SUPABASE_URL="https://your-project.supabase.co" SUPABASE_SERVICE_ROLE_KEY="your-service-role-key" node scripts/import-supabase-users.mjs data/users-import.csv
+```
+
+Format CSV:
+
+```csv
+email,password,name,username,is_admin,email_confirm
+user1@example.com,Password123,Nama User,user1,false,true
+admin@example.com,Password123,Admin Utama,admin,true,true
+```
+
+Kolom wajib:
+
+- `email`
+- `password`
+
+Kolom opsional:
+
+- `name`
+- `username`
+- `is_admin`
+- `email_confirm`
+
+Script ini membuat akun di Supabase Auth, lalu mengisi tabel `profiles`. Jika `is_admin=true`, profil akan langsung ditandai sebagai admin.
+
+Jangan simpan `SUPABASE_SERVICE_ROLE_KEY` di repository, `.env` frontend, atau file yang ikut deploy. Key ini hanya untuk terminal lokal/server aman.
+
+## 7. Pendaftaran User dengan Kode Undangan
+
+Jalankan schema terbaru `sql/supabase-schema.sql` di Supabase SQL Editor. Setelah itu buat grup ujian, misalnya:
+
+```sql
+insert into public.invite_groups (code, group_name, max_users)
+values ('UJIAN-115-KENSETU', 'Ujian 11/5 Kensetsu', 12);
+```
+
+Bagikan link berikut kepada peserta:
+
+```text
+https://ALAMAT-APLIKASI.com/?invite=UJIAN-115-KENSETU
+```
+
+Peserta mengisi nama asli, email, password, dan kode undangan. Akunnya akan berstatus `pending` dan belum dapat membuka kuis sampai admin menyetujuinya dari tab **Persetujuan User** di `/admin.html`. Jumlah status `pending` dan `approved` dihitung bersama, sehingga kuota 12 tidak dapat dilewati. Setelah schema terbaru diterapkan, admin dapat membuat kode dan link undangan langsung dari tab **Undangan** di dashboard admin, tanpa memasukkan SQL manual.
+
+Di Supabase buka **Authentication → Providers → Email**, lalu matikan **Confirm email** agar peserta bisa langsung mendaftar tanpa alur verifikasi email.
+
+## 8. Jadikan Akun Sebagai Admin
 
 Setelah akun admin pernah login minimal sekali, buka **Table Editor** → `profiles`, lalu set:
 
@@ -87,7 +144,7 @@ Kolom lain yang penting:
 - `username`
 - `name`
 
-## 8. Test Lokal
+## 9. Test Lokal
 
 1. Jalankan:
 
@@ -104,7 +161,7 @@ node server/app-server.js
 4. Selesaikan kuis untuk memastikan skor masuk
 5. Login admin dari halaman admin untuk memastikan tab skor bisa dibuka
 
-## 9. Deploy ke Cloudflare Pages
+## 10. Deploy ke Cloudflare Pages
 
 Atur project Cloudflare Pages dengan konfigurasi berikut:
 
@@ -116,7 +173,7 @@ Build command akan memvalidasi seluruh bank soal sebelum folder `public/` dipubl
 
 Setelah deployment, tambahkan URL Cloudflare Pages ke **Supabase → Authentication → URL Configuration** sebagai **Site URL** dan **Redirect URL**.
 
-## 10. Troubleshooting
+## 11. Troubleshooting
 
 ### Login user gagal
 

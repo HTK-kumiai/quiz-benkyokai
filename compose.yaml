@@ -2,10 +2,13 @@ services:
   souzai-kako-app:
     build:
       context: .
-    container_name: souzai-kako-app
+    container_name: ujian-app
     restart: unless-stopped
+    environment:
+      PORT: "9091"
+      HOST: "0.0.0.0"
     ports:
-      - "9090:3000"
+      - "9091:9091"
 
   cloudflared:
     profiles: ["public"]

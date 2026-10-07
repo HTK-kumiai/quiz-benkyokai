@@ -1,6 +1,6 @@
 # Riwayat Pengembangan
 
-Tanggal pembaruan terakhir: 15 September 2026
+Tanggal pembaruan terakhir: 7 Oktober 2026
 
 ## Ringkasan Kondisi
 
@@ -13,7 +13,7 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Memeriksa tiga bank soal aktif:
   - Sozai Kako: 56 soal
   - Shisetsu Engei: 136 soal
-  - Kensetsu: 495 soal
+  - Kensetsu: 695 soal
 - Menambahkan kategori bank soal baru:
   - Shisetsu Engei Kinoko: 106 soal
   - Rakuno: 148 soal
@@ -58,6 +58,9 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Menambahkan 100 soal Kensetsu level `shokyu` ke `public/data/question-bank/questions-kensetsu.json`.
 - Memasukkan tambahan soal Kensetsu dari sumber 2020 dan 2025 setelah dikonfirmasi user.
 - Memindahkan sumber Kensetsu tambahan dari `soal-asli/` ke `sudah-proses/`.
+- Menambahkan 100 soal Kensetsu level `shokyu` ID 596-695 dari sumber 2017-2020.
+- Mengisi reading, jawaban, dan terjemahan Kensetsu 2017-2020 serta mencatatnya di `butuh-konfirmasi.md` untuk koreksi sambil jalan.
+- Memindahkan empat sumber Kensetsu 2017-2020 dari `soal-asli/` ke `sudah-proses/`.
 - Menambahkan kategori `kunsei` ke manifest bank soal.
 - Menambahkan file `public/data/question-bank/questions-kunsei.json`.
 - Memasukkan 35 soal Kunsei level `senmonkyu` dari sumber 2025 setelah dikonfirmasi user.

@@ -1,0 +1,3 @@
+email,password,name,username,is_admin,email_confirm
+user1@example.com,Password123,Nama User,user1,false,true
+admin@example.com,Password123,Admin Utama,admin,true,true

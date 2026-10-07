@@ -26,6 +26,12 @@
                         <button class="btn-header btn-tab-nav" id="tab-btn-scores" onclick="switchAdminTab('scores')">
                             📊 Riwayat Skor
                         </button>
+                        <button class="btn-header btn-tab-nav" id="tab-btn-users" onclick="switchAdminTab('users')">
+                            👥 Persetujuan User
+                        </button>
+                        <button class="btn-header btn-tab-nav" id="tab-btn-invites" onclick="switchAdminTab('invites')">
+                            🔗 Undangan
+                        </button>
                         <button class="btn-header" onclick="logoutAdmin()" title="Kunci Dashboard">
                             🔒 Logout
                         </button>
@@ -209,7 +215,46 @@
                     <p>Skor akan muncul di sini setelah user menyelesaikan kuis.</p>
                 </div>
             </main>
-        </div>
+
+            <!-- User Approval Tab -->
+            <main class="table-card" id="tab-panel-users" style="display: none;">
+                <div style="padding: 24px 24px 8px;">
+                    <h2 style="margin: 0 0 8px;">Persetujuan User</h2>
+                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Periksa nama asli dan setujui peserta sebelum mereka dapat membuka kuis.</p>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead><tr><th>Nama asli</th><th>Email</th><th>Grup</th><th>Status</th><th>Daftar</th><th>Aksi</th></tr></thead>
+                        <tbody id="profiles-tbody"></tbody>
+                    </table>
+                </div>
+                <div id="empty-profiles-state" class="empty-state" style="display: none;">
+                    <h3>Tidak ada pendaftar</h3><p>Belum ada user yang mendaftar.</p>
+                </div>
+             </main>
+            <!-- Invite Management Tab -->
+            <main class="table-card" id="tab-panel-invites" style="display: none;">
+                <div style="padding: 24px 24px 8px;">
+                    <h2 style="margin: 0 0 8px;">Kelola Undangan</h2>
+                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Buat kode undangan, tentukan grup dan kuota, lalu bagikan link kepada peserta.</p>
+                    <form id="invite-form" class="invite-form">
+                        <input id="invite-group-name" class="form-control" type="text" placeholder="Nama grup / ujian" required />
+                        <input id="invite-code" class="form-control" type="text" placeholder="Kode (kosong = otomatis)" />
+                        <input id="invite-max-users" class="form-control" type="number" min="1" value="12" placeholder="Kuota" required />
+                        <button class="btn btn-primary" type="submit">➕ Buat Undangan</button>
+                    </form>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead><tr><th>Kode & Link</th><th>Grup</th><th>Kuota</th><th>Status</th><th>Dibuat</th><th>Aksi</th></tr></thead>
+                        <tbody id="invites-tbody"></tbody>
+                    </table>
+                </div>
+                <div id="empty-invites-state" class="empty-state" style="display: none;">
+                    <h3>Belum ada undangan</h3><p>Buat undangan pertama dari formulir di atas.</p>
+                </div>
+            </main>
+         </div>
 
         <!-- Modal Form Tambah / Edit Soal -->
         <div class="modal-backdrop" id="modal-form">
