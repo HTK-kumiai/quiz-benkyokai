@@ -192,7 +192,7 @@
                     </section>
 
                     <section class="quiz-content-panel meaning-panel" aria-labelledby="meaning-panel-label">
-                        <span class="quiz-panel-label" id="meaning-panel-label">ARTI</span>
+                            <span class="quiz-panel-label" id="meaning-panel-label">TERJEMAHAN</span>
                         <div class="meaning" id="meaning"></div>
                     </section>
 
@@ -270,6 +270,38 @@
                 </div>
             </section>
         </main>
+
+        <aside id="attendance-panel" class="attendance-panel" aria-hidden="true" aria-label="Panel absensi">
+            <div class="attendance-panel-header">
+                <div>
+                    <span class="attendance-eyebrow">KHUSUS ADMIN</span>
+                    <h2>Absensi Pertemuan</h2>
+                </div>
+                <button class="attendance-close" type="button" onclick="closeAttendancePanel()" aria-label="Tutup absensi">&times;</button>
+            </div>
+            <div class="attendance-panel-body">
+                <div class="attendance-session-form">
+                    <label for="attendance-group-select">Grup peserta</label>
+                    <select id="attendance-group-select"></select>
+                    <label for="attendance-date">Tanggal</label>
+                    <input id="attendance-date" type="date" />
+                    <label for="attendance-title">Keterangan <span>(opsional)</span></label>
+                    <input id="attendance-title" type="text" maxlength="120" placeholder="Contoh: Latihan Shokyu" />
+                    <button id="attendance-start-btn" class="attendance-primary-btn" type="button" onclick="startAttendanceSession()">Buka / Buat Sesi</button>
+                </div>
+                <div id="attendance-session-info" class="attendance-session-info" style="display: none;"></div>
+                <div id="attendance-summary" class="attendance-summary" style="display: none;"></div>
+                <div id="attendance-actions" class="attendance-actions" style="display: none;">
+                    <button type="button" onclick="markRemainingAttendance('absent')">Tandai sisa tidak hadir</button>
+                    <button type="button" onclick="markRemainingAttendance('present')">Tandai semua hadir</button>
+                </div>
+                <div id="attendance-roster" class="attendance-roster">
+                    <div class="attendance-empty">Pilih grup dan buka sesi untuk menampilkan peserta.</div>
+                </div>
+                <div id="attendance-feedback" class="attendance-feedback" role="status" aria-live="polite"></div>
+            </div>
+        </aside>
+        <div id="attendance-backdrop" class="attendance-backdrop" onclick="closeAttendancePanel()"></div>
 
         <!-- Lightbox Zoom Modal untuk Gambar Soal -->
         <div id="image-lightbox-modal" class="lightbox-modal" onclick="closeImageLightbox()">

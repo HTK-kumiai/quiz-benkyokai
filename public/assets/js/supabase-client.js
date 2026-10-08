@@ -147,7 +147,7 @@ export async function fetchQuestionBank(categoryId) {
     const client = assertSupabaseReady();
     const { data, error } = await client
         .from("question_bank")
-        .select("id, level, year, question, reading, image, answer, explanation")
+        .select("id, level, year, question, reading, translation, image, answer, explanation")
         .eq("category_id", categoryId)
         .order("id", { ascending: true });
     if (error) throw error;
@@ -163,6 +163,7 @@ export async function replaceQuestionBank(categoryId, questions) {
         year: Number(question.year),
         question: question.question || "",
         reading: question.reading || "",
+        translation: question.translation || "",
         image: question.image || "",
         answer: question.answer,
         explanation: question.explanation || "",
@@ -230,6 +231,71 @@ export async function deleteScoresForAdmin(scoreIds) {
     if (!scoreIds.length) return;
     const client = assertSupabaseReady();
     const { error } = await client.from("scores").delete().in("id", scoreIds);
+    if (error) throw error;
+}
+
+export async function fetchAdminProfiles() {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("profiles")
+        .select("id, name, username, group_name, is_admin, approval_status")
+        .order("name", { ascending: true });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function createAttendanceSession(session) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("attendance_sessions")
+        .insert(session)
+        .select("*")
+        .single();
+    if (error) throw error;
+    return data;
+}
+
+export async function fetchLatestAttendanceSession(groupName, sessionDate) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("attendance_sessions")
+        .select("*")
+        .eq("group_name", groupName)
+        .eq("session_date", sessionDate)
+        .order("created_at", { ascending: false })
+        .limit(1);
+    if (error) throw error;
+    return data?.[0] || null;
+}
+
+export async function upsertAttendanceRecords(records) {
+    if (!records.length) return [];
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("attendance_records")
+        .upsert(records, { onConflict: "session_id,user_id" })
+        .select("*");
+    if (error) throw error;
+    return data || [];
+}
+
+export async function fetchAttendanceRecords(sessionId) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client
+        .from("attendance_records")
+        .select("*")
+        .eq("session_id", sessionId)
+        .order("name", { ascending: true });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function deleteAttendanceSession(sessionId) {
+    const client = assertSupabaseReady();
+    const { error } = await client
+        .from("attendance_sessions")
+        .delete()
+        .eq("id", sessionId);
     if (error) throw error;
 }
 

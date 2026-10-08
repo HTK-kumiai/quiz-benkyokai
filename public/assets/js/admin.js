@@ -463,6 +463,7 @@ function normalizeQuestions(loadedQuestions) {
         year: q.year ? Number(q.year) : 2024,
         question: q.question || "",
         reading: q.reading || "",
+        translation: q.translation || q.explanation || "",
         image: q.image || "",
         answer: q.answer || "○",
         explanation: q.explanation || "",
@@ -523,15 +524,54 @@ async function syncCurrentQuestionBank() {
     }
 }
 
-async function syncAllQuestionBanks() {
+async function reloadAllQuestionBanks() {
     if (!currentAdminProfile?.is_admin) {
         showToast("🔒 Login admin diperlukan.");
         return;
     }
-    const button = document.getElementById("sync-all-question-banks");
+    const button = document.getElementById("reload-all-question-banks");
     if (button) {
         button.disabled = true;
-        button.textContent = "☁️ Menyinkronkan...";
+        button.textContent = "🔄 Memuat dari Supabase...";
+    }
+    try {
+        let total = 0;
+        for (const category of categoryList) {
+            const remoteQuestions = await fetchQuestionBank(category.id);
+            if (remoteQuestions.length > 0) {
+                const normalized = normalizeQuestions(remoteQuestions);
+                localStorage.setItem(category.storageKey, JSON.stringify(normalized));
+                total += normalized.length;
+            }
+        }
+        await switchAdminCategory(currentAdminCategory);
+        showToast(`✅ Data terbaru dimuat dari Supabase (${total} soal).`);
+    } catch (err) {
+        showToast(`❌ Gagal memuat soal dari Supabase: ${err.message}`);
+    } finally {
+        if (button) {
+            button.disabled = false;
+            button.textContent = "🔄 Muat Ulang Semua Soal dari Supabase";
+        }
+    }
+}
+
+async function publishLocalQuestionBanks() {
+    if (!currentAdminProfile?.is_admin) {
+        showToast("🔒 Login admin diperlukan.");
+        return;
+    }
+    const confirmed = confirm(
+        "JSON lokal akan menimpa seluruh soal di Supabase untuk semua bidang.\n\n" +
+        "Perubahan yang dibuat melalui dashboard tetapi belum ada di file JSON dapat hilang.\n\n" +
+        "Lanjutkan?"
+    );
+    if (!confirmed) return;
+
+    const button = document.getElementById("publish-local-question-banks");
+    if (button) {
+        button.disabled = true;
+        button.textContent = "☁️ Menerbitkan JSON lokal...";
     }
     try {
         let total = 0;
@@ -547,10 +587,13 @@ async function syncAllQuestionBanks() {
     } finally {
         if (button) {
             button.disabled = false;
-            button.textContent = "☁️ Sinkronkan Semua Soal";
+            button.textContent = "⚠️ Timpa Supabase dengan JSON Lokal";
         }
     }
 }
+
+// Alias lama untuk kompatibilitas dengan pemanggilan dari browser lama.
+const syncAllQuestionBanks = publishLocalQuestionBanks;
 
 function persistQuestions() {
     const cat = CATEGORIES[currentAdminCategory];
@@ -591,6 +634,7 @@ function renderTable() {
             return String(q.id).includes(searchVal) ||
                 (q.question || "").toLowerCase().includes(searchVal) ||
                 (q.reading || "").toLowerCase().includes(searchVal) ||
+                (q.translation || "").toLowerCase().includes(searchVal) ||
                 (q.explanation || "").toLowerCase().includes(searchVal) ||
                 String(q.year || "").includes(searchVal);
         }
@@ -611,7 +655,7 @@ function renderTable() {
         const isTrue = q.answer === "○";
         tr.innerHTML = `
             <td class="td-id">#${q.id}</td>
-            <td><div class="td-question">${escapeHtml(q.question)}</div>${q.image ? `<div class="table-img-badge"><img class="table-img-thumb" src="${escapeHtml(q.image)}" alt="thumb" onerror="this.style.display='none'" /> 🖼️ Gambar</div>` : ""}${q.reading ? `<div class="reading-subtext">${escapeHtml(q.reading)}</div>` : ""}${q.explanation ? `<div class="explanation-subtext"><strong>Penjelasan:</strong> ${escapeHtml(q.explanation)}</div>` : ""}</td>
+            <td><div class="td-question">${escapeHtml(q.question)}</div>${q.image ? `<div class="table-img-badge"><img class="table-img-thumb" src="${escapeHtml(q.image)}" alt="thumb" onerror="this.style.display='none'" /> 🖼️ Gambar</div>` : ""}${q.reading ? `<div class="reading-subtext">${escapeHtml(q.reading)}</div>` : ""}${q.translation ? `<div class="explanation-subtext"><strong>Terjemahan:</strong> ${escapeHtml(q.translation)}</div>` : ""}${q.explanation ? `<div class="explanation-subtext"><strong>Alasan:</strong> ${escapeHtml(q.explanation)}</div>` : ""}</td>
             <td>${q.level === "senmonkyu" ? '<span style="display:inline-block;padding:3px 8px;border-radius:6px;background:#fef3c7;color:#92400e;font-weight:700;font-size:0.78rem;margin-bottom:4px;">⭐ 専門級</span>' : '<span style="display:inline-block;padding:3px 8px;border-radius:6px;background:#e0e7ff;color:#3730a3;font-weight:700;font-size:0.78rem;margin-bottom:4px;">🔰 初級</span>'}<div style="margin-top:6px;"><span style="display:inline-block;padding:2px 8px;border-radius:6px;background:#f1f5f9;color:#475569;font-weight:600;font-size:0.78rem;">📅 ${q.year}</span></div></td>
             <td>${isTrue ? '<span class="badge-answer true">○ BENAR</span>' : '<span class="badge-answer false">✕ SALAH</span>'}</td>
             <td><div class="table-actions"><button class="btn-icon edit" onclick="openEditModal(${q.id})" title="Ubah Soal">✏️ Edit</button><button class="btn-icon delete" onclick="deleteQuestion(${q.id})" title="Hapus Soal">🗑️ Hapus</button></div></td>`;
@@ -658,6 +702,7 @@ function openAddModal() {
     document.getElementById("form-year").value = document.getElementById("filter-year")?.value !== "all" ? document.getElementById("filter-year").value : "2024";
     document.getElementById("form-question").value = "";
     document.getElementById("form-reading").value = "";
+    document.getElementById("form-translation").value = "";
     clearFormImage();
     document.getElementById("answer-true").checked = true;
     document.getElementById("form-explanation").value = "";
@@ -674,6 +719,7 @@ function openEditModal(id) {
     document.getElementById("form-year").value = q.year || 2024;
     document.getElementById("form-question").value = q.question || "";
     document.getElementById("form-reading").value = q.reading || "";
+    document.getElementById("form-translation").value = q.translation || "";
     document.getElementById("form-image").value = q.image || "";
     handleImageInputManual(q.image || "");
     if (q.answer === "○") document.getElementById("answer-true").checked = true;
@@ -693,6 +739,7 @@ function handleFormSubmit(e) {
     const yearVal = parseInt(document.getElementById("form-year").value, 10) || 2024;
     const questionText = document.getElementById("form-question").value.trim();
     const readingText = document.getElementById("form-reading").value.trim();
+    const translationText = document.getElementById("form-translation").value.trim();
     const imageText = document.getElementById("form-image").value.trim();
     const answerVal = document.querySelector('input[name="form-answer"]:checked').value;
     const explanationText = document.getElementById("form-explanation").value.trim();
@@ -705,13 +752,13 @@ function handleFormSubmit(e) {
     if (editingId !== null) {
         const index = questions.findIndex((q) => q.id === editingId);
         if (index !== -1) {
-            questions[index] = { id, level: levelVal, year: yearVal, question: questionText, reading: readingText, image: imageText, answer: answerVal, explanation: explanationText };
+            questions[index] = { id, level: levelVal, year: yearVal, question: questionText, reading: readingText, translation: translationText, image: imageText, answer: answerVal, explanation: explanationText };
             showToast("✅ Soal berhasil diperbarui.");
         }
     } else {
         const exists = questions.some((q) => q.id === id);
         const finalId = exists ? getNextId() : id;
-        questions.push({ id: finalId, level: levelVal, year: yearVal, question: questionText, reading: readingText, image: imageText, answer: answerVal, explanation: explanationText });
+        questions.push({ id: finalId, level: levelVal, year: yearVal, question: questionText, reading: readingText, translation: translationText, image: imageText, answer: answerVal, explanation: explanationText });
         showToast("🎉 Soal baru berhasil ditambahkan.");
     }
 
@@ -770,6 +817,7 @@ function importQuestionsJSON(event) {
                     year: q.year ? Number(q.year) : 2024,
                     question: q.question || "",
                     reading: q.reading || "",
+                    translation: q.translation || q.explanation || "",
                     image: q.image || "",
                     answer: q.answer || "○",
                     explanation: q.explanation || "",
@@ -992,4 +1040,6 @@ window.importQuestionsJSON = importQuestionsJSON;
 window.resetToDefault = resetToDefault;
 window.syncCurrentQuestionBank = syncCurrentQuestionBank;
 window.syncAllQuestionBanks = syncAllQuestionBanks;
+window.reloadAllQuestionBanks = reloadAllQuestionBanks;
+window.publishLocalQuestionBanks = publishLocalQuestionBanks;
 window.deleteSelectedScores = deleteSelectedScores;

@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 
 const target = process.argv[2];
-const requiredFields = ["id", "level", "year", "question", "reading", "image", "answer", "explanation"];
+const requiredFields = ["id", "level", "year", "question", "reading", "translation", "image", "answer", "explanation"];
 const allowedLevels = new Set(["shokyu", "senmonkyu"]);
 const allowedAnswers = new Set(["○", "×"]);
 
@@ -77,6 +77,10 @@ function validateQuestionFile(filePath) {
 
     if (typeof item.reading !== "string") {
       errors.push(`${label}: reading harus string`);
+    }
+
+    if (typeof item.translation !== "string") {
+      errors.push(`${label}: translation harus string`);
     }
 
     if (typeof item.image !== "string") {

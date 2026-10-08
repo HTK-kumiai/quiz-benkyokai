@@ -5,9 +5,10 @@
     "year": 2013,
     "question": "にほん の きた と みなみ は きこう が おなじ です。",
     "reading": "Nihon no kita to minami wa kikou ga onaji desu.",
+    "translation": "Cuaca di bagian utara dan selatan Jepang itu sama.",
     "image": "",
     "answer": "×",
-    "explanation": "Cuaca di bagian utara dan selatan Jepang itu sama."
+    "explanation": "Salah: Jepang memanjang dari utara ke selatan sehingga iklimnya berbeda menurut wilayah; Hokkaido lebih dingin, sedangkan Okinawa lebih hangat."
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "year": 2013,
     "question": "にほん は やま が すくなく さくもつ を つくる とち が おおい です。",
     "reading": "Nihon wa yama ga sukunaku sakumotsu wo tsukuru tochi ga ooi desu.",
+    "translation": "Jepang punya sedikit pegunungan, dan punya banyak lahan untuk bercocok tanam.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang punya sedikit pegunungan, dan punya banyak lahan untuk bercocok tanam."
+    "explanation": "Salah: Jepang memiliki banyak pegunungan, sehingga lahan datar yang dapat digunakan untuk bercocok tanam terbatas."
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "year": 2013,
     "question": "ほっかいどう から おきなわけん まで にほん ぜんこく で いね（こめ） が つくられて います。",
     "reading": "Hokkaidou kara okinawaken made nihon zenkoku de ine (kome) ga tsukurarete imasu.",
+    "translation": "Beras di buat di seluruh Jepang, dari Hokkaido hingga Okinawa.",
     "image": "",
     "answer": "○",
-    "explanation": "Beras di buat di seluruh Jepang, dari Hokkaido hingga Okinawa."
+    "explanation": "Benar: Padi dibudidayakan di berbagai wilayah Jepang dari Hokkaido hingga Okinawa, meskipun kondisi dan luas produksinya berbeda."
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "year": 2013,
     "question": "にほん の ちくさん けいえい は ちいさな けいえい で、きぼ かくだい が すすんで いません。",
     "reading": "Nihon no chikusan keiei wa chiisana keiei de, kibo kakudai ga susunde imasen.",
+    "translation": "Managemen peternakan di Jepang berskala kecil yang tidak akan berkembang.",
     "image": "",
     "answer": "×",
-    "explanation": "Managemen peternakan di Jepang berskala kecil yang tidak akan berkembang."
+    "explanation": "Salah: Peternakan Jepang memang banyak yang kecil, tetapi skala usaha besar dan perluasan skala juga berkembang."
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "year": 2013,
     "question": "うし は 4つ の い を もっています。",
     "reading": "Ushi wa yottsu no i wo motteimasu.",
+    "translation": "Sapi memiliki 4 lambung.",
     "image": "",
     "answer": "○",
-    "explanation": "Sapi memiliki 4 lambung."
+    "explanation": "Benar: Sapi merupakan hewan ruminansia dengan empat bagian lambung: rumen, retikulum, omasum, dan abomasum."
   },
   {
     "id": 6,
@@ -55,9 +60,10 @@
     "year": 2013,
     "question": "あさ げんき でも ゆうがた には びょうき に なる こと が あるので、 かちく を よく かんさつ する こと が たいせつ です。",
     "reading": "Asa genki demo yuugata niha byouki ni naru koto ga aru node, kachiku wo yoku kansatsu suru koto ga taisetsu desu.",
+    "translation": "Meskipun pagi sehat, bisa jadi sore hari sakit, sehingga penting untuk mengamati ternak dengan cermat.",
     "image": "",
     "answer": "○",
-    "explanation": "Meskipun pagi sehat, bisa jadi sore hari sakit, sehingga penting untuk mengamati ternak dengan cermat."
+    "explanation": "Benar: Kondisi ternak dapat berubah dalam waktu singkat, sehingga pengamatan pagi dan sore membantu menemukan gejala penyakit lebih awal."
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "year": 2013,
     "question": "かちく に いじょう を みつけても、すぐ に のうじょうぬし や のうじょうちょう に しらせる ひつよう は ありません。",
     "reading": "Kachiku ni ijou wo mitsuketemo, sugu ni noujou nushi ya noujou chou ni shiraseru hitsuyou wa arimasen.",
+    "translation": "Tidak perlu memberitahu pemilik peternakan atau kepala peternakan ketika menemukan keanehan pada hewan ternak.",
     "image": "",
     "answer": "×",
-    "explanation": "Tidak perlu memberitahu pemilik peternakan atau kepala peternakan ketika menemukan keanehan pada hewan ternak."
+    "explanation": "Salah: Kelainan pada ternak harus segera dilaporkan kepada pemilik atau kepala peternakan agar dapat diperiksa dan ditangani."
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "year": 2013,
     "question": "かちく の ふんにょう は たいせつ な ひりょう と なります。",
     "reading": "Kachiku no fun'nyou wa taisetsu na hiryou to narimasu.",
+    "translation": "Kotoran dari ternak bisa menjadi pupuk yang penting.",
     "image": "",
     "answer": "○",
-    "explanation": "Kotoran dari ternak bisa menjadi pupuk yang penting."
+    "explanation": "Benar: Kotoran ternak dapat difermentasi menjadi kompos atau pupuk organik yang mengembalikan unsur hara ke tanah."
   },
   {
     "id": 9,
@@ -85,9 +93,10 @@
     "year": 2013,
     "question": "にゅうぎゅう は こ うし を うまなくても、 ぎゅうにゅう を しぼる こと が できます。",
     "reading": "Nyuugyuu wa ko ushi wo umanakutemo, gyuunyuu wo shiboru koto ga dekimasu.",
+    "translation": "Sapi perah dapat diperah walau tidak melahirkan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah dapat diperah walau tidak melahirkan."
+    "explanation": "Salah: Sapi perah mulai menghasilkan susu setelah melahirkan; tanpa kebuntingan dan kelahiran, produksi susu tidak berlangsung normal."
   },
   {
     "id": 10,
@@ -95,9 +104,10 @@
     "year": 2013,
     "question": "ミルキングパーラー は、ぼくそう などの しゅうかく さぎょう に つかう きかい の こと です。",
     "reading": "Mirukingu paaraa wa, bokusou nado no shuukaku sagyou ni tsukau kikai no koto desu.",
+    "translation": "Milking parlor adalah alat/mesin untuk pekerjaan memanen rumput kering, dll.",
     "image": "",
     "answer": "×",
-    "explanation": "Milking parlor adalah alat/mesin untuk pekerjaan memanen rumput kering, dll."
+    "explanation": "Salah: Milking parlor adalah tempat atau fasilitas untuk memerah susu, bukan mesin untuk memanen rumput."
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "year": 2013,
     "question": "ぎゅうしゃ の せいそう は、１しゅうかん に １ど ぐらい で よい です。",
     "reading": "Gyuusha no seisou wa, isshuukan ni ichido gurai de yoi desu.",
+    "translation": "Pembersihan kandang sapi cukup seminggu sekali saja.",
     "image": "",
     "answer": "×",
-    "explanation": "Pembersihan kandang sapi cukup seminggu sekali saja."
+    "explanation": "Salah: Kandang sapi perlu dibersihkan secara rutin, bukan hanya seminggu sekali, untuk menjaga kebersihan dan mengurangi risiko penyakit."
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "year": 2013,
     "question": "がいぶ の ひと が ちくしゃ に きたら、 はきもの を しょうどく して から ちくしゃ に はいって もらいます。",
     "reading": "Gaibu no hito ga chikusha ni kitara, hakimono wo shoudoku shite kara chikusha ni haitte moraimasu.",
+    "translation": "Jika orang luar datang ke kandang sapi, sepatunya didisinfeksi dahulu sebelum masuk.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika orang luar datang ke kandang sapi, sepatunya didisinfeksi dahulu sebelum masuk."
+    "explanation": "Benar: Disinfeksi alas kaki sebelum masuk mencegah kuman dari luar terbawa ke kandang."
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "year": 2013,
     "question": "ホルスタインしゅ は、なつ の あつさ に つよい かちく です。",
     "reading": "Horusutain shu wa, natsu no atsusa ni tsuyoi kachiku desu.",
+    "translation": "Jenis Holstein merupakan ternak yang kuat terhadap panasnya musim panas.",
     "image": "",
     "answer": "×",
-    "explanation": "Jenis Holstein merupakan ternak yang kuat terhadap panasnya musim panas."
+    "explanation": "Salah: Holstein relatif sensitif terhadap stres panas; suhu tinggi dapat menurunkan nafsu makan dan produksi susu."
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "year": 2013,
     "question": "にゅうぎゅう は、はつじょう する と えさ を よく たべます。",
     "reading": "Nyuugyuu wa, hatsujou suru to esa wo yoku tabemasu.",
+    "translation": "Sapi perah akan banyak makan ketika birahi.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah akan banyak makan ketika birahi."
+    "explanation": "Salah: Saat birahi, sapi sering gelisah dan nafsu makannya dapat menurun, bukan meningkat."
   },
   {
     "id": 15,
@@ -145,9 +159,10 @@
     "year": 2013,
     "question": "にほん では、にゅうぎゅう の こうはい は、ほとんど が じんこう じゅせい で おこなわれます。",
     "reading": "Nihon dewa, nyuugyuu no kouhai wa, hotondo ga jinkou jusei de okonawaremasu.",
+    "translation": "Di Jepang, fertilisasi sapi kebanyakan dilakukan dengan bantuan manusia.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang, fertilisasi sapi kebanyakan dilakukan dengan bantuan manusia."
+    "explanation": "Benar: Di Jepang, inseminasi buatan banyak digunakan untuk memasukkan semen pejantan terpilih tanpa perkawinan langsung."
   },
   {
     "id": 16,
@@ -155,9 +170,10 @@
     "year": 2013,
     "question": "ホルスタイン の りそうてき な にんしん・しゅっさん の かいすう は、１ねん に １かい です。",
     "reading": "Horusutain no risou teki na ninshinshussan no kaisuu wa, ichinen ni ikkai desu.",
+    "translation": "Sapi Holstein idealnya hamil dan melahirkan setahun sekali.",
     "image": "",
     "answer": "○",
-    "explanation": "Sapi Holstein idealnya hamil dan melahirkan setahun sekali."
+    "explanation": "Benar: Target reproduksi sapi perah umumnya satu kali melahirkan per tahun agar siklus produksi susunya berkesinambungan."
   },
   {
     "id": 17,
@@ -165,9 +181,10 @@
     "year": 2013,
     "question": "ぶんべん が ちかづく と にゅうぼう が おおきく なってきます。",
     "reading": "Bunben ga chikazuku to nyuubou ga ookiku nattekimasu.",
+    "translation": "Saat waktu melahirkan semakin dekat, payudara sapi membesar.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat waktu melahirkan semakin dekat, payudara sapi membesar."
+    "explanation": "Benar: Menjelang melahirkan, jaringan ambing berkembang dan terisi sehingga ambing tampak membesar."
   },
   {
     "id": 18,
@@ -175,9 +192,10 @@
     "year": 2013,
     "question": "にゅうぎゅう には、 はいごうーしりょう だけ を たべさせます。",
     "reading": "Nyuugyuu niwa, haigou shiryou dake wo tabesasemasu.",
+    "translation": "Sapi perah hanya diberi makan pakan campuran.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah hanya diberi makan pakan campuran."
+    "explanation": "Salah: Sapi perah memerlukan pakan campuran sekaligus pakan kasar seperti rumput atau silase untuk memenuhi kebutuhan energi dan serat."
   },
   {
     "id": 19,
@@ -185,9 +203,10 @@
     "year": 2013,
     "question": "うまれたて の こうし には、 しゅっさん して すぐ に でる しょにゅう を たくさん のませます。",
     "reading": "Umaretate no koushi niwa, shussan shite sugu ni deru shonyuu wo takusan nomasemasu.",
+    "translation": "Anak sapi yang baru lahir diberi ASI yang pertama kali keluar setelah melahirkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Anak sapi yang baru lahir diberi ASI yang pertama kali keluar setelah melahirkan."
+    "explanation": "Benar: Kolostrum yang keluar segera setelah kelahiran kaya antibodi dan harus diberikan kepada anak sapi untuk membantu kekebalan tubuhnya."
   },
   {
     "id": 20,
@@ -195,9 +214,10 @@
     "year": 2013,
     "question": "さくにゅう きぐ は、 さくにゅう の まえ と あと に みずあらいし、しょうどく を おこないます。",
     "reading": "Sakunyuu kigu wa, sakunyuu no mae to ato ni mizuaraishi, shoudoku wo okonaimasu.",
+    "translation": "Peralatan perah, dicuci dan disterilkan sebelum dan sesudah pemerahan.",
     "image": "",
     "answer": "○",
-    "explanation": "Peralatan perah, dicuci dan disterilkan sebelum dan sesudah pemerahan."
+    "explanation": "Benar: Mencuci dan mendisinfeksi peralatan sebelum serta sesudah pemerahan mengurangi kontaminasi dan menjaga mutu susu."
   },
   {
     "id": 21,
@@ -205,9 +225,10 @@
     "year": 2016,
     "question": "にほん の のうち は、ほとんど が はたけ です。",
     "reading": "Nihon no nouchi wa, hotondo ga hatake desu.",
+    "translation": "Lahan di Jepang kebanyakan sawah.",
     "image": "",
     "answer": "×",
-    "explanation": "Lahan di Jepang kebanyakan sawah."
+    "explanation": "Salah: Lahan Jepang tidak didominasi sawah; selain sawah terdapat ladang, kebun, dan lahan pertanian lain."
   },
   {
     "id": 22,
@@ -215,9 +236,10 @@
     "year": 2016,
     "question": "にほん は、きた と みなみ で、 きこう が おなじ です。",
     "reading": "Nihon wa, kita to minami de, kikou ga onaji desu.",
+    "translation": "Di Jepang cuaca di utara dan selatan itu sama.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang cuaca di utara dan selatan itu sama."
+    "explanation": "Salah: Bentuk Jepang yang memanjang membuat iklim utara dan selatan berbeda."
   },
   {
     "id": 23,
@@ -225,9 +247,10 @@
     "year": 2016,
     "question": "にほん の こめ（いなさく） は、あじ の よい ひんしゅう を ちゅうしん に さいばい しています。",
     "reading": "Nihon no kome (inasaku) wa, aji no yoi hinshuu wo chuushin ni saibai shiteimasu.",
+    "translation": "Budidaya beras Jepang diutamakan pada jenis yang rasanya enak.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya beras Jepang diutamakan pada jenis yang rasanya enak."
+    "explanation": "Benar: Pemuliaan padi Jepang banyak menekankan mutu makan dan rasa yang disukai konsumen."
   },
   {
     "id": 24,
@@ -235,9 +258,10 @@
     "year": 2016,
     "question": "にほんで かって いる おもな かちく で おおい のは、うし、ひつじ、にわとり の 3つ です。",
     "reading": "Nihonde katte iru omo na kachiku de ooi nowa, ushi, hitsuji, niwatori no mittsu desu.",
+    "translation": "3 jenis ternak di Jepang kebanyakan adalah sapi, domba, dan ayam.",
     "image": "",
     "answer": "×",
-    "explanation": "3 jenis ternak di Jepang kebanyakan adalah sapi, domba, dan ayam."
+    "explanation": "Salah: Ternak utama Jepang adalah sapi, babi, dan ayam; domba bukan salah satu dari tiga jenis utama tersebut."
   },
   {
     "id": 25,
@@ -245,9 +269,10 @@
     "year": 2016,
     "question": "かちく の いじょう を みつけたら、すぐ に ほうこく します。",
     "reading": "Kachiku no ijou wo mitsuketara, sugu ni houkoku shimasu.",
+    "translation": "Jika menemukan keanehan pada ternak, segera melapor.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika menemukan keanehan pada ternak, segera melapor."
+    "explanation": "Benar: Kelainan harus segera dilaporkan agar penyebabnya dapat diperiksa dan tindakan penanganan tidak terlambat."
   },
   {
     "id": 26,
@@ -255,9 +280,10 @@
     "year": 2016,
     "question": "たいひ は、くうき が はいらない ように して ふんにょう を はっこう させます。",
     "reading": "Taihi wa, kuuki ga hairanai youni shite fun'nyou wo hakkou sasemasu.",
+    "translation": "Pupuk kompos merupakan kotoran yang difermentasi dengan mengusahakan udara tidak masuk.",
     "image": "",
     "answer": "×",
-    "explanation": "Pupuk kompos merupakan kotoran yang difermentasi dengan mengusahakan udara tidak masuk."
+    "explanation": "Salah: Kompos dibuat dengan fermentasi aerob yang memerlukan oksigen; kondisi tanpa udara merupakan prinsip silase atau fermentasi anaerob."
   },
   {
     "id": 27,
@@ -265,9 +291,10 @@
     "year": 2016,
     "question": "うし の 「い」は、３つ です。",
     "reading": "Ushi no i wa, mittsu desu.",
+    "translation": "Lambung sapi ada 3.",
     "image": "",
     "answer": "×",
-    "explanation": "Lambung sapi ada 3."
+    "explanation": "Salah: Sapi memiliki empat bagian lambung, bukan tiga."
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "year": 2016,
     "question": "らくのう よう の のうこうしりょう で いちばん おおく つかう のは トウモロコシ です。",
     "reading": "Rakunou you no noukoushiryou de ichiban ooku tsukau noha toumorokoshi desu.",
+    "translation": "Pakan konsentrat khusus ternak yang paling banyak digunakan adalah jagung.",
     "image": "",
     "answer": "○",
-    "explanation": "Pakan konsentrat khusus ternak yang paling banyak digunakan adalah jagung."
+    "explanation": "Benar: Jagung merupakan bahan utama konsentrat karena kaya energi dan banyak digunakan dalam ransum sapi perah."
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "year": 2016,
     "question": "ウォーターカップ は、さくにゅうよう の きぐ です。",
     "reading": "Wotaa kappu wa, sakunyuuyou no kigu desu.",
+    "translation": "Water cup adalah alat yang digunakan khusus untuk memerah susu.",
     "image": "",
     "answer": "×",
-    "explanation": "Water cup adalah alat yang digunakan khusus untuk memerah susu."
+    "explanation": "Salah: Water cup adalah tempat minum otomatis untuk ternak, bukan alat pemerahan."
   },
   {
     "id": 30,
@@ -295,9 +324,10 @@
     "year": 2016,
     "question": "バルククーラー は、しぼった ちち を ちょぞう する れいぞうこ です。",
     "reading": "Barukukuuraa wa, shibotta chichi wo chozou suru reizouko desu.",
+    "translation": "Bulk cooler adalah tempat pendingin untuk menampung susu yang telah diperah.",
     "image": "",
     "answer": "○",
-    "explanation": "Bulk cooler adalah tempat pendingin untuk menampung susu yang telah diperah."
+    "explanation": "Benar: Bulk cooler mendinginkan dan menyimpan susu hasil pemerahan agar mutu susu tetap terjaga sebelum diangkut."
   },
   {
     "id": 31,
@@ -305,9 +335,10 @@
     "year": 2016,
     "question": "にゅうぎゅう １とう １とう の にゅうしつ には、さ が あります。",
     "reading": "Nyuugyuu ittou ittou no nyuushitsu niwa, sa ga arimasu.",
+    "translation": "Pada tempat pemerahan susu, terdapat jarak pada masing masing sapi perah.",
     "image": "",
     "answer": "○",
-    "explanation": "Pada tempat pemerahan susu, terdapat jarak pada masing masing sapi perah."
+    "explanation": "Benar: Jarak antar sapi di ruang pemerahan diperlukan agar tiap sapi dapat ditempatkan dan diperah dengan aman serta higienis."
   },
   {
     "id": 32,
@@ -315,9 +346,10 @@
     "year": 2016,
     "question": "ひと が ぎゅうしゃ に はいる のに、しょうどく の ひつよう は ありません。",
     "reading": "Hito ga gyuusha ni hairu noni, shoudoku no hitsuyou wa arimasen.",
+    "translation": "Tidak penting untuk melakukan disinfeksi pada orang yang mau masuk ke kandang sapi.",
     "image": "",
     "answer": "×",
-    "explanation": "Tidak penting untuk melakukan disinfeksi pada orang yang mau masuk ke kandang sapi."
+    "explanation": "Salah: Orang yang masuk kandang perlu mengikuti prosedur disinfeksi untuk mencegah masuknya bibit penyakit dari luar."
   },
   {
     "id": 33,
@@ -325,9 +357,10 @@
     "year": 2016,
     "question": "にゅうぎゅう が とおる つうろ は すべらない ように します。",
     "reading": "Nyuugyuu ga tooru tsuuro wa suberanai you ni shimasu.",
+    "translation": "Jalur lewat sapi perah dibuat agar tidak licin.",
     "image": "",
     "answer": "○",
-    "explanation": "Jalur lewat sapi perah dibuat agar tidak licin."
+    "explanation": "Benar: Lantai jalur sapi harus tidak licin agar sapi tidak terpeleset dan mengalami cedera."
   },
   {
     "id": 34,
@@ -335,9 +368,10 @@
     "year": 2016,
     "question": "なつ の じき、 せんぷうき などで、ぎゅうしゃ を すずしく します。",
     "reading": "Natsu no jiki, senpuuki nado de, gyuusha wo suzushiku shimasu.",
+    "translation": "Pada musim panas, kandang sapi dibuat sejuk dengan menggunakan kipas angin.",
     "image": "",
     "answer": "○",
-    "explanation": "Pada musim panas, kandang sapi dibuat sejuk dengan menggunakan kipas angin."
+    "explanation": "Benar: Kipas dan ventilasi membantu mengalirkan udara serta menurunkan beban panas sapi pada musim panas."
   },
   {
     "id": 35,
@@ -345,9 +379,10 @@
     "year": 2016,
     "question": "にほん の にゅうぎゅう で もっとも おおい しゅるい は ジャージしゅ です。",
     "reading": "Nihon no nyuugyuu de mottomo ooi shurui wa jaaji shu desu.",
+    "translation": "Jenis sapi perah yang paling banyak di Jepang adalah jenis Jersey.",
     "image": "",
     "answer": "×",
-    "explanation": "Jenis sapi perah yang paling banyak di Jepang adalah jenis Jersey."
+    "explanation": "Salah: Jenis sapi perah yang paling banyak di Jepang adalah Holstein, bukan Jersey."
   },
   {
     "id": 36,
@@ -355,9 +390,10 @@
     "year": 2016,
     "question": "うし には、そしりょう （かんそう、サイレージ など）が ひつよう です。",
     "reading": "Ushi niwa, soshiryou (kansou, saireeji nado) ga hitsuyou desu.",
+    "translation": "Untuk sapi, pakan kasar juga penting (silage kering, dll.).",
     "image": "",
     "answer": "○",
-    "explanation": "Untuk sapi, pakan kasar juga penting (silage kering, dll.)."
+    "explanation": "Benar: Pakan kasar seperti rumput kering dan silase menyediakan serat yang dibutuhkan untuk fungsi rumen sapi."
   },
   {
     "id": 37,
@@ -365,9 +401,10 @@
     "year": 2016,
     "question": "うし は はつじょう すると しょくよく が ふえます。",
     "reading": "Ushi wa hatsujou suru to shokuyoku ga fuemasu.",
+    "translation": "Jika sapi sedang birahi, maka nafsu makannya meningkat.",
     "image": "",
     "answer": "×",
-    "explanation": "Jika sapi sedang birahi, maka nafsu makannya meningkat."
+    "explanation": "Salah: Saat birahi sapi cenderung gelisah dan konsumsi pakannya dapat turun, bukan nafsu makan meningkat."
   },
   {
     "id": 38,
@@ -375,9 +412,10 @@
     "year": 2016,
     "question": "にゅうぎゅう の にんしん きかん は やく １８０にち です。",
     "reading": "Nyuugyuu no ninshin kikan wa yaku hyaku hachijuu nichi desu.",
+    "translation": "Jangka waktu sapi perah mengandung adalah sekitar 180 hari.",
     "image": "",
     "answer": "×",
-    "explanation": "Jangka waktu sapi perah mengandung adalah sekitar 180 hari."
+    "explanation": "Salah: Masa kebuntingan sapi perah sekitar 280 hari, bukan 180 hari."
   },
   {
     "id": 39,
@@ -385,9 +423,10 @@
     "year": 2016,
     "question": "ほうぼく は、ぎゅうしゃない で かう やりかた です。",
     "reading": "Houboku wa, gyuushanai de kau yarikata desu.",
+    "translation": "Merumput adalah cara memelihara di kandang sapi.",
     "image": "",
     "answer": "×",
-    "explanation": "Merumput adalah cara memelihara di kandang sapi."
+    "explanation": "Salah: Merumput berarti sapi dilepas di padang atau lahan rumput; pemeliharaan di kandang disebut pemeliharaan intensif."
   },
   {
     "id": 40,
@@ -395,9 +434,10 @@
     "year": 2016,
     "question": "にゅうぼうえん の よぼう には、ディッピング が たいせつ です。",
     "reading": "Nyuubouen no yobou niwa, dippingu ga taisetsu desu.",
+    "translation": "Untuk mencegah dari peradangan payudara, penting untuk melakukan dipping.",
     "image": "",
     "answer": "○",
-    "explanation": "Untuk mencegah dari peradangan payudara, penting untuk melakukan dipping."
+    "explanation": "Benar: Dipping setelah pemerahan membasmi atau menghambat kuman pada puting sehingga membantu mencegah mastitis."
   },
   {
     "id": 41,
@@ -405,9 +445,10 @@
     "year": 2018,
     "question": "にほん は やま が すくなく、のうち が おおい です。",
     "reading": "Nihon wa yama ga sukunaku, nouchi ga ooi desu.",
+    "translation": "Jepang memiliki gunung yang sedikit, ladang yang banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang memiliki gunung yang sedikit, ladang yang banyak."
+    "explanation": "Salah: Jepang bergunung-gunung dan lahan datarnya terbatas, sehingga tidak memiliki ladang yang melimpah."
   },
   {
     "id": 42,
@@ -415,9 +456,10 @@
     "year": 2018,
     "question": "にほん には はる なつ あき ふゆ が あります。",
     "reading": "Nihon niwa haru natsu aki fuyu ga arimasu.",
+    "translation": "Jepang memiliki musim semi, panas, gugur, salju.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang memiliki musim semi, panas, gugur, salju."
+    "explanation": "Benar: Jepang mengalami empat musim utama: musim semi, panas, gugur, dan dingin."
   },
   {
     "id": 43,
@@ -425,9 +467,10 @@
     "year": 2018,
     "question": "にほん の いなさく は なえ を そだて、 たうえ を する のが おおい です。",
     "reading": "Nihon no inasaku wa nae wo sodate, taue wo suru noga ooi desu.",
+    "translation": "Budidaya padi di Jepang kebanyakan ditumbuhkan bibitnya sebelum ditanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya padi di Jepang kebanyakan ditumbuhkan bibitnya sebelum ditanam."
+    "explanation": "Benar: Dalam budidaya padi Jepang, bibit sering dibesarkan di persemaian lalu dipindahkan ke sawah melalui tanam pindah."
   },
   {
     "id": 44,
@@ -435,9 +478,10 @@
     "year": 2018,
     "question": "にほん で かっている かちく は うし と ぶた だけ です。",
     "reading": "Nihon de katteiru kachiku wa ushi to buta dake desu.",
+    "translation": "Peternakan di Jepang hanya sapi dan babi saja.",
     "image": "",
     "answer": "×",
-    "explanation": "Peternakan di Jepang hanya sapi dan babi saja."
+    "explanation": "Salah: Selain sapi dan babi, Jepang juga memelihara ayam serta berbagai ternak lain."
   },
   {
     "id": 45,
@@ -445,9 +489,10 @@
     "year": 2018,
     "question": "たいひ は はたけ に のづみ して つくります。",
     "reading": "Taihi wa hatake ni nozumi shite tsukurimasu.",
+    "translation": "Kompos dibuat dengan cara ditumpuk di ladang.",
     "image": "",
     "answer": "×",
-    "explanation": "Kompos dibuat dengan cara ditumpuk di ladang."
+    "explanation": "Salah: Kompos dibuat melalui pengomposan yang dikelola—misalnya ditumpuk di tempat khusus dan dibalik—bukan sekadar menumpuk kotoran di ladang."
   },
   {
     "id": 46,
@@ -455,9 +500,10 @@
     "year": 2018,
     "question": "うし の いじょう を みつけたら、すぐ に ほうこく します。",
     "reading": "Ushi no ijou wo mitsuketara, sugu ni houkoku shimasu.",
+    "translation": "Jika menemukan keanehan pada sapi, segera melapor.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika menemukan keanehan pada sapi, segera melapor."
+    "explanation": "Benar: Kelainan pada sapi perlu segera dilaporkan agar pemeriksaan dan penanganan dapat dilakukan sejak dini."
   },
   {
     "id": 47,
@@ -465,9 +511,10 @@
     "year": 2018,
     "question": "サイレージ は ぼくそう など の はっこう させた しりょう です。",
     "reading": "Saireeji wa bokusou nado no hakkou saseta shiryou desu.",
+    "translation": "Silage adalah pakan rumput kering yang difermentasi.",
     "image": "",
     "answer": "○",
-    "explanation": "Silage adalah pakan rumput kering yang difermentasi."
+    "explanation": "Benar: Silase adalah hijauan seperti rumput yang diawetkan melalui fermentasi, biasanya dalam kondisi minim oksigen."
   },
   {
     "id": 48,
@@ -475,9 +522,10 @@
     "year": 2018,
     "question": "うし の 「い」には、２つ あります。",
     "reading": "Ushi no i niwa, futatsu arimasu.",
+    "translation": "Lambung pada sapi ada 2.",
     "image": "",
     "answer": "×",
-    "explanation": "Lambung pada sapi ada 2."
+    "explanation": "Salah: Sapi memiliki empat bagian lambung, bukan dua."
   },
   {
     "id": 49,
@@ -485,9 +533,10 @@
     "year": 2018,
     "question": "カーフハッチ は しぼった ちち を ひやす きぐ です。",
     "reading": "Kaafuhatchi wa shibotta chichi wo hiyasu kigu desu.",
+    "translation": "Kandang anak sapi adalah tempat untuk medinginkan susu yang telah diperah.",
     "image": "",
     "answer": "×",
-    "explanation": "Kandang anak sapi adalah tempat untuk medinginkan susu yang telah diperah."
+    "explanation": "Salah: Calf hutch adalah tempat pemeliharaan anak sapi; pendinginan susu dilakukan dengan peralatan seperti bulk cooler."
   },
   {
     "id": 50,
@@ -495,9 +544,10 @@
     "year": 2018,
     "question": "まえしぼり は ストリップ カップ で します。",
     "reading": "Maeshibori wa sutorippu kappu de shimasu.",
+    "translation": "Perahan susu awal menggunakan strip cup.",
     "image": "",
     "answer": "○",
-    "explanation": "Perahan susu awal menggunakan strip cup."
+    "explanation": "Benar: Perahan awal diperiksa dengan strip cup untuk melihat perubahan warna atau gumpalan yang dapat menunjukkan kelainan susu."
   },
   {
     "id": 51,
@@ -505,9 +555,10 @@
     "year": 2018,
     "question": "しゅっか された ぎゅうにゅう は ひんしつ を しらべます。",
     "reading": "Shukka sareta gyuunyuu wa hinshitsu wo shirabemasu.",
+    "translation": "Susu sapi yang dikirimkan, kualitasnya diperiksa.",
     "image": "",
     "answer": "○",
-    "explanation": "Susu sapi yang dikirimkan, kualitasnya diperiksa."
+    "explanation": "Benar: Susu yang dikirim diperiksa mutunya untuk memastikan keamanan dan memenuhi standar sebelum dipasarkan."
   },
   {
     "id": 52,
@@ -515,9 +566,10 @@
     "year": 2018,
     "question": "みず の のみば は いつも きれいに します。",
     "reading": "Mizu no nomiba wa itsumo kireini shimasu.",
+    "translation": "Air pada tempat minum selalu dibersihkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Air pada tempat minum selalu dibersihkan."
+    "explanation": "Benar: Tempat minum yang bersih mencegah pencemaran air dan membantu ternak memperoleh air minum yang aman."
   },
   {
     "id": 53,
@@ -525,9 +577,10 @@
     "year": 2018,
     "question": "ぎゅうしゃ に はいる ときは しょうどく しません。",
     "reading": "Gyuusha ni hairu tokiha shoudoku shimasen.",
+    "translation": "Pada saat masuk ke kandang sapi, tidak perlu melakukan disinfeksi.",
     "image": "",
     "answer": "×",
-    "explanation": "Pada saat masuk ke kandang sapi, tidak perlu melakukan disinfeksi."
+    "explanation": "Salah: Disinfeksi diperlukan saat masuk kandang untuk mengurangi risiko membawa patogen ke ternak."
   },
   {
     "id": 54,
@@ -535,9 +588,10 @@
     "year": 2018,
     "question": "にほん の ぎゅうにゅう で もっとも おいしい ひんしゅ は ジャージーしゅ です。",
     "reading": "Nihon no gyuunyuu de mottomo oishii hinshu wa jaajii shu desu.",
+    "translation": "Jenis sapi Jersey merupakan susu sapi Jepang yang paling enak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jenis sapi Jersey merupakan susu sapi Jepang yang paling enak."
+    "explanation": "Salah: Klaim “paling enak” tidak tepat; Jersey dikenal memiliki susu dengan kadar lemak tinggi, tetapi bukan berarti selalu paling enak dibanding semua jenis."
   },
   {
     "id": 55,
@@ -545,9 +599,10 @@
     "year": 2018,
     "question": "ホルスタインしゅ の にんしん きかん は やく 280にち です。",
     "reading": "Horusutain shu no ninshin kikan wa yaku nihyaku hachijuu nichi desu.",
+    "translation": "Jangka waktu hamil sapi jenis Holstein sekitar 280 hari.",
     "image": "",
     "answer": "○",
-    "explanation": "Jangka waktu hamil sapi jenis Holstein sekitar 280 hari."
+    "explanation": "Benar: Masa kebuntingan Holstein rata-rata sekitar 280 hari, walaupun dapat sedikit berbeda antar individu."
   },
   {
     "id": 56,
@@ -555,9 +610,10 @@
     "year": 2018,
     "question": "うし の はつじょう は いちねん に いっかい だけ です。",
     "reading": "Ushi no hatsujou wa ichinen ni ikkai dake desu.",
+    "translation": "Perkawinan sapi dilakukan hanya setahun sekali.",
     "image": "",
     "answer": "×",
-    "explanation": "Perkawinan sapi dilakukan hanya setahun sekali."
+    "explanation": "Salah: Sapi dapat mengalami siklus birahi berulang sekitar setiap 21 hari jika tidak bunting, bukan hanya sekali setahun."
   },
   {
     "id": 57,
@@ -565,9 +621,10 @@
     "year": 2018,
     "question": "ほうぼく は ぼくそうち などで うしを はなして、 かう やりかた です。",
     "reading": "Houboku wa bokusouchi nado de ushi wo hanashite, kau yarikata desu.",
+    "translation": "Merumput adalah cara ternak dengan melepas sapi pada lahan rumput, dll.",
     "image": "",
     "answer": "○",
-    "explanation": "Merumput adalah cara ternak dengan melepas sapi pada lahan rumput, dll."
+    "explanation": "Benar: Houboku adalah pemeliharaan dengan melepas sapi untuk memakan rumput di padang atau lahan rumput."
   },
   {
     "id": 58,
@@ -575,9 +632,10 @@
     "year": 2018,
     "question": "にゅうぼうえん は あし の びょうき です。",
     "reading": "Nyuubouen wa ashi no byouki desu.",
+    "translation": "Peradangan payudara adalah penyakit pada kaki.",
     "image": "",
     "answer": "×",
-    "explanation": "Peradangan payudara adalah penyakit pada kaki."
+    "explanation": "Salah: Nyuubouen atau mastitis adalah peradangan ambing, bukan penyakit kaki."
   },
   {
     "id": 59,
@@ -585,9 +643,10 @@
     "year": 2018,
     "question": "ぶんべん は やく ２かげつ まえ から ちちしぼり を やめます。",
     "reading": "Bunben wa yaku nikagetsu mae kara chichishibori wo yamemasu.",
+    "translation": "Sekitar 2 bulan sebelum melahirkan berhenti memerah susu.",
     "image": "",
     "answer": "○",
-    "explanation": "Sekitar 2 bulan sebelum melahirkan berhenti memerah susu."
+    "explanation": "Benar: Pengeringan sekitar dua bulan sebelum melahirkan memberi waktu ambing beristirahat dan mempersiapkan laktasi berikutnya."
   },
   {
     "id": 60,
@@ -595,9 +654,10 @@
     "year": 2018,
     "question": "ディッピング を した あと、かみたおる で にゅうとう を ふきません。",
     "reading": "Dippingu wo shita ato, kamitaoru de nyuutou wo fukimasen.",
+    "translation": "Setelah dipping, puting susu tidak dilap dengan lap kertas.",
     "image": "",
     "answer": "○",
-    "explanation": "Setelah dipping, puting susu tidak dilap dengan lap kertas."
+    "explanation": "Benar: Setelah dipping, puting dibiarkan memiliki lapisan disinfektan; mengelapnya dengan tisu dapat mengurangi efek perlindungan."
   },
   {
     "id": 61,
@@ -605,9 +665,10 @@
     "year": 2019,
     "question": "にほん は ほとんど が ねったい きこう です。",
     "reading": "Nihon wa hotondo ga nettai kikou desu.",
+    "translation": "Sebagian besar Jepang beriklim tropis.",
     "image": "",
     "answer": "×",
-    "explanation": "Sebagian besar Jepang beriklim tropis."
+    "explanation": "Salah: Sebagian besar Jepang beriklim sedang atau subtropis; hanya wilayah tertentu di selatan yang beriklim tropis."
   },
   {
     "id": 62,
@@ -615,9 +676,10 @@
     "year": 2019,
     "question": "にほん の こくど は なんぼく に ながい です。",
     "reading": "Nihon no kokudo wa nanboku ni nagai desu.",
+    "translation": "Tanah Jepang memanjang dari utara ke selatan.",
     "image": "",
     "answer": "○",
-    "explanation": "Tanah Jepang memanjang dari utara ke selatan."
+    "explanation": "Benar: Kepulauan Jepang memanjang dari utara ke selatan sehingga memiliki rentang iklim dan musim yang beragam."
   },
   {
     "id": 63,
@@ -625,9 +687,10 @@
     "year": 2019,
     "question": "にほん では きぼ の おおきい のうじょう が ふえてきます。",
     "reading": "Nihon dewa kibo no ookii noujou ga fuetekimasu.",
+    "translation": "Di Jepang ladang berskala besar semakin bertambah.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang ladang berskala besar semakin bertambah."
+    "explanation": "Benar: Konsolidasi lahan dan perkembangan mekanisasi mendorong bertambahnya usaha pertanian berskala besar."
   },
   {
     "id": 64,
@@ -635,9 +698,10 @@
     "year": 2019,
     "question": "にほん で かう おもな かちく は うし、ぶた、にわとり の みっつ です。",
     "reading": "Nihon de kau omona kachiku wa ushi, buta, niwatori no mittsu desu.",
+    "translation": "Di Jepang terdapat tiga ternak utama yaitu sapi.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang terdapat tiga ternak utama yaitu sapi."
+    "explanation": "Benar: Tiga ternak utama yang banyak dipelihara di Jepang adalah sapi, babi, dan ayam."
   },
   {
     "id": 65,
@@ -645,9 +709,10 @@
     "year": 2019,
     "question": "しょうどくえき は じかん が たつと こうか が あがります。",
     "reading": "Shoudokueki wa jikan ga tatsuto kouka ga agarimasu.",
+    "translation": "Efektifitas desinfektan meningkat dari waktu ke waktu.",
     "image": "",
     "answer": "×",
-    "explanation": "Efektifitas desinfektan meningkat dari waktu ke waktu."
+    "explanation": "Salah: Efektivitas disinfektan tidak meningkat hanya karena waktu berlalu; larutan dapat menurun efektivitasnya karena pengenceran, kotoran, atau penyimpanan."
   },
   {
     "id": 66,
@@ -655,9 +720,10 @@
     "year": 2019,
     "question": "かちく の いじょう を みつけたら すぐに ようす を しらせます。",
     "reading": "Kachiku no ijou wo mitsuketara suguni yousu wo shirasemasu.",
+    "translation": "Saat menemukan keadaan yang tidak biasa pada ternak segera lapor kondisinya.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menemukan keadaan yang tidak biasa pada ternak segera lapor kondisinya."
+    "explanation": "Benar: Melaporkan kondisi secara segera membantu penanggung jawab menilai tingkat kegawatan dan mengambil tindakan."
   },
   {
     "id": 67,
@@ -665,9 +731,10 @@
     "year": 2019,
     "question": "たいひ は かちく の ふんにょう を はっこうさせて つくります。",
     "reading": "Taihi wa kachiku no funnyou wo hakkou sasete tsukurimasu.",
+    "translation": "Kompos dibuat dari kotoran ternak.",
     "image": "",
     "answer": "○",
-    "explanation": "Kompos dibuat dari kotoran ternak."
+    "explanation": "Benar: Kotoran ternak dapat diolah melalui fermentasi menjadi kompos yang berguna sebagai pupuk."
   },
   {
     "id": 68,
@@ -675,9 +742,10 @@
     "year": 2019,
     "question": "ぼくそう は のうこう しりょう として つかいます。",
     "reading": "Bokusou wa noukou shiryou toshite tsukaimasu.",
+    "translation": "Rumput digunakan untuk pakan ternak konsentrat.",
     "image": "",
     "answer": "×",
-    "explanation": "Rumput digunakan untuk pakan ternak konsentrat."
+    "explanation": "Salah: Rumput termasuk pakan kasar yang menyediakan serat; pakan konsentrat adalah bahan padat energi atau protein seperti jagung."
   },
   {
     "id": 69,
@@ -685,9 +753,10 @@
     "year": 2019,
     "question": "うし の い は にんげん と おなじ ひとつ です。",
     "reading": "Ushi no i wa ningen to onaji hitotsu desu.",
+    "translation": "Perut sapi sama seperti perut manusia.",
     "image": "",
     "answer": "×",
-    "explanation": "Perut sapi sama seperti perut manusia."
+    "explanation": "Salah: Sapi memiliki lambung majemuk dengan empat bagian, sedangkan manusia memiliki satu lambung sederhana."
   },
   {
     "id": 70,
@@ -695,9 +764,10 @@
     "year": 2019,
     "question": "ばるくくーら は しょうどくえき を いれて おくもの です。",
     "reading": "Barukukuura wa shoudokueki wo irete okumono desu.",
+    "translation": "(Bulk Cooler) Tanki pendingin adalah tempat untuk menyimpan cairan disinfektan.",
     "image": "",
     "answer": "×",
-    "explanation": "(Bulk Cooler) Tanki pendingin adalah tempat untuk menyimpan cairan disinfektan."
+    "explanation": "Salah: Bulk cooler digunakan untuk mendinginkan dan menyimpan susu, bukan untuk menyimpan cairan disinfektan."
   },
   {
     "id": 71,
@@ -705,9 +775,10 @@
     "year": 2019,
     "question": "なつば は、だんぼうそうち を おき、ぎゅうしゃない を あたためます。",
     "reading": "Natsuba wa, danbousouchi wo oki, gyuushanai wo atatamemasu.",
+    "translation": "Saat musim panas siapkan penghangat untuk menghangatkan bagian dalam kandang.",
     "image": "",
     "answer": "×",
-    "explanation": "Saat musim panas siapkan penghangat untuk menghangatkan bagian dalam kandang."
+    "explanation": "Salah: Pada musim panas kandang perlu didinginkan dan diberi ventilasi; alat pemanas digunakan saat cuaca dingin."
   },
   {
     "id": 72,
@@ -715,9 +786,10 @@
     "year": 2019,
     "question": "しゅっかされた ちち は ひんしつ を しらべます。",
     "reading": "Shukkasareta chichi wa hinshitsu wo shirabemasu.",
+    "translation": "kualitas susu yang dikirim.",
     "image": "",
     "answer": "○",
-    "explanation": "kualitas susu yang dikirim."
+    "explanation": "Benar: Susu yang dikirim harus diperiksa kualitasnya untuk memastikan memenuhi persyaratan keamanan dan mutu."
   },
   {
     "id": 73,
@@ -725,9 +797,10 @@
     "year": 2019,
     "question": "うし の つうろ は すべる ように します。",
     "reading": "Ushi no tsuuro wa suberu you ni shimasu.",
+    "translation": "Lorong untuk sapi dibuat menjadi licin.",
     "image": "",
     "answer": "×",
-    "explanation": "Lorong untuk sapi dibuat menjadi licin."
+    "explanation": "Salah: Lorong sapi harus dibuat tidak licin agar sapi dapat berjalan tanpa terpeleset."
   },
   {
     "id": 74,
@@ -735,9 +808,10 @@
     "year": 2019,
     "question": "にほん の ぎゅうにゅう で もっとも おおい のは ジャージ しゅです。",
     "reading": "Nihon no gyuunyuu de mottomo ooi nowa jaaji shudesu.",
+    "translation": "Susu sapi di jepang kebanyakan berasal dari jenis sapi Jersey.",
     "image": "",
     "answer": "×",
-    "explanation": "Susu sapi di jepang kebanyakan berasal dari jenis sapi Jersey."
+    "explanation": "Salah: Susu Jepang terutama berasal dari sapi Holstein, bukan Jersey."
   },
   {
     "id": 75,
@@ -745,9 +819,10 @@
     "year": 2019,
     "question": "うし の はつじょう は いちねん に いっかい です。",
     "reading": "Ushi no hatsujou wa ichinen ni ikkai desu.",
+    "translation": "Birahi sapi terjadi satu kali dalam setahun.",
     "image": "",
     "answer": "×",
-    "explanation": "Birahi sapi terjadi satu kali dalam setahun."
+    "explanation": "Salah: Sapi yang tidak bunting dapat mengalami birahi berulang kira-kira setiap 21 hari, bukan hanya sekali setahun."
   },
   {
     "id": 76,
@@ -755,9 +830,10 @@
     "year": 2019,
     "question": "うし の はんしょく は じんこうじゅせい が できません。",
     "reading": "Ushi no hanshoku wa jinkoujusei ga dekimasen.",
+    "translation": "Pengembang biakan sapi tidak bisa melalui inseminasi buatan.",
     "image": "",
     "answer": "×",
-    "explanation": "Pengembang biakan sapi tidak bisa melalui inseminasi buatan."
+    "explanation": "Salah: Reproduksi sapi dapat dilakukan dengan inseminasi buatan, dan metode ini banyak digunakan dalam peternakan sapi."
   },
   {
     "id": 77,
@@ -765,9 +841,10 @@
     "year": 2019,
     "question": "ほうぼく は ぎゅうしゃ の なかで うし を つないで かう やりかた です。",
     "reading": "Houboku wa gyuusha no nakade ushi wo tsunaide kau yarikata desu.",
+    "translation": "Sapi akan diikat di dalam kandang saat pemberian pakan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi akan diikat di dalam kandang saat pemberian pakan."
+    "explanation": "Salah: Houboku berarti melepas sapi untuk merumput; mengikat sapi di kandang adalah metode pemeliharaan yang berbeda."
   },
   {
     "id": 78,
@@ -775,9 +852,10 @@
     "year": 2019,
     "question": "ぶんべん の やく 60 にち まえから ちち を しぼるの を やめます。",
     "reading": "Bunben no yaku rokujuu nichi maekara chichi wo shiboruno wo yamemasu.",
+    "translation": "Pemerahan susu dihentikan sejak 60 hari sebelum sapi melahirkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Pemerahan susu dihentikan sejak 60 hari sebelum sapi melahirkan."
+    "explanation": "Benar: Pemerahan biasanya dihentikan sekitar 60 hari sebelum melahirkan agar ambing beristirahat dan mempersiapkan laktasi berikutnya."
   },
   {
     "id": 79,
@@ -785,9 +863,10 @@
     "year": 2019,
     "question": "にゅうぼうえん は でんせん しません。",
     "reading": "Nyuubouen wa densen shimasen.",
+    "translation": "Penyakit mastitis tidak menular.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyakit mastitis tidak menular."
+    "explanation": "Salah: Mastitis dapat menular melalui tangan, alat, atau lingkungan yang tercemar, sehingga higiene pemerahan penting."
   },
   {
     "id": 80,
@@ -795,9 +874,10 @@
     "year": 2019,
     "question": "びょうき を ふせぐ ため ワクチン を つかいます。",
     "reading": "Byouki wo fusegu tame wakuchin wo tsukaimasu.",
+    "translation": "Menggunakan vaksin untuk mencegah penyakit.",
     "image": "",
     "answer": "○",
-    "explanation": "Menggunakan vaksin untuk mencegah penyakit."
+    "explanation": "Benar: Vaksinasi merangsang kekebalan tubuh sehingga membantu mencegah penyakit tertentu pada ternak."
   },
   {
     "id": 81,
@@ -805,9 +885,10 @@
     "year": 2020,
     "question": "にほん の こくど は、なんぼく に ながく のびています。",
     "reading": "Nihon no kokudo wa, nanboku ni nagaku nobiteimasu.",
+    "translation": "Bentuk negara Jepang itu melintang dari utara ke selatan.",
     "image": "",
     "answer": "○",
-    "explanation": "Bentuk negara Jepang itu melintang dari utara ke selatan."
+    "explanation": "Benar: Kepulauan Jepang membentang memanjang dari utara ke selatan, sehingga kondisi alam dan iklimnya beragam."
   },
   {
     "id": 82,
@@ -815,9 +896,10 @@
     "year": 2020,
     "question": "にほん は、さんち より のうち が おおいです。",
     "reading": "Nihon wa, sanchi yori nouchi ga ooi desu.",
+    "translation": "Jepang banyak tanah pertanian dari pada area produksi.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang banyak tanah pertanian dari pada area produksi."
+    "explanation": "Salah: Jepang memiliki banyak pegunungan dan lahan pertanian relatif terbatas; wilayah pegunungan lebih luas daripada lahan pertanian."
   },
   {
     "id": 83,
@@ -825,9 +907,10 @@
     "year": 2020,
     "question": "にほんに は、2つの きせつ が あります。",
     "reading": "Nihon-ni wa, futatsu no kisetsu ga arimasu.",
+    "translation": "Di Jepang ada 2 musim.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang ada 2 musim."
+    "explanation": "Salah: Jepang memiliki empat musim utama, bukan hanya dua."
   },
   {
     "id": 84,
@@ -835,9 +918,10 @@
     "year": 2020,
     "question": "にほんで は、しようきぼ の かくだい は すすんでいません。",
     "reading": "Nihon dewa, shiyoukibo no kakudai wa susundeimasen.",
+    "translation": "Di Jepang Usaha Skala Kecil (UMKM) nya tidak berkembang.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang Usaha Skala Kecil (UMKM) nya tidak berkembang."
+    "explanation": "Salah: Walaupun ada usaha kecil, pertanian Jepang juga mengalami peningkatan skala dan perkembangan usaha besar."
   },
   {
     "id": 85,
@@ -845,9 +929,10 @@
     "year": 2020,
     "question": "はっこうちゅう の たいひ は おんど が あがります。",
     "reading": "Hakkou chuu no taihi wa ondo ga agarimasu.",
+    "translation": "Kompos yang dalam masa fermentasi suhunya akan menurun.",
     "image": "",
     "answer": "○",
-    "explanation": "Kompos yang dalam masa fermentasi suhunya akan menurun."
+    "explanation": "Benar: Dalam pengomposan, panas naik pada tahap aktivitas mikroba yang tinggi lalu turun ketika bahan mudah terurai berkurang."
   },
   {
     "id": 86,
@@ -855,9 +940,10 @@
     "year": 2020,
     "question": "かちく に、あつさ と さむさ の たいさく は いらないです。",
     "reading": "Kachiku ni, atsusa to samusa no taisaku wa iranaidesu.",
+    "translation": "Pada hewan ternak tidak diperlukan pengukuran dingin dan panas.",
     "image": "",
     "answer": "×",
-    "explanation": "Pada hewan ternak tidak diperlukan pengukuran dingin dan panas."
+    "explanation": "Salah: Suhu lingkungan dan suhu tubuh ternak perlu dipantau karena panas atau dingin yang berlebihan memengaruhi kesehatan dan produktivitas."
   },
   {
     "id": 87,
@@ -865,9 +951,10 @@
     "year": 2020,
     "question": "かちく の いじょう を みつけたら、すぐに ようす を しらせます。",
     "reading": "Kachiku no ijou wo mitsuketara, suguni yousu wo shirasemasu.",
+    "translation": "Kalau menemukan keanehan pada hewan ternak, segera laporkan kondisinya.",
     "image": "",
     "answer": "○",
-    "explanation": "Kalau menemukan keanehan pada hewan ternak, segera laporkan kondisinya."
+    "explanation": "Benar: Pelaporan segera membuat kelainan dapat diperiksa dan ditangani sebelum memburuk atau menyebar."
   },
   {
     "id": 88,
@@ -875,9 +962,10 @@
     "year": 2020,
     "question": "ぎゅうしゃで は、しきりょう に オガクス（おがくす）を つかいます。",
     "reading": "Gyuusha dewa, shikiryou ni ogakusu (ogakusu) wo tsukaimasu.",
+    "translation": "Di Kandang sapi pemakaian alas dengan serbuk gergaji.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Kandang sapi pemakaian alas dengan serbuk gergaji."
+    "explanation": "Benar: Serbuk gergaji dapat digunakan sebagai alas kandang karena menyerap kelembapan dan membantu menjaga lantai tetap kering."
   },
   {
     "id": 89,
@@ -885,9 +973,10 @@
     "year": 2020,
     "question": "うまれた ばかり の こうしに は、そしりょう を おおく あたえます。",
     "reading": "Umareta bakari no koushini wa, soshiryou wo ooku ataemasu.",
+    "translation": "Pada anak sapi yang baru saja lahir memberi banyak serat.",
     "image": "",
     "answer": "×",
-    "explanation": "Pada anak sapi yang baru saja lahir memberi banyak serat."
+    "explanation": "Salah: Anak sapi baru lahir terutama memerlukan kolostrum; pakan berserat banyak bukan prioritas awal dan dapat sulit dicerna."
   },
   {
     "id": 90,
@@ -895,9 +984,10 @@
     "year": 2020,
     "question": "サイロ（さいろ）は、しぼった ちち を ひやし、ためて おく ものです。",
     "reading": "Sairo (sairo) wa, shibotta chichi wo hiyashi, tamete oku mono desu.",
+    "translation": "Silo yaitu sesuatu untuk menyimpan dan mendinginkan susu yang sudah di perah.",
     "image": "",
     "answer": "×",
-    "explanation": "Silo yaitu sesuatu untuk menyimpan dan mendinginkan susu yang sudah di perah."
+    "explanation": "Salah: Silo digunakan untuk menyimpan dan membuat silase; susu didinginkan serta disimpan di bulk cooler."
   },
   {
     "id": 91,
@@ -905,9 +995,10 @@
     "year": 2020,
     "question": "ウォーターカップ（うぉ一た一かっぷ）は びょうきから にゅうぼう を まもります。",
     "reading": "Wotaa kappu (wotaa kappu) wa byouki kara nyuubou wo mamorimasu.",
+    "translation": "Water Cup untuk menjaga puting payudara dari penyakit.",
     "image": "",
     "answer": "×",
-    "explanation": "Water Cup untuk menjaga puting payudara dari penyakit."
+    "explanation": "Salah: Water cup adalah tempat minum otomatis, bukan alat untuk melindungi puting dari penyakit."
   },
   {
     "id": 92,
@@ -915,9 +1006,10 @@
     "year": 2020,
     "question": "にゅうぎゅう[とう] とうの にゅうしつに は、ちがい が あります。",
     "reading": "Nyuugyuu [tou] tou no nyuushitsu niwa, chigai ga arimasu.",
+    "translation": "Pada sapi perah (dll) ada perbedaan pada kualitas susu.",
     "image": "",
     "answer": "○",
-    "explanation": "Pada sapi perah (dll) ada perbedaan pada kualitas susu."
+    "explanation": "Benar: Kualitas susu dapat berbeda antar sapi karena dipengaruhi jenis, kesehatan ambing, pakan, dan tahap laktasi."
   },
   {
     "id": 93,
@@ -925,9 +1017,10 @@
     "year": 2020,
     "question": "すいそうは、いつも きれいに して おきます。",
     "reading": "Suisouha, itsumo kireini shite okimasu.",
+    "translation": "Selalu bersihkan tangki air.",
     "image": "",
     "answer": "○",
-    "explanation": "Selalu bersihkan tangki air."
+    "explanation": "Benar: Tangki air harus dibersihkan rutin agar air tidak tercemar kotoran, lendir, atau mikroorganisme."
   },
   {
     "id": 94,
@@ -935,9 +1028,10 @@
     "year": 2020,
     "question": "にほん の にゅうぎゅうで もっとも おおい しゅるい は ブラウンスイス（ぶら うんすいす）しゅです。",
     "reading": "Nihon no nyuugyuu de mottomo ooi shurui wa buraun suisu (buraun suisu) shu desu.",
+    "translation": "Jenis sapi perah yang banyak ada di Jepang yaitu jenis sapi perah Brown Swiss.",
     "image": "",
     "answer": "×",
-    "explanation": "Jenis sapi perah yang banyak ada di Jepang yaitu jenis sapi perah Brown Swiss."
+    "explanation": "Salah: Jenis sapi perah yang dominan di Jepang adalah Holstein, bukan Brown Swiss."
   },
   {
     "id": 95,
@@ -945,9 +1039,10 @@
     "year": 2020,
     "question": "うし は はつじょう する と、にゅうりょう が へります。",
     "reading": "Ushi wa hatsujou suru to, nyuuryou ga herimasu.",
+    "translation": "Sapi yang sedang birahi, hasil susunya berkurang.",
     "image": "",
     "answer": "○",
-    "explanation": "Sapi yang sedang birahi, hasil susunya berkurang."
+    "explanation": "Benar: Birahi dapat menyebabkan stres dan penurunan konsumsi pakan, sehingga produksi susu dapat berkurang sementara."
   },
   {
     "id": 96,
@@ -955,9 +1050,10 @@
     "year": 2020,
     "question": "にゅうぎゅう の にんしん きかん は、やく150 にち です。",
     "reading": "Nyuugyuu no ninshin kikan wa, yaku hyaku gojuu nichi desu.",
+    "translation": "Jangka waktu hamil sapi perah yaitu sekitar 150 hari.",
     "image": "",
     "answer": "×",
-    "explanation": "Jangka waktu hamil sapi perah yaitu sekitar 150 hari."
+    "explanation": "Salah: Masa kebuntingan sapi perah sekitar 280 hari, bukan 150 hari."
   },
   {
     "id": 97,
@@ -965,9 +1061,10 @@
     "year": 2020,
     "question": "にゅうぼうえん は、うし から うし に かんせん しません。",
     "reading": "Nyuubouen wa, ushi kara ushi ni kansen shimasen.",
+    "translation": "Peradangan payudara tidak menginfeksi dari sapi ke sapi.",
     "image": "",
     "answer": "×",
-    "explanation": "Peradangan payudara tidak menginfeksi dari sapi ke sapi."
+    "explanation": "Salah: Mastitis dapat menular antar sapi melalui tangan, alat pemerahan, atau lingkungan yang terkontaminasi."
   },
   {
     "id": 98,
@@ -975,9 +1072,10 @@
     "year": 2020,
     "question": "ほうぼく は ぎゅうしゃ の なか で つないで かうやりかた です。",
     "reading": "Houboku wa gyuusha no naka de tsunaide kauyarikata desu.",
+    "translation": "Menggembala adalah cara untuk mengikat dan memberi makan sapi di dalam kandang sapi.",
     "image": "",
     "answer": "×",
-    "explanation": "Menggembala adalah cara untuk mengikat dan memberi makan sapi di dalam kandang sapi."
+    "explanation": "Salah: Menggembala berarti melepas sapi di padang rumput; mengikat dan memberi makan di kandang bukan menggembala."
   },
   {
     "id": 99,
@@ -985,9 +1083,10 @@
     "year": 2020,
     "question": "ぶんべん の やく 30 にち まえ から は ちち を しぼるの を やめます。",
     "reading": "Bunben no yaku sanjuu nichi mae kara wa chichi wo shiboruno wo yamemasu.",
+    "translation": "Pemerahan susu di 30 hari sebelum melahirkan itu tidak dilakukan.",
     "image": "",
     "answer": "×",
-    "explanation": "Pemerahan susu di 30 hari sebelum melahirkan itu tidak dilakukan."
+    "explanation": "Salah: Pengeringan umumnya dimulai sekitar 60 hari sebelum melahirkan, bukan baru 30 hari sebelumnya."
   },
   {
     "id": 100,
@@ -995,9 +1094,10 @@
     "year": 2020,
     "question": "びょうき を ふせぐ ため、よぼうせっしゅ を おこないます。",
     "reading": "Byouki wo fusegu tame, yobousesshu wo okonaimasu.",
+    "translation": "Untuk mencegah penyakit, dilaksakanan vaksinasi.",
     "image": "",
     "answer": "○",
-    "explanation": "Untuk mencegah penyakit, dilaksakanan vaksinasi."
+    "explanation": "Benar: Vaksinasi membantu membentuk kekebalan terhadap penyakit tertentu dan merupakan bagian dari pencegahan penyakit ternak."
   },
   {
     "id": 101,
@@ -1005,9 +1105,10 @@
     "year": 2021,
     "question": "にほん は、 やま が すくなく、 のうち が おおいです。",
     "reading": "Nihon wa, yama ga sukunaku, nouchi ga ooidesu.",
+    "translation": "Jepang memiliki pegunungan yang sedikit dan lahan pertanian yang banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang memiliki pegunungan yang sedikit dan lahan pertanian yang banyak."
+    "explanation": "Salah: Jepang memiliki banyak pegunungan dan lahan pertaniannya terbatas, bukan sedikit pegunungan dengan lahan pertanian luas."
   },
   {
     "id": 102,
@@ -1015,9 +1116,10 @@
     "year": 2021,
     "question": "にほん には、 ４つ の きせつ が あり ます。",
     "reading": "Nihon niha, yottsu no kisetsu ga ari masu.",
+    "translation": "Jepang memiliki 4 musim.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang memiliki 4 musim."
+    "explanation": "Benar: Jepang mempunyai empat musim utama yang berbeda: semi, panas, gugur, dan dingin."
   },
   {
     "id": 103,
@@ -1025,9 +1127,10 @@
     "year": 2021,
     "question": "にほん で かう おもな かちく は うし、ぶた、にわとり の ３つ です。",
     "reading": "Nihon de kau omona kachiku wa ushi, buta, niwatori no mittsu desu.",
+    "translation": "Hewan ternak yang utama di Jepang ada 3 jenis (sapi, babi, dan ayam).",
     "image": "",
     "answer": "○",
-    "explanation": "Hewan ternak yang utama di Jepang ada 3 jenis (sapi, babi, dan ayam)."
+    "explanation": "Benar: Sapi, babi, dan ayam merupakan tiga kelompok ternak utama di Jepang."
   },
   {
     "id": 104,
@@ -1035,9 +1138,10 @@
     "year": 2021,
     "question": "はっこうちゅう の たいひ は おんど が さがります。",
     "reading": "Hakkouchuu no taihi wa ondo ga sagarimasu.",
+    "translation": "Kompos yang dalam masa fermentasi suhunya akan menurun.",
     "image": "",
     "answer": "×",
-    "explanation": "Kompos yang dalam masa fermentasi suhunya akan menurun."
+    "explanation": "Salah: Suhu kompos biasanya meningkat lebih dulu akibat aktivitas mikroba, lalu menurun ketika fermentasi/penguraian berlanjut."
   },
   {
     "id": 105,
@@ -1045,9 +1149,10 @@
     "year": 2021,
     "question": "しりょう を たべない かちく が いたら、すぐ しらせます。",
     "reading": "Shiryou wo tabenai kachiku ga itara, sugu shirasemasu.",
+    "translation": "Jika ada hewan ternak yang tidak memakan pakannya, segera lapor.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika ada hewan ternak yang tidak memakan pakannya, segera lapor."
+    "explanation": "Benar: Tidak makan dapat menjadi tanda gangguan kesehatan, sehingga harus segera dilaporkan untuk diperiksa."
   },
   {
     "id": 106,
@@ -1055,9 +1160,10 @@
     "year": 2021,
     "question": "うし は い が ４つ あります。",
     "reading": "Ushi wa i ga yottsu arimasu.",
+    "translation": "Sapi memiliki 4 lambung.",
     "image": "",
     "answer": "○",
-    "explanation": "Sapi memiliki 4 lambung."
+    "explanation": "Benar: Sapi memiliki empat bagian lambung yang bekerja bersama dalam pencernaan pakan berserat."
   },
   {
     "id": 107,
@@ -1065,9 +1171,10 @@
     "year": 2021,
     "question": "うし の ひずめ は のびても、けずって は いけません。",
     "reading": "Ushi no hizume wa nobitemo, kezutte wa ikemasen.",
+    "translation": "Kuku sapi tidak boleh dipotong walaupun memanjang.",
     "image": "",
     "answer": "×",
-    "explanation": "Kuku sapi tidak boleh dipotong walaupun memanjang."
+    "explanation": "Salah: Kuku yang memanjang perlu dipotong atau dirapikan secara berkala agar cara berjalan dan kesehatan kaki tetap baik."
   },
   {
     "id": 108,
@@ -1075,9 +1182,10 @@
     "year": 2021,
     "question": "バルククーラ は しぼった ぎゅうにゅう を ため、ひやす ものです。",
     "reading": "Barukukuura wa shibotta gyuunyuu wo tame, hiyasu monodesu.",
+    "translation": "Bulk cooler adalah alat untuk menyimpan dan mendinginkan susu hasil perahan.",
     "image": "",
     "answer": "○",
-    "explanation": "Bulk cooler adalah alat untuk menyimpan dan mendinginkan susu hasil perahan."
+    "explanation": "Benar: Bulk cooler mendinginkan dan menyimpan susu hasil perahan untuk mempertahankan kualitasnya."
   },
   {
     "id": 109,
@@ -1085,9 +1193,10 @@
     "year": 2021,
     "question": "ウォーターカップ（うぉーたーかっぷ） は にゅうぼう を けが から まもります。",
     "reading": "Wotaa kappu (wotaa kappu) wa nyuubou wo kega kara mamorimasu.",
+    "translation": "Water cup melindungi puting susu sapi dari luka.",
     "image": "",
     "answer": "×",
-    "explanation": "Water cup melindungi puting susu sapi dari luka."
+    "explanation": "Salah: Water cup berfungsi menyediakan air minum; perlindungan puting dari luka bukan fungsi alat tersebut."
   },
   {
     "id": 110,
@@ -1095,9 +1204,10 @@
     "year": 2021,
     "question": "にほん で かう にゅうぎゅう で もっとも おおい のは、 ジャージ （じゃーじ）しゅ です。",
     "reading": "Nihon de kau nyuugyuu de mottomo ooi noha, jaaji (jaaji) shu desu.",
+    "translation": "Sapi yang diternak di Jepang yang paling banyak adalah jenis Jersey.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi yang diternak di Jepang yang paling banyak adalah jenis Jersey."
+    "explanation": "Salah: Sapi yang paling banyak diternakkan di Jepang adalah Holstein, bukan Jersey."
   },
   {
     "id": 111,
@@ -1105,9 +1215,10 @@
     "year": 2021,
     "question": "にゅうぎゅう の にんしんきかん は やく １００にち です。",
     "reading": "Nyuugyuu no ninshinkikan wa yaku hyaku nichi desu.",
+    "translation": "Masa hamil sapi adalah sekitar 100 hari.",
     "image": "",
     "answer": "×",
-    "explanation": "Masa hamil sapi adalah sekitar 100 hari."
+    "explanation": "Salah: Masa kebuntingan sapi sekitar 280 hari, bukan 100 hari."
   },
   {
     "id": 112,
@@ -1115,9 +1226,10 @@
     "year": 2021,
     "question": "うし は はつじょう する と、 おちつき が なくなります。",
     "reading": "Ushi wa hatsujou suru to, ochitsuki ga nakunarimasu.",
+    "translation": "Saat masa birahi, sapi tidak bisa tenang.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat masa birahi, sapi tidak bisa tenang."
+    "explanation": "Benar: Sapi birahi menunjukkan perilaku gelisah atau tidak tenang akibat perubahan hormonal."
   },
   {
     "id": 113,
@@ -1125,9 +1237,10 @@
     "year": 2021,
     "question": "ちち の しぼりすぎ を して は いけません。",
     "reading": "Chichi no shiborisugi wo shite wa ikemasen.",
+    "translation": "Tidak boleh melakukan pemerasan susu sapi berlebihan.",
     "image": "",
     "answer": "○",
-    "explanation": "Tidak boleh melakukan pemerasan susu sapi berlebihan."
+    "explanation": "Benar: Pemerahan berlebihan dapat melukai puting atau ambing dan meningkatkan risiko gangguan, sehingga harus dihindari."
   },
   {
     "id": 114,
@@ -1135,9 +1248,10 @@
     "year": 2021,
     "question": "ほうぼく は、 ぎゅうしゃ の なか で つないで かう ほうほう です。",
     "reading": "Houboku wa, gyuusha no naka de tsunaide kau houhou desu.",
+    "translation": "Merumput adalah cara beternak sapi dengan mengikatnya di kandang.",
     "image": "",
     "answer": "×",
-    "explanation": "Merumput adalah cara beternak sapi dengan mengikatnya di kandang."
+    "explanation": "Salah: Merumput berarti melepas sapi di lahan rumput; mengikat sapi di kandang bukan merumput."
   },
   {
     "id": 115,
@@ -1145,9 +1259,10 @@
     "year": 2021,
     "question": "ぶんべん の やく ３０にち まえ は ちち の しぼり は やめます。",
     "reading": "Bunben no yaku sanjuu nichi mae wa chichi no shibori wa yamemasu.",
+    "translation": "Pemerahan susu di 30 hari sebelum masa melahirkan itu tidak dilakukan.",
     "image": "",
     "answer": "×",
-    "explanation": "Pemerahan susu di 30 hari sebelum masa melahirkan itu tidak dilakukan."
+    "explanation": "Salah: Pemerahan biasanya dihentikan sekitar 60 hari sebelum melahirkan, bukan hanya 30 hari sebelumnya."
   },
   {
     "id": 116,
@@ -1155,9 +1270,10 @@
     "year": 2024,
     "question": "にほんユーラシアたいりくのひがしにあるしまぐにです。",
     "reading": "Nihon wa yuurashia tairiku no higashi ni aru shimaguni desu.",
+    "translation": "Jepang adalah negara kepulauan yang terletak di bagian timur Eurasia.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang adalah negara kepulauan yang terletak di bagian timur Eurasia."
+    "explanation": "Benar: Jepang adalah negara kepulauan di sebelah timur Benua Eurasia."
   },
   {
     "id": 117,
@@ -1165,9 +1281,10 @@
     "year": 2024,
     "question": "にほんはやまがすくなくて、のうちがおおいです。",
     "reading": "Nihon wa yama ga sukunakute, nouchi ga ooi desu.",
+    "translation": "Jepang pegunungannya sedikit dan lahan pertaniannya banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang pegunungannya sedikit dan lahan pertaniannya banyak."
+    "explanation": "Salah: Jepang memiliki banyak pegunungan sehingga lahan pertaniannya tidak luas."
   },
   {
     "id": 118,
@@ -1175,9 +1292,10 @@
     "year": 2024,
     "question": "にほんのかちくはおもにうし、ぶた、にわとりです。",
     "reading": "Nihon no kachiku wa omoni ushi, buta, niwatori desu.",
+    "translation": "Peternakan di Jepang umumnya adalah sapi, babi, dan ayam.",
     "image": "",
     "answer": "○",
-    "explanation": "Peternakan di Jepang umumnya adalah sapi, babi, dan ayam."
+    "explanation": "Benar: Sapi, babi, dan ayam merupakan peternakan utama yang umum di Jepang."
   },
   {
     "id": 119,
@@ -1185,9 +1303,10 @@
     "year": 2024,
     "question": "にほんではいっこあたりのしいくしているうし、ぶた、にわとりのかずがまいとしへっています。",
     "reading": "Nihon dewa, ikko atari no shiiku shiteiru ushi, buta, niwatori no kazu ga maitoshi hetteimasu.",
+    "translation": "Jumlah sapi, babi, dan ayam yang diternak di Jepang semakin berkurang.",
     "image": "",
     "answer": "×",
-    "explanation": "Jumlah sapi, babi, dan ayam yang diternak di Jepang semakin berkurang."
+    "explanation": "Salah: Pernyataan bahwa semuanya semakin berkurang terlalu mutlak; jumlah dan tren tiap komoditas berbeda, dan produksi ternak tetap menjadi kegiatan utama."
   },
   {
     "id": 120,
@@ -1195,9 +1314,10 @@
     "year": 2024,
     "question": "にほんはかちくのしりょうをたくさんゆにゅうしています。",
     "reading": "Nihon wa kachiku no shiryou wo takusan yunyuu shiteimasu.",
+    "translation": "Jepang mengimpor banyak pakan hewan ternak.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang mengimpor banyak pakan hewan ternak."
+    "explanation": "Benar: Jepang bergantung pada impor bahan pakan seperti jagung karena produksi pakan domestik tidak mencukupi kebutuhan peternakan."
   },
   {
     "id": 121,
@@ -1205,9 +1325,10 @@
     "year": 2024,
     "question": "にほんでしいくしているにゅうぎゅうはジャージーしゅがおおいです。",
     "reading": "Nihon de shiiku shiteiru nyuugyuu wa Jaajii shu ga ooi desu.",
+    "translation": "Sapi yang diternak di Jepang kebanyakan adalah jenis Jersey.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi yang diternak di Jepang kebanyakan adalah jenis Jersey."
+    "explanation": "Salah: Mayoritas sapi perah di Jepang adalah Holstein, bukan Jersey."
   },
   {
     "id": 122,
@@ -1215,9 +1336,10 @@
     "year": 2024,
     "question": "けんこうなうしのたいおんは42°Cぐらいです。",
     "reading": "Kenkouna ushi no taion wa yonjuu ni do gurai desu.",
+    "translation": "Suhu badan sapi yang sehat sekitar 42°C.",
     "image": "",
     "answer": "×",
-    "explanation": "Suhu badan sapi yang sehat sekitar 42°C."
+    "explanation": "Salah: Suhu tubuh normal sapi sekitar 38–39°C; 42°C terlalu tinggi dan dapat menunjukkan demam atau gangguan serius."
   },
   {
     "id": 123,
@@ -1225,9 +1347,10 @@
     "year": 2024,
     "question": "サイレージはぼくそうなどをかわかしたしりょうです。",
     "reading": "Saireeji wa bokusou nado wo kawakashita shiryou desu.",
+    "translation": "Silage adalah pakan yang merupakan rumput yang dikeringkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Silage adalah pakan yang merupakan rumput yang dikeringkan."
+    "explanation": "Benar: Silase dibuat dari hijauan yang diawetkan melalui fermentasi; rumput biasanya dilayukan atau dicacah sebelum disimpan kedap udara."
   },
   {
     "id": 124,
@@ -1235,9 +1358,10 @@
     "year": 2024,
     "question": "けいさんぎゅうはしゅっさんしたことがあるうしです。",
     "reading": "Keisan gyuu wa shussan shita koto ga aru ushi desu.",
+    "translation": "Keisan gyuu adalah istilah untuk sapi yang pernah melahirkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Keisan gyuu adalah istilah untuk sapi yang pernah melahirkan."
+    "explanation": "Benar: Keisan gyuu berarti sapi yang sudah pernah melahirkan, sehingga berbeda dari sapi yang belum pernah beranak."
   },
   {
     "id": 125,
@@ -1245,9 +1369,10 @@
     "year": 2024,
     "question": "ミルキングパーラはしぼったぎゅうにゅうをひやすきかいです。",
     "reading": "Mirukinggu paara wa shibotta gyuunyuu wo hiyasu kikai desu.",
+    "translation": "Milking parlor adalah alat untuk mendinginkan susu yang telah diperah.",
     "image": "",
     "answer": "×",
-    "explanation": "Milking parlor adalah alat untuk mendinginkan susu yang telah diperah."
+    "explanation": "Salah: Milking parlor adalah tempat pemerahan susu; alat pendinginnya adalah bulk cooler."
   },
   {
     "id": 126,
@@ -1255,9 +1380,10 @@
     "year": 2024,
     "question": "にゅうぎゅうはぶんべんをして、６かげつぐらいからぎゅうにゅうをおおくだします。",
     "reading": "Nyuugyuu wa bunben wo shite, roku kagetsu gurai kara gyuunyuu wo ooku dashimasu.",
+    "translation": "Sapi perah mengeluarkan banyak susu mulai dari 6 bulan setelah melahirkan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah mengeluarkan banyak susu mulai dari 6 bulan setelah melahirkan."
+    "explanation": "Salah: Produksi susu umumnya mencapai puncak beberapa minggu setelah melahirkan lalu menurun, bukan mulai banyak baru enam bulan kemudian."
   },
   {
     "id": 127,
@@ -1265,9 +1391,10 @@
     "year": 2024,
     "question": "さくにゅうはぎゅうにゅうをしぼることです。",
     "reading": "Sakunyuu wa gyuunyuu wo shiboru koto desu.",
+    "translation": "Sakunyuu adalah kegiatan memerah susu sapi.",
     "image": "",
     "answer": "○",
-    "explanation": "Sakunyuu adalah kegiatan memerah susu sapi."
+    "explanation": "Benar: Sakunyuu berarti kegiatan memerah atau mengambil susu dari sapi perah."
   },
   {
     "id": 128,
@@ -1275,9 +1402,10 @@
     "year": 2024,
     "question": "のうじょうにはいるときに、くるまのタイヤなどをしょうどくします。",
     "reading": "Noujou ni hairu toki ni, kuruma no Taiya nado wo shoudoku shimasu.",
+    "translation": "Ketika memasuki peternakan, ban mobil didisinfeksi terlebih dahulu.",
     "image": "",
     "answer": "○",
-    "explanation": "Ketika memasuki peternakan, ban mobil didisinfeksi terlebih dahulu."
+    "explanation": "Benar: Disinfeksi ban kendaraan saat memasuki peternakan membantu mencegah patogen dari luar masuk ke area ternak."
   },
   {
     "id": 129,
@@ -1285,9 +1413,10 @@
     "year": 2024,
     "question": "さくにゅうのまえに、さくにゅうきぐるいをてんけんします。",
     "reading": "Sakunyuu no mae ni, sakunyuu kigu rui wo tenken shimasu.",
+    "translation": "Peralatan pemerahan dicek sebelum melakukan pemerahan.",
     "image": "",
     "answer": "○",
-    "explanation": "Peralatan pemerahan dicek sebelum melakukan pemerahan."
+    "explanation": "Benar: Pemeriksaan peralatan sebelum pemerahan memastikan alat bersih, berfungsi, dan tidak mencemari susu."
   },
   {
     "id": 130,
@@ -1295,9 +1424,10 @@
     "year": 2024,
     "question": "はいごうしりょう、だいずかすなどはそしりょうです。",
     "reading": "Haigou shiryou, daizu kasu nado wa soshiryou desu.",
+    "translation": "Pakan campuran dan ampas kedelai adalah pakan kasar.",
     "image": "",
     "answer": "×",
-    "explanation": "Pakan campuran dan ampas kedelai adalah pakan kasar."
+    "explanation": "Salah: Pakan campuran dan ampas kedelai termasuk pakan konsentrat atau sumber protein; pakan kasar berupa rumput, jerami, atau silase."
   },
   {
     "id": 131,
@@ -1305,9 +1435,10 @@
     "year": 2024,
     "question": "こうしはうまれたとき、すぐげりやはいえんになります。ですから、きれいにしいくします。",
     "reading": "Koushi wa umareta toki, sugu geri ya haien ni narimasu. Desukara, kirei ni shiiku shimasu.",
+    "translation": "Sapi yang baru lahir rentan terkena diare dan radang paru. Sehingga, perlu diternak dengan bersih.",
     "image": "",
     "answer": "○",
-    "explanation": "Sapi yang baru lahir rentan terkena diare dan radang paru. Sehingga, perlu diternak dengan bersih."
+    "explanation": "Benar: Anak sapi baru lahir rentan terhadap diare dan pneumonia, sehingga kebersihan kandang, alat, dan perawatan sangat penting."
   },
   {
     "id": 132,
@@ -1315,9 +1446,10 @@
     "year": 2024,
     "question": "なつのあついとき、ホルスタインしゅはげんきです。",
     "reading": "Natsu no atsui toki, Horusutain shu wa genki desu.",
+    "translation": "Sapi Holstein sehat-sehat saja terhadap panasnya musim panas.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi Holstein sehat-sehat saja terhadap panasnya musim panas."
+    "explanation": "Salah: Holstein mudah mengalami stres panas; cuaca panas dapat menurunkan konsumsi pakan dan produksi susu."
   },
   {
     "id": 133,
@@ -1325,9 +1457,10 @@
     "year": 2024,
     "question": "こうしにウォーターカップでしりょうをあげます。",
     "reading": "Koushi ni wootaakappu de shiryou wo agemasu.",
+    "translation": "Anak sapi diberi pakan menggunakan water cup.",
     "image": "",
     "answer": "×",
-    "explanation": "Anak sapi diberi pakan menggunakan water cup."
+    "explanation": "Salah: Water cup digunakan untuk menyediakan air minum, bukan untuk memberi pakan anak sapi."
   },
   {
     "id": 134,
@@ -1335,9 +1468,10 @@
     "year": 2024,
     "question": "しょさんぎゅうは、はじめてぶんべんしたうしです。",
     "reading": "Shosan gyuu wa, hajimete bunben shita ushi desu.",
+    "translation": "Shosan gyuu adalah sapi yang baru pertama melahirkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Shosan gyuu adalah sapi yang baru pertama melahirkan."
+    "explanation": "Benar: Shosan gyuu adalah sapi betina yang baru pertama kali melahirkan."
   },
   {
     "id": 135,
@@ -1345,9 +1479,10 @@
     "year": 2024,
     "question": "ぎゅうしゃにはいるときに、ながぐつやさぎょうふくなどをしょうどくします。",
     "reading": "Gyuusha ni hairu toki ni, nagagutsu ya sagyou fuku nado wo shoudoku shimasu.",
+    "translation": "Sebelum masuk ke kandang, sepatu boot dan baju kerja didisinfeksi terlebih dahulu.",
     "image": "",
     "answer": "○",
-    "explanation": "Sebelum masuk ke kandang, sepatu boot dan baju kerja didisinfeksi terlebih dahulu."
+    "explanation": "Benar: Disinfeksi sepatu bot dan pakaian kerja sebelum masuk mengurangi risiko membawa patogen ke kandang."
   },
   {
     "id": 136,
@@ -1355,9 +1490,10 @@
     "year": 2025,
     "question": "にゅうぎゅうは、ぶんべんを して ８かげつぐらいに、ぎゅうにゅうを おおく だします。",
     "reading": "Nyuugyuu wa, bunben wo shite hachi kagetsu gurai ni, gyuunyuu wo ooku dashimasu.",
+    "translation": "Sapi perah mengeluarkan banyak susu 8 bulan setelah melahirkan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah mengeluarkan banyak susu 8 bulan setelah melahirkan."
+    "explanation": "Salah: Produksi susu biasanya mulai menurun setelah mencapai puncak beberapa minggu pascamelahirkan; bukan baru banyak pada bulan kedelapan."
   },
   {
     "id": 137,
@@ -1365,9 +1501,10 @@
     "year": 2025,
     "question": "しりょうそうこには、やちょうや ネズミ（ねずみ）が はいらない ように ちゅういします。",
     "reading": "Shiryou souko niwa, yachou ya nezumi (nezumi) ga hairanai you ni chuui shimasu.",
+    "translation": "Hati-hati jangan sampai burung liar atau tikus masuk ke gudang pangan.",
     "image": "",
     "answer": "○",
-    "explanation": "Hati-hati jangan sampai burung liar atau tikus masuk ke gudang pangan."
+    "explanation": "Benar: Burung liar dan tikus dapat membawa kotoran serta patogen, sehingga harus dicegah masuk ke gudang pakan."
   },
   {
     "id": 138,
@@ -1375,9 +1512,10 @@
     "year": 2025,
     "question": "ミルキングパーラ（みるきんぐぱーら）は、さくにゅうする ところです。",
     "reading": "Mirukingu paara (mirukingu paara) wa, sakunyuu suru tokoro desu.",
+    "translation": "Milking parlor adalah tempat memerah susu.",
     "image": "",
     "answer": "○",
-    "explanation": "Milking parlor adalah tempat memerah susu."
+    "explanation": "Benar: Milking parlor adalah fasilitas atau tempat khusus untuk memerah susu sapi."
   },
   {
     "id": 139,
@@ -1385,9 +1523,10 @@
     "year": 2025,
     "question": "にゅうようぎゅうは、にくを つくる ための うしです。",
     "reading": "Nyuuyou gyuu wa, niku wo tsukuru tame no ushi desu.",
+    "translation": "Sapi perah adalah sapi untuk diambil dagingnya.",
     "image": "",
     "answer": "×",
-    "explanation": "Sapi perah adalah sapi untuk diambil dagingnya."
+    "explanation": "Salah: Sapi perah dipelihara untuk menghasilkan susu; sapi pedaging dipelihara terutama untuk daging."
   },
   {
     "id": 140,
@@ -1395,9 +1534,10 @@
     "year": 2025,
     "question": "なつの あついとき、ホルスタイン（ほるすたいん）しゅは、にゅうりょうが すくなく なります。",
     "reading": "Natsu no atsui toki, Horusutain (horusutain) shu wa, nyuuryou ga sukunaku narimasu.",
+    "translation": "Susu sapi Holstein menurun jumlahnya di hari yang panas musim panas.",
     "image": "",
     "answer": "○",
-    "explanation": "Susu sapi Holstein menurun jumlahnya di hari yang panas musim panas."
+    "explanation": "Benar: Stres panas pada hari musim panas dapat menurunkan konsumsi pakan dan produksi susu Holstein."
   },
   {
     "id": 141,
@@ -1405,9 +1545,10 @@
     "year": 2025,
     "question": "ウォーターカップ（うぉーたーかっぷ）は、ぎゅうにゅうを つめたくする きかいです。",
     "reading": "Wotaa kappu (wotaa kappu) wa, gyuunyuu wo tsumetaku suru kikai desu.",
+    "translation": "Water cup adalah mesin untuk mendinginkan susu.",
     "image": "",
     "answer": "×",
-    "explanation": "Water cup adalah mesin untuk mendinginkan susu."
+    "explanation": "Salah: Water cup adalah tempat minum otomatis, sedangkan pendinginan susu dilakukan dengan bulk cooler."
   },
   {
     "id": 142,
@@ -1415,9 +1556,10 @@
     "year": 2025,
     "question": "ぎゅうしゃに はいるとき、ながぐつや さぎょうふくなどを しょうどくします。",
     "reading": "Gyuusha ni hairu toki, nagagutsu ya sagyou fuku nado wo shoudoku shimasu.",
+    "translation": "Ketika masuk kandang sapi, sepatu boot harus disterilkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Ketika masuk kandang sapi, sepatu boot harus disterilkan."
+    "explanation": "Benar: Mensterilkan sepatu bot sebelum masuk kandang membantu mencegah perpindahan penyakit ke ternak."
   },
   {
     "id": 143,
@@ -1425,9 +1567,10 @@
     "year": 2025,
     "question": "にほんは、おんたいきこうの ところが すくないです。",
     "reading": "Nihon wa, ontai kikou no tokoro ga sukunai desu.",
+    "translation": "Wilayah iklim hangat di Jepang itu sedikit.",
     "image": "",
     "answer": "×",
-    "explanation": "Wilayah iklim hangat di Jepang itu sedikit."
+    "explanation": "Salah: Jepang memiliki wilayah beriklim hangat yang cukup luas, terutama di bagian selatan; bukan hanya sedikit."
   },
   {
     "id": 144,
@@ -1435,9 +1578,10 @@
     "year": 2025,
     "question": "にほんは、やまが おおくて、のうちが すくないです。",
     "reading": "Nihon wa, yama ga ookute, nouchi ga sukunai desu.",
+    "translation": "Jepang itu banyak gunungnya dan sedikit ladangnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang itu banyak gunungnya dan sedikit ladangnya."
+    "explanation": "Benar: Jepang didominasi pegunungan sehingga lahan datar atau ladang relatif sedikit."
   },
   {
     "id": 145,
@@ -1445,9 +1589,10 @@
     "year": 2025,
     "question": "にほんは、トウモロコシ（とうもろこし）などの しりょうを がいこくから たくさん ゆにゅうしています。",
     "reading": "Nihon wa, toumorokoshi (toumorokoshi) nado no shiryou wo gaikoku kara takusan yunyuu shiteimasu.",
+    "translation": "Jepang mengimpor banyak pangan seperti jagung dari luar negeri.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang mengimpor banyak pangan seperti jagung dari luar negeri."
+    "explanation": "Benar: Jepang mengimpor bahan pangan dan pakan seperti jagung karena kebutuhan domestik tidak seluruhnya dipenuhi produksi dalam negeri."
   },
   {
     "id": 146,
@@ -1455,9 +1600,10 @@
     "year": 2025,
     "question": "にほんの らくのうは、かぞくけいえいが いちばん おおいです。",
     "reading": "Nihon no rakunou wa, kazoku keiei ga ichiban ooi desu.",
+    "translation": "Peternakan susu di Jepang paling banyak dikelola oleh keluarga.",
     "image": "",
     "answer": "○",
-    "explanation": "Peternakan susu di Jepang paling banyak dikelola oleh keluarga."
+    "explanation": "Benar: Banyak peternakan sapi perah Jepang dikelola keluarga, meskipun terdapat pula usaha skala besar."
   },
   {
     "id": 147,
@@ -1465,9 +1611,10 @@
     "year": 2025,
     "question": "けんこうな うしの たいおんは、41℃ぐらいです。",
     "reading": "Kenkou na ushi no taion wa, yonjuu ichi do gurai desu.",
+    "translation": "Suhu sapi sehat adalah sekitar 41 derajat C.",
     "image": "",
     "answer": "×",
-    "explanation": "Suhu sapi sehat adalah sekitar 41 derajat C."
+    "explanation": "Salah: Suhu tubuh normal sapi sekitar 38–39°C; 41°C menunjukkan suhu tinggi dan bukan kondisi sehat normal."
   },
   {
     "id": 148,
@@ -1475,8 +1622,9 @@
     "year": 2025,
     "question": "ルーメン（るーめん）で、びせいぶつが しりょうを ぶんかいします。",
     "reading": "Ruumen (ruumen) de, biseibutsu ga shiryou wo bunkai shimasu.",
+    "translation": "Mikroorganisme di Rumen memecah pakan.",
     "image": "",
     "answer": "○",
-    "explanation": "Mikroorganisme di Rumen memecah pakan."
+    "explanation": "Benar: Mikroorganisme di rumen memfermentasi dan memecah komponen pakan, terutama serat, menjadi zat yang dapat dimanfaatkan sapi."
   }
 ]

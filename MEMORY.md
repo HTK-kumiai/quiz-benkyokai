@@ -56,6 +56,38 @@ Repo aktif:
   - semua `reading`, `answer`, dan `explanation` dimasukkan dari hasil konfirmasi user di `butuh-konfirmasi.md`.
 - File sumber Kunsei sudah dipindahkan dari `soal-asli/` ke `sudah-proses/`:
   - `kunsei_2025_senmonkyu.docx`
+- Penjelasan soal Kunsei sudah dianalisis ulang:
+  - 35 dari 35 soal diperbarui dengan alasan faktual/prosedural yang spesifik.
+  - 0 soal memerlukan konfirmasi tambahan.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei` selesai; `sozai-kako` menjadi bidang berikutnya.
+- Penjelasan soal `sozai-kako` sudah dianalisis ulang:
+  - 56 dari 56 soal diperbarui dengan alasan faktual/prosedural yang spesifik.
+  - 0 soal memerlukan konfirmasi tambahan.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei` dan `sozai-kako` selesai; `hatasaku-yasai` menjadi bidang berikutnya.
+- Penjelasan soal `hatasaku-yasai` sudah dianalisis ulang:
+  - 83 dari 83 soal diperbarui dengan alasan faktual/prosedural yang spesifik.
+  - 0 soal memerlukan konfirmasi tambahan.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei`, `sozai-kako`, dan `hatasaku-yasai` selesai; `shisetsu-engei-kinoko` menjadi bidang berikutnya.
+- Penjelasan soal `shisetsu-engei-kinoko` sudah dianalisis ulang:
+  - 106 dari 106 soal diperbarui dengan alasan faktual/prosedural yang spesifik.
+  - 0 soal memerlukan konfirmasi tambahan.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei`, `sozai-kako`, `hatasaku-yasai`, dan `shisetsu-engei-kinoko` selesai; `shisetsu-engei` menjadi bidang berikutnya.
+- Penjelasan soal `shisetsu-engei` sudah dianalisis ulang:
+  - 136 dari 136 soal diperbarui dengan alasan faktual/prosedural spesifik.
+  - 1 soal (ID 4) perlu konfirmasi karena kunci `×` bertentangan dengan isi pernyataan yang secara prosedural benar.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei`, `sozai-kako`, `hatasaku-yasai`, `shisetsu-engei-kinoko`, dan `shisetsu-engei` selesai; `rakuno` menjadi bidang berikutnya.
+- Penjelasan soal `rakuno` sudah dianalisis ulang:
+  - 148 dari 148 soal diperbarui dengan alasan faktual/prosedural yang spesifik.
+  - 0 soal memerlukan konfirmasi tambahan.
+  - Validasi question bank dan Cloudflare build lulus.
+- Status milestone penjelasan: `kunsei`, `sozai-kako`, `hatasaku-yasai`, `shisetsu-engei-kinoko`, `shisetsu-engei`, dan `rakuno` selesai; `kensetsu` sedang dikerjakan.
+- Shisetsu Engei ID 4 dikonfirmasi user: jawaban sumber `×` salah dan telah dikoreksi menjadi `○`; penjelasan menyatakan ventilasi membuang panas saat suhu meningkat.
+- Kensetsu: seluruh 695 field `explanation` diperbarui pada tahap awal; 66 soal pertama ditinjau manual, sisanya masih perlu audit manual agar alasan tidak generik. Validasi question bank dan Cloudflare build lulus.
 - Tambahan Kensetsu 2017-2020 sudah dimasukkan:
   - 100 soal level `shokyu`, ID 596-695
   - tahun sumber: 2017, 2018, 2019, dan 2020
@@ -66,6 +98,8 @@ Repo aktif:
   - `butuh-konfirmasi.md`
   - berisi tabel final Kunsei dan tabel review tambahan Kensetsu 2017-2020 dengan kolom soal, terjemahan, reading, answer, dan catatan.
 - Workflow dan aturan format reading sudah ditambahkan ke `AGENTS.md`.
+- Skema bank soal sudah memisahkan `translation` (terjemahan Indonesia) dari `explanation` (alasan jawaban benar/salah) pada seluruh 1.259 soal lokal.
+- UI kuis, dashboard admin, validator, skrip penambahan soal, dan schema Supabase sudah diperbarui untuk field `translation`.
 
 ## Validasi Terakhir
 

@@ -21,7 +21,8 @@
    - `reading`: romaji hasil konfirmasi
    - `image`: string kosong jika tidak ada gambar
    - `answer`: `○` atau `×`
-   - `explanation`: isi dari kolom `terjemahan`
+   - `translation`: isi terjemahan bahasa Indonesia
+   - `explanation`: alasan mengapa jawaban tersebut benar atau salah
 7. Jika kategori belum ada, tambahkan metadata ke `public/data/question-bank/categories.json` dengan `id`, `title`, `name`, `shortName`, `subtitle`, `description`, `icon`, dan `filename`.
 8. Setelah soal masuk aplikasi, pindahkan sumber yang sudah diproses dari `soal-asli/` ke `sudah-proses/`. Jangan hapus sumber permanen.
 9. Jalankan validasi lokal:

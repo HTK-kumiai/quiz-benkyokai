@@ -9,14 +9,15 @@ QUESTION_BANK_DIR="$PROJECT_ROOT/public/data/question-bank"
 usage() {
   cat <<'EOF'
 Usage:
-  ./scripts/add-question.sh <category-id> "<question>" "<reading>" <answer> <year> [level] [explanation] [image]
+  ./scripts/add-question.sh <category-id> "<question>" "<reading>" <answer> <year> [level] [translation] [explanation] [image]
 
 Contoh:
-  ./scripts/add-question.sh nougyou "のうぎょう では あんぜん かくにん が たいせつ です。" "Nougyou dewa anzen kakunin ga taisetsu desu." "○" 2026 shokyu "Benar. Keselamatan kerja penting." ""
+  ./scripts/add-question.sh nougyou "のうぎょう では あんぜん かくにん が たいせつ です。" "Nougyou dewa anzen kakunin ga taisetsu desu." "○" 2026 shokyu "Keselamatan kerja penting dalam pertanian." "Pernyataan ini benar karena keselamatan kerja wajib diperhatikan." ""
 
 Catatan:
   - <answer> harus "○" atau "×"
   - [level] default: shokyu
+  - [translation] default: string kosong
   - [explanation] default: string kosong
   - [image] default: string kosong
 EOF
@@ -38,8 +39,9 @@ READING_TEXT="$3"
 ANSWER_VALUE="$4"
 YEAR_VALUE="$5"
 LEVEL_VALUE="${6:-shokyu}"
-EXPLANATION_VALUE="${7:-}"
-IMAGE_VALUE="${8:-}"
+TRANSLATION_VALUE="${7:-}"
+EXPLANATION_VALUE="${8:-}"
+IMAGE_VALUE="${9:-}"
 
 QUESTION_FILE="$QUESTION_BANK_DIR/questions-$CATEGORY_ID.json"
 
@@ -63,10 +65,10 @@ if [[ ! "$YEAR_VALUE" =~ ^[0-9]{4}$ ]]; then
   exit 1
 fi
 
-node - "$QUESTION_FILE" "$QUESTION_TEXT" "$READING_TEXT" "$ANSWER_VALUE" "$YEAR_VALUE" "$LEVEL_VALUE" "$EXPLANATION_VALUE" "$IMAGE_VALUE" <<'NODE'
+node - "$QUESTION_FILE" "$QUESTION_TEXT" "$READING_TEXT" "$ANSWER_VALUE" "$YEAR_VALUE" "$LEVEL_VALUE" "$TRANSLATION_VALUE" "$EXPLANATION_VALUE" "$IMAGE_VALUE" <<'NODE'
 const fs = require("fs");
 
-const [filePath, question, reading, answer, yearRaw, level, explanation, image] = process.argv.slice(2);
+const [filePath, question, reading, answer, yearRaw, level, translation, explanation, image] = process.argv.slice(2);
 const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
 if (!Array.isArray(data)) {
@@ -84,6 +86,7 @@ data.push({
   year: Number(yearRaw),
   question,
   reading,
+  translation,
   image,
   answer,
   explanation,
@@ -92,4 +95,3 @@ data.push({
 fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n");
 console.log(`Soal baru ditambahkan dengan id ${nextId} ke ${filePath}`);
 NODE
-

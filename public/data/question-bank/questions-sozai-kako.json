@@ -5,9 +5,10 @@
     "year": 2026,
     "question": "あぶら で あげた ころっけ や、ごまあえ は、そうざい です。",
     "reading": "Abura de ageta korokke ya, gomaae wa, sōzai desu.",
+    "translation": "Kroket goreng dan salad gomaae (sayuran saus wijen) termasuk ke dalam jenis lauk olahan (souzai).",
     "image": "",
     "answer": "○",
-    "explanation": "Kroket goreng dan salad gomaae (sayuran saus wijen) termasuk ke dalam jenis lauk olahan (souzai)."
+    "explanation": "Kroket yang digoreng dan gomaae yang sudah diolah merupakan makanan siap santap sebagai lauk atau pendamping, sehingga termasuk souzai, bukan bahan mentah."
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "year": 2026,
     "question": "むした しゅうまい や、すのもの は、そうざい です。",
     "reading": "Mushita shūmai ya, sunomono wa, sōzai desu.",
+    "translation": "Shumai kukus dan sunomono (acar/makanan asam) termasuk kategori lauk olahan (souzai).",
     "image": "",
     "answer": "○",
-    "explanation": "Shumai kukus dan sunomono (acar/makanan asam) termasuk kategori lauk olahan (souzai)."
+    "explanation": "Shumai yang dikukus dan sunomono yang dibumbui sudah melalui proses pengolahan dan disiapkan untuk dimakan sebagai lauk/pendamping, sehingga termasuk souzai."
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "year": 2026,
     "question": "にた かぼちゃ や、 ぽてとさらだ は、 そうざい です。",
     "reading": "Nita kabocha ya, potetosarada wa, sōzai desu.",
+    "translation": "Labu rebus (nita kabocha) dan salad kentang (potato salad) adalah souzai.",
     "image": "",
     "answer": "○",
-    "explanation": "Labu rebus (nita kabocha) dan salad kentang (potato salad) adalah souzai."
+    "explanation": "Kabocha rebus dan salad kentang adalah hidangan siap santap yang dibuat dari bahan pangan melalui pemasakan atau pencampuran, sehingga masuk kategori souzai."
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "year": 2026,
     "question": "むした じゃがいも と、さっきん した にんじん を まぜた もの は、そうざい です。",
     "reading": "Mushita jagaimo to, sakkin shita ninjin o mazeta mono wa, sōzai desu.",
+    "translation": "Campuran kentang kukus dan wortel yang disterilkan adalah produk souzai.",
     "image": "",
     "answer": "○",
-    "explanation": "Campuran kentang kukus dan wortel yang disterilkan adalah produk souzai."
+    "explanation": "Kentang kukus dan wortel yang dicampur menjadi hidangan siap santap merupakan produk olahan lauk, sehingga dikategorikan sebagai souzai."
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "year": 2026,
     "question": "すらいす する しょくざい を かえる とき は、いちど すらいさー を あらいます。",
     "reading": "Suraisu suru shokuzai o kaeru toki wa, ichido suraisā o araimasu.",
+    "translation": "Saat mengganti bahan yang akan diiris dengan slicer, mesin harus dicuci terlebih dahulu untuk mencegah kontaminasi silang.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat mengganti bahan yang akan diiris dengan slicer, mesin harus dicuci terlebih dahulu untuk mencegah kontaminasi silang."
+    "explanation": "Sisa bahan sebelumnya pada slicer dapat berpindah ke bahan berikutnya. Karena itu slicer harus dicuci saat bahan diganti untuk mencegah kontaminasi silang."
   },
   {
     "id": 6,
@@ -55,9 +60,10 @@
     "year": 2026,
     "question": "れいとうにく を かいとう する とき は、とれー や こんてな に いれます。",
     "reading": "Reitōniku o kaitō suru toki wa, torē ya kontena ni iremasu.",
+    "translation": "Mencairkan daging beku harus menggunakan baki (tray) atau wadah kontainer agar cairan drip daging tidak mengontaminasi tempat lain.",
     "image": "",
     "answer": "○",
-    "explanation": "Mencairkan daging beku harus menggunakan baki (tray) atau wadah kontainer agar cairan drip daging tidak mengontaminasi tempat lain."
+    "explanation": "Daging beku dicairkan di dalam tray atau kontainer agar cairan lelehan tertampung dan tidak menyebarkan kontaminasi ke permukaan atau bahan lain."
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "year": 2026,
     "question": "れいとう の えび を かいとう する とき は、とれー や こんてな に いれません。",
     "reading": "Reitō no ebi o kaitō suru toki wa, torē ya kontena ni iremasen.",
+    "translation": "Mencairkan udang beku juga harus ditaruh di dalam wadah/baki (tray) agar higienis dan cairan tidak mengontaminasi.",
     "image": "",
     "answer": "×",
-    "explanation": "Mencairkan udang beku juga harus ditaruh di dalam wadah/baki (tray) agar higienis dan cairan tidak mengontaminasi."
+    "explanation": "Klaim “tidak dimasukkan ke tray atau kontainer” salah. Udang beku juga harus dicairkan dalam wadah untuk menampung cairan leleh dan mencegah kontaminasi."
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "year": 2026,
     "question": "ふくろ に はいった しょくざい を、みず の なか で かいとう する とき は、ふくろ に あな が あいて いない か かくにん します。",
     "reading": "Fukuro ni haitta shokuzai o, mizu no naka de kaitō suru toki wa, fukuro ni ana ga aite inai ka kakunin shimasu.",
+    "translation": "Saat mencairkan makanan berbungkus di dalam air, wajib memeriksa tidak ada lubang/bocor agar air tidak masuk ke makanan.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat mencairkan makanan berbungkus di dalam air, wajib memeriksa tidak ada lubang/bocor agar air tidak masuk ke makanan."
+    "explanation": "Kemasan yang direndam harus utuh. Lubang atau kebocoran memungkinkan air masuk dan mencemari bahan, sehingga kondisi kantong perlu diperiksa sebelum pencairan."
   },
   {
     "id": 9,
@@ -85,9 +93,10 @@
     "year": 2026,
     "question": "さっきんざい の のうど は、きじゅん より こく します。",
     "reading": "Sakkin-zai no nōdo wa, kijun yori koku shimasu.",
+    "translation": "Konsentrasi disinfektan/cairan sterilisasi harus sesuai takaran standar (kijun), tidak boleh dibuat terlalu pekat.",
     "image": "",
     "answer": "×",
-    "explanation": "Konsentrasi disinfektan/cairan sterilisasi harus sesuai takaran standar (kijun), tidak boleh dibuat terlalu pekat."
+    "explanation": "Klaim konsentrasi harus dibuat lebih pekat salah. Konsentrasi disinfektan harus mengikuti standar; larutan terlalu pekat dapat membahayakan dan tidak sesuai prosedur."
   },
   {
     "id": 10,
@@ -95,9 +104,10 @@
     "year": 2026,
     "question": "さっきんざい の のうど は、きじゅん より うすく します。",
     "reading": "Sakkin-zai no nōdo wa, kijun yori usuku shimasu.",
+    "translation": "Konsentrasi disinfektan tidak boleh lebih encer dari standar karena daya bunuh bakterinya akan berkurang.",
     "image": "",
     "answer": "×",
-    "explanation": "Konsentrasi disinfektan tidak boleh lebih encer dari standar karena daya bunuh bakterinya akan berkurang."
+    "explanation": "Klaim harus dibuat lebih encer salah. Larutan yang terlalu encer dapat kehilangan daya disinfeksi, sehingga konsentrasinya harus sesuai standar yang ditetapkan."
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "year": 2026,
     "question": "さっきんざい が ない とき は、せんざい を つかいます。",
     "reading": "Sakkin-zai ga nai toki wa, senzai o tsukaimasu.",
+    "translation": "Deterjen biasa (senzai) hanya untuk membersihkan kotoran, tidak bisa menggantikan fungsi disinfektan pembunuh kuman (sakkin-zai).",
     "image": "",
     "answer": "×",
-    "explanation": "Deterjen biasa (senzai) hanya untuk membersihkan kotoran, tidak bisa menggantikan fungsi disinfektan pembunuh kuman (sakkin-zai)."
+    "explanation": "Deterjen hanya mengangkat kotoran dan tidak otomatis membunuh mikroorganisme seperti disinfektan. Jika disinfektan tidak tersedia, deterjen tidak boleh dianggap sebagai penggantinya."
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "year": 2026,
     "question": "しょくざい を れいぞうこ に ほかん する とき は、ようき に ふた を します。",
     "reading": "Shokuzai o reizōko ni hokan suru toki wa, yōki ni futa o shimasu.",
+    "translation": "Saat menyimpan bahan makanan di dalam kulkas, wadah wajib ditutup rapat.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menyimpan bahan makanan di dalam kulkas, wadah wajib ditutup rapat."
+    "explanation": "Penutup mencegah bahan terkena kotoran, percikan, dan kontaminasi silang selama penyimpanan di kulkas, sehingga wadah bahan harus ditutup."
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "year": 2026,
     "question": "ゆか や かべ は、そうじ しません。",
     "reading": "Yuka ya kabe wa, sōji shimasen.",
+    "translation": "Lantai dan dinding ruang kerja pabrik makanan wajib dibersihkan secara berkala.",
     "image": "",
     "answer": "×",
-    "explanation": "Lantai dan dinding ruang kerja pabrik makanan wajib dibersihkan secara berkala."
+    "explanation": "Klaim “tidak dibersihkan” salah. Lantai dan dinding dapat menjadi tempat menumpuknya kotoran dan mikroba, sehingga harus dibersihkan secara berkala."
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "year": 2026,
     "question": "つめ を、ながく のばして います。",
     "reading": "Tsume o, nagaku nobashite imasu.",
+    "translation": "Kuku tidak boleh dibiarkan panjang karena dapat menyimpan kotoran dan bakteri patogen.",
     "image": "",
     "answer": "×",
-    "explanation": "Kuku tidak boleh dibiarkan panjang karena dapat menyimpan kotoran dan bakteri patogen."
+    "explanation": "Klaim membiarkan kuku panjang salah. Kuku panjang menyimpan kotoran dan mikroba serta dapat menjadi sumber kontaminasi, sehingga kuku harus dipotong pendek."
   },
   {
     "id": 15,
@@ -145,9 +159,10 @@
     "year": 2026,
     "question": "つめ は、 いつも みじかく きって おきます。",
     "reading": "Tsume wa, itsumo mijikaku kitte okimasu.",
+    "translation": "Kuku harus selalu dipotong pendek dan dijaga kebersihannya.",
     "image": "",
     "answer": "○",
-    "explanation": "Kuku harus selalu dipotong pendek dan dijaga kebersihannya."
+    "explanation": "Kuku pendek lebih mudah dicuci dan tidak mudah menyimpan kotoran atau mikroba. Karena itu kuku perlu dipotong pendek dan dijaga kebersihannya."
   },
   {
     "id": 16,
@@ -155,9 +170,10 @@
     "year": 2026,
     "question": "つめ に、 まにきゅあ を ぬった まま しごと を しました。",
     "reading": "Tsume ni, manikyua o nutta mama shigoto o shimashita.",
+    "translation": "Dilarang memakai kutek/cat kuku saat bekerja karena serpihannya berisiko mengontaminasi makanan.",
     "image": "",
     "answer": "×",
-    "explanation": "Dilarang memakai kutek/cat kuku saat bekerja karena serpihannya berisiko mengontaminasi makanan."
+    "explanation": "Klaim memakai kutek saat bekerja salah. Kutek dapat terkelupas menjadi benda asing dan menyulitkan pemeriksaan kebersihan tangan, sehingga tidak boleh dipakai."
   },
   {
     "id": 17,
@@ -165,9 +181,10 @@
     "year": 2026,
     "question": "はいすいこう は、すぐ に よごれる ので、そうじ しません。",
     "reading": "Haisuikō wa, sugu ni yogoreru node, sōji shimasen.",
+    "translation": "Saluran pembuangan air (drainase) justru harus sering dibersihkan agar tidak menjadi sarang bakteri dan bau.",
     "image": "",
     "answer": "×",
-    "explanation": "Saluran pembuangan air (drainase) justru harus sering dibersihkan agar tidak menjadi sarang bakteri dan bau."
+    "explanation": "Klaim tidak membersihkan drainase salah. Saluran yang kotor dapat menimbulkan bau dan menjadi tempat berkembangnya mikroba, sehingga harus dibersihkan secara rutin."
   },
   {
     "id": 18,
@@ -175,9 +192,10 @@
     "year": 2026,
     "question": "ゆか に おちた しょくざい を そのまま つかいました。",
     "reading": "Yuka ni ochita shokuzai o sonomama tsukaimashita.",
+    "translation": "Bahan makanan yang jatuh ke lantai tidak boleh langsung dipakai karena telah terkontaminasi.",
     "image": "",
     "answer": "×",
-    "explanation": "Bahan makanan yang jatuh ke lantai tidak boleh langsung dipakai karena telah terkontaminasi."
+    "explanation": "Klaim menggunakan bahan yang jatuh salah. Lantai dapat membawa kotoran dan mikroba; bahan yang jatuh tidak boleh langsung dipakai karena berisiko mencemari produk."
   },
   {
     "id": 19,
@@ -185,9 +203,10 @@
     "year": 2026,
     "question": "といれ から でる とき に、て を あらいません でした。",
     "reading": "Toire kara deru toki ni, te o araimasen deshita.",
+    "translation": "Setelah dari toilet wajib mencuci tangan dan melakukan disinfeksi sebelum kembali ke area kerja.",
     "image": "",
     "answer": "×",
-    "explanation": "Setelah dari toilet wajib mencuci tangan dan melakukan disinfeksi sebelum kembali ke area kerja."
+    "explanation": "Klaim tidak mencuci tangan salah. Setelah keluar dari toilet, tangan harus dicuci dan disanitasi sebelum kembali bekerja agar mikroba tidak berpindah ke makanan."
   },
   {
     "id": 20,
@@ -195,9 +214,10 @@
     "year": 2026,
     "question": "にく と やさい を きる とき は、おなじ まないた を つかいます。",
     "reading": "Niku to yasai o kiru toki wa, onaji manaita o tsukaimasu.",
+    "translation": "Talenan untuk memotong daging dan sayuran harus dibedakan untuk mencegah kontaminasi silang.",
     "image": "",
     "answer": "×",
-    "explanation": "Talenan untuk memotong daging dan sayuran harus dibedakan untuk mencegah kontaminasi silang."
+    "explanation": "Klaim memakai talenan yang sama salah. Daging dan sayuran perlu dipisahkan, atau peralatan harus dicuci dan disanitasi di antaranya, untuk mencegah kontaminasi silang."
   },
   {
     "id": 21,
@@ -205,9 +225,10 @@
     "year": 2026,
     "question": "ちゅうしんおんどけい を つかった あと は、 せんさー ぶぶん を せいけつ に します。",
     "reading": "Chūshin-ondokei o tsukatta ato wa, sensā bubun o seiketsu ni shimasu.",
+    "translation": "Setelah menggunakan termometer suhu pusat, bagian sensor jarum harus dibersihkan dan disterilkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Setelah menggunakan termometer suhu pusat, bagian sensor jarum harus dibersihkan dan disterilkan."
+    "explanation": "Sensor termometer masuk ke makanan dan dapat membawa kotoran atau mikroba. Membersihkan serta menyanitasinya setelah digunakan mencegah kontaminasi pada pengukuran berikutnya."
   },
   {
     "id": 22,
@@ -215,9 +236,10 @@
     "year": 2026,
     "question": "ほうちょう は、 は の ぶぶん だけ では なく、て で もつ ぶぶん も あらいます。",
     "reading": "Hōchō wa, ha no bubun dake dewa naku, te de motsu bubun mo araimasu.",
+    "translation": "Pisau harus dicuci bersih secara menyeluruh, baik bilah pisaunya maupun gagang pegangannya.",
     "image": "",
     "answer": "○",
-    "explanation": "Pisau harus dicuci bersih secara menyeluruh, baik bilah pisaunya maupun gagang pegangannya."
+    "explanation": "Kotoran dan mikroba dapat menempel pada bilah maupun gagang pisau. Karena itu seluruh permukaan, bukan hanya bilah, harus dicuci bersih."
   },
   {
     "id": 23,
@@ -225,9 +247,10 @@
     "year": 2026,
     "question": "もりつけ さぎょう を おこなう、 せいけつ な さぎょうしつ に は、だんぼーるばこ を いれません。",
     "reading": "Moritsuke sagyō o okonau, seiketsu na sagyōshitsu ni wa, danbōrubako o iremasen.",
+    "translation": "Kardus kemasan tidak boleh dimasukkan ke dalam ruang bersih/plating karena membawa debu dan hama dari luar.",
     "image": "",
     "answer": "○",
-    "explanation": "Kardus kemasan tidak boleh dimasukkan ke dalam ruang bersih/plating karena membawa debu dan hama dari luar."
+    "explanation": "Kardus dari luar dapat membawa debu, kotoran, dan hama. Tidak memasukkannya ke ruang bersih menjaga area plating tetap higienis."
   },
   {
     "id": 24,
@@ -235,9 +258,10 @@
     "year": 2026,
     "question": "さぎょうば が あつかった ので、まど を あけました。",
     "reading": "Sagyōba ga atsukatta node, mado o akemashita.",
+    "translation": "Jendela ruang produksi makanan tidak boleh dibuka bebas karena debu dan serangga dari luar bisa masuk.",
     "image": "",
     "answer": "×",
-    "explanation": "Jendela ruang produksi makanan tidak boleh dibuka bebas karena debu dan serangga dari luar bisa masuk."
+    "explanation": "Klaim membuka jendela salah. Udara luar dapat membawa debu dan serangga, sehingga jendela ruang produksi hanya boleh dibuka sesuai prosedur pengendalian higiene."
   },
   {
     "id": 25,
@@ -245,9 +269,10 @@
     "year": 2026,
     "question": "さぎょうちゅう に あつく なった ので、そで を まくりました。",
     "reading": "Sagyōchū ni atsuku natta node, sode o makurimashita.",
+    "translation": "Lengan baju kerja tidak boleh digulung agar bulu tangan atau kotoran tidak jatuh ke produk makanan.",
     "image": "",
     "answer": "×",
-    "explanation": "Lengan baju kerja tidak boleh digulung agar bulu tangan atau kotoran tidak jatuh ke produk makanan."
+    "explanation": "Klaim menggulung lengan baju salah. Lengan yang terbuka dapat melepaskan rambut atau kotoran ke produk; pakaian kerja harus tetap menutupinya."
   },
   {
     "id": 26,
@@ -255,9 +280,10 @@
     "year": 2026,
     "question": "さぎょうちゅう に あつく なった ので、 ぼうし を ぬぎました。",
     "reading": "Sagyōchū ni atsuku natta node, bōshi o nugimashita.",
+    "translation": "Topi kerja pabrik makanan dilarang dilepas di area kerja agar rambut tidak jatuh mencemari makanan.",
     "image": "",
     "answer": "×",
-    "explanation": "Topi kerja pabrik makanan dilarang dilepas di area kerja agar rambut tidak jatuh mencemari makanan."
+    "explanation": "Klaim melepas topi salah. Topi menahan rambut agar tidak jatuh ke makanan, sehingga harus tetap dipakai di area kerja."
   },
   {
     "id": 27,
@@ -265,9 +291,10 @@
     "year": 2026,
     "question": "ながく つかって け が みじかく なった ぶらし を つかいました。",
     "reading": "Nagaku tsukatte, ke ga mijikaku natta burashi o tsukaimashita.",
+    "translation": "Sikat yang bulunya sudah aus/pendek harus diganti karena bulu sikat rawan rontok dan menjadi benda asing dalam makanan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sikat yang bulunya sudah aus/pendek harus diganti karena bulu sikat rawan rontok dan menjadi benda asing dalam makanan."
+    "explanation": "Klaim memakai sikat aus salah. Bulu pendek atau rusak lebih mudah rontok dan menjadi benda asing, sehingga sikat harus diganti saat kondisinya menurun."
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "year": 2026,
     "question": "ふくろ に はいった しょくざい を もりつけ に つかう とき は、ふくろ の ひょうめん を しょうどく して から かいふう します。",
     "reading": "Fukuro ni haitta shokuzai o moritsuke ni tsukau toki wa, fukuro no hyōmen o shōdoku shite kara kaifū shimasu.",
+    "translation": "Permukaan kemasan kantong harus disterilkan terlebih dahulu sebelum digunting/dibuka agar debu luar tidak masuk.",
     "image": "",
     "answer": "○",
-    "explanation": "Permukaan kemasan kantong harus disterilkan terlebih dahulu sebelum digunting/dibuka agar debu luar tidak masuk."
+    "explanation": "Disinfeksi permukaan kantong mengurangi debu dan kotoran yang dapat masuk ketika kemasan dibuka. Karena itu permukaan disanitasi sebelum digunting atau dibuka."
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "year": 2026,
     "question": "そうじ よう の ぶらし が とどかない ところ は、そうじ しません。",
     "reading": "Sōji yō no burashi ga todokanai tokoro wa, sōji shimasen.",
+    "translation": "Bagian yang sulit terjangkau pun tetap wajib dibersihkan menggunakan peralatan pembersih yang sesuai.",
     "image": "",
     "answer": "×",
-    "explanation": "Bagian yang sulit terjangkau pun tetap wajib dibersihkan menggunakan peralatan pembersih yang sesuai."
+    "explanation": "Klaim tidak membersihkan bagian yang tidak terjangkau salah. Celah dan sudut tetap dapat menumpuk kotoran, sehingga harus dibersihkan dengan alat yang sesuai."
   },
   {
     "id": 30,
@@ -295,9 +324,10 @@
     "year": 2026,
     "question": "ころっけ を あげた とき は、ちゅうしん の おんど を はかります。",
     "reading": "Korokke o ageta toki wa, chūshin no ondo o hakarimasu.",
+    "translation": "Setelah menggoreng kroket, ukur suhu pusat/bagian dalam (minimal 75°C selama 1 menit) untuk memastikan bakteri mati.",
     "image": "",
     "answer": "○",
-    "explanation": "Setelah menggoreng kroket, ukur suhu pusat/bagian dalam (minimal 75°C selama 1 menit) untuk memastikan bakteri mati."
+    "explanation": "Suhu pusat menunjukkan apakah bagian terdalam kroket mencapai suhu pemasakan yang aman. Pengukuran minimal 75°C selama 1 menit membantu memastikan mikroba patogen terkendali."
   },
   {
     "id": 31,
@@ -305,9 +335,10 @@
     "year": 2026,
     "question": "ころっけ を あげた とき は、ひょうめん の おんど を はかります。",
     "reading": "Korokke o ageta toki wa, hyōmen no ondo o hakarimasu.",
+    "translation": "Pengukuran kematangan masakan wajib dilakukan pada suhu pusat (bagian dalam makanan), bukan hanya suhu permukaannya.",
     "image": "",
     "answer": "×",
-    "explanation": "Pengukuran kematangan masakan wajib dilakukan pada suhu pusat (bagian dalam makanan), bukan hanya suhu permukaannya."
+    "explanation": "Klaim mengukur permukaan saja salah. Permukaan dapat panas sementara bagian dalam belum matang; keamanan harus dinilai dari suhu pusat makanan."
   },
   {
     "id": 32,
@@ -315,9 +346,10 @@
     "year": 2026,
     "question": "ころっけ を あげる とき は、じかん を はかりません。",
     "reading": "Korokke o ageru toki wa, jikan o hakarimasen.",
+    "translation": "Waktu penggorengan wajib diukur dan dipantau sesuai standar SOP.",
     "image": "",
     "answer": "×",
-    "explanation": "Waktu penggorengan wajib diukur dan dipantau sesuai standar SOP."
+    "explanation": "Klaim tidak mengukur waktu salah. Waktu penggorengan perlu dipantau sesuai SOP agar pemasakan konsisten dan produk mencapai kondisi aman."
   },
   {
     "id": 33,
@@ -325,9 +357,10 @@
     "year": 2026,
     "question": "はんばーぐ を やいた とき は、ひょうめん の おんど を はかります。",
     "reading": "Hanbāgu o yaita toki wa, hyōmen no ondo o hakarimasu.",
+    "translation": "Saat memanggang patty hamburger, wajib mengukur suhu bagian pusat/dalam daging.",
     "image": "",
     "answer": "×",
-    "explanation": "Saat memanggang patty hamburger, wajib mengukur suhu bagian pusat/dalam daging."
+    "explanation": "Klaim mengukur suhu permukaan salah. Suhu permukaan tidak mewakili bagian tengah patty, sehingga suhu pusat daging yang harus diperiksa."
   },
   {
     "id": 34,
@@ -335,9 +368,10 @@
     "year": 2026,
     "question": "こんべくしょん おーぶん の なか は、いち に よって おんど が ちがいます。",
     "reading": "Konbekushon ōbun no naka wa, ichi ni yotte ondo ga chigaimasu.",
+    "translation": "Di dalam convection oven, suhu di berbagai sudut/posisi loyang bisa sedikit berbeda.",
     "image": "",
     "answer": "○",
-    "explanation": "Di dalam convection oven, suhu di berbagai sudut/posisi loyang bisa sedikit berbeda."
+    "explanation": "Aliran udara panas dan posisi loyang menyebabkan distribusi panas dalam convection oven tidak selalu seragam. Karena itu posisi dan suhu perlu dikendalikan saat memasak."
   },
   {
     "id": 35,
@@ -345,9 +379,10 @@
     "year": 2026,
     "question": "じょうき で ちょうり する こと を、あげる と いいます。",
     "reading": "Jōki de chōri suru koto o, ageru to iimasu.",
+    "translation": "Memasak dengan uap air disebut 'mengukus' (蒸す / musu). 'Ageru' (揚げる) artinya menggoreng dengan minyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Memasak dengan uap air disebut 'mengukus' (蒸す / musu). 'Ageru' (揚げる) artinya menggoreng dengan minyak."
+    "explanation": "Klaim istilahnya salah: memasak dengan uap disebut 蒸す (musu), sedangkan 揚げる (ageru) berarti menggoreng menggunakan minyak."
   },
   {
     "id": 36,
@@ -355,9 +390,10 @@
     "year": 2026,
     "question": "ふらいやー の なか の あげかす は 、とりません。",
     "reading": "Furaiyā no naka no agekasu wa, torimasen.",
+    "translation": "Remah/ampas gorengan di dalam fryer harus selalu diangkat agar minyak tidak gosong dan cepat rusak.",
     "image": "",
     "answer": "×",
-    "explanation": "Remah/ampas gorengan di dalam fryer harus selalu diangkat agar minyak tidak gosong dan cepat rusak."
+    "explanation": "Klaim tidak mengangkat ampas salah. Remah yang tertinggal dapat terus terbakar, menghitamkan dan mempercepat kerusakan minyak, sehingga harus disaring atau diangkat."
   },
   {
     "id": 37,
@@ -365,9 +401,10 @@
     "year": 2026,
     "question": "ふらいやー へ、 いちど に たいりょう の しょくざい を いれました。",
     "reading": "Furaiyā e, ichido ni tairyō no shokuzai o iremashita.",
+    "translation": "Memasukkan terlalu banyak bahan sekaligus ke dalam fryer akan menurunkan suhu minyak secara drastis.",
     "image": "",
     "answer": "×",
-    "explanation": "Memasukkan terlalu banyak bahan sekaligus ke dalam fryer akan menurunkan suhu minyak secara drastis."
+    "explanation": "Klaim bahwa tindakan itu benar salah. Memasukkan terlalu banyak bahan memang menurunkan suhu minyak dan membuat hasil tidak matang merata; jumlah bahan harus dibatasi."
   },
   {
     "id": 38,
@@ -375,9 +412,10 @@
     "year": 2026,
     "question": "ふらいやー に、 たいりょう の しょくざい を いれる と、あぶら の おんど が さがり、きんとう に かねつ できません。",
     "reading": "Furaiyā ni, tairyō no shokuzai o ireru to, abura no ondo ga sagari, kintō ni kanetsu dekimasen.",
+    "translation": "Benar. Jika memasukkan terlalu banyak bahan sekaligus, suhu minyak anjlok sehingga pemanasan tidak merata.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Jika memasukkan terlalu banyak bahan sekaligus, suhu minyak anjlok sehingga pemanasan tidak merata."
+    "explanation": "Bahan dalam jumlah besar menyerap panas minyak lebih banyak daripada kemampuan pemulihan fryer. Suhu turun dan pemanasan menjadi tidak merata, sehingga kapasitas muatan harus dijaga."
   },
   {
     "id": 39,
@@ -385,9 +423,10 @@
     "year": 2026,
     "question": "こめ を たく とき は、 みず の りょう が たいせつ です。",
     "reading": "Kome o taku toki wa, mizu no ryō ga taisetsu desu.",
+    "translation": "Saat menanak nasi, takaran perbandingan air sangat penting untuk menghasilkan tekstur nasi yang tepat.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menanak nasi, takaran perbandingan air sangat penting untuk menghasilkan tekstur nasi yang tepat."
+    "explanation": "Air menentukan jumlah uap yang tersedia untuk mematangkan beras. Terlalu banyak atau sedikit air mengubah tekstur, sehingga takarannya harus tepat."
   },
   {
     "id": 40,
@@ -395,9 +434,10 @@
     "year": 2026,
     "question": "かねつ ちょうり を する とき は、 やけど に ちゅうい します。",
     "reading": "Kanetsu chōri o suru toki wa, yakedo ni chūi shimasu.",
+    "translation": "Saat memasak menggunakan panas/api/minyak, harus selalu waspada terhadap bahaya luka bakar.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat memasak menggunakan panas/api/minyak, harus selalu waspada terhadap bahaya luka bakar."
+    "explanation": "Panas, minyak, dan uap dapat merusak kulit. Waspada, menggunakan alat pelindung, dan mengikuti prosedur mencegah luka bakar saat memasak."
   },
   {
     "id": 41,
@@ -405,9 +445,10 @@
     "year": 2026,
     "question": "きかい から いつも と ちがう おと が したら、すぐ に きかい を とめます。",
     "reading": "Kikai kara itsumo to chigau oto ga shitara, sugu ni kikai o tomemasu.",
+    "translation": "Jika mesin terdengar mengeluarkan suara asing/tidak biasa, segera matikan mesin dan laporkan ke atasan.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika mesin terdengar mengeluarkan suara asing/tidak biasa, segera matikan mesin dan laporkan ke atasan."
+    "explanation": "Suara tidak biasa dapat menandakan kerusakan atau kondisi mesin yang berbahaya. Menghentikan mesin dan melapor mencegah kerusakan serta kecelakaan lebih lanjut."
   },
   {
     "id": 42,
@@ -415,9 +456,10 @@
     "year": 2026,
     "question": "すらいさー を つかった あと は、すらいさー の は が かけて いない か かくにん します。",
     "reading": "Suraisā o tsukatta ato wa, suraisā no ha ga kakete inai ka kakunin shimasu.",
+    "translation": "Setelah menggunakan slicer, periksa mata pisau untuk memastikan tidak ada bagian yang gompal/pecah dan tercecer ke makanan.",
     "image": "",
     "answer": "○",
-    "explanation": "Setelah menggunakan slicer, periksa mata pisau untuk memastikan tidak ada bagian yang gompal/pecah dan tercecer ke makanan."
+    "explanation": "Pisau slicer yang gompal dapat melepaskan serpihan logam atau bagian pisau ke makanan. Pemeriksaan setelah penggunaan membantu menemukan bahaya benda asing."
   },
   {
     "id": 43,
@@ -425,9 +467,10 @@
     "year": 2026,
     "question": "いそいで いた ので、こうじょう の なか を はしりました。",
     "reading": "Isoide ita node, kōjō no naka o hashirimashita.",
+    "translation": "Dilarang berlari di dalam pabrik makanan karena dapat menyebabkan kecelakaan fatal atau menabrak pekerja lain.",
     "image": "",
     "answer": "×",
-    "explanation": "Dilarang berlari di dalam pabrik makanan karena dapat menyebabkan kecelakaan fatal atau menabrak pekerja lain."
+    "explanation": "Klaim berlari di pabrik salah. Berlari meningkatkan risiko terpeleset, bertabrakan, dan cedera; pekerja harus berjalan mengikuti aturan keselamatan."
   },
   {
     "id": 44,
@@ -435,9 +478,10 @@
     "year": 2026,
     "question": "ゆか が ぬれて いる と、すべる ので きけん です。",
     "reading": "Yuka ga nurete iru to, suberu node kiken desu.",
+    "translation": "Lantai yang basah sangat licin dan berbahaya bagi keselamatan kerja.",
     "image": "",
     "answer": "○",
-    "explanation": "Lantai yang basah sangat licin dan berbahaya bagi keselamatan kerja."
+    "explanation": "Air mengurangi daya cengkeram alas kaki terhadap lantai. Akibatnya lantai basah mudah menyebabkan terpeleset, sehingga merupakan bahaya keselamatan."
   },
   {
     "id": 45,
@@ -445,9 +489,10 @@
     "year": 2026,
     "question": "ゆか は、 ぬれて いた ほう が すべり やすくて よい です。",
     "reading": "Yuka wa, nurete ita hō ga suberi yasukute yoi desu.",
+    "translation": "Lantai yang licin berbahaya. Lantai harus selalu diupayakan tetap kering dan bersih.",
     "image": "",
     "answer": "×",
-    "explanation": "Lantai yang licin berbahaya. Lantai harus selalu diupayakan tetap kering dan bersih."
+    "explanation": "Klaim lantai basah lebih baik salah. Lantai harus segera dikeringkan dan dibersihkan karena air mengurangi gesekan dan meningkatkan risiko jatuh."
   },
   {
     "id": 46,
@@ -455,9 +500,10 @@
     "year": 2026,
     "question": "せんざい を つかう とき は、 め に はいらない よう に ちゅうい します。",
     "reading": "Senzai o tsukau toki wa, me ni hairanai yō ni chūi shimasu.",
+    "translation": "Saat menggunakan deterjen/bahan kimia pembersih, berhati-hatilah agar tidak mengenai mata.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menggunakan deterjen/bahan kimia pembersih, berhati-hatilah agar tidak mengenai mata."
+    "explanation": "Deterjen atau bahan kimia dapat mengiritasi atau mencederai mata. Menghindari percikan dan memakai perlindungan yang sesuai mencegah paparan tersebut."
   },
   {
     "id": 47,
@@ -465,9 +511,10 @@
     "year": 2026,
     "question": "しょくざい を すらいす して いる とき に、 すらいさー の かばー を はずして は いけません。",
     "reading": "Shokuzai o suraisu shite iru toki ni, suraisā no kabā o hazushite wa ikemasen.",
+    "translation": "Saat mesin pemotong (slicer) sedang memotong bahan, penutup pelindung keamanan tidak boleh dibuka.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat mesin pemotong (slicer) sedang memotong bahan, penutup pelindung keamanan tidak boleh dibuka."
+    "explanation": "Penutup slicer menjadi penghalang antara tangan dan pisau yang bergerak. Membukanya saat mesin berjalan menghilangkan perlindungan dan meningkatkan risiko cedera."
   },
   {
     "id": 48,
@@ -475,9 +522,10 @@
     "year": 2026,
     "question": "すらいさー が かんぜん に ていし する まえ に、 かばー を あけました。",
     "reading": "Suraisā ga kanzen ni teishi suru mae ni, kabā o akemashita.",
+    "translation": "Tutup pelindung hanya boleh dibuka setelah mesin slicer berhenti berputar secara total.",
     "image": "",
     "answer": "×",
-    "explanation": "Tutup pelindung hanya boleh dibuka setelah mesin slicer berhenti berputar secara total."
+    "explanation": "Klaim membuka sebelum berhenti salah. Penutup hanya boleh dibuka setelah pisau benar-benar berhenti agar operator tidak terkena gerakan atau putaran sisa."
   },
   {
     "id": 49,
@@ -485,9 +533,10 @@
     "year": 2026,
     "question": "きかい が うごいて いる とき は、 きかい に て を ふれて は いけません。",
     "reading": "Kikai ga ugoite iru toki wa, kikai ni te o furete wa ikemasen.",
+    "translation": "Jangan menyentuh bagian mesin yang sedang bergerak/beroperasi untuk menghindari risiko cedera terjepit.",
     "image": "",
     "answer": "○",
-    "explanation": "Jangan menyentuh bagian mesin yang sedang bergerak/beroperasi untuk menghindari risiko cedera terjepit."
+    "explanation": "Bagian bergerak dapat menjepit atau memotong tangan. Mesin harus dihentikan dan diamankan sebelum disentuh atau dibersihkan."
   },
   {
     "id": 50,
@@ -495,9 +544,10 @@
     "year": 2026,
     "question": "ちょうりちゅう に がす の ひ が きえて いたら、がす が もれて いる かのうせい が ある ため、ひ を つけて は いけません。",
     "reading": "Chōrichū ni gasu no hi ga kiete itara, gasu ga morete iru kanōsei ga aru tame, hi o tsukete wa ikemasen.",
+    "translation": "Jika api gas tiba-tiba mati, jangan langsung menyalakan api kembali karena gas yang terakumulasi bisa memicu ledakan. Tutup katup dan lakukan ventilasi udara.",
     "image": "",
     "answer": "○",
-    "explanation": "Jika api gas tiba-tiba mati, jangan langsung menyalakan api kembali karena gas yang terakumulasi bisa memicu ledakan. Tutup katup dan lakukan ventilasi udara."
+    "explanation": "Api gas yang padam dapat meninggalkan gas yang belum terbakar. Menyalakan ulang segera dapat memicu ledakan; gas harus ditutup dan area diventilasi terlebih dahulu."
   },
   {
     "id": 51,
@@ -505,9 +555,10 @@
     "year": 2026,
     "question": "ちゅうしんおんどけい は、たべもの の ひょうめん の おんど を はかる きぐ です。",
     "reading": "Chūshin-ondokei wa, tabemono no hyōmen no ondo wo hakaru kigu desu.",
+    "translation": "Termometer suhu pusat (中心温度計) adalah alat untuk mengukur suhu bagian dalam/tengah makanan, bukan suhu permukaan.",
     "image": "",
     "answer": "×",
-    "explanation": "Termometer suhu pusat (中心温度計) adalah alat untuk mengukur suhu bagian dalam/tengah makanan, bukan suhu permukaan."
+    "explanation": "Klaim fungsi termometer salah. 中心温度計 dirancang untuk mengukur suhu bagian pusat makanan dengan sensor yang ditusukkan, bukan hanya permukaan."
   },
   {
     "id": 52,
@@ -515,9 +566,10 @@
     "year": 2026,
     "question": "けいりょうかっぷ は、かっぷ を かたむけて はかります。",
     "reading": "Keiryō kappu wa, kappu wo katamukete hakarimasu.",
+    "translation": "Gelas ukur harus ditaruh mendatar di tempat rata dan dibaca sejajar dengan tinggi mata, bukan dimiringkan.",
     "image": "",
     "answer": "×",
-    "explanation": "Gelas ukur harus ditaruh mendatar di tempat rata dan dibaca sejajar dengan tinggi mata, bukan dimiringkan."
+    "explanation": "Klaim mengukur dengan gelas miring salah. Gelas ukur harus diletakkan tegak di permukaan rata dan dibaca pada posisi yang benar agar volume tidak bias."
   },
   {
     "id": 101,
@@ -525,9 +577,10 @@
     "year": 2026,
     "question": "HACCP（はさっぷ）に おいて、じゅうようかんりてん（CCP）を せってい して れんぞくてき に かんし します。",
     "reading": "HACCP ni oite, jūyō kanriten (CCP) o settei shite renzokuteki ni kanshi shimasu.",
+    "translation": "Benar. Dalam sistem HACCP, Titik Kendali Kritis (CCP) ditetapkan dan dipantau secara berkelanjutan untuk menjamin keamanan pangan.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Dalam sistem HACCP, Titik Kendali Kritis (CCP) ditetapkan dan dipantau secara berkelanjutan untuk menjamin keamanan pangan."
+    "explanation": "HACCP menetapkan CCP pada tahap yang penting bagi keamanan pangan, lalu memantaunya secara berkelanjutan agar penyimpangan segera diketahui dan dikoreksi."
   },
   {
     "id": 102,
@@ -535,9 +588,10 @@
     "year": 2026,
     "question": "かねつちょうりご の そうざい は、さいきん の ぞうしょく を ふせぐ ため、できるだけ すみやか に きゅうそくれいきゃく します。",
     "reading": "Kanetsu chōrigo no sōzai wa, saikin no zōshoku o fusegu tame, dekiru dake sumiyaka ni kyūsoku reikyaku shimasu.",
+    "translation": "Benar. Setelah dimasak dengan panas, produk lauk harus segera didinginkan cepat (rapid cooling) untuk mencegah pertumbuhan bakteri di suhu bahaya (20°C - 50°C).",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Setelah dimasak dengan panas, produk lauk harus segera didinginkan cepat (rapid cooling) untuk mencegah pertumbuhan bakteri di suhu bahaya (20°C - 50°C)."
+    "explanation": "Pendinginan cepat mengurangi waktu produk berada pada rentang suhu yang mendukung pertumbuhan bakteri. Karena itu souzai setelah pemanasan harus segera didinginkan sesuai prosedur."
   },
   {
     "id": 103,
@@ -545,9 +599,10 @@
     "year": 2026,
     "question": "あるみはく で ほうそう された しょくひん の いぶつこんにゅう は、つうじょう の きんぞくけんしゅつき で かんぜん に けんしゅつ できます。",
     "reading": "Arumihaku de hōsō sareta shokuhin no ibutsu konnyū wa, tsūjō no kinzoku kenshutsuki de kanzen ni kenshutsu dekimasu.",
+    "translation": "Salah. Makanan dalam kemasan aluminium foil tidak dapat dideteksi secara akurat dengan metal detector biasa; diperlukan mesin X-ray (X線異物検出機).",
     "image": "",
     "answer": "×",
-    "explanation": "Salah. Makanan dalam kemasan aluminium foil tidak dapat dideteksi secara akurat dengan metal detector biasa; diperlukan mesin X-ray (X線異物検出機)."
+    "explanation": "Klaim dapat terdeteksi sempurna dengan metal detector biasa salah. Aluminium foil mengganggu pemeriksaan logam, sehingga produk berkemasan foil memerlukan metode seperti detektor sinar-X."
   },
   {
     "id": 104,
@@ -555,8 +610,9 @@
     "year": 2026,
     "question": "しょくひんてんかぶつ は、ほうりつ で さだめられた しようきじゅん や たいしょうしょくひん を まもって しよう します。",
     "reading": "Shokuhin tenkabutsu wa, hōritsu de sadamerareta shiyō kijun ya taishō shokuhin o mamotte shiyō shimasu.",
+    "translation": "Benar. Bahan Tambahan Pangan (BTP) wajib digunakan secara ketat sesuai standar batasan dan peruntukan makanan yang diatur undang-undang.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Bahan Tambahan Pangan (BTP) wajib digunakan secara ketat sesuai standar batasan dan peruntukan makanan yang diatur undang-undang."
+    "explanation": "BTP tidak boleh digunakan sembarangan. Jenis makanan, batas penggunaan, dan tujuan penggunaannya harus mengikuti standar serta peruntukan yang ditetapkan undang-undang."
   }
 ]

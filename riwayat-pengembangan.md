@@ -1,6 +1,6 @@
 # Riwayat Pengembangan
 
-Tanggal pembaruan terakhir: 7 Oktober 2026
+Tanggal pembaruan terakhir: 8 Oktober 2026
 
 ## Ringkasan Kondisi
 
@@ -41,6 +41,7 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Menambahkan sinkronisasi awal semua bank soal dan penyimpanan otomatis perubahan admin ke Supabase.
 - Memverifikasi deployment Cloudflare Pages: user dapat login, menyelesaikan kuis, dan skor berhasil masuk ke Supabase.
 - Memverifikasi login admin dan tampilan riwayat skor dari Cloudflare Pages.
+- Memisahkan field `translation` dan `explanation` pada 1.259 soal lokal; terjemahan lama dipindahkan ke `translation` dan alasan jawaban ditampilkan terpisah di kuis/admin.
 - Memverifikasi aplikasi dari perangkat atau browser yang berbeda.
 - Menambahkan kategori `shisetsu-engei-kinoko` ke manifest bank soal.
 - Menambahkan file `public/data/question-bank/questions-shisetsu-engei-kinoko.json`.
@@ -66,11 +67,25 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Menambahkan file `public/data/question-bank/questions-kunsei.json`.
 - Memasukkan 35 soal Kunsei level `senmonkyu` dari sumber 2025 setelah dikonfirmasi user.
 - Memindahkan sumber Kunsei dari `soal-asli/` ke `sudah-proses/`.
+- Menganalisis ulang dan memperbarui `explanation` seluruh 35 soal Kunsei dengan alasan spesifik berdasarkan pengolahan hasil laut, pembekuan, higiene, dan pengasapan.
+- Menandai 35 soal Kunsei yakin tanpa item `NEED-CONFIRM`; validator question bank dan Cloudflare build lulus.
+- Menganalisis ulang dan memperbarui `explanation` seluruh 56 soal Sozai Kako dengan alasan spesifik berdasarkan higiene pangan, sanitasi, pengolahan, dan keselamatan kerja.
+- Menandai 56 soal Sozai Kako yakin tanpa item `NEED-CONFIRM`; validator question bank dan Cloudflare build lulus.
+- Menganalisis ulang dan memperbarui `explanation` seluruh 83 soal Hatasaku Yasai dengan alasan spesifik berdasarkan geografi pertanian Jepang, budidaya sayuran, pupuk, pestisida, mesin, dan keselamatan kerja.
+- Menandai 83 soal Hatasaku Yasai yakin tanpa item `NEED-CONFIRM`; validator question bank dan Cloudflare build lulus.
+- Menganalisis ulang dan memperbarui `explanation` seluruh 106 soal Shisetsu Engei Kinoko dengan alasan spesifik berdasarkan geografi Jepang, budidaya tanaman, budidaya jamur, sanitasi, pestisida, dan keselamatan kerja.
+- Menandai 106 soal Shisetsu Engei Kinoko yakin tanpa item `NEED-CONFIRM`; validator question bank dan Cloudflare build lulus.
+- Menganalisis ulang dan memperbarui penjelasan 136 soal Shisetsu Engei dengan alasan spesifik berdasarkan budidaya fasilitas, tanaman, pupuk, pestisida, ventilasi, dan keselamatan kerja.
+- Menandai 135 soal Shisetsu Engei yakin; ID 4 dicatat untuk konfirmasi karena kunci sumber bertentangan dengan prosedur ventilasi. Validator question bank dan Cloudflare build lulus.
+- Memperbaiki Shisetsu Engei ID 4 setelah konfirmasi user: jawaban `×` menjadi `○`, dengan penjelasan bahwa ventilasi membuang panas saat suhu meningkat.
+- Menganalisis ulang dan memperbarui explanation seluruh 148 soal Rakuno dengan alasan spesifik berdasarkan geografi Jepang, pakan, kesehatan, reproduksi, higiene, dan pengelolaan sapi perah.
+- Menandai 148 soal Rakuno yakin tanpa item NEED-CONFIRM; validator question bank dan Cloudflare build lulus.
 - Mengisi `reading` dan `answer` untuk seluruh soal Shisetsu Engei Kinoko setelah dikonfirmasi.
 - Mengekstrak gambar soal 2022 tentang bagian `かさ` ke `public/assets/images/kinoko_2022_q19.png`.
 - Membuat `butuh-konfirmasi.md` sebagai catatan kerja konfirmasi reading, jawaban, dan transkripsi.
 - Memvalidasi seluruh bank soal setelah penambahan kategori baru.
 - Tidak ada file yang dihapus secara permanen.
+- Memulai analisis ulang explanation Kensetsu (695 soal): 66 soal pertama diberi alasan faktual manual, dan seluruh sisanya diperbarui dengan alasan berbasis klaim/terjemahan untuk tahap awal. Validator question bank dan Cloudflare build lulus; audit manual lanjutan masih diperlukan.
 
 ## Yang Belum Dilakukan
 

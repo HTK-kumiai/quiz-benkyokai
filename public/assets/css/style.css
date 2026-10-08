@@ -1020,6 +1020,47 @@ input:focus-visible {
     font-size: 0.9rem;
 }
 
+/* ===========================================================================
+   Attendance Admin Panel
+   =========================================================================== */
+.attendance-backdrop { display: none; position: fixed; inset: 0; z-index: 90; background: rgba(15, 23, 42, .35); }
+.attendance-backdrop.open { display: block; }
+.attendance-panel { position: fixed; z-index: 100; top: 0; right: 0; width: min(430px, 100vw); height: 100vh; background: #fff; box-shadow: -12px 0 35px rgba(15, 23, 42, .18); transform: translateX(105%); transition: transform .22s ease; display: flex; flex-direction: column; }
+.attendance-panel.open { transform: translateX(0); }
+.attendance-panel-header { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; border-bottom: 1px solid var(--border-color); background: #f8fafc; }
+.attendance-eyebrow { color: #2563eb; font-size: .72rem; font-weight: 800; letter-spacing: .08em; }
+.attendance-panel h2 { margin: 4px 0 0; font-size: 1.3rem; }
+.attendance-close { border: 0; background: transparent; font-size: 1.8rem; color: #64748b; cursor: pointer; line-height: 1; }
+.attendance-panel-body { overflow-y: auto; padding: 20px; }
+.attendance-session-form { display: grid; gap: 7px; }
+.attendance-session-form label { color: #334155; font-size: .82rem; font-weight: 700; margin-top: 5px; }
+.attendance-session-form label span { color: #94a3b8; font-weight: 400; }
+.attendance-session-form select, .attendance-session-form input { width: 100%; padding: 10px 11px; border: 1px solid #cbd5e1; border-radius: 9px; background: white; color: #0f172a; font: inherit; }
+.attendance-primary-btn { margin-top: 8px; border: 0; border-radius: 9px; padding: 11px; background: #2563eb; color: white; font-weight: 800; cursor: pointer; }
+.attendance-primary-btn:disabled { opacity: .6; cursor: wait; }
+.attendance-session-info { display: grid; gap: 2px; margin-top: 18px; padding: 12px; border-radius: 10px; background: #eff6ff; color: #1e3a8a; }
+.attendance-session-info span { font-size: .82rem; color: #475569; }
+.attendance-delete-btn { width: fit-content; margin-top: 8px; padding: 5px 8px; border: 1px solid #fecaca; border-radius: 7px; background: #fff; color: #b91c1c; font-size: .75rem; font-weight: 700; cursor: pointer; }
+.attendance-delete-btn:hover { background: #fef2f2; }
+.attendance-summary { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding: 10px 12px; border: 1px solid #bbf7d0; border-radius: 10px; background: #f0fdf4; color: #166534; }
+.attendance-summary span { color: #64748b; font-size: .78rem; }
+.attendance-actions { gap: 7px; margin: 12px 0; }
+.attendance-actions button { flex: 1; padding: 8px 5px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: #475569; font-size: .75rem; cursor: pointer; }
+.attendance-actions button:hover { background: #f8fafc; }
+.attendance-roster { display: grid; gap: 8px; }
+.attendance-person { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px; border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; }
+.attendance-person-name { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: .9rem; font-weight: 650; }
+.attendance-person-name > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.attendance-status-dot { width: 22px; flex: 0 0 22px; text-align: center; }
+.attendance-status-select { max-width: 145px; padding: 6px; border: 1px solid #cbd5e1; border-radius: 7px; font-size: .76rem; font-weight: 700; }
+.attendance-status-select.status-present { color: #166534; background: #f0fdf4; }
+.attendance-status-select.status-late { color: #854d0e; background: #fefce8; }
+.attendance-status-select.status-excused { color: #1e40af; background: #eff6ff; }
+.attendance-status-select.status-absent { color: #991b1b; background: #fef2f2; }
+.attendance-empty { padding: 24px 10px; text-align: center; color: #64748b; font-size: .88rem; }
+.attendance-feedback { min-height: 22px; margin-top: 12px; color: #166534; font-size: .8rem; }
+.attendance-feedback.error { color: #b91c1c; }
+
 .btn-user-logout {
     background: #000;
     border: 1px solid #000;

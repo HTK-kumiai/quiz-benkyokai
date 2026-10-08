@@ -110,9 +110,10 @@ Contoh:
     "year": 2026,
     "question": "のうぎょう では、あんぜん かくにん が たいせつ です。",
     "reading": "Nougyou dewa, anzen kakunin ga taisetsu desu.",
+    "translation": "Dalam pertanian, pemeriksaan keselamatan itu penting.",
     "image": "",
     "answer": "○",
-    "explanation": "Benar. Keselamatan kerja tetap penting dalam bidang pertanian."
+    "explanation": "Jawaban benar karena pemeriksaan keselamatan merupakan bagian penting dari pekerjaan pertanian."
   }
 ]
 ```
@@ -124,9 +125,10 @@ Field yang dipakai:
 - `year`: tahun ujian
 - `question`: teks soal Jepang
 - `reading`: romaji
+- `translation`: terjemahan kalimat soal dalam bahasa Indonesia
 - `image`: kosongkan atau isi URL/path gambar
 - `answer`: `○` atau `×`
-- `explanation`: penjelasan Indonesia
+- `explanation`: alasan mengapa jawaban benar atau salah
 
 ## Catatan Penting
 

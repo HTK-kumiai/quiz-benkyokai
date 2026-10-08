@@ -5,9 +5,10 @@
     "year": 2018,
     "question": "にほん　は　ほとんど　が　ねったい　きこう　です。",
     "reading": "Nihon wa hotondo ga nettai kikou desu.",
+    "translation": "Jepang hampir seluruhnya beriklim tropis.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang hampir seluruhnya beriklim tropis."
+    "explanation": "Jepang membentang dari utara ke selatan dan memiliki zona iklim yang beragam; sebagian besar wilayahnya beriklim sedang, bukan hampir seluruhnya tropis."
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "year": 2018,
     "question": "にほん　の　こくど　は　なんぼく　に　ながい　です。",
     "reading": "Nihon no kokudo wa nanboku ni nagai desu.",
+    "translation": "Wilayah Jepang memanjang dari utara ke selatan.",
     "image": "",
     "answer": "○",
-    "explanation": "Wilayah Jepang memanjang dari utara ke selatan."
+    "explanation": "Kepulauan Jepang memanjang arah utara–selatan, sehingga lintang dan kondisi iklimnya berbeda antara Hokkaido, Honshu, Shikoku, Kyushu, dan Okinawa."
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "year": 2018,
     "question": "にほん　の　いなさく　は　なえ　を　そだて、たうえ　を　する　のが　おおいです。",
     "reading": "Nihon no inasaku wa nae wo sodate, taue wo suru no ga ooi desu.",
+    "translation": "Budidaya padi di Jepang kebanyakan menumbuhkan bibit lalu melakukan penanaman bibit.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya padi di Jepang kebanyakan menumbuhkan bibit lalu melakukan penanaman bibit."
+    "explanation": "Dalam budidaya padi Jepang, benih umumnya disemai dan dibesarkan menjadi bibit, lalu dipindahkan ke sawah melalui taue."
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "year": 2018,
     "question": "ついひ　は　さくもつ　を　うえる　まえに　あたえる　ひりょう　です。",
     "reading": "Tsuihi wa sakumotsu wo ueru mae ni ataeru hiryou desu.",
+    "translation": "Tsuihi adalah pupuk yang diberikan sebelum menanam tanaman.",
     "image": "",
     "answer": "×",
-    "explanation": "Tsuihi adalah pupuk yang diberikan sebelum menanam tanaman."
+    "explanation": "Tsuihi adalah pupuk susulan yang diberikan selama tanaman tumbuh. Pupuk sebelum tanam disebut motogoe atau pupuk dasar."
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "year": 2018,
     "question": "こううん　は　つち　を　ほりかえす　こと　です。",
     "reading": "Kouun wa tsuchi wo horikaesu koto desu.",
+    "translation": "Kouun adalah membalik atau membajak tanah.",
     "image": "",
     "answer": "○",
-    "explanation": "Kouun adalah membalik atau membajak tanah."
+    "explanation": "Kouun adalah pekerjaan membalik dan menggemburkan tanah dengan membajak atau mengolah lapisan tanah."
   },
   {
     "id": 6,
@@ -55,9 +60,10 @@
     "year": 2018,
     "question": "なたねかす　は　ゆうきしつひりょう　です。",
     "reading": "Natanekasu wa yuukishitsu hiryou desu.",
+    "translation": "Ampas natane adalah pupuk organik.",
     "image": "",
     "answer": "○",
-    "explanation": "Ampas natane adalah pupuk organik."
+    "explanation": "Natanekasu berasal dari sisa biji tanaman setelah minyaknya diekstrak, sehingga termasuk bahan pupuk organik."
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "year": 2018,
     "question": "さっきんざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
     "reading": "Sakkinzai wa gaichuu no boujo ni tsukaimasu.",
+    "translation": "Sakkinzai digunakan untuk pengendalian hama serangga.",
     "image": "",
     "answer": "×",
-    "explanation": "Sakkinzai digunakan untuk pengendalian hama serangga."
+    "explanation": "Sakkinzai berarti bahan pembasmi mikroorganisme atau bakteri penyebab penyakit; hama serangga dikendalikan dengan insektisida."
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "year": 2018,
     "question": "きかい　の　てんけん　は　かならず　エンジン　を　かけたまま　します。",
     "reading": "Kikai no tenken wa kanarazu enjin wo kaketa mama shimasu.",
+    "translation": "Pemeriksaan mesin dilakukan dengan mesin tetap menyala.",
     "image": "",
     "answer": "×",
-    "explanation": "Pemeriksaan mesin dilakukan dengan mesin tetap menyala."
+    "explanation": "Pemeriksaan mesin harus dilakukan setelah mesin dimatikan dan bagian bergerak berhenti, agar operator tidak terkena gerakan mesin atau kecelakaan."
   },
   {
     "id": 9,
@@ -85,9 +93,10 @@
     "year": 2018,
     "question": "きかい　に　ねんりょう　を　いれる　とき　は　ちかくに　ひ　の　ない　こと　を　たしかめます。",
     "reading": "Kikai ni nenryou wo ireru toki wa chikaku ni hi no nai koto wo tashikamemasu.",
+    "translation": "Saat mengisi bahan bakar mesin, pastikan tidak ada api di dekatnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat mengisi bahan bakar mesin, pastikan tidak ada api di dekatnya."
+    "explanation": "Bahan bakar mudah terbakar, sehingga api dan sumber penyulut harus dijauhkan saat pengisian untuk mencegah kebakaran."
   },
   {
     "id": 10,
@@ -95,9 +104,10 @@
     "year": 2018,
     "question": "のうやく　の　さんぷ　は　かぜ　の　つよい　とき　が　いい　です。",
     "reading": "Nouyaku no sanpu wa kaze no tsuyoi toki ga ii desu.",
+    "translation": "Penyemprotan pestisida baik dilakukan saat angin kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyemprotan pestisida baik dilakukan saat angin kencang."
+    "explanation": "Angin kencang dapat membawa pestisida keluar sasaran dan membahayakan pekerja atau lingkungan. Penyemprotan dilakukan saat angin lemah dan kondisi sesuai label."
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "year": 2018,
     "question": "きのこ　には　き　の　まるた　げんぼく　を　つかう　さいばい　ほうほう　があります。",
     "reading": "Kinoko ni wa ki no maruta genboku wo tsukau saibai houhou ga arimasu.",
+    "translation": "Ada metode budidaya jamur yang menggunakan kayu gelondongan.",
     "image": "",
     "answer": "○",
-    "explanation": "Ada metode budidaya jamur yang menggunakan kayu gelondongan."
+    "explanation": "Selain budidaya media, jamur tertentu seperti shiitake dapat dibudidayakan dengan metode genboku, yaitu menggunakan kayu gelondongan sebagai media."
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "year": 2018,
     "question": "にほん　で　せいさんりょう　が　もっとも　おおい　きのこ　は　なめこ　です。",
     "reading": "Nihon de seisanryou ga mottomo ooi kinoko wa nameko desu.",
+    "translation": "Jamur dengan produksi terbesar di Jepang adalah nameko.",
     "image": "",
     "answer": "×",
-    "explanation": "Jamur dengan produksi terbesar di Jepang adalah nameko."
+    "explanation": "Nameko bukan jamur dengan produksi terbesar di Jepang; produksi jamur terbesar didominasi jenis lain, terutama enoki dan jamur budidaya botol/media."
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "year": 2018,
     "question": "きんしょう　さいばい　の　ばいち　には　えいようざい　を　いれます。",
     "reading": "Kinshou saibai no baichi ni wa eiyouzai wo iremasu.",
+    "translation": "Pada budidaya kinsho, media tanam diberi bahan nutrisi.",
     "image": "",
     "answer": "○",
-    "explanation": "Pada budidaya kinsho, media tanam diberi bahan nutrisi."
+    "explanation": "Kinshou saibai menggunakan media buatan yang dicampur sumber nutrisi agar miselium memperoleh bahan untuk tumbuh."
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "year": 2018,
     "question": "まいたけ　は　いっぽんずつ　てで　とります。",
     "reading": "Maitake wa ippon zutsu te de torimasu.",
+    "translation": "Maitake dipanen satu per satu dengan tangan.",
     "image": "",
     "answer": "×",
-    "explanation": "Maitake dipanen satu per satu dengan tangan."
+    "explanation": "Maitake umumnya dipanen sebagai satu rumpun atau kelompok dengan memotong pangkalnya, bukan mengambil setiap tubuh buah satu per satu dengan tangan."
   },
   {
     "id": 15,
@@ -145,9 +159,10 @@
     "year": 2018,
     "question": "きんし　を　ばいち　ぜんたい　に　ひろげる　こと　を　ばいよう　と　いいます。",
     "reading": "Kinshi wo baichi zentai ni hirogeru koto wo baiyou to iimasu.",
+    "translation": "Menyebarkan miselium ke seluruh media disebut baiyou.",
     "image": "",
     "answer": "○",
-    "explanation": "Menyebarkan miselium ke seluruh media disebut baiyou."
+    "explanation": "Baiyou adalah proses pertumbuhan miselium (kinshi) hingga menyebar dan mengkolonisasi seluruh media tanam."
   },
   {
     "id": 16,
@@ -155,9 +170,10 @@
     "year": 2018,
     "question": "ばいち　を　びん　や　ふくろ　に　いれる　きかい　を　つめこみき　と　いいます。",
     "reading": "Baichi wo bin ya fukuro ni ireru kikai wo tsumekomiki to iimasu.",
+    "translation": "Mesin untuk memasukkan media ke botol atau kantong disebut tsumekomiki.",
     "image": "",
     "answer": "○",
-    "explanation": "Mesin untuk memasukkan media ke botol atau kantong disebut tsumekomiki."
+    "explanation": "Tsumekomiki atau juutenki berfungsi mengisi media tanam ke dalam botol atau kantong secara mekanis."
   },
   {
     "id": 17,
@@ -165,9 +181,10 @@
     "year": 2018,
     "question": "だんぼうそうち　は　しせつない　の　おんど　を　さげる　もの　です。",
     "reading": "Danbou souchi wa shisetsu nai no ondo wo sageru mono desu.",
+    "translation": "Perangkat pemanas adalah alat untuk menurunkan suhu di dalam fasilitas.",
     "image": "",
     "answer": "×",
-    "explanation": "Perangkat pemanas adalah alat untuk menurunkan suhu di dalam fasilitas."
+    "explanation": "Danbou souchi adalah alat pemanas; fungsinya menaikkan suhu fasilitas, bukan menurunkannya."
   },
   {
     "id": 18,
@@ -175,9 +192,10 @@
     "year": 2018,
     "question": "きのこ　さいばい　しせつ　の　かんき　を　するのは　たんさんガス　のうど　を　あげるため　です。",
     "reading": "Kinoko saibai shisetsu no kanki wo suru no wa tansan gasu noudo wo ageru tame desu.",
+    "translation": "Ventilasi fasilitas budidaya jamur dilakukan untuk menaikkan kadar karbon dioksida.",
     "image": "",
     "answer": "×",
-    "explanation": "Ventilasi fasilitas budidaya jamur dilakukan untuk menaikkan kadar karbon dioksida."
+    "explanation": "Ventilasi membuang udara kaya CO2 dari ruang budidaya dan memasukkan udara baru, sehingga kadar CO2 turun."
   },
   {
     "id": 19,
@@ -185,9 +203,10 @@
     "year": 2018,
     "question": "ゆか　に　おちた　ばいち　の　くず　は　きれいに　かたづけます。",
     "reading": "Yuka ni ochita baichi no kuzu wa kirei ni katazukemasu.",
+    "translation": "Sisa media yang jatuh ke lantai dibersihkan dengan rapi.",
     "image": "",
     "answer": "○",
-    "explanation": "Sisa media yang jatuh ke lantai dibersihkan dengan rapi."
+    "explanation": "Sisa media di lantai dapat menjadi sumber kontaminasi dan mengganggu kebersihan, sehingga harus segera dibersihkan."
   },
   {
     "id": 20,
@@ -195,9 +214,10 @@
     "year": 2018,
     "question": "しゅうかく　する　まえに　もっとも　ざっきん　が　はいり　やすい　です。",
     "reading": "Shuukaku suru mae ni mottomo zakkin ga hairi yasui desu.",
+    "translation": "Sebelum panen adalah saat yang paling mudah dimasuki bakteri kontaminan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sebelum panen adalah saat yang paling mudah dimasuki bakteri kontaminan."
+    "explanation": "Kontaminasi mudah terjadi saat penanganan terbuka seperti inokulasi atau sesshu, bukan terutama sebelum panen ketika media sudah tertutup dan proses lebih terkendali."
   },
   {
     "id": 21,
@@ -205,9 +225,10 @@
     "year": 2018,
     "question": "にほん　は　やま　が　すくなく、のうち　が　おおい　です。",
     "reading": "Nihon wa yama ga sukunaku, nouchi ga ooi desu.",
+    "translation": "Jepang gunungnya sedikit dan ladangnya banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang gunungnya sedikit dan ladangnya banyak."
+    "explanation": "Jepang memiliki banyak wilayah pegunungan dan lahan pertanian yang terbatas; jadi klaim bahwa gunungnya sedikit dan ladangnya banyak terbalik."
   },
   {
     "id": 22,
@@ -215,9 +236,10 @@
     "year": 2018,
     "question": "にほん　には　はる　なつ　あき　ふゆ　が　あります。",
     "reading": "Nihon ni wa haru natsu aki fuyu ga arimasu.",
+    "translation": "Jepang punya musim semi, panas, gugur, dan salju.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang punya musim semi, panas, gugur, dan salju."
+    "explanation": "Jepang mengalami empat musim: haru (semi), natsu (panas), aki (gugur), dan fuyu (dingin/salju)."
   },
   {
     "id": 23,
@@ -225,9 +247,10 @@
     "year": 2018,
     "question": "にほん　の　いなさく　は　なえ　を　そだて、たうえ　を　する　のが　おおい　です。",
     "reading": "Nihon no inasaku wa nae wo sodate, taue wo suru no ga ooi desu.",
+    "translation": "Budidaya beras di Jepang kebanyakan ditumbuhkan tunasnya kemudian ditanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya beras di Jepang kebanyakan ditumbuhkan tunasnya kemudian ditanam."
+    "explanation": "Padi dibesarkan lebih dahulu sebagai bibit di persemaian, kemudian bibit dipindahkan ke sawah melalui taue."
   },
   {
     "id": 24,
@@ -235,9 +258,10 @@
     "year": 2018,
     "question": "さくもつ　は　ね　から　ようぶん　や　すいぶん　を　とっています。",
     "reading": "Sakumotsu wa ne kara youbun ya suibun wo totte imasu.",
+    "translation": "Tanaman menyerap nutrisi dan cairan dari akar.",
     "image": "",
     "answer": "○",
-    "explanation": "Tanaman menyerap nutrisi dan cairan dari akar."
+    "explanation": "Akar menyerap air dan unsur hara dari media tanah, lalu air dan hara tersebut digunakan untuk pertumbuhan tanaman."
   },
   {
     "id": 25,
@@ -245,9 +269,10 @@
     "year": 2018,
     "question": "ついひ　は　さくもつ　を　うえる　まえに　あたえる　ひりょう　です。",
     "reading": "Tsuihi wa sakumotsu wo ueru mae ni ataeru hiryou desu.",
+    "translation": "Tsuihi adalah pupuk yang diberikan sebelum menanam.",
     "image": "",
     "answer": "×",
-    "explanation": "Tsuihi adalah pupuk yang diberikan sebelum menanam."
+    "explanation": "Tsuihi diberikan sebagai pupuk susulan selama pertumbuhan tanaman; pupuk yang diberikan sebelum tanam adalah pupuk dasar atau motogoe."
   },
   {
     "id": 26,
@@ -255,9 +280,10 @@
     "year": 2018,
     "question": "きんしょう　さいばい　の　ばいち　は　えいようざい　を　まぜないで　つかいます。",
     "reading": "Kinshou saibai no baichi wa eiyouzai wo mazenai de tsukaimasu.",
+    "translation": "Bahan nutrisi untuk media tanam budidaya jamur tidak diaduk ketika digunakan.",
     "image": "",
     "answer": "×",
-    "explanation": "Bahan nutrisi untuk media tanam budidaya jamur tidak diaduk ketika digunakan."
+    "explanation": "Media kinshou harus dicampur atau diaduk dengan bahan nutrisi agar nutrisi tersebar merata di seluruh media."
   },
   {
     "id": 27,
@@ -265,9 +291,10 @@
     "year": 2018,
     "question": "きんしょう　さいばい　の　しせつ　は　そと　の　ひかり　を　おおく　いれます。",
     "reading": "Kinshou saibai no shisetsu wa soto no hikari wo ooku iremasu.",
+    "translation": "Cahaya banyak dimasukkan ke fasilitas budidaya jamur.",
     "image": "",
     "answer": "×",
-    "explanation": "Cahaya banyak dimasukkan ke fasilitas budidaya jamur."
+    "explanation": "Fasilitas kinshou biasanya dikendalikan dari lingkungan luar dan tidak memerlukan banyak cahaya; cahaya berlebih dapat mengganggu pengaturan suhu dan pertumbuhan."
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "year": 2018,
     "question": "きかい　そうさ　を　やめる　とき　は　かならず　エンジン　を　とめます。",
     "reading": "Kikai sousa wo yameru toki wa kanarazu enjin wo tomemasu.",
+    "translation": "Selalu pastikan mesin telah berhenti setelah pengoperasian selesai.",
     "image": "",
     "answer": "○",
-    "explanation": "Selalu pastikan mesin telah berhenti setelah pengoperasian selesai."
+    "explanation": "Mematikan mesin setelah operasi menghentikan sumber gerak dan tenaga, sehingga pemeriksaan, pembersihan, atau pekerjaan berikutnya lebih aman."
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "year": 2018,
     "question": "のうやく　さんぷ　は　かぜ　の　つよい　とき　が　よい　です。",
     "reading": "Nouyaku sanpu wa kaze no tsuyoi toki ga yoi desu.",
+    "translation": "Penyemprotan pestisida dilakukan ketika angin berhembus kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyemprotan pestisida dilakukan ketika angin berhembus kencang."
+    "explanation": "Angin kencang menyebabkan semprotan pestisida hanyut dan tidak merata. Karena itu penyemprotan dilakukan pada kondisi angin yang sesuai, bukan saat kencang."
   },
   {
     "id": 30,
@@ -295,9 +324,10 @@
     "year": 2018,
     "question": "きかい　に　ねんりょう　を　いれる　とき　は　ちかくにひ　の　ない　こと　を　たしかめます。",
     "reading": "Kikai ni nenryou wo ireru toki wa chikaku ni hi no nai koto wo tashikamemasu.",
+    "translation": "Pastikan tidak ada api di sekitar ketika mengisi bahan bakar mesin.",
     "image": "",
     "answer": "○",
-    "explanation": "Pastikan tidak ada api di sekitar ketika mengisi bahan bakar mesin."
+    "explanation": "Api dapat menyulut uap bahan bakar, sehingga area sekitar harus bebas dari api dan sumber panas selama pengisian."
   },
   {
     "id": 31,
@@ -305,9 +335,10 @@
     "year": 2018,
     "question": "にほん　で　せいさんりょう　が　いちばん　おおい　きのこ　はしいたけ　です。",
     "reading": "Nihon de seisanryou ga ichiban ooi kinoko wa shiitake desu.",
+    "translation": "Jamur yang paling banyak diproduksi di Jepang adalah Shiitake.",
     "image": "",
     "answer": "×",
-    "explanation": "Jamur yang paling banyak diproduksi di Jepang adalah Shiitake."
+    "explanation": "Shiitake bukan produksi jamur terbesar di Jepang; jenis seperti enoki memiliki produksi yang lebih besar dalam budidaya fasilitas."
   },
   {
     "id": 32,
@@ -315,9 +346,10 @@
     "year": 2018,
     "question": "きのこ　には　き　の　まるた（げんぼく）さいばい　するほうほう　が　あります。",
     "reading": "Kinoko ni wa ki no maruta genboku saibai suru houhou ga arimasu.",
+    "translation": "Ada juga metode budidaya kayu gelondongan untuk budidaya jamur.",
     "image": "",
     "answer": "○",
-    "explanation": "Ada juga metode budidaya kayu gelondongan untuk budidaya jamur."
+    "explanation": "Genboku saibai adalah metode menumbuhkan jamur pada kayu gelondongan yang telah diinokulasi, sehingga merupakan salah satu metode budidaya jamur."
   },
   {
     "id": 33,
@@ -325,9 +357,10 @@
     "year": 2018,
     "question": "きんし　を　ばいち　ぜんたい　に　ひろげる　こと　をばいよう　と　いいます。",
     "reading": "Kinshi wo baichi zentai ni hirogeru koto wo baiyou to iimasu.",
+    "translation": "Menyebarkan kinshi ke seluruh media tanam disebut baiyou.",
     "image": "",
     "answer": "○",
-    "explanation": "Menyebarkan kinshi ke seluruh media tanam disebut baiyou."
+    "explanation": "Baiyou merujuk pada kolonisasi media oleh kinshi sampai miselium menyebar ke seluruh bagian media."
   },
   {
     "id": 34,
@@ -335,9 +368,10 @@
     "year": 2018,
     "question": "ガラス　おんしつ　は　まいとし　ガラス　を　とりかえる。",
     "reading": "Garasu onshitsu wa maitoshi garasu wo torikaeru.",
+    "translation": "Kaca pada rumah kaca diganti setiap tahun.",
     "image": "",
     "answer": "×",
-    "explanation": "Kaca pada rumah kaca diganti setiap tahun."
+    "explanation": "Kaca rumah kaca tidak diganti secara rutin setiap tahun. Penggantian dilakukan bila pecah, rusak, atau tidak lagi layak digunakan."
   },
   {
     "id": 35,
@@ -345,9 +379,10 @@
     "year": 2018,
     "question": "だんぼう　そうち　は　ハウスない　を　くらく　する　そうち　です。",
     "reading": "Danbou souchi wa hausu nai wo kuraku suru souchi desu.",
+    "translation": "Perangkat danbou digunakan untuk menggelapkan dalam fasilitas.",
     "image": "",
     "answer": "×",
-    "explanation": "Perangkat danbou digunakan untuk menggelapkan dalam fasilitas."
+    "explanation": "Danbou souchi adalah perangkat pemanas untuk menaikkan suhu; penggelapan dilakukan dengan tirai atau perangkat penghalang cahaya."
   },
   {
     "id": 36,
@@ -355,9 +390,10 @@
     "year": 2018,
     "question": "ばいち　を　ビン　や　ふくろ　に　いれる　きかい　をつめこみき　と　いいます。",
     "reading": "Baichi wo bin ya fukuro ni ireru kikai wo tsumekomiki to iimasu.",
+    "translation": "Mesin memasukkan media tanam ke botol atau wadah disebut dengan tsumekomiki.",
     "image": "",
     "answer": "○",
-    "explanation": "Mesin memasukkan media tanam ke botol atau wadah disebut dengan tsumekomiki."
+    "explanation": "Tsumekomiki adalah mesin yang mengisi atau memasukkan media tanam ke botol maupun kantong budidaya."
   },
   {
     "id": 37,
@@ -365,9 +401,10 @@
     "year": 2018,
     "question": "きのこ　さいばい　しせつ　の　かんき　する　のはにさんたんガス　のうど　を　さげる　ため　に　つかいます。",
     "reading": "Kinoko saibai shisetsu no kanki suru no wa nisantan gasu noudo wo sageru tame ni tsukaimasu.",
+    "translation": "Ventilasi dalam fasilitas budidaya bertujuan untuk menurunkan kadar CO2.",
     "image": "",
     "answer": "○",
-    "explanation": "Ventilasi dalam fasilitas budidaya bertujuan untuk menurunkan kadar CO2."
+    "explanation": "Jamur menghasilkan CO2 selama respirasi. Ventilasi membuang udara tersebut sehingga konsentrasi CO2 di fasilitas menurun."
   },
   {
     "id": 38,
@@ -375,9 +412,10 @@
     "year": 2018,
     "question": "ようえき　さいばい　は　うえたて　が　ひつよう　です。",
     "reading": "Youeki saibai wa uetate ga hitsuyou desu.",
+    "translation": "Hidroponik memerlukan bedengan.",
     "image": "",
     "answer": "×",
-    "explanation": "Hidroponik memerlukan bedengan."
+    "explanation": "Hidroponik menumbuhkan tanaman dalam larutan nutrisi atau media tanpa tanah; bedengan diperlukan pada budidaya tanah, bukan sebagai syarat hidroponik."
   },
   {
     "id": 39,
@@ -385,9 +423,10 @@
     "year": 2018,
     "question": "しえつ　さいばい　でも　こううん　します。",
     "reading": "Shietsu saibai demo kouun shimasu.",
+    "translation": "Budidaya dalam ruangan juga ada pembajakan.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya dalam ruangan juga ada pembajakan."
+    "explanation": "Kouun berarti mengolah atau membajak tanah. Walaupun budidaya dilakukan di fasilitas, bagian yang menggunakan media tanah tetap dapat memerlukan pengolahan tersebut."
   },
   {
     "id": 40,
@@ -395,9 +434,10 @@
     "year": 2018,
     "question": "さっきんざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
     "reading": "Sakkinzai wa gaichuu no boujo ni tsukaimasu.",
+    "translation": "Sakkinzai digunakan untuk membasmi hama.",
     "image": "",
     "answer": "×",
-    "explanation": "Sakkinzai digunakan untuk membasmi hama."
+    "explanation": "Sakkinzai digunakan untuk menekan bakteri atau mikroorganisme penyebab penyakit; hama serangga ditangani dengan insektisida."
   },
   {
     "id": 41,
@@ -405,9 +445,10 @@
     "year": 2019,
     "question": "こううんを　します。つちが　かたく　なります。",
     "reading": "Kouun wo shimasu. Tsuchi ga kataku narimasu.",
+    "translation": "Setelah mengolah atau membajak tanah, tanah menjadi keras.",
     "image": "",
     "answer": "×",
-    "explanation": "Setelah mengolah atau membajak tanah, tanah menjadi keras."
+    "explanation": "Pengolahan tanah bertujuan menggemburkan dan memperbaiki aerasi tanah, bukan membuat tanah menjadi keras."
   },
   {
     "id": 42,
@@ -415,9 +456,10 @@
     "year": 2019,
     "question": "せいしは、さくもつに　みずを　やる　ことです。",
     "reading": "Seishi wa sakumotsu ni mizu wo yaru koto desu.",
+    "translation": "Seishi adalah memberi air pada tanaman.",
     "image": "",
     "answer": "×",
-    "explanation": "Seishi adalah memberi air pada tanaman."
+    "explanation": "Seishi berarti pengendalian atau pemeliharaan tanaman, bukan penyiraman. Memberi air disebut kanri air/penyiraman sesuai konteks budidaya."
   },
   {
     "id": 43,
@@ -425,9 +467,10 @@
     "year": 2019,
     "question": "せひは、ひりょうを　つちに　いれる　ことです。",
     "reading": "Sehi wa hiryou wo tsuchi ni ireru koto desu.",
+    "translation": "Sehi adalah memasukkan pupuk ke tanah.",
     "image": "",
     "answer": "○",
-    "explanation": "Sehi adalah memasukkan pupuk ke tanah."
+    "explanation": "Sehi adalah tindakan memberikan atau memasukkan pupuk ke tanah untuk menyediakan unsur hara bagi tanaman."
   },
   {
     "id": 44,
@@ -435,9 +478,10 @@
     "year": 2019,
     "question": "さかなかす（ぎょふん）は、かがくひりょうです。",
     "reading": "Sakanakasu (gyofun) wa kagaku hiryou desu.",
+    "translation": "Tepung ikan adalah pupuk kimia.",
     "image": "",
     "answer": "×",
-    "explanation": "Tepung ikan adalah pupuk kimia."
+    "explanation": "Tepung ikan berasal dari bahan hewani dan termasuk pupuk organik; pupuk kimia dibuat melalui proses dan senyawa anorganik/kimia."
   },
   {
     "id": 45,
@@ -445,9 +489,10 @@
     "year": 2019,
     "question": "のうやくを　つかった　とき、きろくします。",
     "reading": "Nouyaku wo tsukatta toki, kiroku shimasu.",
+    "translation": "Saat menggunakan pestisida, dicatat.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menggunakan pestisida, dicatat."
+    "explanation": "Pencatatan penggunaan pestisida diperlukan untuk mengelola jenis, dosis, waktu aplikasi, dan memastikan penggunaannya dapat ditelusuri."
   },
   {
     "id": 46,
@@ -455,9 +500,10 @@
     "year": 2019,
     "question": "きかいを　つかう　とき、さぎょうの　まえに、　つかいかたを　よく　りかいします。",
     "reading": "Kikai wo tsukau toki, sagyou no mae ni, tsukaikata wo yoku rikai shimasu.",
+    "translation": "Saat menggunakan mesin, pahami dengan baik cara penggunaannya sebelum bekerja.",
     "image": "",
     "answer": "○",
-    "explanation": "Saat menggunakan mesin, pahami dengan baik cara penggunaannya sebelum bekerja."
+    "explanation": "Memahami petunjuk sebelum mengoperasikan mesin mencegah salah penggunaan, kerusakan alat, dan kecelakaan kerja."
   },
   {
     "id": 47,
@@ -465,9 +511,10 @@
     "year": 2019,
     "question": "シイタケ（しいたけ）の　げんぼくさいばいでは、クヌギ（くぬぎ）や　コナラ（こなら）を　つかいます。",
     "reading": "Shiitake no genboku saibai dewa, kunugi ya konara wo tsukaimasu.",
+    "translation": "Dalam budidaya jamur shiitake dengan kayu gelondongan, digunakan pohon kunugi atau konara.",
     "image": "",
     "answer": "○",
-    "explanation": "Dalam budidaya jamur shiitake dengan kayu gelondongan, digunakan pohon kunugi atau konara."
+    "explanation": "Kunugi dan konara merupakan kayu keras yang sesuai sebagai bahan genboku untuk budidaya shiitake."
   },
   {
     "id": 48,
@@ -475,9 +522,10 @@
     "year": 2019,
     "question": "キノコ（きのこ）は、こうごうせいを　します。",
     "reading": "Kinoko wa kougousei wo shimasu.",
+    "translation": "Jamur melakukan fotosintesis.",
     "image": "",
     "answer": "×",
-    "explanation": "Jamur melakukan fotosintesis."
+    "explanation": "Jamur tidak memiliki klorofil dan memperoleh nutrisi dari bahan organik; karena itu jamur tidak membuat makanan melalui fotosintesis."
   },
   {
     "id": 49,
@@ -485,9 +533,10 @@
     "year": 2019,
     "question": "きんしょうさいばいでは、おがこを　つかいません。",
     "reading": "Kinshou saibai dewa, ogako wo tsukaimasen.",
+    "translation": "Dalam kinshousaibai, tidak menggunakan serbuk kayu.",
     "image": "",
     "answer": "×",
-    "explanation": "Dalam kinshousaibai, tidak menggunakan serbuk kayu."
+    "explanation": "Kinshou saibai umumnya memakai serbuk kayu (ogako) sebagai bahan utama media, lalu dicampur nutrisi dan air."
   },
   {
     "id": 50,
@@ -495,9 +544,10 @@
     "year": 2019,
     "question": "つめこみき（じゅうてんき）は、ばいちを、さいばいようきに　つめこむ　きかいです。",
     "reading": "Tsumekomiki (juutenki) wa baichi wo saibai youki ni tsumekomu kikai desu.",
+    "translation": "Juutenki adalah mesin untuk memasukkan media ke dalam wadah budidaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Juutenki adalah mesin untuk memasukkan media ke dalam wadah budidaya."
+    "explanation": "Juutenki/tsumekomiki mengisi media ke wadah budidaya seperti botol, sehingga alat tersebut digunakan sebelum sterilisasi dan inokulasi."
   },
   {
     "id": 51,
@@ -505,9 +555,10 @@
     "year": 2019,
     "question": "かくはんは、ばいち　ぜんたいに　きんしが　ひろがる　ことです。",
     "reading": "Kakuhan wa baichi zentai ni kinshi ga hirogaru koto desu.",
+    "translation": "Kakuhan adalah menyebarnya miselium atau benang jamur ke seluruh media tanam.",
     "image": "",
     "answer": "×",
-    "explanation": "Kakuhan adalah menyebarnya miselium atau benang jamur ke seluruh media tanam."
+    "explanation": "Kakuhan adalah proses mengaduk atau mencampur media agar komposisinya merata; penyebaran miselium ke seluruh media disebut baiyou."
   },
   {
     "id": 52,
@@ -515,9 +566,10 @@
     "year": 2019,
     "question": "しせつの　なかで　キノコ（きのこ）を　さいばいする　とき、かんきを　しません。",
     "reading": "Shisetsu no naka de kinoko wo saibai suru toki, kanki wo shimasen.",
+    "translation": "Saat membudidayakan jamur di dalam shisetsu, tidak dilakukan pertukaran udara.",
     "image": "",
     "answer": "×",
-    "explanation": "Saat membudidayakan jamur di dalam shisetsu, tidak dilakukan pertukaran udara."
+    "explanation": "Ventilasi diperlukan untuk memasok udara segar dan mengeluarkan CO2, sehingga budidaya dalam fasilitas tetap memerlukan pertukaran udara."
   },
   {
     "id": 53,
@@ -525,9 +577,10 @@
     "year": 2020,
     "question": "にほんは　やまが　おおくて　のうちが　すくないです。",
     "reading": "Nihon wa yama ga ookute nouchi ga sukunai desu.",
+    "translation": "Jepang mempunyai banyak gunung dan sedikit ladang.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang mempunyai banyak gunung dan sedikit ladang."
+    "explanation": "Pegunungan mencakup sebagian besar wilayah Jepang, sedangkan lahan pertanian relatif terbatas."
   },
   {
     "id": 54,
@@ -535,9 +588,10 @@
     "year": 2020,
     "question": "にほんには　はる　なつ　あきの　みっつの　きせつ　だけが　あります。",
     "reading": "Nihon ni wa haru natsu aki no mittsu no kisetsu dake ga arimasu.",
+    "translation": "Di Jepang hanya terdapat tiga musim, yakni musim semi, panas, dan gugur.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang hanya terdapat tiga musim, yakni musim semi, panas, dan gugur."
+    "explanation": "Selain musim semi, panas, dan gugur, Jepang juga memiliki musim dingin, sehingga jumlah musimnya empat."
   },
   {
     "id": 55,
@@ -545,9 +599,10 @@
     "year": 2020,
     "question": "にほんの　いなさくは　あじの　よい　ひんしゅうの　さいばいがひろがって　います。",
     "reading": "Nihon no inasaku wa aji no yoi hinshu no saibai ga hirogatte imasu.",
+    "translation": "Budidaya padi di Jepang tersebar jenis budidaya yang rasanya enak.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya padi di Jepang tersebar jenis budidaya yang rasanya enak."
+    "explanation": "Varietas padi Jepang banyak dikembangkan untuk menghasilkan kualitas dan rasa yang baik, sehingga budidaya varietas bercita rasa enak tersebar."
   },
   {
     "id": 56,
@@ -555,9 +610,10 @@
     "year": 2020,
     "question": "もとごえは　さくもつの　せいいく　とちゅうに　あたえるひりょうです。",
     "reading": "Motogoe wa sakumotsu no seiiku tochuu ni ataeru hiryou desu.",
+    "translation": "Motogoe merupakan pupuk yang diberikan di pertengahan proses penumbuhan tanaman.",
     "image": "",
     "answer": "×",
-    "explanation": "Motogoe merupakan pupuk yang diberikan di pertengahan proses penumbuhan tanaman."
+    "explanation": "Motogoe adalah pupuk dasar yang diberikan sebelum tanam atau saat persiapan lahan; pupuk pertengahan pertumbuhan adalah tsuihi."
   },
   {
     "id": 57,
@@ -565,9 +621,10 @@
     "year": 2020,
     "question": "しゅしを　まいた あと、つちを　かけることを　ふくどと　いいます。",
     "reading": "Shushi wo maita ato, tsuchi wo kakeru koto wo fukudo to iimasu.",
+    "translation": "Mengubur dengan tanah setelah benih ditaburkan disebut dengan fukudo.",
     "image": "",
     "answer": "○",
-    "explanation": "Mengubur dengan tanah setelah benih ditaburkan disebut dengan fukudo."
+    "explanation": "Fukudo adalah menutup benih dengan tanah setelah penyemaian, untuk melindungi benih dan membantu perkecambahan."
   },
   {
     "id": 58,
@@ -575,9 +632,10 @@
     "year": 2020,
     "question": "なたねかすは　ゆうきしつ　ひりょうです。",
     "reading": "Natanekasu wa yuukishitsu hiryou desu.",
+    "translation": "Biji natane adalah pupuk organik.",
     "image": "",
     "answer": "○",
-    "explanation": "Biji natane adalah pupuk organik."
+    "explanation": "Natanekasu adalah hasil samping tanaman (sisa biji setelah pengambilan minyak), sehingga dikategorikan sebagai pupuk organik."
   },
   {
     "id": 59,
@@ -585,9 +643,10 @@
     "year": 2020,
     "question": "さっきんざいは　がいちゅうの　ほうじょに　つかいます。",
     "reading": "Sakkinzai wa gaichuu no houjo ni tsukaimasu.",
+    "translation": "Anti-bakteri digunakan untuk membasmi serangga.",
     "image": "",
     "answer": "×",
-    "explanation": "Anti-bakteri digunakan untuk membasmi serangga."
+    "explanation": "Sakkinzai menekan bakteri atau mikroorganisme, sedangkan serangga dikendalikan dengan obat serangga/insektisida."
   },
   {
     "id": 60,
@@ -595,9 +654,10 @@
     "year": 2020,
     "question": "きかい の てんけん は かならず エンジン を かけた まま します。",
     "reading": "Kikai no tenken wa kanarazu enjin wo kaketa mama shimasu.",
+    "translation": "Untuk pengecekan mesin, pastikan mesin dibiarkan dalam keadaan menyala.",
     "image": "",
     "answer": "×",
-    "explanation": "Untuk pengecekan mesin, pastikan mesin dibiarkan dalam keadaan menyala."
+    "explanation": "Mesin harus dimatikan saat pemeriksaan agar bagian bergerak tidak tiba-tiba bekerja dan mencederai pemeriksa."
   },
   {
     "id": 61,
@@ -605,9 +665,10 @@
     "year": 2020,
     "question": "きかい に あわない ねんりょう を つかう とこしょう する げんいん に なります。",
     "reading": "Kikai ni awanai nenryou wo tsukau to koshou suru genin ni narimasu.",
+    "translation": "Penggunaan bahan bakar yang tidak sesuai dengan mesin akan menyebabkan kerusakan.",
     "image": "",
     "answer": "○",
-    "explanation": "Penggunaan bahan bakar yang tidak sesuai dengan mesin akan menyebabkan kerusakan."
+    "explanation": "Bahan bakar yang tidak sesuai dapat mengganggu pembakaran dan sistem mesin, sehingga meningkatkan risiko kerusakan."
   },
   {
     "id": 62,
@@ -615,9 +676,10 @@
     "year": 2020,
     "question": "のうやくは　かぜが　つよい　ときに　まきます。",
     "reading": "Nouyaku wa kaze ga tsuyoi toki ni makimasu.",
+    "translation": "Pestisida ditaburkan ketika angin berhembus kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Pestisida ditaburkan ketika angin berhembus kencang."
+    "explanation": "Pestisida tidak boleh disebarkan saat angin kencang karena dapat hanyut dan mengenai orang atau tanaman yang tidak menjadi sasaran."
   },
   {
     "id": 63,
@@ -625,9 +687,10 @@
     "year": 2020,
     "question": "きのこに　きの　まるた　げんぼくをつかう　さいばい　ほうほうがあります。",
     "reading": "Kinoko ni ki no maruta genboku wo tsukau saibai houhou ga arimasu.",
+    "translation": "Untuk jamur, terdapat cara budidaya menggunakan genboku.",
     "image": "",
     "answer": "○",
-    "explanation": "Untuk jamur, terdapat cara budidaya menggunakan genboku."
+    "explanation": "Genboku adalah kayu gelondongan yang digunakan sebagai media pada salah satu metode budidaya jamur."
   },
   {
     "id": 64,
@@ -635,9 +698,10 @@
     "year": 2020,
     "question": "にほんで　せいさんしょうが　もっとも　おおい キノコはしいたけです。",
     "reading": "Nihon de seisanshou ga mottomo ooi kinoko wa shiitake desu.",
+    "translation": "Di Jepang, jenis jamur dengan jumlah produksi terbanyak adalah Shiitake.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang, jenis jamur dengan jumlah produksi terbanyak adalah Shiitake."
+    "explanation": "Shiitake bukan jamur dengan produksi terbanyak di Jepang; produksi terbesar berasal dari jenis jamur fasilitas lain seperti enoki."
   },
   {
     "id": 65,
@@ -645,9 +709,10 @@
     "year": 2020,
     "question": "きんしょう さいばい では ばいち に えいようざい を いれます。",
     "reading": "Kinshou saibai dewa baichi ni eiyouzai wo iremasu.",
+    "translation": "Dalam budidaya media jamur, memasukkan nutrisi ke dalam media budaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Dalam budidaya media jamur, memasukkan nutrisi ke dalam media budaya."
+    "explanation": "Media kinshou perlu diberi sumber nutrisi agar miselium memperoleh energi dan bahan untuk membentuk tubuh jamur."
   },
   {
     "id": 66,
@@ -655,9 +720,10 @@
     "year": 2020,
     "question": "しいたけ は きかい で しゅうかく します。",
     "reading": "Shiitake wa kikai de shuukaku shimasu.",
+    "translation": "Shiitake dipanen menggunakan mesin.",
     "image": "",
     "answer": "×",
-    "explanation": "Shiitake dipanen menggunakan mesin."
+    "explanation": "Shiitake biasanya dipanen secara manual dengan memetik atau memotong tubuh buah pada tingkat kematangan yang tepat, bukan menggunakan mesin panen."
   },
   {
     "id": 67,
@@ -665,9 +731,10 @@
     "year": 2020,
     "question": "きんし を ばいち ぜんたい に ひろげる こと を ばいよう と いいます。",
     "reading": "Kinshi wo baichi zentai ni hirogeru koto wo baiyou to iimasu.",
+    "translation": "Menyebarkan kinshi ke keseluruhan media budidaya disebut baiyou.",
     "image": "",
     "answer": "○",
-    "explanation": "Menyebarkan kinshi ke keseluruhan media budidaya disebut baiyou."
+    "explanation": "Baiyou merupakan tahap kolonisasi ketika kinshi menyebar hingga memenuhi seluruh media."
   },
   {
     "id": 68,
@@ -675,9 +742,10 @@
     "year": 2020,
     "question": "れいぼう そうち は さいばい しせつ の なか の おんど を たかく する もの です。",
     "reading": "Reibou souchi wa saibai shisetsu no naka no ondo wo takaku suru mono desu.",
+    "translation": "Alat pendingin adalah alat meningkatkan suhu di dalam fasilitas budidaya.",
     "image": "",
     "answer": "×",
-    "explanation": "Alat pendingin adalah alat meningkatkan suhu di dalam fasilitas budidaya."
+    "explanation": "Reibou souchi adalah alat pendingin yang menurunkan suhu fasilitas, bukan menaikkannya."
   },
   {
     "id": 69,
@@ -685,9 +753,10 @@
     "year": 2020,
     "question": "ばいち を ビン や ふくろ に いれる きかい を つみこみき と いいます。",
     "reading": "Baichi wo bin ya fukuro ni ireru kikai wo tsumikomiki to iimasu.",
+    "translation": "Alat untuk memindahkan media tanam ke dalam botol atau wadah disebut tsumekomiki.",
     "image": "",
     "answer": "×",
-    "explanation": "Alat untuk memindahkan media tanam ke dalam botol atau wadah disebut tsumekomiki."
+    "explanation": "Mesin pengisi media disebut tsumekomiki atau juutenki; istilah yang diberikan pada pernyataan bukan nama alat tersebut."
   },
   {
     "id": 70,
@@ -695,9 +764,10 @@
     "year": 2020,
     "question": "さいばい しせつ の かんき を する のは たんさんガス のうど を さげることです。",
     "reading": "Saibai shisetsu no kanki wo suru no wa tansan gasu noudo wo sageru koto desu.",
+    "translation": "Ventilasi pada fasilitas budidaya bertujuan untuk menurunkan kepadatan CO2.",
     "image": "",
     "answer": "○",
-    "explanation": "Ventilasi pada fasilitas budidaya bertujuan untuk menurunkan kepadatan CO2."
+    "explanation": "Respirasi jamur meningkatkan CO2 di ruang budidaya. Ventilasi membuang CO2 dan memasukkan udara segar sehingga konsentrasinya turun."
   },
   {
     "id": 71,
@@ -705,9 +775,10 @@
     "year": 2020,
     "question": "ゆか に おちた ばいち の くず は かたづけます。",
     "reading": "Yuka ni ochita baichi no kuzu wa katazukemasu.",
+    "translation": "Membersihkan sampah media tanam yang jatuh ke lantai.",
     "image": "",
     "answer": "○",
-    "explanation": "Membersihkan sampah media tanam yang jatuh ke lantai."
+    "explanation": "Media yang jatuh ke lantai dapat membawa kontaminan, maka harus segera diangkat dan area dibersihkan."
   },
   {
     "id": 72,
@@ -715,9 +786,10 @@
     "year": 2020,
     "question": "せっしゅ する とき には ざっきん が はいりやすい です。",
     "reading": "Sesshu suru toki ni wa zakkin ga hairi yasui desu.",
+    "translation": "Bakteri mudah masuk dalam proses sesshu.",
     "image": "",
     "answer": "○",
-    "explanation": "Bakteri mudah masuk dalam proses sesshu."
+    "explanation": "Sesshu/inokulasi membuka atau menangani media untuk memasukkan bibit, sehingga mikroorganisme mudah masuk bila sanitasi tidak baik."
   },
   {
     "id": 73,
@@ -725,9 +797,10 @@
     "year": 2021,
     "question": "にほん　は、　やま　が　すくなく、のうち　が　おおい　です。",
     "reading": "Nihon wa yama ga sukunaku, nouchi ga ooi desu.",
+    "translation": "Jepang mempunyai banyak gunung dan sedikit ladang.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang mempunyai banyak gunung dan sedikit ladang."
+    "explanation": "Jepang memiliki banyak gunung dan lahan pertanian yang relatif sedikit; terjemahan pernyataan ini menyebut kebalikannya."
   },
   {
     "id": 74,
@@ -735,9 +808,10 @@
     "year": 2021,
     "question": "にほん　には、４つ　の　きせつ　が　あります。",
     "reading": "Nihon ni wa yottsu no kisetsu ga arimasu.",
+    "translation": "Di Jepang ada empat musim.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang ada empat musim."
+    "explanation": "Empat musim di Jepang adalah musim semi, panas, gugur, dan dingin."
   },
   {
     "id": 75,
@@ -745,9 +819,10 @@
     "year": 2021,
     "question": "さくもつ　は、ね　から　ようすいぶん　を　きゅうしゅう　します。",
     "reading": "Sakumotsu wa ne kara yousuibun wo kyuushuu shimasu.",
+    "translation": "Tanaman menyerap air dan nutrisi dari akar.",
     "image": "",
     "answer": "○",
-    "explanation": "Tanaman menyerap air dan nutrisi dari akar."
+    "explanation": "Akar mengambil air serta unsur hara dari tanah atau media, kemudian menyalurkannya ke bagian tanaman."
   },
   {
     "id": 76,
@@ -755,9 +830,10 @@
     "year": 2021,
     "question": "ついひ　は、なえ　を　うえる　まえ　に　まく　ひりょう　です。",
     "reading": "Tsuihi wa nae wo ueru mae ni maku hiryou desu.",
+    "translation": "Tsuihi adalah pupuk yang disebar sebelum menanam bibit.",
     "image": "",
     "answer": "×",
-    "explanation": "Tsuihi adalah pupuk yang disebar sebelum menanam bibit."
+    "explanation": "Tsuihi adalah pupuk susulan selama tanaman tumbuh, sedangkan pupuk sebelum penanaman bibit merupakan pupuk dasar/motogoe."
   },
   {
     "id": 77,
@@ -765,9 +841,10 @@
     "year": 2021,
     "question": "れんさく　は、おなじ　しゅるい　の　さくもつ　を　つづけて　つくる　こと　です。",
     "reading": "Rensaku wa onaji shurui no sakumotsu wo tsuzukete tsukuru koto desu.",
+    "translation": "Rensaku adalah menanam jenis tanaman yang sama berkelanjutan.",
     "image": "",
     "answer": "○",
-    "explanation": "Rensaku adalah menanam jenis tanaman yang sama berkelanjutan."
+    "explanation": "Rensaku berarti menanam tanaman dari jenis yang sama berulang kali secara berurutan pada lahan yang sama."
   },
   {
     "id": 78,
@@ -775,9 +852,10 @@
     "year": 2021,
     "question": "なたねかす　は、かがくひりょう　です。",
     "reading": "Natanekasu wa kagaku hiryou desu.",
+    "translation": "Ampas natane adalah pupuk kimia.",
     "image": "",
     "answer": "×",
-    "explanation": "Ampas natane adalah pupuk kimia."
+    "explanation": "Natanekasu berasal dari bahan tanaman sehingga merupakan pupuk organik, bukan pupuk kimia."
   },
   {
     "id": 79,
@@ -785,9 +863,10 @@
     "year": 2021,
     "question": "さっきんざい　は、びょうき　から　さくもつ　をまもる　ため　に　つかい　ます。",
     "reading": "Sakkinzai wa byouki kara sakumotsu wo mamoru tame ni tsukaimasu.",
+    "translation": "Sakkinzai digunakan untuk melindungi tanaman dari penyakit.",
     "image": "",
     "answer": "○",
-    "explanation": "Sakkinzai digunakan untuk melindungi tanaman dari penyakit."
+    "explanation": "Sakkinzai mengendalikan mikroorganisme penyebab penyakit, sehingga membantu melindungi tanaman dari penyakit."
   },
   {
     "id": 80,
@@ -795,9 +874,10 @@
     "year": 2021,
     "question": "よくせいさいばい　は、ふつうさいばい　より　も　はやく　しゅかく　でき　ます。",
     "reading": "Yokusei saibai wa futsuu saibai yori mo hayaku shuukaku dekimasu.",
+    "translation": "Yokusei-saibai dapat dipanen lebih cepat daripada futsuu-saibai.",
     "image": "",
     "answer": "×",
-    "explanation": "Yokusei-saibai dapat dipanen lebih cepat daripada futsuu-saibai."
+    "explanation": "Yokusei saibai mengendalikan atau menekan pertumbuhan untuk mengatur waktu panen, sehingga panennya dapat lebih lambat daripada budidaya normal."
   },
   {
     "id": 81,
@@ -805,9 +885,10 @@
     "year": 2021,
     "question": "ブナシメジ（ぶなしめじ）は、かぶ　ごと　しゅうかく　します。",
     "reading": "Bunashimeji wa kabu goto shuukaku shimasu.",
+    "translation": "Bunashimeji dipanen sampai tunggulnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Bunashimeji dipanen sampai tunggulnya."
+    "explanation": "Bunashimeji dipanen sebagai satu rumpun dengan memotong bagian pangkalnya, sehingga bagian pangkal/rumpun ikut terangkat."
   },
   {
     "id": 82,
@@ -815,9 +896,10 @@
     "year": 2021,
     "question": "のうやく　は、かぜ　の　つよい　とき　に　まき　ます。",
     "reading": "Nouyaku wa kaze no tsuyoi toki ni makimasu.",
+    "translation": "Insektisida disebarkan ketika angin berhembus kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Insektisida disebarkan ketika angin berhembus kencang."
+    "explanation": "Angin kencang membuat insektisida hanyut dan aplikasinya tidak terkendali; penyemprotan dilakukan pada kondisi angin yang sesuai."
   },
   {
     "id": 83,
@@ -825,9 +907,10 @@
     "year": 2021,
     "question": "マイタケ（まいたけ）には、　き　の　まるた　を　つかう　さいばい　ほうほう　が　あります。",
     "reading": "Maitake ni wa ki no maruta wo tsukau saibai houhou ga arimasu.",
+    "translation": "Ada juga metode budidaya di bonggol kayu untuk Maitake.",
     "image": "",
     "answer": "○",
-    "explanation": "Ada juga metode budidaya di bonggol kayu untuk Maitake."
+    "explanation": "Maitake dapat dibudidayakan pada kayu gelondongan, selain metode menggunakan media buatan."
   },
   {
     "id": 84,
@@ -835,9 +918,10 @@
     "year": 2021,
     "question": "かくはん　は、きんし　を　ばいち　ぜんたい　に　ひろげる　こと　です。",
     "reading": "Kakuhan wa kinshi wo baichi zentai ni hirogeru koto desu.",
+    "translation": "Kakuhan adalah menyebarkan bubuk jamur ke keseluruhan media tanam.",
     "image": "",
     "answer": "×",
-    "explanation": "Kakuhan adalah menyebarkan bubuk jamur ke keseluruhan media tanam."
+    "explanation": "Kakuhan adalah pengadukan/pencampuran media. Penyebaran kinshi ke seluruh media merupakan baiyou, bukan kakuhan."
   },
   {
     "id": 85,
@@ -845,9 +929,10 @@
     "year": 2021,
     "question": "しせつえんげいようハウスは、エノキタケ　の　きんしょうさいばいしせつ　として　つかえ　ません。",
     "reading": "Shisetsu engei you hausu wa enokitake no kinshou saibai shisetsu toshite tsukaemasen.",
+    "translation": "House untuk budidaya dalam ruangan tidak dapat digunakan untuk membudidaya jamur Enoki.",
     "image": "",
     "answer": "○",
-    "explanation": "House untuk budidaya dalam ruangan tidak dapat digunakan untuk membudidaya jamur Enoki."
+    "explanation": "House budidaya fasilitas untuk sayuran tidak memiliki kondisi khusus yang diperlukan untuk kinshou enoki, sehingga tidak dapat langsung dipakai sebagai fasilitasnya."
   },
   {
     "id": 86,
@@ -855,9 +940,10 @@
     "year": 2021,
     "question": "ばいち　を　ビン　に　つめる　きかい　は、せっしゅき　です。",
     "reading": "Baichi wo bin ni tsumeru kikai wa sesshuki desu.",
+    "translation": "Mesin untuk memasukkan media tanam ke botol disebut sesshu-ki.",
     "image": "",
     "answer": "×",
-    "explanation": "Mesin untuk memasukkan media tanam ke botol disebut sesshu-ki."
+    "explanation": "Mesin untuk mengisi media ke botol disebut tsumekomiki atau juutenki; sesshuki berkaitan dengan proses lain, bukan pengisian media."
   },
   {
     "id": 87,
@@ -865,9 +951,10 @@
     "year": 2021,
     "question": "ひかり　を　あてると、キノコ　は、め　が　でなく　なります。",
     "reading": "Hikari wo ateru to, kinoko wa me ga denaku narimasu.",
+    "translation": "Jamur tidak akan bertunas bila terkena sinar matahari.",
     "image": "",
     "answer": "×",
-    "explanation": "Jamur tidak akan bertunas bila terkena sinar matahari."
+    "explanation": "Cahaya tidak berarti mencegah jamur bertunas; beberapa jamur memerlukan rangsangan cahaya pada tahap tertentu, dan pertunasan dipengaruhi pula suhu serta kondisi lingkungan."
   },
   {
     "id": 88,
@@ -875,9 +962,10 @@
     "year": 2022,
     "question": "きかい に あわない ねんりょう を つかう と こしょうする げんいんに なります。",
     "reading": "Kikai ni awanai nenryou wo tsukau to koshou suru genin ni narimasu.",
+    "translation": "Menggunakan bahan bakar yang tidak sesuai dengan mesin bisa menyebabkan kerusakan.",
     "image": "",
     "answer": "○",
-    "explanation": "Menggunakan bahan bakar yang tidak sesuai dengan mesin bisa menyebabkan kerusakan."
+    "explanation": "Jenis bahan bakar harus sesuai spesifikasi mesin. Bahan bakar yang salah dapat mengganggu pembakaran dan merusak komponen."
   },
   {
     "id": 89,
@@ -885,9 +973,10 @@
     "year": 2022,
     "question": "にほん では、コメ（こめ）の しょうひりょう が まいとし ふえています。",
     "reading": "Nihon dewa, kome no shouhiryou ga maitoshi fuete imasu.",
+    "translation": "Jumlah produksi beras di Jepang meningkat setiap tahunnya.",
     "image": "",
     "answer": "×",
-    "explanation": "Jumlah produksi beras di Jepang meningkat setiap tahunnya."
+    "explanation": "Konsumsi beras Jepang cenderung menurun, bukan meningkat setiap tahun; karena itu klaim kenaikan tahunan tidak benar."
   },
   {
     "id": 90,
@@ -895,9 +984,10 @@
     "year": 2022,
     "question": "ひりょう の ３ようそ とは、ちっそ、リン（りん）、カルシウム（かるしうむ）です。",
     "reading": "Hiryou no san youso to wa, chisso, rin, karushiumu desu.",
+    "translation": "Tiga unsur pupuk adalah nitrogen, fosfor dan kalsium.",
     "image": "",
     "answer": "×",
-    "explanation": "Tiga unsur pupuk adalah nitrogen, fosfor dan kalsium."
+    "explanation": "Tiga unsur hara utama pupuk adalah nitrogen (N), fosfor (P), dan kalium (K), bukan kalsium."
   },
   {
     "id": 91,
@@ -905,9 +995,10 @@
     "year": 2022,
     "question": "れんさく とは、おなじ はたけ に、おなじ しゅるい の さくもつ を つづけて つくる こと です。",
     "reading": "Rensaku to wa, onaji hatake ni, onaji shurui no sakumotsu wo tsuzukete tsukuru koto desu.",
+    "translation": "Penanaman berturut atau rensaku adalah menanam jenis tanaman yang sama secara berurutan di lahan yang sama.",
     "image": "",
     "answer": "○",
-    "explanation": "Penanaman berturut atau rensaku adalah menanam jenis tanaman yang sama secara berurutan di lahan yang sama."
+    "explanation": "Rensaku berarti menanam jenis tanaman yang sama terus-menerus pada lahan yang sama, sehingga definisi pada pernyataan tepat."
   },
   {
     "id": 92,
@@ -915,9 +1006,10 @@
     "year": 2022,
     "question": "ついひ は、なえ を うえ つける まえ に、はたけ に まく ひりょう です。",
     "reading": "Tsuihi wa nae wo uetsukeru mae ni, hatake ni maku hiryou desu.",
+    "translation": "Tsuihi merupakan pupuk yang disebarkan di lahan sebelum menanam bibit.",
     "image": "",
     "answer": "×",
-    "explanation": "Tsuihi merupakan pupuk yang disebarkan di lahan sebelum menanam bibit."
+    "explanation": "Tsuihi adalah pupuk susulan setelah tanaman tumbuh. Pupuk yang disebarkan sebelum bibit ditanam adalah motogoe/pupuk dasar."
   },
   {
     "id": 93,
@@ -925,9 +1017,10 @@
     "year": 2022,
     "question": "よくせいさいばい では、ふつうさいばい より も おそい じき に しゅうかく できます。",
     "reading": "Yokusei saibai dewa, futsuu saibai yori mo osoi jiki ni shuukaku dekimasu.",
+    "translation": "Dengan yokusei saibai, panen dapat menjadi lebih lambat dibandingkan dengan budidaya normal.",
     "image": "",
     "answer": "○",
-    "explanation": "Dengan yokusei saibai, panen dapat menjadi lebih lambat dibandingkan dengan budidaya normal."
+    "explanation": "Yokusei saibai menekan pertumbuhan dan mengatur perkembangan, sehingga waktu panennya dapat dibuat lebih lambat daripada budidaya normal."
   },
   {
     "id": 94,
@@ -935,9 +1028,10 @@
     "year": 2022,
     "question": "りゅうあん（りゅうさんアンモニウム（あんもにうむ））は、ゆうきしつひりょうです。",
     "reading": "Ryuuan (ryuusan anmoniumu) wa yuukishitsu hiryou desu.",
+    "translation": "Amonium sulfat adalah pupuk organik.",
     "image": "",
     "answer": "×",
-    "explanation": "Amonium sulfat adalah pupuk organik."
+    "explanation": "Amonium sulfat adalah pupuk kimia anorganik yang memasok nitrogen dan sulfur, bukan pupuk organik."
   },
   {
     "id": 95,
@@ -945,9 +1039,10 @@
     "year": 2022,
     "question": "おなじ さっちゅうざい を なんかい も つづけて つかう と、こうか が あ がります。",
     "reading": "Onaji sacchuuzai wo nankai mo tsuzukete tsukau to, kouka ga agarimasu.",
+    "translation": "Penggunaan pestisida yang sama berulang akan meningkatkan efektivitas.",
     "image": "",
     "answer": "×",
-    "explanation": "Penggunaan pestisida yang sama berulang akan meningkatkan efektivitas."
+    "explanation": "Pemakaian pestisida dengan bahan aktif sama berulang dapat menyeleksi hama yang resisten, sehingga efektivitasnya menurun; bahan aktif perlu dirotasi sesuai aturan."
   },
   {
     "id": 96,
@@ -955,9 +1050,10 @@
     "year": 2022,
     "question": "のうやく を しようした とき は、しようぼ に きろく します。",
     "reading": "Nouyaku wo shiyou shita toki wa, shiyoubo ni kiroku shimasu.",
+    "translation": "Ketika menggunakan pestisida, catatlah pada tabel penggunaan.",
     "image": "",
     "answer": "○",
-    "explanation": "Ketika menggunakan pestisida, catatlah pada tabel penggunaan."
+    "explanation": "Catatan penggunaan pestisida mencatat aplikasi secara resmi, termasuk waktu dan jenisnya, untuk pengelolaan keamanan serta penelusuran."
   },
   {
     "id": 97,
@@ -965,9 +1061,10 @@
     "year": 2022,
     "question": "きかい の そうさ は、とりあつかいせつめいしょ を よむ など して、さぎょう まえ に よく りかい して から おこないます。",
     "reading": "Kikai no sousa wa, toriatsukai setsumeisho wo yomu nado shite, sagyou mae ni yoku rikai shite kara okonaimasu.",
+    "translation": "Sebelum mengoperasikan mesin, bacalah buku petunjuknya dan pahami dengan baik sebelum mulai bekerja.",
     "image": "",
     "answer": "○",
-    "explanation": "Sebelum mengoperasikan mesin, bacalah buku petunjuknya dan pahami dengan baik sebelum mulai bekerja."
+    "explanation": "Membaca petunjuk dan memahami cara kerja mesin sebelum mulai mencegah pengoperasian yang salah dan mengurangi risiko kecelakaan."
   },
   {
     "id": 98,
@@ -975,9 +1072,10 @@
     "year": 2022,
     "question": "きんしょうさいばい の ばいち には、えいようげん（えいようざい）を いれます。",
     "reading": "Kinshou saibai no baichi ni wa, eiyougen (eiyouzai) wo iremasu.",
+    "translation": "Pada budidaya media jamur, sumber nutrisi dimasukkan ke dalam media tanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Pada budidaya media jamur, sumber nutrisi dimasukkan ke dalam media tanam."
+    "explanation": "Media buatan untuk kinshou diberi sumber nutrisi agar miselium dapat tumbuh dan membentuk jamur."
   },
   {
     "id": 99,
@@ -985,9 +1083,10 @@
     "year": 2022,
     "question": "にほん の きのこ の ねんかん せいさんりょう は、やく 10まんトン（とん）です。",
     "reading": "Nihon no kinoko no nenkan seisanryou wa, yaku juu man ton desu.",
+    "translation": "Produksi jamur tahunan di Jepang sekitar 100.000 ton.",
     "image": "",
     "answer": "×",
-    "explanation": "Produksi jamur tahunan di Jepang sekitar 100.000 ton."
+    "explanation": "Produksi jamur Jepang jauh lebih besar daripada 100.000 ton per tahun; angka tersebut terlalu rendah untuk total produksi nasional."
   },
   {
     "id": 100,
@@ -995,9 +1094,10 @@
     "year": 2022,
     "question": "せっしゅしつ に はいる とき、ぼうじんふく や せいけつ な くつ に はきかえます。",
     "reading": "Sesshushitsu ni hairu toki, boujinfuku ya seiketsu na kutsu ni hakikaemasu.",
+    "translation": "Ganti ke pakaian anti-debu dan kenakan sepatu bersih saat memasuki ruang vaksinasi.",
     "image": "",
     "answer": "○",
-    "explanation": "Ganti ke pakaian anti-debu dan kenakan sepatu bersih saat memasuki ruang vaksinasi."
+    "explanation": "Pakaian anti-debu dan sepatu bersih mengurangi masuknya debu serta mikroorganisme ke ruang inokulasi, sehingga membantu mencegah kontaminasi."
   },
   {
     "id": 101,
@@ -1005,9 +1105,10 @@
     "year": 2022,
     "question": "にほんでは、エノキタケ（えのきたけ）の ほとんど が げんぼく さいばい されています。",
     "reading": "Nihon dewa, enokitake no hotondo ga genboku saibai sarete imasu.",
+    "translation": "Di Jepang, sebagian besar jamur Enoki ditanam di kayu gelondongan.",
     "image": "",
     "answer": "×",
-    "explanation": "Di Jepang, sebagian besar jamur Enoki ditanam di kayu gelondongan."
+    "explanation": "Enoki di Jepang umumnya diproduksi dengan metode kinshou menggunakan botol atau kantong media, bukan sebagian besar pada kayu gelondongan."
   },
   {
     "id": 102,
@@ -1015,9 +1116,10 @@
     "year": 2022,
     "question": "さっきん（めっきん）は、さいばいようき に ばいち を つめこみ（じゅうてん）してから おこないます。",
     "reading": "Sakkin (mekkin) wa saibai youki ni baichi wo tsumekomi (juuten) shite kara okonaimasu.",
+    "translation": "Pembasmian bakteri atau sterilisasi dilakukan setelah wadah tanam diisi dengan media tanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Pembasmian bakteri atau sterilisasi dilakukan setelah wadah tanam diisi dengan media tanam."
+    "explanation": "Media dimasukkan ke wadah lebih dahulu, kemudian wadah berisi media disterilkan untuk membunuh mikroorganisme sebelum inokulasi."
   },
   {
     "id": 103,
@@ -1025,9 +1127,10 @@
     "year": 2022,
     "question": "きんしょうさいばい では、きんしょうふくろ や きんしょうビン（びん）を もちいて キノコ（きのこ）を さいばい します。",
     "reading": "Kinshou saibai dewa, kinshou fukuro ya kinshou bin wo mochiite kinoko wo saibai shimasu.",
+    "translation": "Dalam budidaya media jamur, jamur dibudidaya dengan menggunakan kantong media jamur dan botol media jamur.",
     "image": "",
     "answer": "○",
-    "explanation": "Dalam budidaya media jamur, jamur dibudidaya dengan menggunakan kantong media jamur dan botol media jamur."
+    "explanation": "Kinshou saibai menggunakan wadah buatan berupa kantong dan botol media untuk mengatur media, sterilisasi, serta pertumbuhan jamur."
   },
   {
     "id": 104,
@@ -1035,9 +1138,10 @@
     "year": 2022,
     "question": "ばいち を ビン（びん）に つめる きかい は、かくはんきです。",
     "reading": "Baichi wo bin ni tsumeru kikai wa, kakuhanki desu.",
+    "translation": "Mesin untuk memindahkan media tanam ke dalam botol adalah kakuhanki.",
     "image": "",
     "answer": "×",
-    "explanation": "Mesin untuk memindahkan media tanam ke dalam botol adalah kakuhanki."
+    "explanation": "Mesin pengisi media ke botol adalah tsumekomiki/juutenki; kakuhanki digunakan untuk mengaduk atau mencampur, bukan mengisi botol."
   },
   {
     "id": 105,
@@ -1045,9 +1149,10 @@
     "year": 2022,
     "question": "しせつ の かんき を おこなう のは、さんそ のうど を ひくく する ためです。",
     "reading": "Shisetsu no kanki wo okonau no wa, sanso noudo wo hikuku suru tame desu.",
+    "translation": "Ventilasi fasilitas bertujuan menurunkan konsentrasi oksigen.",
     "image": "",
     "answer": "×",
-    "explanation": "Ventilasi fasilitas bertujuan menurunkan konsentrasi oksigen."
+    "explanation": "Jamur menghasilkan CO2, sehingga ventilasi bertujuan mengeluarkan CO2 dan memasukkan udara segar; bukan menurunkan konsentrasi oksigen."
   },
   {
     "id": 106,
@@ -1055,8 +1160,9 @@
     "year": 2022,
     "question": "キノコ（きのこ）の つぎ の ぶぶん は、かさ と いいます。",
     "reading": "Kinoko no tsugi no bubun wa, kasa to iimasu.",
+    "translation": "Bagian jamur di samping disebut dengan kasa.",
     "image": "./assets/images/kinoko_2022_q19.png",
     "answer": "○",
-    "explanation": "Bagian jamur di samping disebut dengan kasa."
+    "explanation": "Pada gambar, bagian seperti payung di tubuh buah jamur disebut kasa (tudung/cap), sedangkan bagian penyangganya adalah tangkai."
   }
 ]

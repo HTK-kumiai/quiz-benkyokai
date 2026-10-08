@@ -85,6 +85,7 @@ create table if not exists public.question_bank (
   year integer not null check (year between 2000 and 2100),
   question text not null,
   reading text not null default '',
+  translation text not null default '',
   image text not null default '',
   answer text not null check (answer in ('○', '×')),
   explanation text not null default '',
@@ -93,6 +94,10 @@ create table if not exists public.question_bank (
   primary key (category_id, id)
 );
 
+-- Kompatibilitas untuk database question_bank yang dibuat sebelum field translation.
+alter table public.question_bank
+  add column if not exists translation text not null default '';
+
 create index if not exists idx_scores_user_id on public.scores(user_id);
 create index if not exists idx_scores_timestamp on public.scores(timestamp desc);
 create index if not exists idx_profiles_username on public.profiles(username);
@@ -100,6 +105,35 @@ create index if not exists idx_profiles_is_admin on public.profiles(is_admin);
 create index if not exists idx_profiles_group_name on public.profiles(group_name);
 create index if not exists idx_question_bank_category on public.question_bank(category_id);
 create index if not exists idx_question_bank_category_level on public.question_bank(category_id, level);
+
+-- Absensi pertemuan, hanya dapat diakses admin.
+create table if not exists public.attendance_sessions (
+  id uuid primary key default gen_random_uuid(),
+  admin_id uuid not null references auth.users(id) on delete cascade,
+  group_name text not null,
+  session_date date not null,
+  title text not null default 'Pertemuan',
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.attendance_records (
+  id uuid primary key default gen_random_uuid(),
+  session_id uuid not null references public.attendance_sessions(id) on delete cascade,
+  user_id uuid not null references auth.users(id) on delete cascade,
+  name text not null,
+  status text not null default 'pending' check (status in ('pending', 'present', 'late', 'excused', 'absent')),
+  marked_at timestamptz,
+  note text,
+  created_at timestamptz not null default now(),
+  unique (session_id, user_id)
+);
+
+create index if not exists idx_attendance_sessions_date on public.attendance_sessions(session_date desc);
+create index if not exists idx_attendance_records_session on public.attendance_records(session_id);
+alter table public.attendance_sessions enable row level security;
+alter table public.attendance_records enable row level security;
+grant select, insert, update, delete on public.attendance_sessions to authenticated;
+grant select, insert, update on public.attendance_records to authenticated;
 
 alter table public.profiles enable row level security;
 alter table public.scores enable row level security;
@@ -195,6 +229,18 @@ as $$
 $$;
 revoke execute on function public.is_admin_user() from public;
 grant execute on function public.is_admin_user() to authenticated;
+
+drop policy if exists "attendance_sessions_admin_only" on public.attendance_sessions;
+create policy "attendance_sessions_admin_only" on public.attendance_sessions
+  for all to authenticated
+  using (public.is_admin_user())
+  with check (public.is_admin_user() and admin_id = auth.uid());
+
+drop policy if exists "attendance_records_admin_only" on public.attendance_records;
+create policy "attendance_records_admin_only" on public.attendance_records
+  for all to authenticated
+  using (public.is_admin_user())
+  with check (public.is_admin_user());
 
 create or replace function public.protect_profile_approval()
 returns trigger

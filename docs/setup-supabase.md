@@ -115,6 +115,8 @@ Jangan simpan `SUPABASE_SERVICE_ROLE_KEY` di repository, `.env` frontend, atau f
 
 Jalankan schema terbaru `sql/supabase-schema.sql` di Supabase SQL Editor. Admin harus menambahkan grup aktif dari tab **Grup & User** di `/admin.html` terlebih dahulu. Semua orang dapat membuat akun dari tombol **Daftar Akun** dengan memasukkan nama grup. Nama grup harus cocok dengan grup aktif. Akun yang grupnya valid langsung dapat digunakan.
 
+Schema terbaru juga membuat tabel `attendance_sessions` dan `attendance_records`. Setelah schema dijalankan, admin dapat menekan tombol keyboard `L`, lalu membuat sesi berdasarkan grup dan tanggal. Data absensi dibatasi oleh RLS sehingga tidak dapat dibaca atau diubah oleh akun peserta.
+
 Admin dapat menonaktifkan satu grup. Semua user dalam grup tersebut langsung kehilangan akses, dan pendaftar baru dari grup itu juga ditolak. Mengaktifkan grup kembali memulihkan akses seluruh anggotanya.
 
 Di Supabase buka **Authentication → Providers → Email**, lalu matikan **Confirm email** agar peserta bisa langsung mendaftar tanpa alur verifikasi email.

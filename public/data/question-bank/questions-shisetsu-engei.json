@@ -5,9 +5,10 @@
     "year": 2025,
     "question": "キュウリ(きゅうり)は、かさいるいです。",
     "reading": "Kyuri wa kasai rui desu.",
+    "translation": "Karena dia tumbuh dari bunga, makanya disebut dengan kasai rui (jenis sayur dari buah)",
     "image": "",
     "answer": "○",
-    "explanation": "Karena dia tumbuh dari bunga, makanya disebut dengan kasai rui (jenis sayur dari buah)"
+    "explanation": "Mentimun termasuk kasai-rui karena bagian yang dimakan berkembang dari bunga dan ovarium bunga menjadi buah."
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "year": 2025,
     "question": "キク(きく)は、なつには しゅっかできません。",
     "reading": "Kiku wa natsu niwa shukka dekimasen",
+    "translation": "Yo ndak tahu nanya kok nanya saya.",
     "image": "",
     "answer": "×",
-    "explanation": "Yo ndak tahu nanya kok nanya saya."
+    "explanation": "Klaim bahwa krisan tidak dapat dipanen pada musim panas keliru; krisan dapat dibudidayakan dan dipanen pada musim panas dengan pengaturan varietas serta kondisi fasilitas yang sesuai."
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "year": 2025,
     "question": "ようえきさいばいは、ばいようえきで、さくもつを そだてます。",
     "reading": "Yoeki saibai wa baiyoeki de sakumotsu wo sodatemasu",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "○",
-    "explanation": "YNTTKTS."
+    "explanation": "Pada budidaya larutan nutrisi, akar tanaman memperoleh air dan unsur hara dari baiyoeki, bukan dari tanah."
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "year": 2025,
     "question": "しせつの なかの きおんが、いつもより たかく なりそうです。かんきを します。",
     "reading": "Shisetsu no naka no kion ga itsumo yori takaku nari sou desu. Kanki wo shimasu.",
+    "translation": "YNTTKTS.",
     "image": "",
-    "answer": "×",
-    "explanation": "YNTTKTS."
+    "answer": "○",
+    "explanation": "Ventilasi dilakukan ketika suhu di dalam fasilitas diperkirakan meningkat karena pertukaran udara membantu membuang panas dan menjaga suhu tanaman tetap sesuai kondisi budidaya."
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "year": 2025,
     "question": "ずじょうかんすいは、てんてきかんすいチューブ(ちゅーぶ)をつかいます。",
     "reading": "Zujou kansui wa tenteki kansui chubu wo tsukaimasu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "○",
-    "explanation": "YNTTKTS."
+    "explanation": "Irigasi dari atas (zujou kansui) menggunakan selang/tube tetes untuk menyalurkan air secara terarah ke tanaman."
   },
   {
     "id": 6,
@@ -55,9 +60,10 @@
     "year": 2025,
     "question": "しせつさいばいでは、なつに だんぼうを します。",
     "reading": "Shisetsu saibai dewa natsu ni danbou wo shimasu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "×",
-    "explanation": "YNTTKTS."
+    "explanation": "Musim panas biasanya memerlukan pendinginan dan ventilasi, bukan pemanasan (danbou); pemanasan digunakan saat suhu rendah."
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "year": 2025,
     "question": "【7】ホウレンソウ(ほうれんそう)は、くさたけで、しゅうかくのじきを きめます。",
     "reading": "Horenso wa kusatake de shuukaku no jiki wo kimemasu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "○",
-    "explanation": "YNTTKTS."
+    "explanation": "Pada bayam, ukuran tinggi/pertumbuhan daun (kusatake) digunakan sebagai salah satu patokan menentukan waktu panen."
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "year": 2025,
     "question": "【8】にほんは、おんたいきこうの ところが すくないです。",
     "reading": "Nihon wa ontai kikou no tokoro ga sukunai desu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "×",
-    "explanation": "YNTTKTS."
+    "explanation": "Jepang memiliki wilayah beriklim sedang yang luas; karena itu pernyataan bahwa wilayah beriklim sedang hanya sedikit adalah salah."
   },
   {
     "id": 9,
@@ -85,9 +93,10 @@
     "year": 2025,
     "question": "【9】にほんは、やまが おおくて、のうちが すくないです。",
     "reading": "Nihon wa yama ga ookute nouchi ga sukunai desu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "○",
-    "explanation": "YNTTKTS."
+    "explanation": "Wilayah Jepang didominasi pegunungan sehingga lahan datar yang dapat dijadikan lahan pertanian relatif terbatas."
   },
   {
     "id": 10,
@@ -95,9 +104,10 @@
     "year": 2025,
     "question": "【10】こううんを します。つちの つうきせいが よくなります。",
     "reading": "Kouun wo shimasu. Tsuchi no tsuukisei ga yoku narimasu.",
+    "translation": "YNTTKTS.",
     "image": "",
     "answer": "○",
-    "explanation": "YNTTKTS."
+    "explanation": "Pembajakan membalik dan menggemburkan tanah serta membentuk pori-pori, sehingga pertukaran udara dan drainase tanah menjadi lebih baik."
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "year": 2025,
     "question": "さくもつは、ねから、ようぶんや すいぶんを\nきゅうしゅう します。",
     "reading": "Sakumotsu wa ne kara youbun ya suibun wo kyuushuu shimasu.",
+    "translation": "",
     "image": "",
     "answer": "○",
-    "explanation": ""
+    "explanation": "Akar menyerap air dan unsur hara dari media, lalu menyalurkannya ke bagian tanaman untuk pertumbuhan."
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "year": 2025,
     "question": "はなは、えいようきかんです。",
     "reading": "Hana wa eiyou kikan desu.",
+    "translation": "",
     "image": "",
     "answer": "×",
-    "explanation": ""
+    "explanation": "Bunga adalah organ reproduksi, bukan organ nutrisi; organ nutrisi terutama akar, batang, dan daun."
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "year": 2025,
     "question": "なたねかすは、ゆうきしつひりょうです。",
     "reading": "Natane kasu wa yuukishitsu hiryou desu.",
+    "translation": "Pokoknya kalau ada nama-nama tumbuhan begini udah bisa dipastiin dia yukishitsu hiryo (pupuk organik).",
     "image": "",
     "answer": "○",
-    "explanation": "Pokoknya kalau ada nama-nama tumbuhan begini udah bisa dipastiin dia yukishitsu hiryo (pupuk organik)."
+    "explanation": "Ampas biji lobak (natane-kasu) berasal dari bahan tanaman dan mengandung bahan organik, sehingga digolongkan sebagai pupuk organik."
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "year": 2025,
     "question": "さっちゅうざいで、ざっそうを ぼうじょします。",
     "reading": "Sacchuuzai de zassou wo boujo shimasu.",
+    "translation": "Sacchuzai dipakai untuk membasmi serangga, bukan rumput.",
     "image": "",
     "answer": "×",
-    "explanation": "Sacchuzai dipakai untuk membasmi serangga, bukan rumput."
+    "explanation": "Satchuuzai adalah insektisida untuk mengendalikan serangga hama; gulma dikendalikan dengan herbisida atau penyiangan."
   },
   {
     "id": 15,
@@ -145,9 +159,10 @@
     "year": 2024,
     "question": "蒸散は葉の気孔から水分を放出することです。",
     "reading": "Jousan wa ha no kikou kara suibun wo houtshutsu suru koto desu.",
+    "translation": "",
     "image": "",
     "answer": "○",
-    "explanation": ""
+    "explanation": "Transpirasi adalah pelepasan uap air dari jaringan tanaman, terutama melalui stomata pada daun."
   },
   {
     "id": 16,
@@ -155,9 +170,10 @@
     "year": 2023,
     "question": "にほんは、ねったいきこうのところがおおいです。",
     "reading": "",
+    "translation": "Pernyataan pada sumber ditandai ×.",
     "image": "",
     "answer": "×",
-    "explanation": "Pernyataan pada sumber ditandai ×."
+    "explanation": "Jepang tidak didominasi iklim tropis; sebagian besar wilayahnya beriklim sedang, dengan variasi dari subtropis hingga dingin."
   },
   {
     "id": 17,
@@ -165,9 +181,10 @@
     "year": 2015,
     "question": "にほん　の　こくど　は　やま　が　おおく、のうち　が　すくない　です。",
     "reading": "",
+    "translation": "Jepang memiliki banyak gunung dan sedikit lahan pertanian.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang memiliki banyak gunung dan sedikit lahan pertanian."
+    "explanation": "Banyak wilayah Jepang berupa pegunungan, sehingga luas lahan pertaniannya relatif sedikit."
   },
   {
     "id": 18,
@@ -175,9 +192,10 @@
     "year": 2015,
     "question": "にほん　には　はる　なつ　あき　ふゆ　が　あります。",
     "reading": "",
+    "translation": "Di Jepang terdapat musim semi, musim panas, musim gugur dan musim salju.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang terdapat musim semi, musim panas, musim gugur dan musim salju."
+    "explanation": "Jepang mengalami empat musim: musim semi, panas, gugur, dan dingin."
   },
   {
     "id": 19,
@@ -185,9 +203,10 @@
     "year": 2015,
     "question": "にほん　の　いなさく　は　ほとんど　が　じかまきさいばい　です。",
     "reading": "",
+    "translation": "Penanaman padi di Jepang kebanyakan sistem menanam langsung di ladang.",
     "image": "",
     "answer": "×",
-    "explanation": "Penanaman padi di Jepang kebanyakan sistem menanam langsung di ladang."
+    "explanation": "Budidaya padi di Jepang umumnya menggunakan persemaian lalu pindah tanam (taue), bukan mayoritas tanam langsung."
   },
   {
     "id": 20,
@@ -195,9 +214,10 @@
     "year": 2015,
     "question": "ゆういん　は　こみあった　は　を　のぞく　さぎょう　です。",
     "reading": "",
+    "translation": "Yuuin adalah pekerjaan membuang daun yang mbulet.",
     "image": "",
     "answer": "○",
-    "explanation": "Yuuin adalah pekerjaan membuang daun yang mbulet."
+    "explanation": "Yuuin berarti membuang atau merapikan daun yang saling bertumpuk/terlalu rapat agar sirkulasi udara dan penerimaan cahaya membaik."
   },
   {
     "id": 21,
@@ -205,9 +225,10 @@
     "year": 2015,
     "question": "もとごえ　は　さくもつ　を　うえ　つける　まえに　あたえるひりょう　です。",
     "reading": "",
+    "translation": "Motogoe adalah pupuk yang diberikan sebelum menanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Motogoe adalah pupuk yang diberikan sebelum menanam."
+    "explanation": "Motogoe adalah pupuk dasar yang diberikan sebelum atau saat penanaman agar unsur hara tersedia sejak awal pertumbuhan."
   },
   {
     "id": 22,
@@ -215,9 +236,10 @@
     "year": 2015,
     "question": "りゅうあん　は　ゆうきしつ　ひりょう　です。",
     "reading": "",
+    "translation": "Amonium sulfat merupakan pupuk organik.",
     "image": "",
     "answer": "×",
-    "explanation": "Amonium sulfat merupakan pupuk organik."
+    "explanation": "Ryuuan (amonium sulfat) merupakan pupuk anorganik/kimia yang memasok nitrogen dan sulfur, bukan pupuk organik."
   },
   {
     "id": 23,
@@ -225,9 +247,10 @@
     "year": 2015,
     "question": "トラクター　は　すいでん　や　はたけ　を　たがやす　のにつかいます。",
     "reading": "",
+    "translation": "Traktor digunakan untuk membajak sawah, ladang, dan lainnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Traktor digunakan untuk membajak sawah, ladang, dan lainnya."
+    "explanation": "Traktor digunakan dengan alat pengolah tanah untuk membajak dan menggemburkan sawah maupun ladang."
   },
   {
     "id": 24,
@@ -235,9 +258,10 @@
     "year": 2015,
     "question": "きかい　さぎょう　の　まえに　のうぎょう　きかい　をてんけん　します。",
     "reading": "",
+    "translation": "Mesin pertanian diperiksa sebelum digunakan.",
     "image": "",
     "answer": "○",
-    "explanation": "Mesin pertanian diperiksa sebelum digunakan."
+    "explanation": "Pemeriksaan sebelum bekerja menemukan kerusakan atau bahaya lebih awal sehingga mesin dapat digunakan dengan aman."
   },
   {
     "id": 25,
@@ -245,9 +269,10 @@
     "year": 2015,
     "question": "のうやく　は　こうか　が　なければ　なんかい　でもしよう　できます。",
     "reading": "",
+    "translation": "Jika pestisida tidak berpengaruh, maka boleh digunakan berkali-kali.",
     "image": "",
     "answer": "×",
-    "explanation": "Jika pestisida tidak berpengaruh, maka boleh digunakan berkali-kali."
+    "explanation": "Pestisida tidak boleh diulang sesuka hati saat tidak efektif; dosis, interval, sasaran, dan jumlah aplikasi harus mengikuti label serta aturan."
   },
   {
     "id": 26,
@@ -255,9 +280,10 @@
     "year": 2015,
     "question": "ねんりょう　を　いれる　とき　は　のうぎょう　きかい　のエンジン　を　とめます。",
     "reading": "",
+    "translation": "Mesin pertanian diberhentikan ketika hendak mengisi bahan bakar.",
     "image": "",
     "answer": "○",
-    "explanation": "Mesin pertanian diberhentikan ketika hendak mengisi bahan bakar."
+    "explanation": "Mesin harus dimatikan saat mengisi bahan bakar agar panas mesin dan sumber api tidak memicu kebakaran."
   },
   {
     "id": 27,
@@ -265,9 +291,10 @@
     "year": 2015,
     "question": "チューリップ、ゆり　は　まいとし　しゅし　を　まいてさいばい　します。",
     "reading": "",
+    "translation": "Tulip dan Yuri ditanam dengan menanam biji/benih setiap tahunnya.",
     "image": "",
     "answer": "×",
-    "explanation": "Tulip dan Yuri ditanam dengan menanam biji/benih setiap tahunnya."
+    "explanation": "Tulip dan lili umumnya diperbanyak dengan umbi, bukan menabur benih setiap tahun."
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "year": 2015,
     "question": "よくせい　さいばい　は　ふつう　さいばい　よりしゅうかく　じき　を　はやく　する　ことです。",
     "reading": "",
+    "translation": "Yokusei Saibai adalah penanaman yang mempercepat masa panen dibandingkan penanaman biasa.",
     "image": "",
     "answer": "×",
-    "explanation": "Yokusei Saibai adalah penanaman yang mempercepat masa panen dibandingkan penanaman biasa."
+    "explanation": "Yokusei saibai mengatur pertumbuhan agar panen lebih lambat dari budidaya biasa, bukan mempercepatnya."
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "year": 2015,
     "question": "ガラス　おんしつ　は　まいとし　ガラス　を　とりかえます。",
     "reading": "",
+    "translation": "Kaca pada rumah kaca diganti setiap tahunnya.",
     "image": "",
     "answer": "×",
-    "explanation": "Kaca pada rumah kaca diganti setiap tahunnya."
+    "explanation": "Kaca rumah kaca tidak diganti setiap tahun; penggantian dilakukan bila pecah, rusak, atau tidak lagi layak."
   },
   {
     "id": 30,
@@ -295,9 +324,10 @@
     "year": 2015,
     "question": "れんとうがた　ハウス　は　むね　が　つながった　ハウス　です。",
     "reading": "",
+    "translation": "Rentougata house adalah rumah yang menyambung bagian tengahnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Rentougata house adalah rumah yang menyambung bagian tengahnya."
+    "explanation": "Rentougata house terdiri dari beberapa bentang yang atap atau bagian tengahnya tersambung, sehingga berbeda dari rumah dengan satu atap tunggal."
   },
   {
     "id": 31,
@@ -305,9 +335,10 @@
     "year": 2015,
     "question": "ふしょくふ　は　おもに　ハウスない　の　ほおん　に　つかいます。",
     "reading": "",
+    "translation": "Fushokufu umumnya digunakan untuk menjaga suhu di dalam house.",
     "image": "",
     "answer": "○",
-    "explanation": "Fushokufu umumnya digunakan untuk menjaga suhu di dalam house."
+    "explanation": "Kain nonwoven digunakan sebagai penutup untuk menahan panas di dalam rumah kaca, terutama ketika suhu luar rendah."
   },
   {
     "id": 32,
@@ -315,9 +346,10 @@
     "year": 2015,
     "question": "だんぼう　そうち　は　ハウスない　を　ひやす　そうち　です。",
     "reading": "",
+    "translation": "Danbo adalah perangkat untuk mendinginkan bagian dalam house.",
     "image": "",
     "answer": "×",
-    "explanation": "Danbo adalah perangkat untuk mendinginkan bagian dalam house."
+    "explanation": "Danbou adalah alat pemanas yang menaikkan suhu di dalam rumah kaca; alat pendingin digunakan untuk menurunkannya."
   },
   {
     "id": 33,
@@ -325,9 +357,10 @@
     "year": 2015,
     "question": "かんき　の　もくてき　は　ハウスない　の　おんど　をさげる　こと　です。",
     "reading": "",
+    "translation": "Tujuan ventilasi adalah menurunkan suhu di dalam house.",
     "image": "",
     "answer": "○",
-    "explanation": "Tujuan ventilasi adalah menurunkan suhu di dalam house."
+    "explanation": "Ventilasi membuang udara panas dan memasukkan udara lebih sejuk, sehingga suhu di dalam rumah kaca turun."
   },
   {
     "id": 34,
@@ -335,9 +368,10 @@
     "year": 2015,
     "question": "ようえきさいばい　は　みず　と　ひりょう　を　どうじにあたえます。",
     "reading": "",
+    "translation": "Youeki Saibai dapat menggunakan air dan pupuk secara bersamaaan.",
     "image": "",
     "answer": "○",
-    "explanation": "Youeki Saibai dapat menggunakan air dan pupuk secara bersamaaan."
+    "explanation": "Dalam budidaya larutan nutrisi, air dan pupuk dilarutkan lalu diberikan bersama sebagai larutan nutrisi."
   },
   {
     "id": 35,
@@ -345,9 +379,10 @@
     "year": 2015,
     "question": "マルチング　は　つち　を　かんそう　させる　ために　します。",
     "reading": "",
+    "translation": "Mulsa (mulching) dilakukan untuk mengeringkan tanah.",
     "image": "",
     "answer": "×",
-    "explanation": "Mulsa (mulching) dilakukan untuk mengeringkan tanah."
+    "explanation": "Mulsa menutup permukaan tanah untuk mengurangi penguapan dan mempertahankan kelembapan, bukan mengeringkan tanah."
   },
   {
     "id": 36,
@@ -355,9 +390,10 @@
     "year": 2015,
     "question": "しせつ　の　なか　は　しつど　が　ひくく　なりやすい　ので、びょうき　が　でにくいです。",
     "reading": "",
+    "translation": "Di dalam fasilitas kelembapan mudah menurun, penyakit sulit muncul.",
     "image": "",
     "answer": "○",
-    "explanation": "Di dalam fasilitas kelembapan mudah menurun, penyakit sulit muncul."
+    "explanation": "Kelembapan yang lebih rendah mengurangi kondisi yang mendukung banyak patogen, sehingga risiko perkembangan penyakit dapat menurun."
   },
   {
     "id": 37,
@@ -365,9 +401,10 @@
     "year": 2018,
     "question": "にほん　は　ほとんど　が　ねったい　きこう　です。",
     "reading": "",
+    "translation": "Hampir seluruh wilayah di Jepang adalah tropis.",
     "image": "",
     "answer": "×",
-    "explanation": "Hampir seluruh wilayah di Jepang adalah tropis."
+    "explanation": "Sebagian besar Jepang beriklim sedang, bukan tropis; hanya wilayah selatan tertentu yang bersifat subtropis atau lebih hangat."
   },
   {
     "id": 38,
@@ -375,9 +412,10 @@
     "year": 2018,
     "question": "にほん　の　こくど　は　なんぼく　に　ながい　です。",
     "reading": "",
+    "translation": "Jepang melintang panjang dari selatan ke utara.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang melintang panjang dari selatan ke utara."
+    "explanation": "Kepulauan Jepang memanjang dari utara ke selatan, sehingga iklim dan musim tanam berbeda antarwilayah."
   },
   {
     "id": 39,
@@ -385,9 +423,10 @@
     "year": 2018,
     "question": "にほん　の　いなさく　は　なえ　を　そだて、たうえ　を　する　のが　おおい　です。",
     "reading": "",
+    "translation": "Budidaya beras di Jepang, banyak dilakukan dengan cara menumbuhkan bibit, kemudian menanamnya di ladang.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya beras di Jepang, banyak dilakukan dengan cara menumbuhkan bibit, kemudian menanamnya di ladang."
+    "explanation": "Padi di Jepang banyak dibudidayakan dengan menumbuhkan bibit terlebih dahulu lalu memindahkannya ke sawah."
   },
   {
     "id": 40,
@@ -395,9 +434,10 @@
     "year": 2018,
     "question": "ついひ　は　さくもつ　を　うえる　まえに　あたえる　ひりょう　です。",
     "reading": "",
+    "translation": "Tsuihi adalah pupuk yang diberikan sebelum menanam.",
     "image": "",
     "answer": "○",
-    "explanation": "Tsuihi adalah pupuk yang diberikan sebelum menanam."
+    "explanation": "Tsuihi adalah pupuk susulan yang diberikan setelah tanaman tumbuh, bukan pupuk sebelum tanam."
   },
   {
     "id": 41,
@@ -405,9 +445,10 @@
     "year": 2018,
     "question": "こううん　は　つち　を　ほりかえす　こと　です。",
     "reading": "",
+    "translation": "Kouun adalah kegiatan membajak tanah.",
     "image": "",
     "answer": "○",
-    "explanation": "Kouun adalah kegiatan membajak tanah."
+    "explanation": "Kouun adalah pekerjaan membalik atau menggali kembali tanah untuk mengolah dan menggemburkannya."
   },
   {
     "id": 42,
@@ -415,9 +456,10 @@
     "year": 2018,
     "question": "なたねかす　は　ゆうきしつ　ひりょう　です。",
     "reading": "",
+    "translation": "Biji bunga Natane merupakan pupuk organik.",
     "image": "",
     "answer": "○",
-    "explanation": "Biji bunga Natane merupakan pupuk organik."
+    "explanation": "Natane-kasu adalah sisa bahan tanaman setelah pengambilan minyak, sehingga termasuk sumber bahan organik untuk pupuk."
   },
   {
     "id": 43,
@@ -425,9 +467,10 @@
     "year": 2018,
     "question": "さっきんざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
     "reading": "",
+    "translation": "Disinfektan digunakan untuk membasmi serangga (hama).",
     "image": "",
     "answer": "×",
-    "explanation": "Disinfektan digunakan untuk membasmi serangga (hama)."
+    "explanation": "Sakkinzai digunakan untuk membunuh atau menekan mikroorganisme penyebab penyakit; serangga hama dikendalikan dengan insektisida."
   },
   {
     "id": 44,
@@ -435,9 +478,10 @@
     "year": 2018,
     "question": "きかい　の　てんけん　は　かならず　エンジン　をかけたまま　します。",
     "reading": "",
+    "translation": "Mesin harus dibiarkan menyala ketika melakukan pengecekan.",
     "image": "",
     "answer": "×",
-    "explanation": "Mesin harus dibiarkan menyala ketika melakukan pengecekan."
+    "explanation": "Pemeriksaan harus dilakukan dengan mesin berhenti agar bagian bergerak tidak mencederai pekerja dan pemeriksaan aman."
   },
   {
     "id": 45,
@@ -445,9 +489,10 @@
     "year": 2018,
     "question": "きかい　に　ねんりょう　を　いれる　ときは　ちかくにひ　の　ない　こと　を　たしかめます。",
     "reading": "",
+    "translation": "Periksa sekitar ada api atau tidak ketika akan mengisi bahan bakar ke mesin.",
     "image": "",
     "answer": "○",
-    "explanation": "Periksa sekitar ada api atau tidak ketika akan mengisi bahan bakar ke mesin."
+    "explanation": "Bahan bakar mudah terbakar, sehingga sebelum mengisi harus dipastikan tidak ada api atau sumber penyulut di sekitar."
   },
   {
     "id": 46,
@@ -455,9 +500,10 @@
     "year": 2018,
     "question": "のうやく　の　さんぷ　は　かぜ　の　つよい　とき　が　いい　です。",
     "reading": "",
+    "translation": "Penyebaran pestisida baiknya dilakukan pada saat angin kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyebaran pestisida baiknya dilakukan pada saat angin kencang."
+    "explanation": "Penyemprotan saat angin kencang menyebabkan pestisida terbawa dan mencemari area lain; pilih kondisi angin lemah sesuai label."
   },
   {
     "id": 47,
@@ -465,9 +511,10 @@
     "year": 2018,
     "question": "いちご　は　しゅし（たね）を　まいて　さいばい　します。",
     "reading": "",
+    "translation": "Budidaya stroberi dilakukan dengan cara menaburkan bijinya.",
     "image": "",
     "answer": "×",
-    "explanation": "Budidaya stroberi dilakukan dengan cara menaburkan bijinya."
+    "explanation": "Stroberi umumnya diperbanyak dengan anakan/runners atau bibit, bukan menabur benih untuk budidaya biasa."
   },
   {
     "id": 48,
@@ -475,9 +522,10 @@
     "year": 2018,
     "question": "きゅうり　は　かさいるい　です。",
     "reading": "",
+    "translation": "Mentimun adalah jenis sayur-buah.",
     "image": "",
     "answer": "○",
-    "explanation": "Mentimun adalah jenis sayur-buah."
+    "explanation": "Mentimun adalah kasai-rui karena buahnya berkembang dari bunga dan merupakan bagian yang dipanen."
   },
   {
     "id": 49,
@@ -485,9 +533,10 @@
     "year": 2018,
     "question": "ガラス　おんしつ　は　ひかり　を　とうし　やすい　です。",
     "reading": "",
+    "translation": "Rumah kaca mudah dilalui oleh cahaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Rumah kaca mudah dilalui oleh cahaya."
+    "explanation": "Kaca meneruskan cahaya matahari, sehingga rumah kaca dapat menerima cahaya untuk fotosintesis tanaman."
   },
   {
     "id": 50,
@@ -495,9 +544,10 @@
     "year": 2018,
     "question": "やね　が　ひとつ　の　ハウス　を　れんとうがた　と　いいます。",
     "reading": "",
+    "translation": "House yang atapnya hanya satu disebut rentougata hausu.",
     "image": "",
     "answer": "×",
-    "explanation": "House yang atapnya hanya satu disebut rentougata hausu."
+    "explanation": "Rumah dengan satu atap disebut tantougata; rentougata memiliki beberapa bagian rumah yang tersambung."
   },
   {
     "id": 51,
@@ -505,9 +555,10 @@
     "year": 2018,
     "question": "かんれいしゃ　は　ひかり　を　すくなく　する　とき　に　つかいます。",
     "reading": "",
+    "translation": "Kanreisha digunakan untuk mengurangi cahaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Kanreisha digunakan untuk mengurangi cahaya."
+    "explanation": "Kanreisha atau jaring peneduh mengurangi intensitas cahaya yang masuk ke rumah kaca."
   },
   {
     "id": 52,
@@ -515,9 +566,10 @@
     "year": 2018,
     "question": "だんぼう　そうち　は　ハウスない　を　あかるく　する　そうち　です。",
     "reading": "",
+    "translation": "Perangkat danbou merupakan perangkat untuk menerangi bagian dalam house.",
     "image": "",
     "answer": "×",
-    "explanation": "Perangkat danbou merupakan perangkat untuk menerangi bagian dalam house."
+    "explanation": "Danbou adalah alat pemanas, bukan penerangan; fungsinya menaikkan suhu di dalam rumah kaca."
   },
   {
     "id": 53,
@@ -525,9 +577,10 @@
     "year": 2018,
     "question": "しぜんかんき　は　かんきせん　を　まわし、そと　の　くうき　を　いれる　やりかた　です。",
     "reading": "",
+    "translation": "Shizen-kanki adalah metode menyalakan kipas angin dan memasukkan udara dari luar.",
     "image": "",
     "answer": "×",
-    "explanation": "Shizen-kanki adalah metode menyalakan kipas angin dan memasukkan udara dari luar."
+    "explanation": "Shizen-kanki memanfaatkan perbedaan suhu/angin dan membuka bukaan secara alami; penggunaan kipas untuk memasukkan udara adalah kyousei-kanki."
   },
   {
     "id": 54,
@@ -535,9 +588,10 @@
     "year": 2018,
     "question": "ようえき　さいばい　は　みず　と　ひりょう　を　どうじ　にあたえる　こと　が　できます。",
     "reading": "",
+    "translation": "Dapat memberikan pupuk dan air secara bersamaan pada youseki saibai.",
     "image": "",
     "answer": "○",
-    "explanation": "Dapat memberikan pupuk dan air secara bersamaan pada youseki saibai."
+    "explanation": "Larutan nutrisi memungkinkan air dan pupuk diberikan sekaligus melalui larutan yang diserap akar."
   },
   {
     "id": 55,
@@ -545,9 +599,10 @@
     "year": 2018,
     "question": "マルチング　は　つち　を　よく　かんそう　させる　ために　します。",
     "reading": "",
+    "translation": "Mulching digunakan untuk mengeringkan tanah.",
     "image": "",
     "answer": "×",
-    "explanation": "Mulching digunakan untuk mengeringkan tanah."
+    "explanation": "Mulsa mempertahankan kelembapan tanah dan menekan gulma, sehingga bukan untuk mengeringkan tanah."
   },
   {
     "id": 56,
@@ -555,9 +610,10 @@
     "year": 2018,
     "question": "ざっそう　は　しゅし（たね）が　おちる　まえに　とります。",
     "reading": "",
+    "translation": "Rumput liar dihilangkan sebelum benihnya jatuh.",
     "image": "",
     "answer": "○",
-    "explanation": "Rumput liar dihilangkan sebelum benihnya jatuh."
+    "explanation": "Gulma dicabut sebelum menghasilkan dan menjatuhkan benih agar gulma tidak memperbanyak diri di lahan."
   },
   {
     "id": 57,
@@ -565,9 +621,10 @@
     "year": 2019,
     "question": "にほん　は　ほとんど　が　ねったい　きこう　です。",
     "reading": "",
+    "translation": "Jepang, kebanyakan tanahnya beriklim hangat.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang, kebanyakan tanahnya beriklim hangat."
+    "explanation": "Jepang terutama beriklim sedang, bukan hampir seluruhnya tropis."
   },
   {
     "id": 58,
@@ -575,9 +632,10 @@
     "year": 2019,
     "question": "にほん　の　こめ　は　しゅうりょう　が　おおい　ひんしゅ　をちゅうしん　に　つくっています。",
     "reading": "",
+    "translation": "Budidaya beras di Jepang berpusat pada banyaknya jumlah panen.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya beras di Jepang berpusat pada banyaknya jumlah panen."
+    "explanation": "Varietas padi Jepang banyak dikembangkan dengan prioritas hasil panen tinggi agar produksi per satuan lahan meningkat."
   },
   {
     "id": 59,
@@ -585,9 +643,10 @@
     "year": 2019,
     "question": "にほん　の　こくど　は　なんぼく　に　ながい　です。",
     "reading": "",
+    "translation": "Negara Jepang melintang panjang dari utara ke selatan.",
     "image": "",
     "answer": "○",
-    "explanation": "Negara Jepang melintang panjang dari utara ke selatan."
+    "explanation": "Kepulauan Jepang membentang panjang dari utara ke selatan, menyebabkan perbedaan iklim antarwilayah."
   },
   {
     "id": 60,
@@ -595,9 +654,10 @@
     "year": 2019,
     "question": "もとごえ　は　さくもつ　を　うえる　まえにあたえる　ひりょう　です。",
     "reading": "",
+    "translation": "Motogoe adalah pupuk yang diberikan sebelum menanam tanaman.",
     "image": "",
     "answer": "×",
-    "explanation": "Motogoe adalah pupuk yang diberikan sebelum menanam tanaman."
+    "explanation": "Motogoe adalah pupuk dasar sebelum tanam; pupuk yang diberikan selama pertumbuhan adalah tsuihi."
   },
   {
     "id": 61,
@@ -605,9 +665,10 @@
     "year": 2019,
     "question": "さくもつ　は　ね　から　ようぶん　や　すいぶん　を　とっています。",
     "reading": "",
+    "translation": "Tanaman menyerap nutrisi dan air dari akar.",
     "image": "",
     "answer": "○",
-    "explanation": "Tanaman menyerap nutrisi dan air dari akar."
+    "explanation": "Akar menyerap air dan unsur hara dari tanah atau media tanam, kemudian mengirimkannya ke bagian tanaman."
   },
   {
     "id": 62,
@@ -615,9 +676,10 @@
     "year": 2019,
     "question": "なたねかす　は　かがく　ひりょう　です。",
     "reading": "",
+    "translation": "Ampas Natane adalah pupuk kimia.",
     "image": "",
     "answer": "×",
-    "explanation": "Ampas Natane adalah pupuk kimia."
+    "explanation": "Natane-kasu berasal dari bahan tumbuhan dan tergolong pupuk organik, bukan pupuk kimia."
   },
   {
     "id": 63,
@@ -625,9 +687,10 @@
     "year": 2019,
     "question": "さっちゅうざい　は　がいちゅう　の　ぼうじょ　に　つかいます。",
     "reading": "",
+    "translation": "Insektisida digunakan untuk mencegah hama (cacing).",
     "image": "",
     "answer": "○",
-    "explanation": "Insektisida digunakan untuk mencegah hama (cacing)."
+    "explanation": "Insektisida digunakan untuk mengendalikan serangga hama; istilahnya tidak terbatas pada cacing."
   },
   {
     "id": 64,
@@ -635,9 +698,10 @@
     "year": 2019,
     "question": "きかい　の　てんけん　は　かならず　エンジン　を　かけた　まま　します。",
     "reading": "",
+    "translation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala.",
     "image": "",
     "answer": "×",
-    "explanation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala."
+    "explanation": "Mesin dimatikan saat pemeriksaan agar tidak ada gerakan atau bagian berputar yang membahayakan."
   },
   {
     "id": 65,
@@ -645,9 +709,10 @@
     "year": 2019,
     "question": "きかい　に　ねんりょう　を　いれる　とき　は　ちかくに　ひ　の　ないこと　を　たしかめます。",
     "reading": "",
+    "translation": "Memeriksa apakah ada api atau tidak di sekitar ketika mengisi bahan bakar mesin.",
     "image": "",
     "answer": "○",
-    "explanation": "Memeriksa apakah ada api atau tidak di sekitar ketika mengisi bahan bakar mesin."
+    "explanation": "Pemeriksaan ketiadaan api penting karena uap dan bahan bakar dapat mudah terbakar ketika pengisian."
   },
   {
     "id": 66,
@@ -655,9 +720,10 @@
     "year": 2019,
     "question": "のうやく　の　さんぷ　は　まわり　に　とびちらない　ようにまきます。",
     "reading": "",
+    "translation": "Penaburan pestisida diusahakan tidak sampai terbang ke sekitar.",
     "image": "",
     "answer": "○",
-    "explanation": "Penaburan pestisida diusahakan tidak sampai terbang ke sekitar."
+    "explanation": "Pestisida harus diaplikasikan agar tidak terbawa angin ke pekerja, tanaman lain, atau lingkungan sekitar."
   },
   {
     "id": 67,
@@ -665,9 +731,10 @@
     "year": 2019,
     "question": "トマト　は　なえ　を　うえて　さいばい　します。",
     "reading": "",
+    "translation": "Tomat dibudidaya dengan menanam tunasnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Tomat dibudidaya dengan menanam tunasnya."
+    "explanation": "Tomat umumnya ditanam dari bibit (nae) yang telah disemai, lalu dipindahkan ke tempat budidaya."
   },
   {
     "id": 68,
@@ -675,9 +742,10 @@
     "year": 2019,
     "question": "きく　は　きゅうこん　を　うえて　そだてます。",
     "reading": "",
+    "translation": "Bunga Krisan dibudidaya dengan menanam umbinya.",
     "image": "",
     "answer": "×",
-    "explanation": "Bunga Krisan dibudidaya dengan menanam umbinya."
+    "explanation": "Krisan tidak dibudidayakan dari umbi; biasanya menggunakan stek atau bibit vegetatif."
   },
   {
     "id": 69,
@@ -685,9 +753,10 @@
     "year": 2019,
     "question": "ガラス　おんしつ　は　ひかり　を　とおし　やすい　です。",
     "reading": "",
+    "translation": "Rumah kaca mudah dilalui oleh cahaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Rumah kaca mudah dilalui oleh cahaya."
+    "explanation": "Kaca rumah kaca mudah meneruskan cahaya, yang diperlukan tanaman untuk fotosintesis."
   },
   {
     "id": 70,
@@ -695,9 +764,10 @@
     "year": 2019,
     "question": "やね　が　ひとつ　の　ハウス　を　れんとうがた　と　いいます。",
     "reading": "",
+    "translation": "Rumah kaca yang atapnya hanya satu disebut dengan rentougata.",
     "image": "",
     "answer": "×",
-    "explanation": "Rumah kaca yang atapnya hanya satu disebut dengan rentougata."
+    "explanation": "Rumah kaca satu atap adalah tantougata; rentougata berarti beberapa bentang rumah tersambung."
   },
   {
     "id": 71,
@@ -705,9 +775,10 @@
     "year": 2019,
     "question": "くろい　かんれいしゃ　は　ひかり　を　すくなく　するためにつかいます。",
     "reading": "",
+    "translation": "Kanreisha hitam digunakan untuk mengurangi cahaya yang masuk.",
     "image": "",
     "answer": "○",
-    "explanation": "Kanreisha hitam digunakan untuk mengurangi cahaya yang masuk."
+    "explanation": "Jaring peneduh hitam mengurangi intensitas cahaya yang masuk sehingga tanaman terlindung dari cahaya berlebih."
   },
   {
     "id": 72,
@@ -715,9 +786,10 @@
     "year": 2019,
     "question": "だんぼう　そうち　は　ハウス　の　なか　をあかる　する　もの　です。",
     "reading": "",
+    "translation": "Perangkat danbou digunakan untuk menerangi dalam rumah kaca.",
     "image": "",
     "answer": "×",
-    "explanation": "Perangkat danbou digunakan untuk menerangi dalam rumah kaca."
+    "explanation": "Danbou memanaskan rumah kaca, bukan meneranginya."
   },
   {
     "id": 73,
@@ -725,9 +797,10 @@
     "year": 2019,
     "question": "きょうせいかんき　は　しせつ　の　まど　を　あけて　くうき　の　いれかえ　を　する　やりかた　です。",
     "reading": "",
+    "translation": "Kyousei kanki adalah cara ventilasi dengan memasukkan udara ke dalam ruangan dengan membuka jendela.",
     "image": "",
     "answer": "×",
-    "explanation": "Kyousei kanki adalah cara ventilasi dengan memasukkan udara ke dalam ruangan dengan membuka jendela."
+    "explanation": "Membuka jendela untuk pertukaran udara adalah ventilasi alami (shizen-kanki); ventilasi paksa menggunakan kipas."
   },
   {
     "id": 74,
@@ -735,9 +808,10 @@
     "year": 2019,
     "question": "ようえき　さいばい　は　みず　と　ひりょう　を　どうじ　に　あたえる　こと　が　できます。",
     "reading": "",
+    "translation": "Air dan pupuk dapat diberikan bersamaan dalam youeki saibai.",
     "image": "",
     "answer": "○",
-    "explanation": "Air dan pupuk dapat diberikan bersamaan dalam youeki saibai."
+    "explanation": "Pada budidaya larutan nutrisi, air dan pupuk dapat dicampur lalu diberikan bersamaan kepada tanaman."
   },
   {
     "id": 75,
@@ -745,9 +819,10 @@
     "year": 2019,
     "question": "しせつ　の　なか　に　ざっそう　の　たね　を　もちこまない　ように　します。",
     "reading": "",
+    "translation": "Usahakan tidak membawa bibit gulma ke dalam fasilitas.",
     "image": "",
     "answer": "○",
-    "explanation": "Usahakan tidak membawa bibit gulma ke dalam fasilitas."
+    "explanation": "Mencegah benih gulma masuk mengurangi sumber gulma baru dan memudahkan pengelolaan kebersihan fasilitas."
   },
   {
     "id": 76,
@@ -755,9 +830,10 @@
     "year": 2019,
     "question": "マルチ　は　つち　を　よく　かんそう　させるために　つかいます。",
     "reading": "",
+    "translation": "Mulsa digunakan untuk mengeringkan tanah.",
     "image": "",
     "answer": "×",
-    "explanation": "Mulsa digunakan untuk mengeringkan tanah."
+    "explanation": "Mulsa mengurangi penguapan dan membantu mempertahankan air tanah; tujuannya bukan mengeringkan tanah."
   },
   {
     "id": 77,
@@ -765,9 +841,10 @@
     "year": 2019,
     "question": "にほんは　やまが　おおくて、のうち　は　すくない　です。",
     "reading": "",
+    "translation": "Jepang mempunyai banyak gunung dan sedikit lahan.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang mempunyai banyak gunung dan sedikit lahan."
+    "explanation": "Pegunungan mendominasi banyak wilayah Jepang, sehingga lahan pertanian yang datar relatif terbatas."
   },
   {
     "id": 78,
@@ -775,9 +852,10 @@
     "year": 2019,
     "question": "にほん　には　はる　なつ　あき　の　３つの　きせつ　だけがあります。",
     "reading": "",
+    "translation": "Musim di Jepang hanya ada 3, musim semi, musim panas dan musim gugur.",
     "image": "",
     "answer": "×",
-    "explanation": "Musim di Jepang hanya ada 3, musim semi, musim panas dan musim gugur."
+    "explanation": "Jepang memiliki empat musim; musim dingin juga termasuk dan bukan hanya tiga musim."
   },
   {
     "id": 79,
@@ -785,9 +863,10 @@
     "year": 2019,
     "question": "にほん　の　いなさく　は　あじ　の　よい　ひんしゅ　のさいばい　が　ひろがっています。",
     "reading": "",
+    "translation": "Budidaya beras di Jepang, jenis yang rasanya enaklah yang tersebar.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya beras di Jepang, jenis yang rasanya enaklah yang tersebar."
+    "explanation": "Budidaya padi Jepang meluas pada varietas yang dinilai memiliki rasa dan kualitas makan yang baik."
   },
   {
     "id": 80,
@@ -795,9 +874,10 @@
     "year": 2019,
     "question": "もとごえ　は　さくもつ　の　せいいくちゅう　に　あたえるひりょう　です。",
     "reading": "",
+    "translation": "Motogoe adalah pupuk yang diberikan pada pertengahan pertumbuhan.",
     "image": "",
     "answer": "×",
-    "explanation": "Motogoe adalah pupuk yang diberikan pada pertengahan pertumbuhan."
+    "explanation": "Motogoe diberikan sebelum tanam sebagai pupuk dasar; pupuk pertengahan pertumbuhan disebut pupuk susulan/tsuihi."
   },
   {
     "id": 81,
@@ -805,9 +885,10 @@
     "year": 2019,
     "question": "さくもつ　は　ね　から　ようぶん　や　すいぶん　を　とっています。",
     "reading": "",
+    "translation": "Tanaman menyerap nutrisi dan cairan dari akar.",
     "image": "",
     "answer": "○",
-    "explanation": "Tanaman menyerap nutrisi dan cairan dari akar."
+    "explanation": "Akar mengambil air dan unsur hara dari media tanam untuk menunjang pertumbuhan tanaman."
   },
   {
     "id": 82,
@@ -815,9 +896,10 @@
     "year": 2019,
     "question": "なたねかす　は　ゆうきしつ　ひりょう　です。",
     "reading": "",
+    "translation": "Biji bunga Natane merupakan pupuk organik.",
     "image": "",
     "answer": "○",
-    "explanation": "Biji bunga Natane merupakan pupuk organik."
+    "explanation": "Natane-kasu merupakan residu tanaman dan termasuk bahan pupuk organik."
   },
   {
     "id": 83,
@@ -825,9 +907,10 @@
     "year": 2019,
     "question": "さっちゅうざい　は　がいちゅう　の　ほうじょ　に　つかいます。",
     "reading": "",
+    "translation": "Insektisida digunakan untuk mengendalikan serangga (hama).",
     "image": "",
     "answer": "○",
-    "explanation": "Insektisida digunakan untuk mengendalikan serangga (hama)."
+    "explanation": "Satchuuzai memang digunakan untuk mengendalikan serangga hama pada tanaman."
   },
   {
     "id": 84,
@@ -835,9 +918,10 @@
     "year": 2019,
     "question": "きかい　の　てんけん　は　かならず　エンジン　をかけた　まま　します。",
     "reading": "",
+    "translation": "Pada saat pemeriksaan mesin, kondisi mesin harus tetap menyala.",
     "image": "",
     "answer": "×",
-    "explanation": "Pada saat pemeriksaan mesin, kondisi mesin harus tetap menyala."
+    "explanation": "Pemeriksaan dilakukan saat mesin berhenti agar pekerja tidak terkena gerakan mesin dan dapat memeriksa dengan aman."
   },
   {
     "id": 85,
@@ -845,9 +929,10 @@
     "year": 2019,
     "question": "きかい　に　あわない　ねんりょうゆを　つかうとこしょうする　げんいん　に　なります。",
     "reading": "",
+    "translation": "Penggunaan bahan bakar yang tidak sesuai dengan mesin menjadi penyebab kerusakan mesin.",
     "image": "",
     "answer": "○",
-    "explanation": "Penggunaan bahan bakar yang tidak sesuai dengan mesin menjadi penyebab kerusakan mesin."
+    "explanation": "Bahan bakar yang tidak sesuai spesifikasi mesin dapat menyebabkan pembakaran tidak tepat dan merusak komponen."
   },
   {
     "id": 86,
@@ -855,9 +940,10 @@
     "year": 2019,
     "question": "のうやく　は　かぜ　の　つよい　ときに　まきます。",
     "reading": "",
+    "translation": "Penyemprotan pestisida dilakukan pada saat angin kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyemprotan pestisida dilakukan pada saat angin kencang."
+    "explanation": "Angin kencang membawa pestisida keluar sasaran; penyemprotan dilakukan pada kondisi angin lemah sesuai petunjuk."
   },
   {
     "id": 87,
@@ -865,9 +951,10 @@
     "year": 2019,
     "question": "きく　は　きゅうこん　を　うえて　そだてます。",
     "reading": "",
+    "translation": "Bunga Krisan dibubidayakan dengan menanam umbinya.",
     "image": "",
     "answer": "×",
-    "explanation": "Bunga Krisan dibubidayakan dengan menanam umbinya."
+    "explanation": "Krisan biasanya diperbanyak dengan stek atau bibit, bukan dengan menanam kyuukon/umbi."
   },
   {
     "id": 88,
@@ -875,9 +962,10 @@
     "year": 2019,
     "question": "キュウリ　は　かさいるい　です。",
     "reading": "",
+    "translation": "Mentimun adalah jenis sayur-buah.",
     "image": "",
     "answer": "○",
-    "explanation": "Mentimun adalah jenis sayur-buah."
+    "explanation": "Mentimun termasuk kasai-rui karena organ yang dipanen adalah buah yang terbentuk dari bunga."
   },
   {
     "id": 89,
@@ -885,9 +973,10 @@
     "year": 2019,
     "question": "ガラス　おんしつ　は　そとからの　ひかり　が　はいりにくい　です。",
     "reading": "",
+    "translation": "Sinar matahari sulit menembus ruangan kaca.",
     "image": "",
     "answer": "×",
-    "explanation": "Sinar matahari sulit menembus ruangan kaca."
+    "explanation": "Kaca rumah kaca justru meneruskan cahaya dari luar, sehingga klaim bahwa cahaya sulit masuk adalah salah."
   },
   {
     "id": 90,
@@ -895,9 +984,10 @@
     "year": 2019,
     "question": "やね　が　ひとつ　の　ハウス　を　れんとう　がた　と　いいます。",
     "reading": "",
+    "translation": "House yang atapnya satu saja disebut rentou gata.",
     "image": "",
     "answer": "×",
-    "explanation": "House yang atapnya satu saja disebut rentou gata."
+    "explanation": "Rumah dengan satu atap disebut tantougata; rentougata memiliki atap atau bentang yang saling tersambung."
   },
   {
     "id": 91,
@@ -905,9 +995,10 @@
     "year": 2019,
     "question": "くろい　かんれいしゃ　は　ひかり　を　すくなく　するため　につかいます。",
     "reading": "",
+    "translation": "Kanreisha hitam digunakan untuk mengurangi cahaya.",
     "image": "",
     "answer": "○",
-    "explanation": "Kanreisha hitam digunakan untuk mengurangi cahaya."
+    "explanation": "Kanreisha hitam berfungsi sebagai peneduh untuk mengurangi cahaya berlebih yang masuk."
   },
   {
     "id": 92,
@@ -915,9 +1006,10 @@
     "year": 2019,
     "question": "だんぼう　そうち　は　ハウス　ない　をあかるく　する　そうち　です。",
     "reading": "",
+    "translation": "Perangkat danbou merupakan perangkat untuk menerangkan ruangan house.",
     "image": "",
     "answer": "×",
-    "explanation": "Perangkat danbou merupakan perangkat untuk menerangkan ruangan house."
+    "explanation": "Danbou adalah perangkat pemanas untuk menaikkan suhu, bukan perangkat penerangan."
   },
   {
     "id": 93,
@@ -925,9 +1017,10 @@
     "year": 2019,
     "question": "しぜん　かんき　は　かんきせん　を　まわし、そとの　くうき　を　いれる　やりかた　です。",
     "reading": "",
+    "translation": "Shizen-kanki adalah menyalakan kipas angin kemudian memasukkan udara dari luar.",
     "image": "",
     "answer": "×",
-    "explanation": "Shizen-kanki adalah menyalakan kipas angin kemudian memasukkan udara dari luar."
+    "explanation": "Ventilasi alami tidak menggunakan kipas, melainkan memanfaatkan bukaan serta perbedaan suhu dan angin; kipas termasuk ventilasi paksa."
   },
   {
     "id": 94,
@@ -935,9 +1028,10 @@
     "year": 2019,
     "question": "ようえき　さいばい　は　つち　を　つかわない　さいばい　です。",
     "reading": "",
+    "translation": "Youeki saibai adalah metode yang tidak menggunakan tanah.",
     "image": "",
     "answer": "○",
-    "explanation": "Youeki saibai adalah metode yang tidak menggunakan tanah."
+    "explanation": "Budidaya larutan nutrisi menumbuhkan tanaman tanpa tanah, dengan unsur hara diberikan melalui larutan."
   },
   {
     "id": 95,
@@ -945,9 +1039,10 @@
     "year": 2019,
     "question": "マルチング　は　つち　を　よく　かんそう　させるためにつかいます。",
     "reading": "",
+    "translation": "Mulching digunakan untuk mengeringkan tanah dengan baik.",
     "image": "",
     "answer": "×",
-    "explanation": "Mulching digunakan untuk mengeringkan tanah dengan baik."
+    "explanation": "Mulsa menutup tanah untuk menjaga kelembapan dan menekan gulma, bukan untuk mengeringkan tanah."
   },
   {
     "id": 96,
@@ -955,9 +1050,10 @@
     "year": 2019,
     "question": "ハウス　の　なかに　ざっそう　の　しゅし　をもちこまない　ように　します。",
     "reading": "",
+    "translation": "Jangan sampai membawa benih gulma ke dalam house.",
     "image": "",
     "answer": "○",
-    "explanation": "Jangan sampai membawa benih gulma ke dalam house."
+    "explanation": "Mencegah masuknya benih gulma ke rumah kaca mengurangi perkecambahan dan persaingan gulma dengan tanaman."
   },
   {
     "id": 97,
@@ -965,9 +1061,10 @@
     "year": 2023,
     "question": "にほん　は　やま　が　すくなく　のうち／はたけ　がおおい　くに　です。",
     "reading": "",
+    "translation": "Jepang adalah negara yang banyak ladangnya tetapi gunungnya sedikit.",
     "image": "",
     "answer": "×",
-    "explanation": "Jepang adalah negara yang banyak ladangnya tetapi gunungnya sedikit."
+    "explanation": "Jepang memiliki banyak pegunungan dan lahan pertanian yang terbatas; bukan negara dengan sedikit gunung dan banyak ladang."
   },
   {
     "id": 98,
@@ -975,9 +1072,10 @@
     "year": 2023,
     "question": "は　や　くき　は　えいよう　きかん　です。",
     "reading": "",
+    "translation": "Daun dan tangkai disebut organ vegetatif.",
     "image": "",
     "answer": "○",
-    "explanation": "Daun dan tangkai disebut organ vegetatif."
+    "explanation": "Daun dan batang/tangkai berperan dalam fotosintesis, penopang, dan pertumbuhan sehingga termasuk organ vegetatif."
   },
   {
     "id": 99,
@@ -985,9 +1083,10 @@
     "year": 2023,
     "question": "せいし　は　よぶん　な　はな　を　とる　こと　です。",
     "reading": "",
+    "translation": "Seishi adalah pemangkasan bunga yang tidak perlu.",
     "image": "",
     "answer": "○",
-    "explanation": "Seishi adalah pemangkasan bunga yang tidak perlu."
+    "explanation": "Seishi adalah membuang bunga yang tidak diperlukan agar nutrisi tanaman terarah pada bunga atau buah yang dipelihara."
   },
   {
     "id": 100,
@@ -995,9 +1094,10 @@
     "year": 2023,
     "question": "にほん　の　つち　は　さんせい　の　つち　が　おおい　です。",
     "reading": "",
+    "translation": "Jepang memiliki banyak tanah yang bersifat asam.",
     "image": "",
     "answer": "○",
-    "explanation": "Jepang memiliki banyak tanah yang bersifat asam."
+    "explanation": "Banyak tanah Jepang bersifat asam karena curah hujan tinggi dan pencucian basa dari tanah; pH perlu dikelola sesuai tanaman."
   },
   {
     "id": 101,
@@ -1005,9 +1105,10 @@
     "year": 2023,
     "question": "Tシャツ　で　のうやく　を　まいても　いい　です。",
     "reading": "",
+    "translation": "Boleh menyebarkan pestisida dengan mengenakan T-shirt.",
     "image": "",
     "answer": "×",
-    "explanation": "Boleh menyebarkan pestisida dengan mengenakan T-shirt."
+    "explanation": "Pestisida harus diaplikasikan dengan pakaian pelindung yang menutup kulit; T-shirt tidak cukup melindungi dari paparan."
   },
   {
     "id": 102,
@@ -1015,9 +1116,10 @@
     "year": 2023,
     "question": "なたねかす　は　かがく　ひりょう　です。",
     "reading": "",
+    "translation": "Ampas Natane adalah pupuk kimia.",
     "image": "",
     "answer": "×",
-    "explanation": "Ampas Natane adalah pupuk kimia."
+    "explanation": "Natane-kasu berasal dari bahan tumbuhan dan merupakan pupuk organik, bukan pupuk kimia."
   },
   {
     "id": 103,
@@ -1025,9 +1127,10 @@
     "year": 2023,
     "question": "さっきんざい　は　びょうき　の　よぼう　に　つかいます。",
     "reading": "",
+    "translation": "Anti-bakteri digunakan untuk mencegah penyakit.",
     "image": "",
     "answer": "○",
-    "explanation": "Anti-bakteri digunakan untuk mencegah penyakit."
+    "explanation": "Sakkinzai menekan mikroorganisme penyebab penyakit sehingga digunakan untuk pencegahan atau pengendalian penyakit."
   },
   {
     "id": 104,
@@ -1035,9 +1138,10 @@
     "year": 2023,
     "question": "のうやく　を　つかったら 、きろく　します。",
     "reading": "",
+    "translation": "Mencatat setelah menggunakan pestisida.",
     "image": "",
     "answer": "○",
-    "explanation": "Mencatat setelah menggunakan pestisida."
+    "explanation": "Pencatatan penggunaan pestisida diperlukan untuk mengetahui nama, waktu, dosis, dan area aplikasi serta menjaga ketertelusuran."
   },
   {
     "id": 105,
@@ -1045,9 +1149,10 @@
     "year": 2023,
     "question": "きかい　を　つかうとき、さぎょうの　まえに　つかいかた　を　よく　りかい　します。",
     "reading": "",
+    "translation": "Ketika menggunakan mesin, pahamilah cara menggunakannya sebelum bekerja.",
     "image": "",
     "answer": "○",
-    "explanation": "Ketika menggunakan mesin, pahamilah cara menggunakannya sebelum bekerja."
+    "explanation": "Memahami petunjuk pengoperasian sebelum bekerja mencegah kesalahan dan kecelakaan saat menggunakan mesin."
   },
   {
     "id": 106,
@@ -1055,9 +1160,10 @@
     "year": 2023,
     "question": "キュウリ　は、かさいるいです。",
     "reading": "",
+    "translation": "Mentimun adalah jenis sayur-buah.",
     "image": "",
     "answer": "○",
-    "explanation": "Mentimun adalah jenis sayur-buah."
+    "explanation": "Mentimun termasuk sayur buah karena bagian yang dipanen adalah buah yang berkembang dari bunga."
   },
   {
     "id": 107,
@@ -1065,9 +1171,10 @@
     "year": 2023,
     "question": "せっかん　が　みじかい　なえ　は　わるい　なえ　です。",
     "reading": "",
+    "translation": "Bibit yang tangkainya pendek merupakan bibit yang buruk.",
     "image": "",
     "answer": "×",
-    "explanation": "Bibit yang tangkainya pendek merupakan bibit yang buruk."
+    "explanation": "Bibit dengan ruas pendek tidak otomatis buruk; kualitas bibit dinilai dari kesehatan, kekuatan, akar, dan pertumbuhannya."
   },
   {
     "id": 108,
@@ -1075,9 +1182,10 @@
     "year": 2023,
     "question": "プラスチックハウス　は　ガラス　の　おんしつです。",
     "reading": "",
+    "translation": "Rumah plastik adalah ruang hangat yang terbuat dari kaca.",
     "image": "",
     "answer": "×",
-    "explanation": "Rumah plastik adalah ruang hangat yang terbuat dari kaca."
+    "explanation": "Plastic house memakai lembaran plastik sebagai penutup, sedangkan glass greenhouse memakai kaca."
   },
   {
     "id": 109,
@@ -1085,9 +1193,10 @@
     "year": 2023,
     "question": "ばら　は　かぼく　です。",
     "reading": "",
+    "translation": "Mawar adalah pohon berbunga.",
     "image": "",
     "answer": "○",
-    "explanation": "Mawar adalah pohon berbunga."
+    "explanation": "Mawar termasuk tanaman berkayu (kakuboku), karena memiliki batang berkayu dan tumbuh sebagai semak."
   },
   {
     "id": 110,
@@ -1095,9 +1204,10 @@
     "year": 2023,
     "question": "マルチフイルム　は　いろ　で　こうか　が　ちがいます。",
     "reading": "",
+    "translation": "Efek film mulsa berbeda tergantung warnanya.",
     "image": "",
     "answer": "○",
-    "explanation": "Efek film mulsa berbeda tergantung warnanya."
+    "explanation": "Warna film mulsa memengaruhi pantulan/penyerapan cahaya dan suhu tanah, sehingga efeknya berbeda."
   },
   {
     "id": 111,
@@ -1105,9 +1215,10 @@
     "year": 2023,
     "question": "しぜんかんき　は　かんきせん　を　まわして、しせつ　の　なか　を　かんき　する　こと　です。",
     "reading": "",
+    "translation": "Shizen-kanki adalah penggunaan kipas ventilasi untuk memberikan ventilasi pada bagian dalam suatu fasilitas.",
     "image": "",
     "answer": "×",
-    "explanation": "Shizen-kanki adalah penggunaan kipas ventilasi untuk memberikan ventilasi pada bagian dalam suatu fasilitas."
+    "explanation": "Shizen-kanki menggunakan bukaan dan kondisi alami tanpa kipas; ventilasi dengan kipas adalah kyousei-kanki."
   },
   {
     "id": 112,
@@ -1115,9 +1226,10 @@
     "year": 2023,
     "question": "たんとうがた　ハウス　は　やね　が　ひとつ　です。",
     "reading": "",
+    "translation": "Tantougata hausu atapnya hanya satu.",
     "image": "",
     "answer": "○",
-    "explanation": "Tantougata hausu atapnya hanya satu."
+    "explanation": "Tantougata house adalah rumah kaca dengan satu atap atau satu bentang utama."
   },
   {
     "id": 113,
@@ -1125,9 +1237,10 @@
     "year": 2023,
     "question": "なす　は　つぎき　なえ　を　つかっては　いけません。",
     "reading": "",
+    "translation": "Jangan gunakan penyambungan bibit untuk terong.",
     "image": "",
     "answer": "×",
-    "explanation": "Jangan gunakan penyambungan bibit untuk terong."
+    "explanation": "Terong dapat dibudidayakan dengan bibit sambungan bila batang bawah dan atas sesuai; larangan mutlak tersebut salah."
   },
   {
     "id": 114,
@@ -1135,9 +1248,10 @@
     "year": 2023,
     "question": "マルチング　は　つち　の　うえ　を　プラスチックフイルム　など　で　おおう　こと　です。",
     "reading": "",
+    "translation": "Mulching adalah proses menutupi bagian atas taman dengan film plastik, dll.",
     "image": "",
     "answer": "○",
-    "explanation": "Mulching adalah proses menutupi bagian atas taman dengan film plastik, dll."
+    "explanation": "Mulching adalah menutup permukaan tanah menggunakan film plastik atau bahan lain untuk menjaga kondisi tanah dan menekan gulma."
   },
   {
     "id": 115,
@@ -1145,9 +1259,10 @@
     "year": 2000,
     "question": "きかいに　あわない　ねんりょうを　つかうと　こしょうするげんいんに　なります。",
     "reading": "",
+    "translation": "Mesin akan rusak jika diberikan bahan bakar yang tidak sesuai.",
     "image": "",
     "answer": "○",
-    "explanation": "Mesin akan rusak jika diberikan bahan bakar yang tidak sesuai."
+    "explanation": "Bahan bakar yang tidak sesuai dapat mengganggu pembakaran dan pelumasan sehingga menimbulkan kerusakan mesin."
   },
   {
     "id": 116,
@@ -1155,9 +1270,10 @@
     "year": 2000,
     "question": "にほんでは、コメ（こめ）の　しょうひりょうが　まいとしふえています。",
     "reading": "",
+    "translation": "Jumlah konsumsi beras di Jepang setiap tahun semakin banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Jumlah konsumsi beras di Jepang setiap tahun semakin banyak."
+    "explanation": "Konsumsi beras Jepang tidak terus meningkat setiap tahun; kecenderungannya menurun karena perubahan pola makan dan demografi."
   },
   {
     "id": 117,
@@ -1165,9 +1281,10 @@
     "year": 2000,
     "question": "ひりょうの　３ようそ とは、ちっそ、リンさん、カルシウムです。",
     "reading": "",
+    "translation": "Tiga unsur pupuk adalah nitrogen, asam fosfor, dan kalsium.",
     "image": "",
     "answer": "×",
-    "explanation": "Tiga unsur pupuk adalah nitrogen, asam fosfor, dan kalsium."
+    "explanation": "Tiga unsur hara utama pupuk adalah nitrogen, fosfor, dan kalium (N-P-K), bukan kalsium."
   },
   {
     "id": 118,
@@ -1175,9 +1292,10 @@
     "year": 2000,
     "question": "れんさくとは、おなじ　はたけに、おなじ　しゅるいの　さくもつをつづけて　つくることです。",
     "reading": "",
+    "translation": "Rensaku adalah menanam jenis tumbuhan yang sama di satu lahan melanjutkan tanaman sebelumnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Rensaku adalah menanam jenis tumbuhan yang sama di satu lahan melanjutkan tanaman sebelumnya."
+    "explanation": "Rensaku adalah menanam tanaman sejenis berulang kali di lahan yang sama, yang dapat meningkatkan risiko penyakit dan penurunan kesuburan."
   },
   {
     "id": 119,
@@ -1185,9 +1303,10 @@
     "year": 2000,
     "question": "ついひは、なえを　うえつける　まえに、はたけに　まく　ひりょうです。",
     "reading": "",
+    "translation": "Tsuihi adalah pupuk yang diberikan ke lahan sebelum menanam tunas.",
     "image": "",
     "answer": "×",
-    "explanation": "Tsuihi adalah pupuk yang diberikan ke lahan sebelum menanam tunas."
+    "explanation": "Tsuihi adalah pupuk susulan selama pertumbuhan; pupuk yang diberikan sebelum tanam disebut motogoe."
   },
   {
     "id": 120,
@@ -1195,9 +1314,10 @@
     "year": 2000,
     "question": "よくせいさいばいでは、ふつうさいばいよりも　おそい　じきにしゅうかく できます。",
     "reading": "",
+    "translation": "Yokusei Saibai dapat dipanen lebih lambat daripada futsuu saibai.",
     "image": "",
     "answer": "○",
-    "explanation": "Yokusei Saibai dapat dipanen lebih lambat daripada futsuu saibai."
+    "explanation": "Yokusei saibai mengendalikan pertumbuhan agar panen lebih lambat daripada budidaya biasa."
   },
   {
     "id": 121,
@@ -1205,9 +1325,10 @@
     "year": 2000,
     "question": "りゅうあん（りゅうさんアンモニウム）は、ゆうきしつ　ひりょうです。",
     "reading": "",
+    "translation": "Ryuuan (ammonium gabungan) adalah pupuk organik.",
     "image": "",
     "answer": "×",
-    "explanation": "Ryuuan (ammonium gabungan) adalah pupuk organik."
+    "explanation": "Ryuuan adalah amonium sulfat, yaitu pupuk anorganik/kimia yang menyediakan nitrogen dan sulfur."
   },
   {
     "id": 122,
@@ -1215,9 +1336,10 @@
     "year": 2000,
     "question": "のうやくを　しようしたときは、しようぼに　きろくします。",
     "reading": "",
+    "translation": "Ketika menggunakan pestisida, harus dicatatan ke buku penggunaan.",
     "image": "",
     "answer": "○",
-    "explanation": "Ketika menggunakan pestisida, harus dicatatan ke buku penggunaan."
+    "explanation": "Penggunaan pestisida harus dicatat dalam buku penggunaan agar aplikasi dapat ditelusuri dan sesuai aturan."
   },
   {
     "id": 123,
@@ -1225,9 +1347,10 @@
     "year": 2000,
     "question": "きかいの　そうさは、とりあつかい　せつめいしょを　よむなどして、さぎょう まえに　よく　りかいして から　おこないます.",
     "reading": "",
+    "translation": "Untuk pengoperasian mesin, diperlukan untuk membaca buku panduan dengan benar sebelumnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Untuk pengoperasian mesin, diperlukan untuk membaca buku panduan dengan benar sebelumnya."
+    "explanation": "Membaca manual dan memahami pengoperasian sebelum bekerja membantu mencegah kesalahan, kerusakan, dan kecelakaan."
   },
   {
     "id": 124,
@@ -1235,9 +1358,10 @@
     "year": 2000,
     "question": "にほんの　いなさくは　あじの　よい　ひんしゅの　さいばいがひろがっています。",
     "reading": "",
+    "translation": "Di Jepang, tersebar luas budidaya beras yang rasanya lezat.",
     "image": "",
     "answer": "○",
-    "explanation": "Di Jepang, tersebar luas budidaya beras yang rasanya lezat."
+    "explanation": "Varietas padi dengan rasa yang baik banyak dibudidayakan di Jepang karena kualitas makan menjadi salah satu tujuan pemuliaan dan produksi."
   },
   {
     "id": 125,
@@ -1245,9 +1369,10 @@
     "year": 2000,
     "question": "もとごえは　さくもつの　せいいく　とちゅうに　あたえるひりょうです。",
     "reading": "",
+    "translation": "Motogoe adalah pupuk yang diberikan di pertengahan budidaya tanaman.",
     "image": "",
     "answer": "×",
-    "explanation": "Motogoe adalah pupuk yang diberikan di pertengahan budidaya tanaman."
+    "explanation": "Motogoe diberikan sebelum tanam sebagai pupuk dasar, bukan di tengah pertumbuhan."
   },
   {
     "id": 126,
@@ -1255,9 +1380,10 @@
     "year": 2000,
     "question": "しゅしを　まいたあと、つちを　かけることをふくどと　いいます。",
     "reading": "",
+    "translation": "Mengubur dengan tanah setelah menanam benih disebut dengan fukudo.",
     "image": "",
     "answer": "○",
-    "explanation": "Mengubur dengan tanah setelah menanam benih disebut dengan fukudo."
+    "explanation": "Menutup benih dengan tanah setelah penaburan disebut fukudo; penutupan membantu menjaga kelembapan dan melindungi benih."
   },
   {
     "id": 127,
@@ -1265,9 +1391,10 @@
     "year": 2000,
     "question": "なたねかすは　ゆうきしつ ひりょうです。",
     "reading": "",
+    "translation": "Natanekasu adalah pupuk organik.",
     "image": "",
     "answer": "○",
-    "explanation": "Natanekasu adalah pupuk organik."
+    "explanation": "Natane-kasu adalah sisa bahan tanaman sehingga termasuk pupuk organik."
   },
   {
     "id": 128,
@@ -1275,9 +1402,10 @@
     "year": 2000,
     "question": "さっきんざいは　がいちゅうの　ぼうじょに　つかいます。",
     "reading": "",
+    "translation": "Disinfektan digunakan untuk membasmi serangga hama.",
     "image": "",
     "answer": "×",
-    "explanation": "Disinfektan digunakan untuk membasmi serangga hama."
+    "explanation": "Sakkinzai menargetkan mikroorganisme penyebab penyakit, sedangkan hama serangga dikendalikan dengan insektisida."
   },
   {
     "id": 129,
@@ -1285,9 +1413,10 @@
     "year": 2000,
     "question": "きかいの　てんけんは　かならず　エンジンを　かけたままします。",
     "reading": "",
+    "translation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala.",
     "image": "",
     "answer": "×",
-    "explanation": "Pemeriksaan mesin harus dilakukan ketika mesin menyala."
+    "explanation": "Mesin harus dihentikan ketika diperiksa agar tidak terjadi kontak dengan bagian bergerak dan pemeriksaan lebih aman."
   },
   {
     "id": 130,
@@ -1295,9 +1424,10 @@
     "year": 2000,
     "question": "のうやくは　かぜが　つよい　ときに　まきます。",
     "reading": "",
+    "translation": "Pestisida ditaburkan ketika angin berhembus kencang.",
     "image": "",
     "answer": "×",
-    "explanation": "Pestisida ditaburkan ketika angin berhembus kencang."
+    "explanation": "Angin kencang menyebabkan pestisida menyebar di luar sasaran; aplikasi dilakukan saat angin tidak kuat."
   },
   {
     "id": 131,
@@ -1305,9 +1435,10 @@
     "year": 2000,
     "question": "ようえきさいばいは、うねたてがひつようです。",
     "reading": "",
+    "translation": "Youeki Saibai diharuskan membuat bedengan.",
     "image": "",
     "answer": "○",
-    "explanation": "Youeki Saibai diharuskan membuat bedengan."
+    "explanation": "Pada budidaya larutan nutrisi, bedengan/raised bed diperlukan untuk menata tanaman dan mengatur aliran air serta larutan."
   },
   {
     "id": 132,
@@ -1315,9 +1446,10 @@
     "year": 2000,
     "question": "しせつさいばいでも　ほおんします。",
     "reading": "",
+    "translation": "Budidaya dalam ruang juga harus mempertahankan suhu.",
     "image": "",
     "answer": "○",
-    "explanation": "Budidaya dalam ruang juga harus mempertahankan suhu."
+    "explanation": "Budidaya fasilitas tetap memerlukan pengaturan suhu; pemanasan atau penahanan panas dilakukan ketika suhu rendah."
   },
   {
     "id": 133,
@@ -1325,9 +1457,10 @@
     "year": 2000,
     "question": "のうやくを　さんぷするときは　Tシャツを　きても　よいです。",
     "reading": "",
+    "translation": "Boleh mengenakan T-shirt ketika menaburkan pestisida.",
     "image": "",
     "answer": "×",
-    "explanation": "Boleh mengenakan T-shirt ketika menaburkan pestisida."
+    "explanation": "T-shirt tidak memberikan perlindungan yang cukup; penyemprotan pestisida memerlukan pakaian pelindung, sarung tangan, dan perlindungan sesuai label."
   },
   {
     "id": 134,
@@ -1335,9 +1468,10 @@
     "year": 2000,
     "question": "トマトは　かさいるいです。",
     "reading": "",
+    "translation": "Tomat adalah jenis sayur-buah.",
     "image": "",
     "answer": "○",
-    "explanation": "Tomat adalah jenis sayur-buah."
+    "explanation": "Tomat termasuk kasai-rui karena bagian yang dipanen adalah buah yang terbentuk dari bunga."
   },
   {
     "id": 135,
@@ -1345,9 +1479,10 @@
     "year": 2000,
     "question": "マルチングで　はくしょくフィルムは　ちおんに　こうかがある。",
     "reading": "",
+    "translation": "Dalam mulching, film putih berpengaruh terhadap suhu tanah.",
     "image": "",
     "answer": "○",
-    "explanation": "Dalam mulching, film putih berpengaruh terhadap suhu tanah."
+    "explanation": "Film mulsa putih memantulkan cahaya dan membantu mengurangi pemanasan tanah, sehingga memengaruhi suhu tanah."
   },
   {
     "id": 136,
@@ -1355,8 +1490,9 @@
     "year": 2000,
     "question": "わきめが　のびると　いいです。",
     "reading": "",
+    "translation": "Tunas ketek boleh dipanjangkan.",
     "image": "",
     "answer": "×",
-    "explanation": "Tunas ketek boleh dipanjangkan."
+    "explanation": "Tunas ketiak perlu dikendalikan atau dipangkas sesuai tanaman; membiarkannya memanjang bukan selalu baik karena dapat menguras nutrisi dan membuat tajuk terlalu rimbun."
   }
 ]

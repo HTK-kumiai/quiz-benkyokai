@@ -1,5 +1,11 @@
 import {
     fetchOwnScores,
+    fetchAdminProfiles,
+    createAttendanceSession,
+    fetchLatestAttendanceSession,
+    upsertAttendanceRecords,
+    fetchAttendanceRecords,
+    deleteAttendanceSession,
     fetchQuestionBank,
     getCurrentSessionProfile,
     insertScore,
@@ -34,6 +40,19 @@ let unseen = new Set();
 let userAnswers = {};
 let resultsShown = false;
 let secretAdminClicks = 0;
+
+// STATE ABSENSI ADMIN
+let attendanceProfiles = [];
+let attendanceSession = null;
+let attendanceRecords = new Map();
+let attendancePanelOpen = false;
+const ATTENDANCE_STATUSES = {
+    pending: { label: "Belum ditandai", icon: "⚪" },
+    present: { label: "Hadir", icon: "🟢" },
+    late: { label: "Terlambat", icon: "🟡" },
+    excused: { label: "Izin", icon: "🔵" },
+    absent: { label: "Tidak hadir", icon: "🔴" },
+};
 
 // ============================================================
 // INISIALISASI
@@ -131,6 +150,7 @@ function showMainApp() {
     document.getElementById("screen-login").style.display = "none";
     document.getElementById("main-app").style.display = "block";
     document.getElementById("topbar-username").textContent = currentUser.name || currentUser.username;
+    initializeAttendanceUI();
     updateCategoryCounts();
 }
 
@@ -216,6 +236,9 @@ async function handleUserLogout() {
             console.error("Gagal logout:", e);
         }
         currentUser = null;
+        closeAttendancePanel();
+        attendanceSession = null;
+        attendanceRecords = new Map();
         sessionStorage.removeItem("quiz_current_user");
         // Reset kuis state
         currentCategory = null;
@@ -277,6 +300,24 @@ async function updateCategoryCounts() {
 // ============================================================
 // MENGAMBIL SOAL
 // ============================================================
+function normalizeQuestionRecord(question) {
+    const legacyTranslation = question.translation || question.explanation || "";
+    const hasSeparateExplanation = Boolean(question.translation);
+    return {
+        ...question,
+        translation: legacyTranslation,
+        explanation: hasSeparateExplanation
+            ? (question.explanation || "")
+            : (question.answer === "○"
+                ? "Jawaban yang benar adalah ○ karena pernyataan pada soal dinilai sesuai dengan materi yang berlaku."
+                : "Jawaban yang benar adalah × karena pernyataan pada soal dinilai tidak sesuai dengan materi yang berlaku."),
+    };
+}
+
+function normalizeQuestionList(questions) {
+    return Array.isArray(questions) ? questions.map(normalizeQuestionRecord) : [];
+}
+
 async function getQuestionsForCategory(catId) {
     const cat = CATEGORIES[catId];
     if (!cat) return [];
@@ -288,7 +329,7 @@ async function getQuestionsForCategory(catId) {
             const remoteData = await fetchQuestionBank(catId);
             if (remoteData.length > 0) {
                 localStorage.setItem(cat.storageKey, JSON.stringify(remoteData));
-                return remoteData;
+                return normalizeQuestionList(remoteData);
             }
         } catch (err) {
             console.warn(`Gagal memuat bank soal ${catId} dari Supabase.`, err);
@@ -301,20 +342,20 @@ async function getQuestionsForCategory(catId) {
         const data = await response.json();
         if (!Array.isArray(data) || data.length === 0) throw new Error("Format JSON tidak valid");
         localStorage.setItem(cat.storageKey, JSON.stringify(data));
-        return data;
+        return normalizeQuestionList(data);
     } catch (err) {
         console.warn(`Gagal memuat ${cat.fileUrl} via fetch.`, err);
         if (localData) {
             try {
                 const parsed = JSON.parse(localData);
-                if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+                if (Array.isArray(parsed) && parsed.length > 0) return normalizeQuestionList(parsed);
             } catch (storageErr) {
                 console.error("Gagal parse localStorage:", storageErr);
             }
         }
         const fallbackData = getDefaultFallbackForCategory(catId);
         localStorage.setItem(cat.storageKey, JSON.stringify(fallbackData));
-        return fallbackData;
+        return normalizeQuestionList(fallbackData);
     }
 }
 
@@ -526,7 +567,7 @@ function render() {
     document.getElementById("question").textContent = q.question;
     document.getElementById("reading").textContent = q.reading || "";
     const meaning = document.getElementById("meaning");
-    if (meaning) meaning.textContent = q.explanation || "Arti belum tersedia.";
+    if (meaning) meaning.textContent = q.translation || "Terjemahan belum tersedia.";
 
     const imgWrap = document.getElementById("question-image-wrap");
     const imgEl = document.getElementById("question-image");
@@ -758,7 +799,7 @@ function applyAnswerVisuals(q, choice, isCorrect) {
 
     feedbackExplanation.innerHTML = `<strong>Kunci Jawaban: ${
         q.answer === "○" ? "○ (BENAR)" : "✕ (SALAH)"
-    }</strong>`;
+    }</strong>${q.explanation ? `<div class="feedback-reason">${escapeHtml(q.explanation)}</div>` : ""}`;
     feedback.style.display = "block";
 }
 
@@ -801,6 +842,231 @@ function resetSession() {
 }
 
 // ============================================================
+// ABSENSI ADMIN
+// ============================================================
+function localDateString(date = new Date()) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+}
+
+async function initializeAttendanceUI() {
+    if (!currentUser?.is_admin) {
+        return;
+    }
+
+    document.getElementById("attendance-date").value = localDateString();
+    try {
+        attendanceProfiles = (await fetchAdminProfiles()).filter((profile) =>
+            !profile.is_admin && profile.approval_status === "approved" && profile.group_name
+        );
+        populateAttendanceGroups();
+    } catch (error) {
+        showAttendanceFeedback("Daftar peserta belum dapat dimuat. Pastikan migrasi database absensi sudah dijalankan.", true);
+        console.error("Gagal memuat peserta absensi:", error);
+    }
+}
+
+function populateAttendanceGroups() {
+    const select = document.getElementById("attendance-group-select");
+    if (!select) return;
+    const groups = [...new Set(attendanceProfiles.map((profile) => profile.group_name.trim()))]
+        .sort((a, b) => a.localeCompare(b, "id"));
+    select.innerHTML = groups.length
+        ? groups.map((group) => `<option value="${escapeHtml(group)}">${escapeHtml(group)}</option>`).join("")
+        : `<option value="">Belum ada grup peserta</option>`;
+}
+
+function toggleAttendancePanel() {
+    if (!currentUser?.is_admin) return;
+    const panel = document.getElementById("attendance-panel");
+    if (!panel) return;
+    attendancePanelOpen = !attendancePanelOpen;
+    if (attendancePanelOpen) updateAttendancePanelPosition();
+    panel.classList.toggle("open", attendancePanelOpen);
+    document.getElementById("attendance-backdrop")?.classList.toggle("open", attendancePanelOpen);
+    panel.setAttribute("aria-hidden", String(!attendancePanelOpen));
+}
+
+function updateAttendancePanelPosition() {
+    const topbar = document.querySelector(".user-topbar");
+    const panel = document.getElementById("attendance-panel");
+    const backdrop = document.getElementById("attendance-backdrop");
+    if (!topbar || !panel || !backdrop) return;
+    const top = Math.max(0, Math.ceil(topbar.getBoundingClientRect().bottom));
+    panel.style.top = `${top}px`;
+    panel.style.height = `calc(100vh - ${top}px)`;
+    backdrop.style.top = `${top}px`;
+}
+
+function closeAttendancePanel() {
+    attendancePanelOpen = false;
+    document.getElementById("attendance-panel")?.classList.remove("open");
+    document.getElementById("attendance-backdrop")?.classList.remove("open");
+    document.getElementById("attendance-panel")?.setAttribute("aria-hidden", "true");
+}
+
+async function startAttendanceSession() {
+    if (!currentUser?.is_admin) return;
+    const groupName = document.getElementById("attendance-group-select")?.value;
+    const sessionDate = document.getElementById("attendance-date")?.value;
+    const title = document.getElementById("attendance-title")?.value.trim() || "Pertemuan";
+    const button = document.getElementById("attendance-start-btn");
+    if (!groupName || !sessionDate) {
+        showAttendanceFeedback("Pilih grup dan tanggal terlebih dahulu.", true);
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Memuat sesi...";
+    try {
+        attendanceSession = await fetchLatestAttendanceSession(groupName, sessionDate);
+        if (!attendanceSession) {
+            attendanceSession = await createAttendanceSession({
+                admin_id: currentUser.id,
+                group_name: groupName,
+                session_date: sessionDate,
+                title,
+            });
+        }
+        const existing = await fetchAttendanceRecords(attendanceSession.id);
+        attendanceRecords = new Map(existing.map((record) => [record.user_id, record]));
+
+        const roster = attendanceProfiles.filter((profile) => profile.group_name.trim() === groupName);
+        const missing = roster
+            .filter((profile) => !attendanceRecords.has(profile.id))
+            .map((profile) => ({
+                session_id: attendanceSession.id,
+                user_id: profile.id,
+                name: profile.name || profile.username,
+                status: "pending",
+            }));
+        if (missing.length) {
+            const created = await upsertAttendanceRecords(missing);
+            created.forEach((record) => attendanceRecords.set(record.user_id, record));
+        }
+        renderAttendanceRoster(roster);
+        showAttendanceFeedback(`Sesi ${formatAttendanceDate(attendanceSession.session_date)} siap digunakan.`);
+    } catch (error) {
+        showAttendanceFeedback(error.message || "Sesi absensi gagal dibuka.", true);
+        console.error("Gagal membuka sesi absensi:", error);
+    } finally {
+        button.disabled = false;
+        button.textContent = "Buka / Buat Sesi";
+    }
+}
+
+function formatAttendanceDate(value) {
+    if (!value) return "";
+    return new Date(`${value}T00:00:00`).toLocaleDateString("id-ID", {
+        day: "numeric", month: "long", year: "numeric",
+    });
+}
+
+function renderAttendanceRoster(roster) {
+    const info = document.getElementById("attendance-session-info");
+    const summary = document.getElementById("attendance-summary");
+    const actions = document.getElementById("attendance-actions");
+    const list = document.getElementById("attendance-roster");
+    info.style.display = "block";
+    info.innerHTML = `<strong>${escapeHtml(attendanceSession.title || "Pertemuan")}</strong><span>${formatAttendanceDate(attendanceSession.session_date)} · ${escapeHtml(attendanceSession.group_name)}</span><button type="button" class="attendance-delete-btn" onclick="deleteCurrentAttendanceSession()">🗑️ Hapus sesi</button>`;
+    actions.style.display = "flex";
+    list.innerHTML = roster.length ? roster.map((profile) => {
+        const record = attendanceRecords.get(profile.id) || { status: "pending" };
+        const status = ATTENDANCE_STATUSES[record.status] || ATTENDANCE_STATUSES.pending;
+        return `<div class="attendance-person" data-user-id="${escapeHtml(profile.id)}">
+            <div class="attendance-person-name"><span class="attendance-status-dot status-${record.status}">${status.icon}</span><span>${escapeHtml(profile.name || profile.username)}</span></div>
+            <select class="attendance-status-select status-${record.status}" onchange="updateAttendanceStatus('${escapeHtml(profile.id)}', this.value)">
+                ${Object.entries(ATTENDANCE_STATUSES).map(([key, value]) => `<option value="${key}" ${record.status === key ? "selected" : ""}>${value.icon} ${value.label}</option>`).join("")}
+            </select>
+        </div>`;
+    }).join("") : `<div class="attendance-empty">Tidak ada peserta aktif di grup ini.</div>`;
+    updateAttendanceSummary();
+}
+
+async function deleteCurrentAttendanceSession() {
+    if (!currentUser?.is_admin || !attendanceSession) return;
+    const sessionLabel = `${attendanceSession.title || "Pertemuan"} (${formatAttendanceDate(attendanceSession.session_date)})`;
+    if (!confirm(`Hapus sesi ${sessionLabel}? Semua data absensi dalam sesi ini juga akan dihapus.`)) return;
+
+    try {
+        await deleteAttendanceSession(attendanceSession.id);
+        attendanceSession = null;
+        attendanceRecords = new Map();
+        document.getElementById("attendance-session-info").style.display = "none";
+        document.getElementById("attendance-summary").style.display = "none";
+        document.getElementById("attendance-actions").style.display = "none";
+        document.getElementById("attendance-roster").innerHTML = `<div class="attendance-empty">Sesi dihapus. Pilih tanggal atau grup untuk membuat sesi baru.</div>`;
+        showAttendanceFeedback("Sesi dan seluruh data absensinya berhasil dihapus.");
+    } catch (error) {
+        showAttendanceFeedback(error.message || "Sesi gagal dihapus.", true);
+    }
+}
+
+async function updateAttendanceStatus(userId, status) {
+    if (!attendanceSession || !ATTENDANCE_STATUSES[status]) return;
+    const profile = attendanceProfiles.find((item) => item.id === userId);
+    if (!profile) return;
+    try {
+        const updated = await upsertAttendanceRecords([{
+            session_id: attendanceSession.id,
+            user_id: userId,
+            name: profile.name || profile.username,
+            status,
+            marked_at: status === "pending" ? null : new Date().toISOString(),
+        }]);
+        if (updated[0]) attendanceRecords.set(userId, updated[0]);
+        updateAttendanceSummary();
+        const row = document.querySelector(`.attendance-person[data-user-id="${CSS.escape(userId)}"]`);
+        if (row) {
+            row.querySelector(".attendance-status-dot").className = `attendance-status-dot status-${status}`;
+            row.querySelector(".attendance-status-dot").textContent = ATTENDANCE_STATUSES[status].icon;
+            row.querySelector(".attendance-status-select").className = `attendance-status-select status-${status}`;
+        }
+    } catch (error) {
+        showAttendanceFeedback(error.message || "Status absensi gagal disimpan.", true);
+    }
+}
+
+async function markRemainingAttendance(status) {
+    if (!attendanceSession) return;
+    const roster = attendanceProfiles.filter((profile) => profile.group_name.trim() === attendanceSession.group_name);
+    const targets = roster.filter((profile) => (attendanceRecords.get(profile.id)?.status || "pending") === "pending");
+    if (!targets.length) return;
+    try {
+        const saved = await upsertAttendanceRecords(targets.map((profile) => ({
+            session_id: attendanceSession.id,
+            user_id: profile.id,
+            name: profile.name || profile.username,
+            status,
+            marked_at: new Date().toISOString(),
+        })));
+        saved.forEach((record) => attendanceRecords.set(record.user_id, record));
+        renderAttendanceRoster(roster);
+    } catch (error) {
+        showAttendanceFeedback(error.message || "Absensi gagal disimpan.", true);
+    }
+}
+
+function updateAttendanceSummary() {
+    const summary = document.getElementById("attendance-summary");
+    if (!summary || !attendanceSession) return;
+    const records = [...attendanceRecords.values()].filter((record) => record.session_id === attendanceSession.id);
+    const present = records.filter((record) => record.status === "present" || record.status === "late").length;
+    const marked = records.filter((record) => record.status !== "pending").length;
+    summary.style.display = "block";
+    summary.innerHTML = `<strong>${present} hadir</strong><span>${marked} ditandai · ${records.length} peserta</span>`;
+}
+
+function showAttendanceFeedback(message, isError = false) {
+    const feedback = document.getElementById("attendance-feedback");
+    if (!feedback) return;
+    feedback.textContent = message;
+    feedback.className = `attendance-feedback${isError ? " error" : ""}`;
+}
+
+// ============================================================
 // LIGHTBOX GAMBAR
 // ============================================================
 function openImageLightbox(src) {
@@ -825,12 +1091,23 @@ function closeImageLightbox() {
 function setupEventListeners() {
     document.getElementById("next").onclick = nextQuestion;
     document.getElementById("back").onclick = prevQuestion;
+    window.addEventListener("resize", () => {
+        if (attendancePanelOpen) updateAttendancePanelPosition();
+    });
 
     window.addEventListener("keydown", (e) => {
-        if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
-
         if (e.key === "Escape") {
             closeImageLightbox();
+            closeAttendancePanel();
+            return;
+        }
+
+        if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+
+        if (currentUser?.is_admin && !e.ctrlKey && !e.altKey && !e.metaKey && e.key.toLowerCase() === "l") {
+            e.preventDefault();
+            toggleAttendancePanel();
+            return;
         }
 
         // Shortcut rahasia admin: Alt + A atau Ctrl + Shift + A
@@ -1001,6 +1278,12 @@ window.prevQuestion = prevQuestion;
 window.resetSession = resetSession;
 window.openImageLightbox = openImageLightbox;
 window.closeImageLightbox = closeImageLightbox;
+window.toggleAttendancePanel = toggleAttendancePanel;
+window.closeAttendancePanel = closeAttendancePanel;
+window.startAttendanceSession = startAttendanceSession;
+window.updateAttendanceStatus = updateAttendanceStatus;
+window.markRemainingAttendance = markRemainingAttendance;
+window.deleteCurrentAttendanceSession = deleteCurrentAttendanceSession;
 window.setupEventListeners = setupEventListeners;
 window.setupSecretAdminAccess = setupSecretAdminAccess;
 window.getDefaultFallbackForCategory = getDefaultFallbackForCategory;

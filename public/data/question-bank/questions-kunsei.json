@@ -5,9 +5,10 @@
     "year": 2025,
     "question": "水産加工食品の原料になる魚介藻類は、種類が多い。",
     "reading": "Suisan kakou shokuhin no genryou ni naru gyokai sourui wa, shurui ga ooi.",
+    "translation": "Ikan dan lumut yang menjadi bahan pangan pengolahan hasil laut jenisnya ada banyak.",
     "image": "",
     "answer": "○",
-    "explanation": "Ikan dan lumut yang menjadi bahan pangan pengolahan hasil laut jenisnya ada banyak."
+    "explanation": "Bahan baku pangan hasil laut sangat beragam, meliputi berbagai jenis ikan, kerang atau hewan laut lain, serta rumput laut. Karena itu, jenis ikan dan alga yang dapat diolah menjadi pangan memang banyak."
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "year": 2025,
     "question": "魚介類の脂肪には、EPAが含まれていない。",
     "reading": "Gyokairui no shibou ni wa, EPA ga fukumarete inai.",
+    "translation": "Lemak pada jenis ikan tidak mengandung EPA.",
     "image": "",
     "answer": "×",
-    "explanation": "Lemak pada jenis ikan tidak mengandung EPA."
+    "explanation": "Klaim “tidak mengandung EPA” salah. Lemak ikan, terutama ikan berlemak, mengandung EPA (asam eikosapentaenoat), yaitu salah satu asam lemak omega-3; koreksinya adalah lemak ikan dapat mengandung EPA."
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "year": 2025,
     "question": "魚肉に含まれるたんぱく質は、酵素作用によって分解されやすい。",
     "reading": "Gyoniku ni fukumareru tanpakushitsu wa, kouso sayou ni yotte bunkai sareyasui.",
+    "translation": "Protein yang terkandung dalam daging ikan mudah dipecah oleh kerja enzim.",
     "image": "",
     "answer": "○",
-    "explanation": "Protein yang terkandung dalam daging ikan mudah dipecah oleh kerja enzim."
+    "explanation": "Protein daging ikan dapat diuraikan oleh enzim proteolitik. Aktivitas enzim tersebut memutus protein menjadi peptida dan senyawa yang lebih kecil, sehingga protein ikan relatif mudah mengalami penguraian."
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "year": 2025,
     "question": "魚が死んでも、魚の筋肉は変化しない。",
     "reading": "Sakana ga shindemo, sakana no kinniku wa henka shinai.",
+    "translation": "Otot dalam ikan tidak akan berubah meski sudah mati.",
     "image": "",
     "answer": "×",
-    "explanation": "Otot dalam ikan tidak akan berubah meski sudah mati."
+    "explanation": "Klaim bahwa otot tidak berubah salah. Setelah ikan mati, otot mengalami perubahan pascakematian seperti rigor mortis, lalu pelunakan akibat kerja enzim dan aktivitas mikroba; perubahan suhu dan penyimpanan memengaruhi proses tersebut."
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "year": 2025,
     "question": "魚介類は、季節や場所によって獲れる量が変わる。",
     "reading": "Gyokairui wa, kisetsu ya basho ni yotte toreru ryou ga kawaru.",
+    "translation": "Jumlah hewan laut yang bisa diambil berubah tergantung musim dan tempat.",
     "image": "",
     "answer": "○",
-    "explanation": "Jumlah hewan laut yang bisa diambil berubah tergantung musim dan tempat."
+    "explanation": "Ketersediaan hewan laut dipengaruhi musim, wilayah penangkapan, suhu air, dan kondisi lingkungan. Akibatnya, jumlah serta jenis ikan atau hasil laut yang dapat ditangkap tidak sama sepanjang waktu dan di setiap tempat."
   },
   {
     "id": 6,
@@ -55,9 +60,10 @@
     "year": 2025,
     "question": "魚肉の成分は、貯蔵中に変化する。",
     "reading": "Gyoniku no seibun wa, chozou chuu ni henka suru.",
+    "translation": "Komponen daging ikan berubah dalam masa penyimpanan.",
     "image": "",
     "answer": "○",
-    "explanation": "Komponen daging ikan berubah dalam masa penyimpanan."
+    "explanation": "Selama penyimpanan, enzim dan mikroorganisme dapat menguraikan protein serta komponen lain, sedangkan lemak dapat mengalami oksidasi. Oleh sebab itu, komposisi, aroma, rasa, dan tekstur daging ikan dapat berubah."
   },
   {
     "id": 7,
@@ -65,9 +71,10 @@
     "year": 2025,
     "question": "魚体の選別は、機械でできないので、必ず人の手と目で行う。",
     "reading": "Gyotai no senbetsu wa, kikai de dekinai node, kanarazu hito no te to me de okonau.",
+    "translation": "Penyortiran daging ikan yang tidak bisa dengan mesin, harus dilakukan dengan tangan dan mata.",
     "image": "",
     "answer": "×",
-    "explanation": "Penyortiran daging ikan yang tidak bisa dengan mesin, harus dilakukan dengan tangan dan mata."
+    "explanation": "Klaim bahwa penyortiran tidak dapat dilakukan dengan mesin terlalu mutlak. Mesin dapat membantu menyortir berdasarkan ukuran, berat, warna, atau bentuk, sedangkan pemeriksaan tangan dan mata digunakan bila diperlukan untuk menilai kondisi yang belum dapat dibedakan mesin."
   },
   {
     "id": 8,
@@ -75,9 +82,10 @@
     "year": 2025,
     "question": "大出刃包丁は、小さい魚を捌く時だけ使う。",
     "reading": "Oodeba bouchou wa, chiisai sakana wo sabaku toki dake tsukau.",
+    "translation": "Pisau Odeba hanya digunakan ketika memotong ikan kecil.",
     "image": "",
     "answer": "×",
-    "explanation": "Pisau Odeba hanya digunakan ketika memotong ikan kecil."
+    "explanation": "Pisau oodeba adalah pisau besar dan kuat untuk membelah atau memotong ikan, terutama ikan berukuran besar dan bagian yang keras. Jadi, pisau ini bukan hanya digunakan untuk ikan kecil; untuk ikan kecil biasanya digunakan pisau yang lebih sesuai ukurannya."
   },
   {
     "id": 9,
@@ -85,9 +93,10 @@
     "year": 2025,
     "question": "魚介藻類を加工すると、保存性を向上させることができる。",
     "reading": "Gyokai sourui wo kakou suru to, hozonsei wo koujou saseru koto ga dekiru.",
+    "translation": "Lama penyimpanan hewan laut dapat ditingkatkan dengan mengolahnya.",
     "image": "",
     "answer": "○",
-    "explanation": "Lama penyimpanan hewan laut dapat ditingkatkan dengan mengolahnya."
+    "explanation": "Pengolahan seperti pendinginan, pembekuan, pengeringan, penggaraman, atau pengasapan menghambat pertumbuhan mikroorganisme dan aktivitas enzim. Hambatan tersebut memperlambat kerusakan sehingga daya simpan hasil laut meningkat."
   },
   {
     "id": 10,
@@ -95,9 +104,10 @@
     "year": 2025,
     "question": "水分の多い魚肉は、冷凍してもすぐに腐る。",
     "reading": "Suibun no ooi gyoniku wa, reitou shite mo sugu ni kusaru.",
+    "translation": "Daging ikan dengan banyak kandungan air segera membusuk bahkan setelah dibekukan.",
     "image": "",
     "answer": "×",
-    "explanation": "Daging ikan dengan banyak kandungan air segera membusuk bahkan setelah dibekukan."
+    "explanation": "Pembekuan menurunkan suhu dan mengubah sebagian air menjadi es, sehingga pertumbuhan mikroorganisme serta reaksi enzim berlangsung sangat lambat. Daging ikan berkadar air tinggi memang lebih mudah rusak bila tidak ditangani baik, tetapi tidak segera membusuk hanya karena sudah dibekukan."
   },
   {
     "id": 11,
@@ -105,9 +115,10 @@
     "year": 2025,
     "question": "水産加工食品は、水分活性を下げることで、保存性が高くなる。",
     "reading": "Suisan kakou shokuhin wa, suibun kassei wo sageru koto de, hozonsei ga takaku naru.",
+    "translation": "Masa penyimpanan pangan olahan hasil laut dapat meningkat hanya dengan mengurangi kadar air.",
     "image": "",
     "answer": "○",
-    "explanation": "Masa penyimpanan pangan olahan hasil laut dapat meningkat hanya dengan mengurangi kadar air."
+    "explanation": "Menurunkan aktivitas air berarti mengurangi air bebas yang dapat digunakan mikroorganisme dan reaksi kimia. Akibatnya pertumbuhan mikroba terhambat dan daya simpan pangan olahan hasil laut meningkat; pengeringan, penggaraman, dan penambahan gula adalah contohnya."
   },
   {
     "id": 12,
@@ -115,9 +126,10 @@
     "year": 2025,
     "question": "水産加工食品は、脂質が酸化すると、品質が良くなる。",
     "reading": "Suisan kakou shokuhin wa, shishitsu ga sanka suru to, hinshitsu ga yoku naru.",
+    "translation": "Apabila kadar lemak pangan olahan hasil laut mengalami oksidasi, kualitas akan meningkat.",
     "image": "",
     "answer": "×",
-    "explanation": "Apabila kadar lemak pangan olahan hasil laut mengalami oksidasi, kualitas akan meningkat."
+    "explanation": "Oksidasi lemak menghasilkan bau tengik, rasa tidak enak, perubahan warna, dan penurunan mutu gizi. Jadi, kualitas tidak meningkat; oksidasi lemak harus dicegah dengan pengendalian oksigen, cahaya, suhu, dan waktu penyimpanan."
   },
   {
     "id": 13,
@@ -125,9 +137,10 @@
     "year": 2025,
     "question": "冷凍された原料の、冷凍の方法は、製品の品質に影響する。",
     "reading": "Reitou sareta genryou no, reitou no houhou wa, seihin no hinshitsu ni eikyou suru.",
+    "translation": "Metode pembekuan untuk bahan yang dibekukan berpengaruh pada kualitas produk.",
     "image": "",
     "answer": "○",
-    "explanation": "Metode pembekuan untuk bahan yang dibekukan berpengaruh pada kualitas produk."
+    "explanation": "Kecepatan dan suhu pembekuan menentukan ukuran kristal es. Pembekuan cepat membentuk kristal lebih kecil dan lebih sedikit merusak jaringan, sedangkan pembekuan lambat dapat merusak tekstur dan meningkatkan keluarnya drip saat pencairan."
   },
   {
     "id": 14,
@@ -135,9 +148,10 @@
     "year": 2025,
     "question": "冷凍温度が高い魚肉は、解凍した時に、ドリップが出にくくなる。",
     "reading": "Reitou ondo ga takai gyoniku wa, kaitou shita toki ni, dorippu ga denikuku naru.",
+    "translation": "Daging ikan dengan suhu pembekuan tinggi setelah dicairkan tidak mudah mengeluarkan tetesan.",
     "image": "",
     "answer": "×",
-    "explanation": "Daging ikan dengan suhu pembekuan tinggi setelah dicairkan tidak mudah mengeluarkan tetesan."
+    "explanation": "Suhu pembekuan yang relatif tinggi biasanya membuat pembekuan lebih lambat dan kristal es lebih besar. Kristal besar merusak jaringan ikan, sehingga saat dicairkan cairan sel lebih mudah keluar sebagai drip; jadi daging tersebut justru lebih mudah mengeluarkan tetesan."
   },
   {
     "id": 15,
@@ -145,9 +159,10 @@
     "year": 2025,
     "question": "鮮度の良い魚の表皮は、光沢がある。",
     "reading": "Sendo no yoi sakana no hyouhi wa, koutaku ga aru.",
+    "translation": "Kulit permukaan ikan dengan kesegaran yang bagus itu mengkilap.",
     "image": "",
     "answer": "○",
-    "explanation": "Kulit permukaan ikan dengan kesegaran yang bagus itu mengkilap."
+    "explanation": "Ikan segar umumnya memiliki permukaan kulit yang mengilap dan lendir yang jernih karena lapisan permukaan masih dalam kondisi baik. Kusam, kering, atau berlendir keruh merupakan tanda penurunan kesegaran."
   },
   {
     "id": 16,
@@ -155,9 +170,10 @@
     "year": 2025,
     "question": "水産加工場では、おいしい製品が作れば、安全でなくても良い。",
     "reading": "Suisan kakouba de wa, oishii seihin ga tsukureba, anzen de nakutemo yoi.",
+    "translation": "Di dalam pabrik pengolahan hasil ikan, tidak harus aman apabila bisa membuat produk yang lezat.",
     "image": "",
     "answer": "×",
-    "explanation": "Di dalam pabrik pengolahan hasil ikan, tidak harus aman apabila bisa membuat produk yang lezat."
+    "explanation": "Kelezatan tidak menggantikan keamanan pangan. Pabrik wajib mengendalikan bahaya biologis, kimia, dan fisik agar produk tidak menyebabkan penyakit; produk yang enak tetapi tidak aman tetap tidak boleh diproduksi atau diedarkan."
   },
   {
     "id": 17,
@@ -165,9 +181,10 @@
     "year": 2025,
     "question": "従業員が、外から食中毒細菌や異物を持ち込むことがある。",
     "reading": "Juugyouin ga, soto kara shokuchuudoku saikin ya ibutsu wo mochikomu koto ga aru.",
+    "translation": "Ada kalanya karyawan membawa bakteri keracunan makanan atau benda asing dari luar.",
     "image": "",
     "answer": "○",
-    "explanation": "Ada kalanya karyawan membawa bakteri keracunan makanan atau benda asing dari luar."
+    "explanation": "Karyawan dapat membawa mikroorganisme dari tangan, pakaian, rambut, atau tubuh, serta benda asing dari luar ke area produksi. Karena itu diperlukan cuci tangan, pakaian kerja, pemeriksaan kesehatan, dan aturan masuk untuk mencegah kontaminasi."
   },
   {
     "id": 18,
@@ -175,9 +192,10 @@
     "year": 2025,
     "question": "手袋をつける前には手洗いはしなくても良い。",
     "reading": "Tebukuro wo tsukeru mae ni wa, tearai wa shinakutemo yoi.",
+    "translation": "Tidak perlu mencuci tangan sebelum mengenakan sarung tangan.",
     "image": "",
     "answer": "×",
-    "explanation": "Tidak perlu mencuci tangan sebelum mengenakan sarung tangan."
+    "explanation": "Sarung tangan bukan pengganti cuci tangan. Tangan harus dicuci dan dikeringkan sebelum sarung tangan dipakai agar mikroba pada tangan tidak berpindah ke bagian luar sarung tangan atau ke pangan; sarung tangan juga harus diganti saat kotor atau rusak."
   },
   {
     "id": 19,
@@ -185,9 +203,10 @@
     "year": 2025,
     "question": "毎日使う機械や器具は、洗わなくて良い。",
     "reading": "Mainichi tsukau kikai ya kigu wa, arawanakute yoi.",
+    "translation": "Tidak perlu mencuci mesin atau alat yang digunakan setiap hari.",
     "image": "",
     "answer": "×",
-    "explanation": "Tidak perlu mencuci mesin atau alat yang digunakan setiap hari."
+    "explanation": "Mesin dan alat yang dipakai setiap hari dapat menyimpan sisa bahan serta mikroorganisme. Pencucian dan sanitasi rutin diperlukan untuk menghilangkan kotoran dan mencegah kontaminasi silang pada produksi berikutnya."
   },
   {
     "id": 20,
@@ -195,9 +214,10 @@
     "year": 2025,
     "question": "水産加工場を衛生的に管理して、製品への二次汚染を防ぐことが大切である。",
     "reading": "Suisan kakouba wo eiseiteki ni kanri shite, seihin e no niji osen wo fusegu koto ga taisetsu de aru.",
+    "translation": "Penting untuk mencegah polusi kedua terhadap produk dengan pengelolaan kebersihan pabrik pengolahan hasil laut.",
     "image": "",
     "answer": "○",
-    "explanation": "Penting untuk mencegah polusi kedua terhadap produk dengan pengelolaan kebersihan pabrik pengolahan hasil laut."
+    "explanation": "Pengelolaan higienis memisahkan area kotor dan bersih serta mengendalikan tangan, alat, permukaan, air, dan hama. Langkah tersebut mencegah kontaminasi sekunder, yaitu masuknya bahaya ke produk setelah bahan mengalami proses pengolahan."
   },
   {
     "id": 21,
@@ -205,9 +225,10 @@
     "year": 2025,
     "question": "くん煙を食品にかけると、食品の風味や保存性がよくなる。",
     "reading": "Kunen wo shokuhin ni kakeru to, shokuhin no fuumi ya hozonsei ga yoku naru.",
+    "translation": "Rasa dan daya simpan makanan akan menjadi lebih baik jika diasapkan.",
     "image": "",
     "answer": "○",
-    "explanation": "Rasa dan daya simpan makanan akan menjadi lebih baik jika diasapkan."
+    "explanation": "Asap memberikan senyawa aroma dan rasa khas, sekaligus mengandung senyawa yang menghambat sebagian mikroorganisme dan oksidasi. Karena itu pengasapan dapat memperbaiki cita rasa serta membantu memperpanjang daya simpan, jika prosesnya dilakukan dengan benar."
   },
   {
     "id": 22,
@@ -215,9 +236,10 @@
     "year": 2025,
     "question": "くん製の方法には、冷くん方や温くん方がある。",
     "reading": "Kunsei no houhou ni wa, reikunhou ya onkunhou ga aru.",
+    "translation": "Terdapat dua metode dalam pengasapan, yaitu metode reikun dan onkun.",
     "image": "",
     "answer": "○",
-    "explanation": "Terdapat dua metode dalam pengasapan, yaitu metode reikun dan onkun."
+    "explanation": "Metode pengasapan dibedakan menurut suhu ruang asap, antara lain pengasapan dingin (reikun) dan pengasapan panas (onkun). Pengasapan dingin terutama memberi aroma dengan suhu rendah, sedangkan pengasapan panas juga memasak produk."
   },
   {
     "id": 23,
@@ -225,9 +247,10 @@
     "year": 2025,
     "question": "温くん方で製造した製品は、水分が少ないので、常温で長い期間貯蔵できる。",
     "reading": "Onkunhou de seizou shita seihin wa, suibun ga sukunai node, jouon de nagai kikan chozou dekiru.",
+    "translation": "Produk pangan yang diproduksi dengan metode onkun dapat disimpan lama karena kadar airnya sedikit.",
     "image": "",
     "answer": "×",
-    "explanation": "Produk pangan yang diproduksi dengan metode onkun dapat disimpan lama karena kadar airnya sedikit."
+    "explanation": "Pengasapan panas (onkun) menggunakan suhu lebih tinggi, tetapi produknya umumnya masih memiliki kadar air cukup tinggi. Karena itu produk onkun tidak otomatis tahan lama pada suhu ruang; untuk penyimpanan panjang diperlukan pengeringan, pendinginan, pembekuan, atau pengemasan yang sesuai."
   },
   {
     "id": 24,
@@ -235,9 +258,10 @@
     "year": 2025,
     "question": "水分の多いくん製品を、長い期間貯蔵する時は、凍結する。",
     "reading": "Suibun no ooi kunseihin wo, nagai kikan chozou suru toki wa, touketsu suru.",
+    "translation": "Produk asapan yang punya kadar air banyak akan membeku jika disimpan dalam waktu lama.",
     "image": "",
     "answer": "○",
-    "explanation": "Produk asapan yang punya kadar air banyak akan membeku jika disimpan dalam waktu lama."
+    "explanation": "Produk asapan dengan kadar air tinggi masih mudah mengalami kerusakan dan tidak cukup awet hanya karena diasapkan. Untuk penyimpanan lama, produk tersebut disimpan pada kondisi beku agar pertumbuhan mikroorganisme dan reaksi kerusakan terhambat."
   },
   {
     "id": 25,
@@ -245,9 +269,10 @@
     "year": 2025,
     "question": "くん製品は、真空包装することができない。",
     "reading": "Kunseihin wa, shinkuu housou suru koto ga dekinai.",
+    "translation": "Produk asapan tidak dapat dimasukkan wadah vakum.",
     "image": "",
     "answer": "×",
-    "explanation": "Produk asapan tidak dapat dimasukkan wadah vakum."
+    "explanation": "Produk asapan dapat dikemas secara vakum setelah suhunya dan kondisi produknya sesuai. Pengurangan udara membantu menghambat oksidasi dan sebagian mikroorganisme aerob, tetapi tetap harus disertai pengendalian suhu serta keamanan terhadap mikroba anaerob."
   },
   {
     "id": 26,
@@ -255,9 +280,10 @@
     "year": 2025,
     "question": "くん煙室の中の温度を、調整できるくん煙装置はない。",
     "reading": "Kunenshitsu no naka no ondo wo, chousei dekiru kunen souchi wa nai.",
+    "translation": "Tidak ada peralatan yang bisa mengatur suhu di dalam ruangan pengasapan.",
     "image": "",
     "answer": "×",
-    "explanation": "Tidak ada peralatan yang bisa mengatur suhu di dalam ruangan pengasapan."
+    "explanation": "Peralatan pengasapan dapat dilengkapi sumber panas, pengatur suhu, ventilasi, dan alat ukur suhu. Dengan pengaturan tersebut suhu ruang asap dapat dikendalikan sesuai metode pengasapan dingin atau panas."
   },
   {
     "id": 27,
@@ -265,9 +291,10 @@
     "year": 2025,
     "question": "脂肪が少ない原料は、脂肪が多い原料に比べて、乾燥に時間がかかる。",
     "reading": "Shibou ga sukunai genryou wa, shibou ga ooi genryou ni kurabete, kansou ni jikan ga kakaru.",
+    "translation": "Bahan baku yang lemaknya sedikit lebih lama kering dibandingkan bahan yang lemaknya banyak.",
     "image": "",
     "answer": "×",
-    "explanation": "Bahan baku yang lemaknya sedikit lebih lama kering dibandingkan bahan yang lemaknya banyak."
+    "explanation": "Lemak tidak mudah menguap seperti air dan dapat menghambat perpindahan air ke permukaan. Karena itu bahan baku dengan lemak lebih sedikit umumnya lebih cepat kering, sedangkan bahan yang lebih berlemak cenderung memerlukan waktu pengeringan lebih lama."
   },
   {
     "id": 28,
@@ -275,9 +302,10 @@
     "year": 2025,
     "question": "くん製に使うくん材は、樹脂が少ない広葉樹が適している。",
     "reading": "Kunsei ni tsukau kunzai wa, jushi ga sukunai kouyouju ga tekishite iru.",
+    "translation": "Bahan pengasapan untuk produk asapan biasanya menggunakan pohon daun lebar yang lemak pohonnya sedikit.",
     "image": "",
     "answer": "○",
-    "explanation": "Bahan pengasapan untuk produk asapan biasanya menggunakan pohon daun lebar yang lemak pohonnya sedikit."
+    "explanation": "Kayu daun lebar dengan kandungan resin rendah menghasilkan asap yang lebih sesuai untuk pangan dan mengurangi risiko rasa atau aroma resin yang tajam. Kayu berresin tinggi tidak dipilih karena dapat menghasilkan senyawa dan rasa yang tidak diinginkan."
   },
   {
     "id": 29,
@@ -285,9 +313,10 @@
     "year": 2025,
     "question": "くん製品の保存性が良くなるのは、くん煙の殺菌作用や酸化防止作用による。",
     "reading": "Kunseihin no hozonsei ga yoku naru no wa, kunen no sakkin sayou ya sanka boushi sayou ni yoru.",
+    "translation": "Membaiknya daya simpan produk asap tergantung fungsi disinfeksi atau pencegahan oksidasi.",
     "image": "",
     "answer": "○",
-    "explanation": "Membaiknya daya simpan produk asap tergantung fungsi disinfeksi atau pencegahan oksidasi."
+    "explanation": "Senyawa dalam asap dapat menghambat atau membunuh sebagian mikroorganisme dan memperlambat oksidasi lemak. Kedua efek tersebut mengurangi pembusukan dan ketengikan, sehingga daya simpan produk asapan menjadi lebih baik."
   },
   {
     "id": 30,
@@ -295,9 +324,10 @@
     "year": 2025,
     "question": "スモークサーモンは、サケをくん製した水産加工食品である。",
     "reading": "Sumooku saamon wa, sake wo kunsei shita suisan kakou shokuhin de aru.",
+    "translation": "Smoke salmon adalah produk hasil laut yang berupa ikan sake asap.",
     "image": "",
     "answer": "○",
-    "explanation": "Smoke salmon adalah produk hasil laut yang berupa ikan sake asap."
+    "explanation": "Smoke salmon adalah produk hasil laut yang dibuat dari ikan salmon yang diberi perlakuan pengasapan. Pengasapan memberikan aroma dan rasa khas serta membantu pengawetan produk salmon."
   },
   {
     "id": 31,
@@ -305,9 +335,10 @@
     "year": 2025,
     "question": "水産加工場では、安全でなくても良い。",
     "reading": "Suisan kakouba de wa, anzen de nakutemo yoi.",
+    "translation": "Di pabrik pengolahan hasil laut, asalkan bisa membuat produk yang lezat, tidak harus aman.",
     "image": "",
     "answer": "×",
-    "explanation": "Di pabrik pengolahan hasil laut, asalkan bisa membuat produk yang lezat, tidak harus aman."
+    "explanation": "Produk hasil laut harus memenuhi keamanan pangan selain memiliki rasa yang baik. Pengendalian bahaya biologis, kimia, dan fisik wajib dilakukan karena produk yang lezat tetap berbahaya jika mengandung patogen, racun, atau benda asing."
   },
   {
     "id": 32,
@@ -315,9 +346,10 @@
     "year": 2025,
     "question": "従業員が、外から食中毒細菌や異物を持ち込むことがある。",
     "reading": "Juugyouin ga, soto kara shokuchuudoku saikin ya ibutsu wo mochikomu koto ga aru.",
+    "translation": "Karyawan dapat membawa bakteri penyebab keracunan makanan atau benda asing dari luar.",
     "image": "",
     "answer": "○",
-    "explanation": "Karyawan dapat membawa bakteri penyebab keracunan makanan atau benda asing dari luar."
+    "explanation": "Bakteri dari tangan atau pakaian dan benda asing seperti rambut dapat terbawa karyawan dari luar ke area produksi. Prosedur kebersihan personal dan pemeriksaan sebelum masuk diperlukan untuk memutus jalur kontaminasi tersebut."
   },
   {
     "id": 33,
@@ -325,9 +357,10 @@
     "year": 2025,
     "question": "手袋をつける前には、手洗いはしなくても良い。",
     "reading": "Tebukuro wo tsukeru mae ni wa, tearai wa shinakutemo yoi.",
+    "translation": "Sebelum memakai sarung tangan, tidak perlu mencuci tangan.",
     "image": "",
     "answer": "×",
-    "explanation": "Sebelum memakai sarung tangan, tidak perlu mencuci tangan."
+    "explanation": "Tangan harus dicuci sebelum memakai sarung tangan karena sarung tangan hanya menjadi penghalang tambahan, bukan pengganti kebersihan tangan. Jika tangan kotor saat sarung tangan dipasang, bagian luar sarung tangan dapat ikut terkontaminasi."
   },
   {
     "id": 34,
@@ -335,9 +368,10 @@
     "year": 2025,
     "question": "毎日使う機械や器具は、洗わなくて良い。",
     "reading": "Mainichi tsukau kikai ya kigu wa, arawanakute yoi.",
+    "translation": "Mesin dan peralatan yang digunakan setiap hari tidak perlu dicuci.",
     "image": "",
     "answer": "×",
-    "explanation": "Mesin dan peralatan yang digunakan setiap hari tidak perlu dicuci."
+    "explanation": "Pemakaian setiap hari justru membuat sisa bahan dan mikroba dapat menumpuk pada mesin serta peralatan. Karena itu alat harus dicuci dan disanitasi sesuai jadwal agar tidak menjadi sumber kontaminasi silang."
   },
   {
     "id": 35,
@@ -345,8 +379,9 @@
     "year": 2025,
     "question": "水産加工場を衛生的に管理して、製品への二次汚染を防ぐことが大切である。",
     "reading": "Suisan kakouba wo eiseiteki ni kanri shite, seihin e no niji osen wo fusegu koto ga taisetsu de aru.",
+    "translation": "Penting untuk mengelola pabrik pengolahan hasil laut secara higienis dan mencegah kontaminasi sekunder pada produk.",
     "image": "",
     "answer": "○",
-    "explanation": "Penting untuk mengelola pabrik pengolahan hasil laut secara higienis dan mencegah kontaminasi sekunder pada produk."
+    "explanation": "Kebersihan fasilitas, peralatan, pekerja, air, dan alur produksi mencegah bahaya masuk kembali ke produk setelah proses pengolahan. Inilah sebabnya pengelolaan higienis penting untuk mencegah kontaminasi sekunder."
   }
 ]

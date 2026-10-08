@@ -184,12 +184,20 @@
                     <div style="margin-top: 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px;">
                         <strong>Bank soal terpusat</strong>
                         <p style="color: #475569; line-height: 1.7;">
-                            Setelah schema `question_bank` dibuat di Supabase, gunakan tombol ini untuk mengunggah bank soal JSON saat ini.
-                            Setelah tersinkron, user login akan membaca soal dari Supabase.
+                            Soal yang diedit dari dashboard tersimpan di Supabase. Gunakan tombol muat ulang untuk mengambil data terbaru dari Supabase.
+                            Tombol JSON lokal hanya dipakai jika Anda memang ingin menimpa data Supabase dengan isi file JSON di repository.
                         </p>
-                        <button id="sync-all-question-banks" class="btn btn-primary" onclick="syncAllQuestionBanks()">
-                            ☁️ Sinkronkan Semua Soal
-                        </button>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button id="reload-all-question-banks" class="btn btn-secondary" onclick="reloadAllQuestionBanks()">
+                                🔄 Muat Ulang Semua Soal dari Supabase
+                            </button>
+                            <button id="publish-local-question-banks" class="btn btn-danger" onclick="publishLocalQuestionBanks()">
+                                ⚠️ Timpa Supabase dengan JSON Lokal
+                            </button>
+                        </div>
+                        <p style="margin: 12px 0 0; color: #92400e; line-height: 1.6; font-size: 0.9rem;">
+                            <strong>Perhatian:</strong> tombol JSON lokal dapat menghapus perubahan dashboard yang belum ada di file JSON.
+                        </p>
                     </div>
                 </div>
             </main>
@@ -305,12 +313,12 @@
 
                         <div class="form-group">
                             <label for="form-question">Teks Pertanyaan (Bahasa Jepang / Hiragana / Kanji) <span style="color:red;">*</span></label>
-                            <textarea id="form-question" class="form-control" rows="3" placeholder="Contoh pertanyaan dalam huruf Jepang..." required></textarea>
+                            <textarea id="form-question" class="form-control" rows="3" placeholder="Contoh pertanyaan dalam huruf Jepang..." spellcheck="false" required></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="form-reading">Cara Baca / Romaji (Opsional)</label>
-                            <input type="text" id="form-reading" class="form-control" placeholder="Contoh cara baca romaji..." />
+                            <input type="text" id="form-reading" class="form-control" placeholder="Contoh cara baca romaji..." spellcheck="false" />
                         </div>
 
                         <!-- Gambar Soal (Opsional) -->
@@ -355,8 +363,13 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="form-explanation">Penjelasan / Terjemahan (Bahasa Indonesia)</label>
-                            <textarea id="form-explanation" class="form-control" rows="3" placeholder="Contoh penjelasan singkat mengenai materi soal..."></textarea>
+                            <label for="form-translation">Terjemahan (Bahasa Indonesia)</label>
+                            <textarea id="form-translation" class="form-control" rows="3" placeholder="Terjemahan kalimat soal..." spellcheck="false"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-explanation">Alasan Jawaban</label>
+                            <textarea id="form-explanation" class="form-control" rows="3" placeholder="Mengapa pernyataan ini benar atau salah..." spellcheck="false"></textarea>
                         </div>
                     </div>
 
