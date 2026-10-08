@@ -1,4 +1,136 @@
-# Butuh Konfirmasi - Kunsei
+# Butuh Konfirmasi - Kunsei dan 調味加工品製造
+
+## Review Baru: 養豚
+
+### Ringkasan Sumber
+
+- `soal-asli/soal 学科　2015　養豚　初級.docx`: 20 soal, level `shokyu`, tahun 2015.
+- `soal-asli/soal 学科　2018　養豚　初級.docx`: 20 soal, level `shokyu`, tahun 2018.
+- `soal-asli/soal 学科　2019　養豚　初級.docx`: 20 soal, level `shokyu`, tahun 2019.
+- `soal-asli/soal 学科　2020　養豚　初級.docx`: 20 soal, level `shokyu`, tahun 2020.
+- Total draf: 80 soal.
+- Kategori tujuan: `youton` / 養豚.
+- Sumber tidak mencantumkan kunci `○`/`×`; jawaban draf diinferensikan dari isi pernyataan dan perlu dikonfirmasi.
+
+### Hal yang Perlu Dikonfirmasi
+
+- Periksa seluruh jawaban, terutama fakta angka dan definisi teknis.
+- Soal 2019 nomor 19 (`けんこう な ぶた は、おっこって さがります。`) memiliki terjemahan sumber `?` dan kalimat Jepang tampak tidak lengkap/salah ekstraksi.
+- Periksa reading, terjemahan, serta normalisasi teks Jepang sebelum dimasukkan ke JSON.
+
+### Draf Soal
+
+Teks hasil ekstraksi lengkap tersimpan pada sumber asli; belum dimasukkan ke `questions-youton.json` sampai review selesai.
+
+## Review Tambahan: 調味加工品製造
+
+### Ringkasan Sumber
+
+- `soal-asli/soal-chomi-kako_shokyu_2020.docx`: 20 soal, level `shokyu`, tahun 2020.
+- `soal-asli/soal-chomi-kako_shokyu_2025.docx`: 44 soal terdeteksi, level `shokyu`, tahun 2025.
+- `soal-asli/soal-chomi-kako_shokyu_2026.docx`: 20 soal, level `shokyu`, tahun 2026.
+- Total draf: 84 soal.
+- Kategori aplikasi: `kunsei` / くん製, sesuai pemetaan yang telah disepakati untuk `調味加工品製造`.
+- Semua sumber tidak mencantumkan kunci `○`/`×` eksplisit. Jawaban berikut adalah inferensi awal dan harus dikonfirmasi.
+
+### Hal yang Perlu Dikonfirmasi
+
+- Pastikan pemetaan sumber `soal-chomi-kako_*` ke kategori `kunsei` benar.
+- Pastikan setiap jawaban `○`/`×`; seluruh kunci di bawah berstatus `inferred`.
+- File 2025 berisi 44 paragraf soal, tetapi hanya 43 yang memiliki nomor eksplisit; nomor draf terakhir dibuat berurutan.
+- Periksa kembali reading, terjemahan, dan istilah teknis sebelum soal dimasukkan ke JSON.
+
+### Draf Review Soal 調味加工品製造
+
+| id | tahun | soal | terjemahan | reading | answer | catatan |
+|---:|---:|---|---|---|:---:|---|
+| 1 | 2020 | すいさんかこうしょくひんは、えいせいに、ちゅういしてつくる。 | Produk olahan hasil laut dibuat dengan memperhatikan kebersihan. | Suisan kakou shokuhin wa, eisei ni, chuui shite tsukuru. | ○ | inferred |
+| 2 | 2020 | あんぜんなしょくひんは、しょくひんえいせいに、ちゅういしてつくる。 | Produksi makanan yang aman harus memperhatikan higiene makanan. | Anzen na shokuhin wa, shokuhin eisei ni, chuui shite tsukuru. | ○ | inferred |
+| 3 | 2020 | しょくひんえいせいは、しょくひんをちょぞうするための、ほうほうである。 | Higiene makanan adalah metode untuk menyimpan makanan. | Shokuhin eisei wa, shokuhin o chozou suru tame no, houhou de aru. | × | inferred |
+| 4 | 2020 | すいさんかこうしょくひんを、つくるまえには、かならず、てをあらう。 | Sebelum membuat produk olahan hasil laut, wajib mencuci tangan. | Suisan kakou shokuhin o, tsukuru mae ni wa, kanarazu, te o arau. | ○ | inferred |
+| 5 | 2020 | てあらいのとき、せっけんのあわは、たおるでふきとる。 | Saat mencuci tangan, busa sabun dilap dengan handuk. | Tearai no toki, sekken no awa wa, taoru de fukitoru. | × | inferred |
+| 6 | 2020 | てのつめには、よごれやさいきんがおおい。 | Pada kuku tangan banyak kotoran dan bakteri. | Te no tsume ni wa, yogore ya saikin ga ooi. | ○ | inferred |
+| 7 | 2020 | まないたは、せんざいをつかって、よくあらうことがたいせつである。 | Penting mencuci talenan dengan deterjen secara menyeluruh. | Manaita wa, senzai o tsukatte, yoku arau koto ga taisetsu de aru. | ○ | inferred |
+| 8 | 2020 | ほうちょうは、さぎょうのあと、あらわない。 | Pisau tidak dicuci setelah bekerja. | Houchou wa, sagyou no ato, arawanai. | × | inferred |
+| 9 | 2020 | まいにちつかう、きぐは、さぎょうのあと、あらわなくてもよい。 | Peralatan yang dipakai setiap hari tidak perlu dicuci setelah bekerja. | Mainichi tsukau, kigu wa, sagyou no ato, arawanakute mo yoi. | × | inferred |
+| 10 | 2020 | しょくひんこうじょうの、ゆかは、そうじしない。 | Lantai pabrik makanan tidak dibersihkan. | Shokuhin koujou no, yuka wa, souji shinai. | × | inferred |
+| 11 | 2020 | しょくひんかこうでは、さぎょうい、ながぐつ、ぼうし、ますくをちゃくようする。 | Dalam pengolahan makanan, memakai baju kerja, sepatu bot, topi, dan masker. | Shokuhin kakou de wa, sagyoui, nagagutsu, boushi, masuku o chakuyou suru. | ○ | inferred |
+| 12 | 2020 | しょくひんこうじょうに、はいるとき、ながぐつは、さっきんえきに、つける。 | Saat masuk pabrik makanan, sepatu bot dicelupkan ke cairan pembunuh bakteri. | Shokuhin koujou ni, hairu toki, nagagutsu wa, sakkin-eki ni, tsukeru. | ○ | inferred |
+| 13 | 2020 | すいさんかこうしょくひんを、つくるとき、ぼうしは、かぶらない。 | Saat membuat produk olahan hasil laut, tidak memakai topi. | Suisan kakou shokuhin o, tsukuru toki, boushi wa, kaburanai. | × | inferred |
+| 14 | 2020 | しょくひんこうじょうでは、じぶんのすきなふくそうで、さぎょうする。 | Di pabrik makanan, bekerja dengan pakaian yang disukai sendiri. | Shokuhin koujou de wa, jibun no sukina fukusou de, sagyou suru. | × | inferred |
+| 15 | 2020 | すいさんかこうしょくひんでは、しょくちゅうどくが、おきることはない。 | Dalam produksi olahan hasil laut, keracunan makanan tidak akan terjadi. | Suisan kakou shokuhin de wa, shokuchuudoku ga, okiru koto wa nai. | × | inferred |
+| 16 | 2020 | かねつする、しょくひんは、えいせいに、ちゅういして、つくらなくてもよい。 | Makanan yang dipanaskan tidak perlu dibuat dengan memperhatikan higiene. | Kanetsu suru, shokuhin wa, eisei ni, chuui shite, tsukuranakute mo yoi. | × | inferred |
+| 17 | 2020 | さいきんは、ぶんれつをくりかえして、ふえる。 | Bakteri berkembang biak dengan berulang kali membelah diri. | Saikin wa, bunretsu o kurikaeshite, fueru. | ○ | inferred |
+| 18 | 2020 | さいきんのかたちは、しゅるいによって、ちがう。 | Bentuk bakteri berbeda menurut jenisnya. | Saikin no katachi wa, shurui ni yotte, chigau. | ○ | inferred |
+| 19 | 2020 | さいきんが、いきるためには、すいぶんがひつようである。 | Bakteri membutuhkan air untuk hidup. | Saikin ga, ikiru tame ni wa, suibun ga hitsuyou de aru. | ○ | inferred |
+| 20 | 2020 | しょくひんのなかにはいった、かみのけは、いぶつという。 | Rambut yang masuk ke makanan disebut benda asing. | Shokuhin no naka ni haitta, kami no ke wa, ibutsu to iu. | ○ | inferred |
+
+| 1 | 2025 | かつお、まぐろは、あかみのさかなである。 | Cakalang dan tuna adalah ikan berdaging merah. | Katsuo, maguro wa, akami no sakana de aru. | ○ | inferred |
+| 2 | 2025 | たい、かれいは、しろみのさかなである。 | Tai dan karei adalah ikan berdaging putih. | Tai, karei wa, shiromi no sakana de aru. | ○ | inferred |
+| 3 | 2025 | たいは、かわがあかいので、あかみのさかなである。 | Tai adalah ikan berdaging merah karena kulitnya merah. | Tai wa, kawa ga akai node, akami no sakana de aru. | × | inferred |
+| 4 | 2025 | かつお、いわしには、ちあいにくが、おおい。 | Katsuo dan iwashi memiliki banyak daging gelap/berdarah. | Katsuo, iwashi ni wa, chiainiku ga ooi. | ○ | inferred |
+| 5 | 2025 | さかなの、ちあいにくは、たべることが、できない。 | Daging gelap pada ikan tidak dapat dimakan. | Sakana no, chiainiku wa, taberu koto ga dekinai. | × | inferred |
+| 6 | 2025 | こざかなの、ほねやかわは、たべることが、できる。 | Tulang dan kulit ikan kecil dapat dimakan. | Kozakana no, hone ya kawa wa, taberu koto ga dekiru. | ○ | inferred |
+| 7 | 2025 | さかなの、はらのにくは、せなかのにくに、くらべて、あぶらが、おおい。 | Daging perut ikan lebih berlemak daripada daging punggung. | Sakana no, hara no niku wa, senaka no niku ni kurabete, abura ga ooi. | ○ | inferred |
+| 8 | 2025 | さかなは、しゅるいにより、あじが、ちがう。 | Rasa ikan berbeda menurut jenisnya. | Sakana wa, shurui ni yori, aji ga chigau. | ○ | inferred |
+| 9 | 2025 | さかなや、かいは、きせつによって、あじが、かわる。 | Rasa ikan dan kerang berubah menurut musim. | Sakana ya, kai wa, kisetsu ni yotte, aji ga kawaru. | ○ | inferred |
+| 10 | 2025 | さかなのにくは、ぶたのにくにくらべて、えいようが、おとる。 | Daging ikan lebih rendah gizinya daripada daging babi. | Sakana no niku wa, buta no niku ni kurabete, eiyou ga otoru. | × | inferred |
+| 11 | 2025 | こんぶは、かこうしょくひんの、げんりょうとして、つかう。 | Konbu digunakan sebagai bahan baku produk olahan. | Konbu wa, kakou shokuhin no, genryou to shite, tsukau. | ○ | inferred |
+| 12 | 2025 | こんぶは、たべても、えいように、ならない。 | Konbu tidak memberikan nutrisi walaupun dimakan. | Konbu wa, tabete mo, eiyou ni naranai. | × | inferred |
+| 13 | 2025 | わかめ(こんぶ)は、かこうしょくひんの、げんりょうに、ならない。 | Wakame (konbu) bukan bahan baku produk olahan. | Wakame (konbu) wa, kakou shokuhin no, genryou ni naranai. | × | inferred |
+| 14 | 2025 | えびは、かねつすると、からが、あかくなる。 | Cangkang udang menjadi merah saat dipanaskan. | Ebi wa, kanetsu suru to, kara ga aka ni naru. | ○ | inferred |
+| 15 | 2025 | えびは、かねつすると、からが、あおくなる。 | Cangkang udang menjadi biru saat dipanaskan. | Ebi wa, kanetsu suru to, kara ga ao ni naru. | × | inferred |
+| 16 | 2025 | さかなは、おんどが、たかいと、はやくくさる。 | Ikan cepat membusuk jika suhunya tinggi. | Sakana wa, ondo ga takai to, hayaku kusaru. | ○ | inferred |
+| 17 | 2025 | さかなのにくは、ぶたのにくより、はやくくさる。 | Daging ikan lebih cepat membusuk daripada daging babi. | Sakana no niku wa, buta no niku yori, hayaku kusaru. | ○ | inferred |
+| 18 | 2025 | さかなのないぞうは、さかなのにくより、はやくくさる。 | Jeroan ikan lebih cepat membusuk daripada daging ikan. | Sakana no naizou wa, sakana no niku yori, hayaku kusaru. | ○ | inferred |
+| 19 | 2025 | しょくひんが、くさるのは、おもに、さいきん(ばくてりあ)による。 | Makanan terutama membusuk karena bakteri. | Shokuhin ga kusaru no wa, omoni, saikin (bakuteria) ni yoru. | ○ | inferred |
+| 20 | 2025 | さかなは、ひくいおんどで、ほぞんする。 | Ikan disimpan pada suhu rendah. | Sakana wa, hikui ondo de, hozon suru. | ○ | inferred |
+| 21 | 2025 | さかなは、きおん(おんど)が、たかいと、くさらない。 | Ikan tidak membusuk jika suhu udara tinggi. | Sakana wa, kion (ondo) ga takai to, kusaranai. | × | inferred |
+| 22 | 2025 | くさったさかなも、かこうすれば、たべることが、できる。 | Ikan busuk masih dapat dimakan jika diolah. | Kusatta sakana mo, kakou sureba, taberu koto ga dekiru. | × | inferred |
+| 23 | 2025 | しんせんな、さかなや、かいは、わるいにおいが、すくない。 | Ikan dan kerang segar hanya sedikit berbau tidak sedap. | Shinsen na, sakana ya, kai wa, warui nioi ga sukunai. | ○ | inferred |
+| 24 | 2025 | さかなや、かいは、せんどによって、においが、かわる。 | Bau ikan dan kerang berubah menurut kesegarannya. | Sakana ya, kai wa, sendo ni yotte, nioi ga kawaru. | ○ | inferred |
+| 25 | 2025 | さかなや、かいは、くさると、においが、わるくなる。 | Bau ikan dan kerang memburuk ketika membusuk. | Sakana ya, kai wa, kusaru to, nioi ga waruku naru. | ○ | inferred |
+| 26 | 2025 | さかなは、においによって、せんどが、かわる。 | Kesegaran ikan berubah berdasarkan baunya. | Sakana wa, nioi ni yotte, sendo ga kawaru. | × | inferred |
+| 27 | 2025 | さかなは、くさっても、においは、かわらない。 | Bau ikan tidak berubah walaupun ikan membusuk. | Sakana wa, kusatte mo, nioi wa kawaranai. | × | inferred |
+| 28 | 2025 | れいとうは、さかなを、ほぞんする、よいほうほうである。 | Pembekuan adalah cara yang baik untuk menyimpan ikan. | Reitou wa, sakana o hozon suru, yoi houhou de aru. | ○ | inferred |
+| 29 | 2025 | れいぞうは、さかなを、ほぞんする、よいほうほうである。 | Pendinginan adalah cara yang baik untuk menyimpan ikan. | Reizou wa, sakana o hozon suru, yoi houhou de aru. | ○ | inferred |
+| 30 | 2025 | いか、たこは、れいとうして、ほぞんすることが、できない。 | Cumi dan gurita tidak dapat disimpan dengan dibekukan. | Ika, tako wa, reitou shite, hozon suru koto ga dekinai. | × | inferred |
+| 31 | 2025 | れいとうした、さかなは、かこうしょくひんの、げんりょうに、ならない。 | Ikan beku bukan bahan baku produk olahan. | Reitou shita, sakana wa, kakou shokuhin no, genryou ni naranai. | × | inferred |
+| 32 | 2025 | さかなのかこうに、しおをつかうことが、おおい。 | Garam sering digunakan dalam pengolahan ikan. | Sakana no kakou ni, shio o tsukau koto ga ooi. | ○ | inferred |
+| 33 | 2025 | しょうゆ、さとうは、ちょうみりょうである。 | Kecap asin dan gula adalah bumbu penyedap. | Shouyu, satou wa, choumiryou de aru. | ○ | inferred |
+| 34 | 2025 | こうしんりょうは、かこうひんに、かおりや、あじをつける。 | Rempah memberi aroma dan rasa pada produk olahan. | Koushinryou wa, kakouhin ni, kaori ya, aji o tsukeru. | ○ | inferred |
+| 35 | 2025 | しょうゆ、さとうは、こうしんりょうである。 | Kecap asin dan gula adalah rempah-rempah. | Shouyu, satou wa, koushinryou de aru. | × | inferred |
+| 36 | 2025 | さかなのかこうに、しおや、さとうは、つかわない。 | Garam dan gula tidak digunakan dalam pengolahan ikan. | Sakana no kakou ni, shio ya, satou wa, tsukawanai. | × | inferred |
+| 37 | 2025 | ほうちょうの、しゅるいは、せいぞうする、かこうひんにより、きまっている。 | Jenis pisau ditentukan berdasarkan produk olahan yang dibuat. | Houchou no, shurui wa, seizou suru, kakouhin ni yori, kimatte iru. | ○ | inferred |
+| 38 | 2025 | さかなのあたまは、さしみぼうちょうできる。 | Kepala ikan dipotong dengan pisau sashimi. | Sakana no atama wa, sashimi bouchou de kiru. | × | inferred |
+| 39 | 2025 | すいさんかこうしょくひんの、せいぞうには、きかいを、つかうことが、おおい。 | Produksi produk olahan hasil laut sering menggunakan mesin. | Suisan kakou shokuhin no, seizou ni wa, kikai o tsukau koto ga ooi. | ○ | inferred |
+| 40 | 2025 | さかなは、きかい(さかなあらいき)で、あらうことが、できる。 | Ikan dapat dicuci dengan mesin pencuci ikan. | Sakana wa, kikai (sakana araiki) de, arau koto ga dekiru. | ○ | inferred |
+| 41 | 2025 | さかなのかこうに、ぎょたいしょりきを、つかうことがある。 | Pengolahan ikan kadang menggunakan mesin pengolah tubuh ikan. | Sakana no kakou ni, gyotai shoriki o tsukau koto ga aru. | ○ | inferred |
+| 42 | 2025 | さかなの、あたまをきり、ないぞうをとる、きかいがある。 | Ada mesin untuk memotong kepala ikan dan mengambil jeroan. | Sakana no, atama o kiri, naizou o toru, kikai ga aru. | ○ | inferred |
+| 43 | 2025 | しょくひんに、きんぞくが、まじっているのを、しらべる、きかいがある。 | Ada mesin untuk memeriksa logam yang tercampur dalam makanan. | Shokuhin ni, kinzoku ga, majitte iru no o, shiraberu, kikai ga aru. | ○ | inferred |
+| 44 | 2025 | すいさんかこうしょくひんを、つくるとき、きかいは、つかわない。 | Saat membuat produk olahan hasil laut, mesin tidak digunakan. | Suisan kakou shokuhin o, tsukuru toki, kikai wa, tsukawanai. | × | inferred |
+| 45 | 2025 | さかなの、あたまをきる、きかいは、ない。 | Tidak ada mesin untuk memotong kepala ikan. | Sakana no, atama o kiru, kikai wa, nai. | × | inferred |
+
+| 1 | 2026 | いわしは、かこうしょくひんのげんりょうとして、つかう。 | Iwashi digunakan sebagai bahan baku produk olahan. | Iwashi wa, kakou shokuhin no genryou to shite, tsukau. | ○ | inferred |
+| 2 | 2026 | さかなのあぶらには、えいようがある。 | Minyak ikan mengandung nutrisi. | Sakana no abura ni wa, eiyou ga aru. | ○ | inferred |
+| 3 | 2026 | さかなは、どのしゅるいでも、あじは、おなじである。 | Semua jenis ikan memiliki rasa yang sama. | Sakana wa, dono shurui demo, aji wa onaji de aru. | × | inferred |
+| 4 | 2026 | てのつめは、いつでも、みじかくきっておく。 | Kuku tangan harus selalu dipotong pendek. | Te no tsume wa, itsudemo, mijikaku kitte oku. | ○ | inferred |
+| 5 | 2026 | さかなのないぞうは、くさっても、においは、かわらない。 | Bau jeroan ikan tidak berubah walaupun membusuk. | Sakana no naizou wa, kusatte mo, nioi wa kawaranai. | × | inferred |
+| 6 | 2026 | さかなのせなかのにくは、はらのにくにくらべて、あぶらがすくない。 | Daging punggung ikan lebih sedikit lemaknya daripada daging perut. | Sakana no senaka no niku wa, hara no niku ni kurabete, abura ga sukunai. | ○ | inferred |
+| 7 | 2026 | さかなのかこうに、ちょうみりょうは、つかわない。 | Bumbu penyedap tidak digunakan dalam pengolahan ikan. | Sakana no kakou ni, choumiryou wa, tsukawanai. | × | inferred |
+| 8 | 2026 | さかなのあたまをきり、ないぞうをとるきかいがある。 | Ada mesin untuk memotong kepala ikan dan mengambil jeroan. | Sakana no atama o kiri, naizou o toru kikai ga aru. | ○ | inferred |
+| 9 | 2026 | かにのからは、かねつすると、あおくなる。 | Cangkang kepiting menjadi biru ketika dipanaskan. | Kani no kara wa, kanetsu suru to, aoku naru. | × | inferred |
+| 10 | 2026 | まぐろ、さばには、ちあいにくがない。 | Tuna dan makarel tidak memiliki daging gelap. | Maguro, saba ni wa, chiainiku ga nai. | × | inferred |
+| 11 | 2026 | ほうちょう、まないたは、つかったあと、せんざいであらう。 | Pisau dan talenan dicuci dengan deterjen setelah digunakan. | Houchou, manaita wa, tsukatta ato, senzai de arau. | ○ | inferred |
+| 12 | 2026 | くさったさかなは、かこうひんのげんりょうにならない。 | Ikan busuk bukan bahan baku produk olahan. | Kusatta sakana wa, kakouhin no genryou ni naranai. | ○ | inferred |
+| 13 | 2026 | かねつするしょくひんは、えいせいにちゅういして、つくらなくてよい。 | Makanan yang dipanaskan tidak perlu dibuat dengan memperhatikan higiene. | Kanetsu suru shokuhin wa, eisei ni chuui shite, tsukuranakute yoi. | × | inferred |
+| 14 | 2026 | すいさんかこうしょくひんをつくるとき、きぐはつかわない。 | Saat membuat produk olahan hasil laut, alat tidak digunakan. | Suisan kakou shokuhin o tsukuru toki, kigu wa tsukawanai. | × | inferred |
+| 15 | 2026 | しょくひんかこうじょうでは、さぎょうい、ながぐつ、ぼうし、ますくをちゃくようする。 | Di pabrik pengolahan makanan harus mengenakan baju kerja, sepatu bot, topi, dan masker. | Shokuhin kakoujou de wa, sagyoui, nagagutsu, boushi, masuku o chakuyou suru. | ○ | inferred |
+| 16 | 2026 | まぐろ、かつおは、つくだにのげんりょうである。 | Tuna dan cakalang merupakan bahan baku tsukudani. | Maguro, katsuo wa, tsukudani no genryou de aru. | ○ | inferred |
+| 17 | 2026 | ちょうみかこうひんは、しおだけであじをつけたせいひんである。 | Produk olahan berbumbu adalah produk yang rasanya hanya diberi garam. | Choumi kakouhin wa, shio dake de aji o tsuketa seihin de aru. | × | inferred |
+| 18 | 2026 | さかなをつくだににかこうすると、ながいあいだ、ちょぞうできる。 | Ikan yang diolah menjadi tsukudani dapat disimpan lama. | Sakana o tsukudani ni kakou suru to, nagai aida, chozou dekiru. | ○ | inferred |
+| 19 | 2026 | つくだには、うかしに、いりつけになどで、つくる。 | Tsukudani dibuat dengan metode ukashi, iritsuke, dan lainnya. | Tsukudani wa, ukashi ni, iritsuke ni nado de, tsukuru. | ○ | inferred |
+| 20 | 2026 | するめは、ちょうみかこうひんである。 | Surume adalah produk olahan berbumbu. | Surume wa, choumi kakouhin de aru. | ○ | inferred |
 
 Aku sudah mengekstrak soal Kunsei senmonkyu dari `soal-asli/kunsei_2025_senmonkyu.docx` dan mengisi `reading`, `terjemahan`, dan `answer` sebagai draf awal. Tolong cek lagi transkripsi, reading, terjemahan, dan benar/salah sebelum dimasukkan ke aplikasi.
 
@@ -170,3 +302,172 @@ Sumber: `soal-asli/kensetsu 2017 shokyu.pdf`, `kensetsu 2018 shokyu.pdf`, `kense
 | 693 | 2020 | やまのしゃめんをきかいでのぼるときは、まっすぐにのぼります。 | Saat menaiki lereng gunung dengan mesin, naiklah lurus. | yama no shamen wo kikai de noboru toki ha, massugu ni noborimasu. | ○ | source/inferred |
 | 694 | 2020 | ばけっとはぶーむをたかくあげてそうこうします。 | Mesin dijalankan dengan boom dan bucket diangkat tinggi. | baketto ha buumu baketto wo takaku agete soukou shimasu. | × | source/inferred |
 | 695 | 2020 | だんぷとらっくをひくいばしょにおくと、ばっくほうによるつみこみさぎょうがしやすくなります。 | Jika dump truck ditempatkan di tempat rendah, pekerjaan pemuatan dengan backhoe menjadi lebih mudah. | danputorakku wo hikui basho ni okuto, bakkuhou ni yoru tsumikomi sagyou ga shiyasuku narimasu. | ○ | source/inferred |
+
+---
+
+# Review Sesi 1 — 育林 (Ikurin)
+
+## Ringkasan Sumber
+
+- `soal-asli/soal-ikurin-shokyu-2025-a.docx`: 20 soal, level `shokyu`, tahun 2025.
+- `soal-asli/soal-ikurin-shokyu-2025-b.docx`: 20 soal, level `shokyu`, tahun 2025.
+- `soal-asli/soal-ikurin-shokyu-2025-c.docx`: 20 soal, level `shokyu`, tahun 2025.
+- Total draf: 60 soal.
+- Kategori aplikasi: `ikurin` / 育林.
+- Kunci `○`/`×` tercetak pada sumber dan ditandai `source`; reading perlu dinormalisasi sesuai aturan proyek.
+
+## Hal yang Perlu Dikonfirmasi
+
+- Periksa transkripsi soal yang merujuk gambar: gambar sumber belum dipasangkan ke field `image`.
+- Periksa normalisasi kana, spasi partikel, istilah teknis, reading romaji, dan terjemahan.
+- Sumber B memuat daftar jawaban teks tambahan setelah soal; kunci pada setiap baris soal sudah dipakai.
+- Sumber C memiliki beberapa kemungkinan typo/transkripsi, misalnya `えではらい` dan `Uestsuke` pada terjemahan; mohon cek sebelum dimasukkan ke JSON.
+- Pastikan 60 soal ini boleh diproses ke `questions-ikurin.json`; belum dimasukkan ke aplikasi.
+
+## Draf Soal yang Memerlukan Konfirmasi
+
+Hanya soal yang merujuk gambar atau memiliki transkripsi/reading yang belum dapat dipastikan dicatat di bagian ini. Soal yang jelas sudah dimasukkan ke JSON aplikasi.
+|---:|---:|---|---|---|:---:|---|
+soal-ikurin-shokyu-2025-a.docx 20
+| 1 | 2025 | した の しゃしん は うえつけ を して います。 | Gambar di bawah adalah “uetsuke”. | NEED-CONFIRM | × | source; reading perlu review |
+| 2 | 2025 | したがり とは なえぎ の まわり の くさ を かる こと です。 | “Shitagari” adalah kegiatan memotong rumput di sekitar pohon bibit. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 3 | 2025 | えだうち は した の ず の あかい せん の ところ を きります。 | "Edauchi" memotong bagian yang ditandai garis merah pada gambar di bawah. | NEED-CONFIRM | × | source; reading perlu review |
+| 4 | 2025 | じごしらえ には かりはらいき や チェーンソーを つかいます。 | Dalam “jigoshirae”, digunakan alat pemotong rumput dan chainsaw. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 5 | 2025 | したがり には した の ず の おおきな かま も つかいます。 | "Shitagari" juga menggunakan sabit besar seperti yang terlihat pada gambar di bawah. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 6 | 2025 | かりはらいき を つかう とき は ちかく で さぎょう を しません。 | Saat menggunakan alat pemotong rumput, tidak melakukan pekerjaan di dekatnya. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 7 | 2025 | かぜ が つよい とき に き を たおします。 | Menebang pohon ketika angin kencang. | NEED-CONFIRM | × | source; reading perlu review |
+| 8 | 2025 | した の ず の きかい を チェーンソー と いいます。 | Alat pada gambar di bawah disebut chainsaw. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 9 | 2025 | した の ず の さぎょう を えだはらい と いいます。 | Kegiatan pada gambar di bawah disebut “edaharai”. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 10 | 2025 | たまぎり は ざい に かかって いる あつりょく に ちゅうい して おこないます。 | "Tamagiri" dilakukan dengan memperhatikan tekanan pada kayu. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 11 | 2025 | チェーンソー の あんぜんそうち には ソーチェーン が あります。 | Pada perangkat keamanan chainsaw terdapat rantai chainsaw. | NEED-CONFIRM | × | source; reading perlu review |
+| 12 | 2025 | した の ず の あかい せん の ぶぶん は キックバック が おきやすく きけん です。 | Bagian yang ditandai garis merah pada gambar di bawah rawan terjadi kickback dan berbahaya. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 13 | 2025 | かりはらいき の は は １ねん に １かい きず と へんけい を かくにん します。 | Mata pisau alat pemotong rumput diperiksa kerusakan dan deformasi setahun sekali. | NEED-CONFIRM | × | source; reading perlu review |
+| 14 | 2025 | した の どうぐ は かま と いいます。 | Alat pada gambar di bawah disebut “kama”. | NEED-CONFIRM | × | source; reading perlu review |
+| 15 | 2025 | たまぎり で ガイドバー が はさまった とき は した の ず の どうぐ を つかいます。 | Ketika guide bar terjepit saat "tamagiri", gunakan alat pada gambar di bawah. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 16 | 2025 | チェーンソー を つかう とき は ぼうごずぼん を はきます。 | Saat menggunakan chainsaw, kenakan celana pelindung. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 17 | 2025 | うえつけ では くわ を おおぶり して あな を ほります。 | Dalam “uetsuke”, cangkul digerakkan dengan ayunan lebar untuk menggali lubang. | NEED-CONFIRM | × | source; reading perlu review |
+| 18 | 2025 | きよせ とは もくざい を あつめる さぎょう を いいます。 | "Kiyose" adalah kegiatan mengumpulkan kayu. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 19 | 2025 | えだはらい では ざい や えだ に かかる あつりょく に ちゅうい して おこないます。 | Dalam “edaharai”, dilakukan dengan memperhatikan tekanan pada kayu dan dahan. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 20 | 2025 | じこ が おきた とき は ただち に たすけ を よびます。 | Jika terjadi kecelakaan, segera meminta pertolongan. | NEED-CONFIRM | ○ | source; reading perlu review |
+soal-ikurin-shokyu-2025-b.docx 20
+| 1 | 2025 | した の ず は うえつけ を して います。 | Gambar di bawah menunjukkan proses “uetsuke”. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 2 | 2025 | じごしらえ とは なえぎ の まわり の くさ を かる こと です。 | “Jigoshirae” adalah kegiatan memotong rumput di sekitar bibit pohon. | NEED-CONFIRM | × | source; reading perlu review |
+| 3 | 2025 | した の ず は えだはらい を して います。 | Gambar di bawah menunjukkan proses “edaharai”. | NEED-CONFIRM | × | source; reading perlu review |
+| 4 | 2025 | じごしらえ は うえつけ が はじまる まえ に おこないます。 | “Jigoshirae” dilakukan sebelum penanaman dimulai. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 5 | 2025 | した の どうぐ は のこぎり と いいます。 | Alat pada gambar di bawah disebut “nokogiri”. | NEED-CONFIRM | × | source; reading perlu review |
+| 6 | 2025 | かりはらいき の さぎょう は ほか の さぎょうしゃ の ちかく で しません。 | Pekerjaan dengan alat pemotong rumput tidak dilakukan di dekat pekerja lain. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 7 | 2025 | かぜ が つよい とき は き を たおしません。 | Saat angin kencang, pohon tidak ditebang. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 8 | 2025 | した の ず の きかい を チェーンソー と いいます。 | Alat pada gambar di bawah disebut chainsaw. | NEED-CONFIRM | × | source; reading perlu review |
+| 9 | 2025 | した の ず の さぎょう を えだはらい と いいます。 | Kegiatan pada gambar di bawah disebut “edaharai”. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 10 | 2025 | たまぎり は ざい に かかって いる ちから の かかりかた に ちゅうい して おこないます。 | “Tamagiri” dilakukan dengan memperhatikan distribusi tekanan pada kayu. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 11 | 2025 | した の ず は きよせ を して います。 | Gambar di bawah menunjukkan proses “kiyose”. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 12 | 2025 | チェーンソー や かりはらいき の キックバック は きけん で けが を する こと が あります。 | Kickback pada chainsaw atau alat pemotong rumput berbahaya dan dapat menyebabkan cedera. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 13 | 2025 | かりはらいき の は は まいにち きず と へんけい が ないこと を かくにん します。 | Pisau alat pemotong rumput diperiksa setiap hari untuk memastikan tidak ada kerusakan atau deformasi. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 14 | 2025 | えだうち は した の ず の あかい せん の ところ を きります。 | “Edauchi” dilakukan pada bagian yang ditandai garis merah pada gambar di bawah. | NEED-CONFIRM | × | source; reading perlu review |
+| 15 | 2025 | たまぎり で ガイドバー が はさまった とき は した の ず の どうぐ を つかいます。 | Jika guide bar terjepit saat “tamagiri”, gunakan alat pada gambar di bawah. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 16 | 2025 | チェーンソー を つかう とき は チェーンソー よう の ぼうごずぼん を はきます。 | Saat menggunakan chainsaw, kenakan celana pelindung khusus chainsaw. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 17 | 2025 | き を たおす まえ には さだめられた あいず を おこない まわり の ひと の あんぜん を かくにん します。 | Sebelum menebang pohon, berikan isyarat yang ditentukan dan pastikan keamanan orang di sekitar. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 18 | 2025 | はち が とんで いる じき は した の しゃしん の ぼうほう も つけます。 | Saat musim lebah terbang, gunakan juga pelindung wajah seperti pada gambar di bawah. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 19 | 2025 | さぎょうふく は うごき やすく あんぜん な もの を つかいます。 | Pakaian kerja harus nyaman bergerak dan aman. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 20 | 2025 | ひと の いのち に かかわる じこ が おきた とき は だたちに けいさつ を よびます。 | Jika terjadi kecelakaan yang mengancam nyawa, segera hubungi polisi. | NEED-CONFIRM | × | source; reading perlu review |
+soal-ikurin-shokyu-2025-c.docx 20
+| 1 | 2025 | じごしらえ は なえぎ を うえる こと です。 | “Jigoshirae” adalah kegiatan menanam bibit pohon. | NEED-CONFIRM | × | source; reading perlu review |
+| 2 | 2025 | うえつけ とは なえぎ の まわり の くさ を かる こと です。 | “Uetsuke” merupakan kegiatan memotong rumput di sekitar bibit. | NEED-CONFIRM | × | source; reading perlu review |
+| 3 | 2025 | したがり とは なえぎ を うえる こと です。 | “Shitagari” adalah proses penanaman bibit pohon. | NEED-CONFIRM | × | source; reading perlu review |
+| 4 | 2025 | じょばつ とは そだち の わるい き や しぜん に はえて きた いらない き を きる こと です。 | “Jobatsu” adalah penebasan pohon yang pertumbuhannya buruk atau pohon tidak perlu yang tumbuh alami. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 5 | 2025 | じごしらえ は かならず はる に おこない ます。 | “Jigoshirae” harus dilakukan pada musim semi. | NEED-CONFIRM | × | source; reading perlu review |
+| 6 | 2025 | ふつうなえ の うえつけ は かならず ふゆ に おこない ます。 | “Uestsuke” bibit harus selalu dilakukan pada musim dingin. | NEED-CONFIRM | × | source; reading perlu review |
+| 7 | 2025 | したがり は つうじょう ６がつ から ８がつ に おこないます。 | “Shitagari” biasanya dilakukan dari bulan Juni hingga Agustus. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 8 | 2025 | えだうち は きる いち を きめて のこぎり や なた で おこないます。 | “Edauchi” dilakukan dengan menentukan titik potong menggunakan gergaji atau parang. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 9 | 2025 | き を たおす ばあい は あんぜん に たおす ほうこう を きめます。 | Saat menebang pohon, harus menentukan arah menjatuhkan yang aman. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 10 | 2025 | き を たおす ばあい は たいひ する ばしょ を かくにん します。 | Ketika menebang pohon, perlu dipastikan lokasi untuk menghindar. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 11 | 2025 | ず の さぎょう は えではらい です。 | Kegiatan pada gambar adalah pembersihan cabang. | NEED-CONFIRM | × | source; reading perlu review |
+| 12 | 2025 | えだはらい を する ばあい は チェーンソー の ガイドバー の せんたん のみ つかいます。 | Saat melakukan pembersihan cabang, hanya ujung guide bar chainsaw yang digunakan. | NEED-CONFIRM | × | source; reading perlu review |
+| 13 | 2025 | たまぎり では チェーンソー を つかいます。 | “Tamagiri” menggunakan chainsaw. | NEED-CONFIRM | ○ | source; reading perlu review |
+| 14 | 2025 | たまぎり では ガイドバー が はさまる こと は ありません。 | Dalam “tamagiri”, guide bar tidak akan terjepit. | NEED-CONFIRM | × | source; reading perlu review |
+| 15 | 2025 | チェーンソー は したくさ を かりはらう きかい です。 | Chainsaw adalah alat untuk memotong rumput bawah. | NEED-CONFIRM | × | source; reading perlu review |
+| 16 | 2025 | チェーンソー の ソーチェーン は １ねん に １かい はり の じょうたい を かくにん します。 | Rantai chainsaw (saw chain) diperiksa kondisi mata pisaunya setahun sekali. | NEED-CONFIRM | × | source; reading perlu review |
+| 17 | 2025 | かりはらいき の キックバック は エンジン の かいてんすう を あげる こと で ふせぐ こと が できます。 | Kickback pada alat pemotong rumput dapat dicegah dengan meningkatkan putaran mesin. | NEED-CONFIRM | × | source; reading perlu review |
+| 18 | 2025 | かりはらいき を つかった したかり さぎょう は けいしゃ の ある ばしょ では けいしゃ の じょうげ いち に わかれて さぎょう を します。 | “Shitakari” dengan alat pemotong rumput di lereng dilakukan dengan membagi area kerja menjadi zona atas dan bawah. | NEED-CONFIRM | × | source; reading perlu review |
+| 19 | 2025 | チェーンソー を つかう ばあい は イヤーマフを つけます。 | Saat menggunakan chainsaw, harus menggunakan pelindung telinga (ear muff). | NEED-CONFIRM | ○ | source; reading perlu review |
+| 20 | 2025 | ねっちゅうしょう は すいぶん を とらない こと で ふせげます。 | Heat stroke dapat dicegah dengan tidak mengonsumsi cairan. | NEED-CONFIRM | × | source; reading perlu review |
+| 1 | 2015 | にほん　の　こくど　は、やま　が　おおく、のうち　が　すくない　です。Tanah di Jepang memiliki banyak gunung dan sedikit ladang |  | NEED-CONFIRM | inferred |
+| 2 | 2015 | にほん　には、はる、なつ、あき、ふゆ　が　あります。Di Jepang terdapat musim semi, panas, gugur, dan salju |  | NEED-CONFIRM | inferred |
+| 3 | 2015 | にほん　の　いなさく　は、ほとんど　が　じかまき　さいばい　です。Budidaya beras di Jepang kebanyakan dengan metode jikamaki |  | NEED-CONFIRM | inferred |
+| 4 | 2015 | にほん　で　かって　いる　おもな　かちく　は、うし、ぶた、にわとり　の　３つ　です。Ternak yang umum di Jepang adalah tiga jenis hewan, yaitu sapi, babi, dan ayam |  | NEED-CONFIRM | inferred |
+| 5 | 2015 | あさ、かちく　の　いじょう　を　みつけたら、ゆうがた　しごと　が　おわった　とき　に、ほうこく　します。Apabila menemukan kelainan hewan di pagi hari, maka melapor di sore hari setelah selesai bekerja |  | NEED-CONFIRM | inferred |
+| 6 | 2015 | たいひ　は　ふんにょう　を　はたけ　に　のづみ　して　つくり　ます。Pupuk kompos dibuat dengan mengumpulkan kotoran hewan ke ladang |  | NEED-CONFIRM | inferred |
+| 7 | 2015 | にくとん（にくぶた）は、はんしょく　に　つかう　ぼとん（ははぶた）の　こと　です。Babi pedaging adalah babi indukan yang digunakan untuk berkembang biak |  | NEED-CONFIRM | inferred |
+| 8 | 2015 | ぶた　の　じんこうにゅう　は、ひいく　に　つかう　えさ　です。Susu buatan untuk babi digunakan sebagai makanan pertumbuhan |  | NEED-CONFIRM | inferred |
+| 9 | 2015 | ぶんべんしゃ　は　にくとん　を　そだてる　とんしゃ　です。Bunbensha adalah kandang untuk membesarkan babi pedaging |  | NEED-CONFIRM | inferred |
+| 10 | 2015 | にくとん　は、やく　115キログラム（きろぐらむ）に　そだて　しゅっか　します。Babi pedaging dibesarkan hingga berat 115 KG sebelum dijual |  | NEED-CONFIRM | inferred |
+| 11 | 2015 | とんしゃ　に　はいる　とき　は、ながぐつ　を　ふみこみしょうどくそう　で、しょうどく　します。Mengenakan sepatu panjang dan mensterilkannya di disinfeksi injak sebelum memasuki kandang babi |  | NEED-CONFIRM | inferred |
+| 12 | 2015 | とんしゃない　の　せいそう　は、まいにち　おこない　ます。Pembersihan dalam kandang babi dilaksanakan setiap hari |  | NEED-CONFIRM | inferred |
+| 13 | 2015 | ぶた　は、1ねん　に　３かい　しゅっさん　します。Babi melahirkan 3 kali dalam 1 tahun |  | NEED-CONFIRM | inferred |
+| 14 | 2015 | ぼとん　は、いちど　に　20とう　こぶた　を　うみ　ます。Babi indukan melahirkan 20 anak babi sekaligus |  | NEED-CONFIRM | inferred |
+| 15 | 2015 | ランドレース（らんどれーす）しゅ　は、しろい　ぶた　です。Jenis Landrace adalah babi berwarna putih |  | NEED-CONFIRM | inferred |
+| 16 | 2015 | にほん　の　ひいくとん（にくとん）は、おなじ　ひんしゅ　を　かけあわせた　ぶた　が　おおい　です。Kebanyakan babi pedaging di Jepang adalah hasil perkawinan babi yang sejenis |  | NEED-CONFIRM | inferred |
+| 17 | 2015 | ひいくとん　は、むれ　で　しいく　しています。Babi pedaging dibesarkan secara berkelompok |  | NEED-CONFIRM | inferred |
+| 18 | 2015 | こぶた　は、さむさ　に　つよい　です。Anak babi kuat terhadap dingin |  | NEED-CONFIRM | inferred |
+| 19 | 2015 | ひいくとん　は、えさ　の　たべのこし　が　ないよう　に、りょう　を　せいげん（すくなく）して　そだて　ます。Babi pedaging dibesarkan dengan porsi makan yang dikurangi agar tidak menyisakan makanan |  | NEED-CONFIRM | inferred |
+| 20 | 2015 | びょうき　を　ふせぐ　ため、えいせいかんり　が　たいせつ　です。Pengelolaan kebersihan diperlukan untuk mencegah penyakit |  | NEED-CONFIRM | inferred |
+| 21 | 2018 | にほん　は　やま　が　すくなく、のうち　が　おおい　です。Jepang mempunyai sedikit gunung dan banyak ladang |  | NEED-CONFIRM | inferred |
+| 22 | 2018 | にほん　には、はる、なつ、あき、ふゆ　が　あり　ます。Di Jepang terdapat musim semi, panas, gugur, dan salju |  | NEED-CONFIRM | inferred |
+| 23 | 2018 | にほん　の　いなさく　は、なえ　を　そだて　たうえ　を　する　のが　おおい　です。Budidaya beras di Jepang kebanyakan dilakukan dengan menanam ke ladang setelah menumbuhkan benihnya |  | NEED-CONFIRM | inferred |
+| 24 | 2018 | にほん　で　かって　いる　かちく　は、ぶた　と　にわとり　だけ　です。Hewan ternak di Jepang hanyalah babi dan ayam |  | NEED-CONFIRM | inferred |
+| 25 | 2018 | たいひ　は、はたけ　に　のづみ　して　つくり　ます。Pupuk kompos dibuat dengan mengumpulkan ke ladang |  | NEED-CONFIRM | inferred |
+| 26 | 2018 | ぶた　の　いじょう　を　みつけたら、すぐ　に　しらせ　ます。Apabila menemukan kelainan pada babi, segera melapor |  | NEED-CONFIRM | inferred |
+| 27 | 2018 | はんしょくよう　の　たねぶた　は、１とう　ずつ　かい　ます。Babi benih untuk pengembangbiakan dipelihara satu per satu |  | NEED-CONFIRM | inferred |
+| 28 | 2018 | ひいくとん　には、あまり　えさ　を　あたえ　ません。Tidak terlalu banyak memberikan pakan untuk babi pedaging |  | NEED-CONFIRM | inferred |
+| 29 | 2018 | ぶんべんしゃ　は、ひいくとん　を　そだてる　ところ　です。Bunbensha adalah tempat untuk membesarkan babi pedaging |  | NEED-CONFIRM | inferred |
+| 30 | 2018 | ぶた　は　うまれて　から、110キログラム（きろぐらむ）～ 120キログラム　に　そだて、　しゅっか　します。Setelah lahir, babi dijual setelah mencapai berat 110 hingga 120 kg |  | NEED-CONFIRM | inferred |
+| 31 | 2018 | ふみこみしょうどくそう　の　しょうどくえき　は、１ねん　に　１っかい　あたらしく　します。Cairan disinfektan di disinfektan injak diperbarui sekali setahun |  | NEED-CONFIRM | inferred |
+| 32 | 2018 | デュロック（ぢゅろっく）しゅ　は、しろい　いろ　の　ぶた　です。Jenis Duroc adalah babi berwarna putih |  | NEED-CONFIRM | inferred |
+| 33 | 2018 | しょうどくえき　を　つかう　とき　は、　しようほうほう　と　しようりょう　を　まもり　ます。Mematuhi aturan dan porsi penggunaan ketika menggunakan cairan disinfektan |  | NEED-CONFIRM | inferred |
+| 34 | 2018 | ぶた　は、１ねん　に　４かい　しゅっさん　します。Babi melahirkan 4 kali dalam setahun |  | NEED-CONFIRM | inferred |
+| 35 | 2018 | ぶた　の　はんしょく　は、じんこうじゅせい　が　でき　ます。Babi dapat berkembang biak dengan pembuahan buatan |  | NEED-CONFIRM | inferred |
+| 36 | 2018 | ははぶた　は、１かい　に　30とう　の　こぶた　を　うみ　ます。Babi indukan melahirkan 30 anak babi sekaligus |  | NEED-CONFIRM | inferred |
+| 37 | 2018 | にほん　の　ひいくとん　は、ちがう　ひんしゅ　を　かけあわせた　もの　が　おおい　です。Babi pedaging di Jepang kebanyakan adalah hasil perkawinan jenis babi yang berbeda |  | NEED-CONFIRM | inferred |
+| 38 | 2018 | こぶた　は、さむさ　に　よわい　です。Anak babi lemah terhadap dingin |  | NEED-CONFIRM | inferred |
+| 39 | 2018 | メス（めす）の　こぶた　は、きょせい　を　します。Anak babi betina dikebiri |  | NEED-CONFIRM | inferred |
+| 40 | 2018 | ワクチン（わくちん）は、びょうき　を　よぼう　する　ため　に　つかい　ます。Vaksin bertujuan untuk mencegah penyakit |  | NEED-CONFIRM | inferred |
+| 41 | 2019 | にほん　は　ほとんど　が　ねったい　きこう　です。Kebanyakan tanah di Jepang beriklim tropis |  | NEED-CONFIRM | inferred |
+| 42 | 2019 | にほん　の　こくど　は　なんぼく　に　ながい　です。Wilayah Jepang melintang Utara ke Selatan |  | NEED-CONFIRM | inferred |
+| 43 | 2019 | にほん　では　きぼ　の　おおきい　のうじょう　が　ふえてきます。Di Jepang ladang berskala besar semakin bertambah |  | NEED-CONFIRM | inferred |
+| 44 | 2019 | にほん　で　かう　おもな　かちく　は　うし、ぶた、にわとり　の　みっつ　です。Hewan ternak yang umum di Jepang ada tiga, yakni sapi, babi, dan ayam |  | NEED-CONFIRM | inferred |
+| 45 | 2019 | しょうどくえき　は　じかん　が　たつと　こうか　が　あがります。Efek cairan disinfektan menguat seiring berjalannya waktu |  | NEED-CONFIRM | inferred |
+| 46 | 2019 | とんしゃ　に　はいる　とき　は、ながぐつ　を　ふみこみしょうどくそう　で　しょうどく　します。Mengenakan sepatu panjang dan membersihkannya di bak disinfeksi injak sebelum masuk ke kandang babi |  | NEED-CONFIRM | inferred |
+| 47 | 2019 | たいひ　は　かちく　の　ふんにょう　を　はっこうさせて　つくります。Pupuk kompos dibuat dengan melakukan fermentasi pada kotoran ternak |  | NEED-CONFIRM | inferred |
+| 48 | 2019 | こぶた　の　じんこうにゅう　は　いっしゅるい　です。Susu buatan untuk babi hanya ada satu jenis |  | NEED-CONFIRM | inferred |
+| 49 | 2019 | たねぶた　は　はんしょく　に　つかう　ぶた　です。Babi benih adalah babi untuk berkembang biak |  | NEED-CONFIRM | inferred |
+| 50 | 2019 | ぶんべんしゃ　は　にくとん　を　そだてる　ところ　です。Bunbensha adalah tempat untuk membesarkan babi pedaging |  | NEED-CONFIRM | inferred |
+| 51 | 2019 | ぶた　は　50キログラム　から 60キログラム　に　そだて　しゅっか　します。Babi dijual setelah dibesarkan hingga mencapai berat 50~60 kg |  | NEED-CONFIRM | inferred |
+| 52 | 2019 | ぶた　は、１ねん　に　３かい　しゅっさん　します。Babi melahirkan 3 kali dalam 1 tahun |  | NEED-CONFIRM | inferred |
+| 53 | 2019 | デュロックしゅ　は　しろいろ　の　ぶた　です。Jenis Duroc adalah babi berwarna putih |  | NEED-CONFIRM | inferred |
+| 54 | 2019 | ぶた　の　はんしょく　は　じんこうじゅせい　が　できます。Babi dapat berkembang biak dengan pembuahan buatan |  | NEED-CONFIRM | inferred |
+| 55 | 2019 | ぶた　の　にんしん　きかん　は　やく　５００にち　です。Masa hamil babi sekitar 500 hari |  | NEED-CONFIRM | inferred |
+| 56 | 2019 | めすぶたしゅ　は　うまれてから　やく　はっかげつぶん　こうはい　を　します。Babi betina kawin sekitar 8 bulan setelah lahir |  | NEED-CONFIRM | inferred |
+| 57 | 2019 | おす　の　こぶた　は　きょせい　を　します。Anak babi jantan dikebiri |  | NEED-CONFIRM | inferred |
+| 58 | 2019 | けんこう　な　ぶた　は　おっこって　さがります。? |  | NEED-CONFIRM | inferred |
+| 59 | 2019 | はんしょくとん　は　つねに　しりょう　が　たべられる　ように　して　おきます。Babi untuk berkembang biak dibuat supaya bisa makan di segala waktu |  | NEED-CONFIRM | inferred |
+| 60 | 2019 | びょうき　を　ふせぐ　ため、えいせい　かんり　が　たいせつ　です。Pengelolaan kebersihan penting untuk mencegah penyakit |  | NEED-CONFIRM | inferred |
+| 61 | 2020 | にほん　は　やま　が　おおく　のうち　が　すくない　です。Di Jepang terdapat banyak gunung dan sedikit ladang |  | NEED-CONFIRM | inferred |
+| 62 | 2020 | にほん　には　はる、なつ、あき　の　みっつ　の　きせつ　だけ　が　あります。Di Jepang terdapat tiga musim saja, yaitu musim semi, panas, dan gugur |  | NEED-CONFIRM | inferred |
+| 63 | 2020 | にほん　では　きぼ　の　おおきい　のうじょう　が　ふえて　きます。Ladang berskala besar di Jepang semakin bertambah |  | NEED-CONFIRM | inferred |
+| 64 | 2020 | にほん　で　かう　おもな　かちく　は　うし、ぶた、にわとり　の　みっつ　です。Hewan ternak yang umum di Jepang ada tiga, yakni sapi, babi, dan ayam |  | NEED-CONFIRM | inferred |
+| 65 | 2020 | はっこうちゅう　の　たいひ　は　おんど　が　さがります。Pupus kompos yang sedang difermentasi, suhunya menurun |  | NEED-CONFIRM | inferred |
+| 66 | 2020 | しりょう　を　たべない　かちく　が　いたら　すぐに　ようす　を　しらせます。Segera melaporkan keadaan apabila ada ternak yang tidak mau makan |  | NEED-CONFIRM | inferred |
+| 67 | 2020 | とんしゃ　に　はいる　とき　は、ながぐつ　を　ふみこみしょうどくそう　で、　しょうどく　します。Memakai sepatu panjang dan membersihkannya di bak disinfeksi injak sebelum masuk ke kandang babi |  | NEED-CONFIRM | inferred |
+| 68 | 2020 | だいずかす　は　ぶた　の　しりょう　に　よく　つかいます。Ampas kedelai sering digunakan sebagai pakan babi |  | NEED-CONFIRM | inferred |
+| 69 | 2020 | こぶた　の　じんこうにゅう　は　いっしゅるい　です。Susu buatan untuk anak babi hanya ada satu jenis |  | NEED-CONFIRM | inferred |
+| 70 | 2020 | ぶんべんしゃ　は　にくとん　を　そだてる　ところ　です。Bunbensha adalah tempat membesarkan babi pedaging |  | NEED-CONFIRM | inferred |
+| 71 | 2020 | ぶた　は　50キログラム　から　60キログラム　に　そだて　しゅっか　します。Babi dijual setelah dibesarkan hingga mencapai 50~60 kg |  | NEED-CONFIRM | inferred |
+| 72 | 2020 | しょうどくやく　は　つかいかた　と　りょう　を　まもります。Patuhi aturan dan jumlah penggunaan untuk disinfektan |  | NEED-CONFIRM | inferred |
+| 73 | 2020 | ランドレースしゅ　は　しろいろ　の　ぶた　です。Jenis Landrace adalah babi berwarna putih |  | NEED-CONFIRM | inferred |
+| 74 | 2020 | ぶた　の　にんしん　きかん　は　やく　365にち　です。Masa kehamilan babi sekitar 365 hari |  | NEED-CONFIRM | inferred |
+| 75 | 2020 | たねぶた　は　はんしょく　に　つかう　ぶた　です。Babi benih digunakan untuk berkembang biak |  | NEED-CONFIRM | inferred |
+| 76 | 2020 | おす　の　こぶた　は　きょせい　を　します。Anak babi jantan dikebiri |  | NEED-CONFIRM | inferred |
+| 77 | 2020 | はんしょくとん　は　いつも　しりょう　が　たべられる　ように　して　おきます。Babi kembang biak dibuat agar bisa makan di segala waktu |  | NEED-CONFIRM | inferred |
+| 78 | 2020 | しょうどくえき　は　じかん　が　たつと　こうか　が　あがります。Cairan disinfektan semakin bekerja seiring berjalannya waktu |  | NEED-CONFIRM | inferred |
+| 79 | 2020 | トンコレラ　は　かんせん　します。Kolera babi menular |  | NEED-CONFIRM | inferred |
+| 80 | 2020 | びょうき　を　ふせぐ　ために　ワクチン　を　つかいます。Menggunakan vaksin untuk mencegah penyakit |  | NEED-CONFIRM | inferred |

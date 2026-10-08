@@ -1,0 +1,1 @@
+scp ./*soal* dwikiprayoga24@10.179.35.180:/mnt/data/2-Kumiai/ujian-app/soal-asli/

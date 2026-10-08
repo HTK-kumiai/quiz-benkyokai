@@ -145,3 +145,56 @@ Jumlah yang diharapkan setelah sinkronisasi saat ini:
 - Untuk bidang baru berikutnya, baca `AGENTS.md` dan `MEMORY.md` terlebih dahulu.
 - Proses sumber dari `soal-asli/` ke `butuh-konfirmasi.md` dulu.
 - Setelah user menyatakan sudah dicek, baru masukkan ke aplikasi dan pindahkan sumber ke `sudah-proses/`.
+
+## Milestone: Menambahkan Semua Bidang Ujian
+
+- Total bidang pada `DAFTAR-BIDANG.md`: 23.
+- Pembagian pekerjaan: 16 sesi, satu bidang per sesi sesuai `TAMBAH-BIDANG.md`.
+- Status: sesi 1 selesai pada state menunggu konfirmasi soal.
+- Sesi 1 — `育林` / `ikurin`: metadata ditambahkan, file soal kosong dibuat, 60 soal shokyu 2025 didraf di `butuh-konfirmasi.md`; sumber masih di `soal-asli/`.
+- Validasi sesi 1: `validate-question-bank.sh` dan `cloudflare-build.sh` lulus.
+- Catatan sesi berikutnya: jangan memasukkan 60 soal Ikurin atau memindahkan sumber sebelum review user disetujui.
+
+### Pembagian Phase
+
+1. 育林 + 養豚
+2. とび + 型枠工事
+3. 鉄筋組立 + 溶接
+4. パン製造 + 加熱生水産加工
+5. 缶詰 + 牛豚部分肉製造
+6. 食鳥処理加工 + 介護
+7. 機械製材 + 自動車整備
+8. 射出成形 + 製本
+9. Audit dan pelengkapan bidang yang sudah ada
+10. Normalisasi kategori, pemetaan, dan metadata
+11. Pembaruan UI serta filter bidang/level
+12. Validasi menyeluruh dan dokumentasi
+
+- Kebijakan pemrosesan diperbarui: soal yang jelas langsung dimasukkan ke JSON; hanya item ambigu dicatat di `butuh-konfirmasi.md`.
+- Sesi 1 育林 diperbarui: 43 soal shokyu 2025 masuk ke `questions-ikurin.json`; 17 soal yang merujuk gambar/teks belum pasti tetap di `butuh-konfirmasi.md`.
+- Sumber Ikurin selesai dipindahkan ke `sudah-proses/`.
+- Validasi setelah pemrosesan Ikurin: `validate-question-bank.sh` dan `cloudflare-build.sh` lulus.
+- Kolom `reading` Ikurin diperbaiki menjadi romaji penuh; tidak lagi menyalin hiragana/katakana. Instruksi validasi reading diperjelas di `TAMBAH-BIDANG.md`.
+- Aturan baru reading: huruf pertama setiap kalimat romaji harus kapital; aturan ditambahkan ke `TAMBAH-BIDANG.md` dan diterapkan pada seluruh 43 soal Ikurin.
+
+## Checkpoint Sesi 2 — 養豚
+
+- Status: selesai
+- Bidang: 養豚
+- Kategori ID: youton
+- Level tersedia: belum tersedia
+- Jumlah soal: 0
+- Sumber: tidak ada
+- Status sumber: tidak ada sumber; file soal kosong
+- Validasi: dijalankan setelah penambahan kategori
+- Catatan untuk sesi berikutnya: lanjutkan bidang とび; jangan membuat kategori duplikat.
+
+- Atas permintaan user, 80 soal 養豚 langsung dimasukkan ke `questions-youton.json` sebagai level `shokyu` tahun 2015, 2018, 2019, dan 2020.
+- Reading dan jawaban diisi dari hasil ekstraksi/inferensi awal; soal 2019 nomor 19 tetap perlu ditinjau karena teks sumber tidak lengkap.
+- Total lokal terbaru: 1339 soal. Sumber 養豚 masih di `soal-asli/` sampai verifikasi akhir.
+- 養豚 2019 nomor 19 diperbaiki menjadi `けんこう な ぶた は しっぽ が さがります。`; reading dan terjemahan diperbarui.
+
+- Sumber 養豚 ditemukan: 4 DOCX level `shokyu` tahun 2015, 2018, 2019, dan 2020, total 80 soal.
+- Draf ekstraksi 養豚 ditambahkan ke `butuh-konfirmasi.md`; soal belum dimasukkan ke JSON karena seluruh kunci perlu review.
+- Sumber 養豚 masih berada di `soal-asli/`.
+- Validasi setelah pembuatan draf: `validate-question-bank.sh` dan `cloudflare-build.sh` lulus.

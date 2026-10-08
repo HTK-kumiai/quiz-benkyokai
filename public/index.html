@@ -79,6 +79,12 @@
             <!-- User info bar -->
             <div class="user-topbar">
                 <span class="user-topbar-name">👤 <span id="topbar-username">-</span></span>
+                <div class="quiz-topbar-controls" id="quiz-topbar-controls" style="display: none;">
+                    <span class="topbar-quiz-context" id="topbar-quiz-context">Latihan soal</span>
+                    <button class="btn-topbar-filter" onclick="backToCategories()" title="Ganti bidang, level, atau tahun soal">⚙️ Ganti Bidang / Level / Soal</button>
+                </div>
+                <span id="quiz-cat-name" class="topbar-runtime-value" aria-hidden="true"></span>
+                <span id="quiz-level-year-badge" class="topbar-runtime-value" aria-hidden="true"></span>
                 <button class="btn-user-logout" onclick="handleUserLogout()">🚪 Keluar</button>
             </div>
 
@@ -152,26 +158,7 @@
                 <div class="card">
                     <div class="header-bar">
                         <div class="header-left">
-                            <button class="btn-change-cat" onclick="backToConfig()" title="Ganti level atau tahun soal">
-                                ⚙️ Ganti Filter
-                            </button>
-                            <span class="badge-cat-active" id="quiz-cat-name">🍱 惣菜製造業</span>
-                            <span class="badge-level-year" id="quiz-level-year-badge">🔰 初級 • 2024</span>
                             <span class="badge-id" id="meta">Soal #...</span>
-                        </div>
-                        <div class="score-stats">
-                            <span class="stat-badge stat-correct" id="stat-correct">Benar: 0</span>
-                            <span class="stat-badge stat-wrong" id="stat-wrong">Salah: 0</span>
-                        </div>
-                    </div>
-
-                    <div class="quiz-progress-panel">
-                        <div class="quiz-progress-copy">
-                            <span class="quiz-eyebrow">LATIHAN BERJALAN</span>
-                            <span class="quiz-progress-label" id="progress-label">0 dari 0 soal</span>
-                        </div>
-                        <div class="quiz-progress-track" role="progressbar" aria-label="Progress kuis" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
-                            <div class="quiz-progress-value" id="quiz-progress-value"></div>
                         </div>
                     </div>
 

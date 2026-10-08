@@ -508,6 +508,8 @@ function launchQuiz() {
     document.getElementById("screen-config").style.display = "none";
     document.getElementById("screen-results").style.display = "none";
     document.getElementById("screen-quiz").style.display = "flex";
+    const topbarControls = document.getElementById("quiz-topbar-controls");
+    if (topbarControls) topbarControls.style.display = "flex";
 
     document.getElementById("quiz-cat-name").textContent = cat.shortName;
     const levelName = selectedLevel === "shokyu" ? "🔰 初級" : "⭐ 専門級";
@@ -527,6 +529,8 @@ function backToConfig() {
     document.getElementById("screen-quiz").style.display = "none";
     document.getElementById("screen-results").style.display = "none";
     document.getElementById("screen-config").style.display = "block";
+    const topbarControls = document.getElementById("quiz-topbar-controls");
+    if (topbarControls) topbarControls.style.display = "none";
     showLevelStep();
     updateConfigSummary();
 }
@@ -536,6 +540,8 @@ function backToCategories() {
     document.getElementById("screen-quiz").style.display = "none";
     document.getElementById("screen-results").style.display = "none";
     document.getElementById("screen-categories").style.display = "block";
+    const topbarControls = document.getElementById("quiz-topbar-controls");
+    if (topbarControls) topbarControls.style.display = "none";
     currentCategory = null;
     updateCategoryCounts();
 }
@@ -606,21 +612,13 @@ function render() {
     const progressText = "Sudah muncul: " + history.length + " / " + allQuestions.length;
     const progressFooter = document.getElementById("progress");
     if (progressFooter) progressFooter.textContent = progressText;
-    const progressLabel = document.getElementById("progress-label");
-    const progressTrack = document.querySelector(".quiz-progress-track");
-    const progressValue = document.getElementById("quiz-progress-value");
-    const progressPercent = allQuestions.length > 0
-        ? Math.round((history.length / allQuestions.length) * 100)
-        : 0;
-    if (progressLabel) {
-        progressLabel.textContent = `${history.length} dari ${allQuestions.length} soal`;
-    }
-    if (progressTrack) {
-        progressTrack.setAttribute("aria-valuemax", String(allQuestions.length));
-        progressTrack.setAttribute("aria-valuenow", String(history.length));
-    }
-    if (progressValue) {
-        progressValue.style.width = `${progressPercent}%`;
+    const topbarContext = document.getElementById("topbar-quiz-context");
+    if (topbarContext) {
+        topbarContext.textContent = [
+            document.getElementById("quiz-cat-name")?.textContent,
+            document.getElementById("quiz-level-year-badge")?.textContent,
+            document.getElementById("meta")?.textContent,
+        ].filter(Boolean).join(" · ");
     }
 
     updateScoreStats();

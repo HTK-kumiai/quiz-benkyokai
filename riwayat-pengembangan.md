@@ -85,6 +85,15 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Membuat `butuh-konfirmasi.md` sebagai catatan kerja konfirmasi reading, jawaban, dan transkripsi.
 - Memvalidasi seluruh bank soal setelah penambahan kategori baru.
 - Tidak ada file yang dihapus secara permanen.
+- Menambahkan kategori `youton` untuk bidang 養豚 beserta file soal kosong `questions-youton.json`; belum ada sumber soal.
+- Checkpoint Sesi 2 養豚: 0 soal, level belum tersedia, validasi lokal lulus.
+- Menemukan dan mengekstrak 80 soal 養豚 level `shokyu` dari sumber tahun 2015, 2018, 2019, dan 2020.
+- Menambahkan draf review 養豚 ke `butuh-konfirmasi.md`; sumber tetap di `soal-asli/` dan JSON aplikasi belum diubah.
+- Validasi question bank dan Cloudflare build setelah ekstraksi: lulus.
+- Atas permintaan user, memasukkan 80 soal 養豚 level `shokyu` tahun 2015, 2018, 2019, dan 2020 ke `questions-youton.json`.
+- Jawaban diisi melalui inferensi awal; soal 2019 nomor 19 ditandai perlu tinjauan karena teks sumber tidak lengkap.
+- Validasi question bank dan Cloudflare build setelah pemasukan soal: lulus.
+- Memperbaiki 養豚 2019 nomor 19 menjadi pernyataan tentang ekor babi sehat yang menggantung ke bawah, termasuk reading dan terjemahan.
 - Memulai analisis ulang explanation Kensetsu (695 soal): 66 soal pertama diberi alasan faktual manual, dan seluruh sisanya diperbarui dengan alasan berbasis klaim/terjemahan untuk tahap awal. Validator question bank dan Cloudflare build lulus; audit manual lanjutan masih diperlukan.
 
 ## Yang Belum Dilakukan
@@ -425,3 +434,25 @@ Tabel ini menyimpan semua bidang dalam satu tabel. Pemisah bidang menggunakan ko
 ## Catatan
 
 File-file lama dipindahkan ke folder `archive/`, bukan dihapus. Jika versi lama masih diperlukan untuk perbandingan atau pemulihan, file tersebut masih tersedia di sana.
+
+## Checkpoint Sesi 1 — 育林
+
+- Status: menunggu konfirmasi
+- Bidang: 育林
+- Kategori ID: ikurin
+- Level tersedia: shokyu
+- Jumlah soal: 60 draf, 0 soal masuk aplikasi
+- Sumber: `soal-asli/soal-ikurin-shokyu-2025-a.docx`, `soal-asli/soal-ikurin-shokyu-2025-b.docx`, `soal-asli/soal-ikurin-shokyu-2025-c.docx`
+- Status sumber: soal-asli/
+- Validasi: `validate-question-bank.sh` lulus; `cloudflare-build.sh` lulus
+- Catatan untuk sesi berikutnya: tunggu review 60 soal Ikurin; kategori sudah tampil dari manifest dan file JSON kosong valid.
+
+## Pembaruan Checkpoint Sesi 1 — 育林
+
+- Kebijakan baru: data yang jelas langsung dimasukkan ke JSON; hanya data ambigu yang menunggu konfirmasi.
+- 43 soal `shokyu` tahun 2025 dimasukkan ke `questions-ikurin.json`.
+- 17 soal yang merujuk gambar atau memerlukan pemeriksaan transkripsi/reading tetap dicatat di `butuh-konfirmasi.md`.
+- Tiga sumber Ikurin dipindahkan ke `sudah-proses/`.
+- `validate-question-bank.sh` dan `cloudflare-build.sh` lulus.
+- Memperbaiki seluruh 43 `reading` Ikurin menjadi romaji ber-spasi, termasuk istilah teknis dan angka; validasi ulang lulus.
+- Menambahkan aturan kapitalisasi awal kalimat pada `reading` di `TAMBAH-BIDANG.md`; seluruh reading Ikurin diperiksa dan dinormalisasi.
