@@ -45,6 +45,16 @@ create table if not exists public.invite_groups (
   created_at timestamptz not null default now()
 );
 
+create table if not exists public.registration_groups (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+
+create unique index if not exists idx_registration_groups_name_normalized
+  on public.registration_groups (lower(regexp_replace(trim(name), '\s+', ' ', 'g')));
+
 -- Isi email profil lama dari akun Auth jika tersedia. Tetap izinkan NULL
 -- pada tabel lama agar profil tanpa email Auth tidak menghambat migrasi.
 update public.profiles as p
@@ -87,12 +97,30 @@ create index if not exists idx_scores_user_id on public.scores(user_id);
 create index if not exists idx_scores_timestamp on public.scores(timestamp desc);
 create index if not exists idx_profiles_username on public.profiles(username);
 create index if not exists idx_profiles_is_admin on public.profiles(is_admin);
+create index if not exists idx_profiles_group_name on public.profiles(group_name);
 create index if not exists idx_question_bank_category on public.question_bank(category_id);
 create index if not exists idx_question_bank_category_level on public.question_bank(category_id, level);
 
 alter table public.profiles enable row level security;
 alter table public.scores enable row level security;
 alter table public.question_bank enable row level security;
+grant select, insert, delete on public.scores to authenticated;
+
+create or replace function public.has_active_group_access()
+returns boolean
+language sql stable security definer set search_path = public
+as $$
+  select exists (
+    select 1
+    from public.profiles p
+    left join public.registration_groups g
+      on lower(regexp_replace(trim(g.name), '\s+', ' ', 'g')) = lower(regexp_replace(trim(p.group_name), '\s+', ' ', 'g'))
+    where p.id = auth.uid()
+      and (p.is_admin or (p.approval_status = 'approved' and g.active = true))
+  );
+$$;
+revoke execute on function public.has_active_group_access() from public;
+grant execute on function public.has_active_group_access() to authenticated;
 
 grant select on public.question_bank to authenticated;
 grant insert, update, delete on public.question_bank to authenticated;
@@ -102,7 +130,7 @@ create policy "question_bank_select_authenticated"
   on public.question_bank
   for select
   to authenticated
-  using (true);
+  using (public.has_active_group_access());
 
 drop policy if exists "question_bank_insert_admin" on public.question_bank;
 create policy "question_bank_insert_admin"
@@ -217,101 +245,32 @@ create policy "profiles_select_admin"
   using (public.is_admin_user());
 
 drop policy if exists "profiles_approve_admin" on public.profiles;
-create policy "profiles_approve_admin"
-  on public.profiles for update to authenticated
-  using (public.is_admin_user())
-  with check (approval_status in ('pending', 'approved', 'rejected'));
+-- Status akses dikendalikan oleh registration_groups, bukan update user satu per satu.
+revoke update (approval_status, approved_at) on public.profiles from public, anon, authenticated;
 
+-- Fitur kode undangan sudah tidak dipakai. Tabel invite_groups lama dibiarkan
+-- agar migrasi tidak menghapus data historis, tetapi tidak lagi menjadi syarat signup.
 alter table public.invite_groups enable row level security;
 drop policy if exists "invite_groups_select_authenticated" on public.invite_groups;
-create policy "invite_groups_select_authenticated"
-  on public.invite_groups for select to authenticated using (active = true);
-
 drop policy if exists "invite_groups_select_admin" on public.invite_groups;
-create policy "invite_groups_select_admin"
-  on public.invite_groups for select to authenticated
-  using (public.is_admin_user());
+revoke all on public.invite_groups from public, anon, authenticated;
+drop function if exists public.create_invite_group(text, text, integer);
+drop function if exists public.set_invite_group_active(uuid, boolean);
+drop function if exists public.register_with_invite(text, text);
 
--- Pengelolaan undangan dilakukan lewat RPC agar anon key tidak mendapat
--- izin insert/update langsung pada tabel undangan.
-create or replace function public.create_invite_group(
-  p_code text,
-  p_group_name text,
-  p_max_users integer
-)
-returns public.invite_groups
-language plpgsql
-security definer
-set search_path = public
-as $$
-declare
-  new_invite public.invite_groups;
-begin
-  if not public.is_admin_user() then
-    raise exception 'Hanya admin yang dapat membuat undangan';
-  end if;
-  if length(trim(coalesce(p_code, ''))) < 4 then
-    raise exception 'Kode undangan minimal 4 karakter';
-  end if;
-  if length(trim(coalesce(p_group_name, ''))) < 2 then
-    raise exception 'Nama grup wajib diisi';
-  end if;
-  if coalesce(p_max_users, 0) < 1 then
-    raise exception 'Kuota undangan harus lebih dari 0';
-  end if;
-
-  insert into public.invite_groups (code, group_name, max_users)
-  values (upper(trim(p_code)), trim(p_group_name), p_max_users)
-  returning * into new_invite;
-  return new_invite;
-end;
-$$;
-
-create or replace function public.set_invite_group_active(
-  p_id uuid,
-  p_active boolean
-)
-returns public.invite_groups
-language plpgsql
-security definer
-set search_path = public
-as $$
-declare
-  updated_invite public.invite_groups;
-begin
-  if not public.is_admin_user() then
-    raise exception 'Hanya admin yang dapat mengubah undangan';
-  end if;
-
-  update public.invite_groups
-  set active = coalesce(p_active, false)
-  where id = p_id
-  returning * into updated_invite;
-  if not found then
-    raise exception 'Undangan tidak ditemukan';
-  end if;
-  return updated_invite;
-end;
-$$;
-
-revoke execute on function public.create_invite_group(text, text, integer) from public;
-grant execute on function public.create_invite_group(text, text, integer) to authenticated;
-revoke execute on function public.set_invite_group_active(uuid, boolean) from public;
-grant execute on function public.set_invite_group_active(uuid, boolean) to authenticated;
-
--- Pendaftaran atomik: status pending juga dihitung agar batas grup tidak terlewati.
-create or replace function public.register_with_invite(p_code text, p_name text)
+-- Semua user dapat mendaftar jika nama grupnya sedang aktif.
+drop function if exists public.register_profile(text);
+create or replace function public.register_profile(p_name text, p_group_name text)
 returns public.profiles
 language plpgsql
 security definer
 set search_path = public
 as $$
 declare
-  invite public.invite_groups;
+  allowed_group public.registration_groups;
   user_email text;
   generated_username text;
   new_profile public.profiles;
-  current_count integer;
 begin
   if auth.uid() is null then
     raise exception 'Anda harus login untuk mendaftar';
@@ -319,16 +278,16 @@ begin
   if length(trim(coalesce(p_name, ''))) < 2 then
     raise exception 'Nama asli wajib diisi';
   end if;
+  if length(trim(coalesce(p_group_name, ''))) < 2 then
+    raise exception 'Nama grup wajib diisi';
+  end if;
 
-  select * into invite from public.invite_groups
-  where upper(code) = upper(trim(p_code)) and active = true
-  for update;
-  if not found then raise exception 'Kode undangan tidak valid atau sudah ditutup'; end if;
-
-  select count(*) into current_count from public.profiles
-  where group_name = invite.group_name and approval_status in ('pending', 'approved');
-  if current_count >= invite.max_users then
-    raise exception 'Kuota grup sudah penuh';
+  select * into allowed_group
+  from public.registration_groups
+  where lower(regexp_replace(trim(name), '\s+', ' ', 'g')) = lower(regexp_replace(trim(p_group_name), '\s+', ' ', 'g'))
+    and active = true;
+  if not found then
+    raise exception 'Grup tidak terdaftar atau sedang dinonaktifkan';
   end if;
 
   select email into user_email from auth.users where id = auth.uid();
@@ -338,15 +297,126 @@ begin
   end if;
 
   insert into public.profiles (id, email, username, name, group_name, approval_status)
-  values (auth.uid(), coalesce(user_email, ''), generated_username, trim(p_name), invite.group_name, 'pending')
-  on conflict (id) do update set name = excluded.name, group_name = excluded.group_name;
+  values (auth.uid(), coalesce(user_email, ''), generated_username, trim(p_name), allowed_group.name, 'approved')
+  on conflict (id) do update set name = excluded.name, group_name = excluded.group_name,
+    approval_status = 'approved', approved_at = now();
 
   select * into new_profile from public.profiles where id = auth.uid();
   return new_profile;
 end;
 $$;
 
-grant execute on function public.register_with_invite(text, text) to authenticated;
+revoke execute on function public.register_profile(text, text) from public;
+
+-- Admin mengatur grup yang boleh mendaftar dan akses seluruh anggotanya.
+alter table public.registration_groups enable row level security;
+drop policy if exists "registration_groups_select_admin" on public.registration_groups;
+create policy "registration_groups_select_admin"
+  on public.registration_groups for select to authenticated
+  using (public.is_admin_user());
+grant select on public.registration_groups to authenticated;
+
+create or replace function public.create_registration_group(p_name text)
+returns public.registration_groups
+language plpgsql security definer set search_path = public
+as $$
+declare new_group public.registration_groups;
+begin
+  if not public.is_admin_user() then
+    raise exception 'Hanya admin yang dapat mengatur grup';
+  end if;
+  if length(trim(coalesce(p_name, ''))) < 2 then
+    raise exception 'Nama grup wajib diisi';
+  end if;
+  insert into public.registration_groups (name)
+  values (regexp_replace(trim(p_name), '\s+', ' ', 'g'))
+  returning * into new_group;
+  return new_group;
+end;
+$$;
+
+create or replace function public.set_registration_group_active(p_id uuid, p_active boolean)
+returns public.registration_groups
+language plpgsql security definer set search_path = public
+as $$
+declare updated_group public.registration_groups;
+begin
+  if not public.is_admin_user() then
+    raise exception 'Hanya admin yang dapat mengatur grup';
+  end if;
+  update public.registration_groups
+  set active = coalesce(p_active, false)
+  where id = p_id
+  returning * into updated_group;
+  if not found then raise exception 'Grup tidak ditemukan'; end if;
+  return updated_group;
+end;
+$$;
+
+revoke execute on function public.create_registration_group(text) from public;
+grant execute on function public.create_registration_group(text) to authenticated;
+revoke execute on function public.set_registration_group_active(uuid, boolean) from public;
+grant execute on function public.set_registration_group_active(uuid, boolean) to authenticated;
+
+create or replace function public.move_profiles_to_group(p_user_ids uuid[], p_group_id uuid)
+returns integer
+language plpgsql security definer set search_path = public
+as $$
+declare
+  target_group public.registration_groups;
+  changed_count integer;
+begin
+  if not public.is_admin_user() then
+    raise exception 'Hanya admin yang dapat mengatur grup user';
+  end if;
+  select * into target_group from public.registration_groups where id = p_group_id;
+  if not found then raise exception 'Grup tujuan tidak ditemukan'; end if;
+  if coalesce(array_length(p_user_ids, 1), 0) = 0 then
+    raise exception 'Tidak ada user yang dipilih';
+  end if;
+
+  update public.profiles
+  set group_name = target_group.name,
+      approval_status = 'approved',
+      approved_at = coalesce(approved_at, now())
+  where id = any(p_user_ids) and is_admin = false;
+  get diagnostics changed_count = row_count;
+  return changed_count;
+end;
+$$;
+
+revoke execute on function public.move_profiles_to_group(uuid[], uuid) from public;
+grant execute on function public.move_profiles_to_group(uuid[], uuid) to authenticated;
+
+-- Profil hanya dapat membaca status aksesnya sendiri; admin dapat membaca semua.
+create or replace function public.get_profile_access(p_user_id uuid default auth.uid())
+returns table (
+  id uuid, email text, username text, name text, is_admin boolean,
+  approval_status text, group_name text, group_active boolean,
+  created_at timestamptz, approved_at timestamptz
+)
+language plpgsql stable security definer set search_path = public
+as $$
+begin
+  if p_user_id <> auth.uid() and not public.is_admin_user() then
+    raise exception 'Tidak diizinkan membaca profil ini';
+  end if;
+  return query
+  select p.id, p.email, p.username, p.name, p.is_admin, p.approval_status,
+         p.group_name,
+         (p.is_admin or coalesce(g.active, false)) as group_active,
+         p.created_at, p.approved_at
+  from public.profiles p
+  left join public.registration_groups g
+    on lower(regexp_replace(trim(g.name), '\s+', ' ', 'g')) = lower(regexp_replace(trim(p.group_name), '\s+', ' ', 'g'))
+  where p.id = p_user_id;
+end;
+$$;
+
+revoke execute on function public.get_profile_access(uuid) from public;
+grant execute on function public.get_profile_access(uuid) to authenticated;
+
+grant execute on function public.register_profile(text, text) to authenticated;
 
 drop policy if exists "scores_select_own_or_admin" on public.scores;
 create policy "scores_select_own_or_admin"
@@ -354,7 +424,7 @@ create policy "scores_select_own_or_admin"
   for select
   to authenticated
   using (
-    auth.uid() = user_id
+    (auth.uid() = user_id and public.has_active_group_access())
     or exists (
       select 1
       from public.profiles p
@@ -368,4 +438,12 @@ create policy "scores_insert_own"
   on public.scores
   for insert
   to authenticated
-  with check (auth.uid() = user_id);
+  with check (auth.uid() = user_id and public.has_active_group_access());
+
+drop policy if exists "scores_delete_admin" on public.scores;
+create policy "scores_delete_admin"
+  on public.scores for delete to authenticated
+  using (exists (
+    select 1 from public.profiles p
+    where p.id = auth.uid() and p.is_admin = true
+  ));

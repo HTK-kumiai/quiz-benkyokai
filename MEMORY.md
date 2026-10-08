@@ -60,6 +60,7 @@ Repo aktif:
   - 100 soal level `shokyu`, ID 596-695
   - tahun sumber: 2017, 2018, 2019, dan 2020
   - sumber sudah dipindahkan ke `sudah-proses/`
+- Seluruh soal Kensetsu level `shokyu` (ID 496-695) sudah dinormalisasi menjadi teks soal hiragana penuh dan reading romaji ber-spasi.
 - `soal-asli/` saat ini kosong setelah pemrosesan Kensetsu 2017-2020.
 - File konfirmasi:
   - `butuh-konfirmasi.md`

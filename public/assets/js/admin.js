@@ -1,7 +1,9 @@
 import {
     fetchAllScoresForAdmin,
+    deleteScoreForAdmin,
+    deleteScoresForAdmin,
     fetchPendingProfilesForAdmin,
-    fetchInviteGroupsForAdmin,
+    fetchRegistrationGroupsForAdmin,
     fetchQuestionBank,
     getCurrentSessionProfile,
     getSupabaseStatus,
@@ -9,30 +11,34 @@ import {
     replaceQuestionBank,
     signInWithEmail,
     signOutUser,
-    updateProfileApproval,
-    createInviteGroup,
-    updateInviteGroupActive,
+    createRegistrationGroup,
+    updateRegistrationGroupActive,
+    moveProfilesToRegistrationGroup,
 } from "./supabase-client.js";
 import { buildCategoryMap, getImageUrl, loadCategories } from "./category-config.js";
 
 let categoryList = [];
 let CATEGORIES = {};
 let currentAdminCategory = "";
-let currentAdminTab = "soal";
+let currentAdminTab = "home";
 let currentAdminProfile = null;
 let questions = [];
 let editingId = null;
+let cachedProfiles = [];
+let cachedGroups = [];
+let profilesPage = 1;
+const profilesPageSize = 20;
+const selectedScoreIds = new Set();
+let visibleScoreIds = [];
+const selectedProfileIds = new Set();
+let visibleProfileIds = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
     await initializeCategories();
     setupAdminEvents();
     updateSetupStatus();
     await restoreAdminSession();
-    try {
-        await switchAdminCategory(currentAdminCategory);
-    } catch (e) {
-        console.warn("Init error:", e);
-    }
+    await switchAdminTab("home");
 });
 
 async function initializeCategories() {
@@ -99,7 +105,10 @@ function setupAdminEvents() {
     document.getElementById("import-file-input")?.addEventListener("change", importQuestionsJSON);
     document.getElementById("search-score-input")?.addEventListener("input", () => renderScoresTable());
     document.getElementById("filter-score-category")?.addEventListener("change", () => renderScoresTable());
-    document.getElementById("invite-form")?.addEventListener("submit", handleInviteSubmit);
+    document.getElementById("registration-group-form")?.addEventListener("submit", handleRegistrationGroupSubmit);
+    document.getElementById("select-all-scores")?.addEventListener("change", (event) => toggleAllScores(event.target.checked));
+    document.getElementById("select-all-profiles")?.addEventListener("change", (event) => toggleAllProfiles(event.target.checked));
+    document.getElementById("move-selected-profiles")?.addEventListener("click", moveSelectedProfiles);
 }
 
 function updateSetupStatus() {
@@ -178,21 +187,21 @@ async function logoutAdmin() {
 
 async function switchAdminTab(tab) {
     currentAdminTab = tab;
-    ["soal", "setup", "scores", "users", "invites"].forEach((t) => {
+    ["home", "soal", "setup", "scores", "users"].forEach((t) => {
         const btn = document.getElementById("tab-btn-" + t);
         if (btn) btn.classList.toggle("active", t === tab);
     });
 
+    const panelHome = document.getElementById("tab-panel-home");
     const panelSoal = document.getElementById("tab-panel-soal");
     const panelSetup = document.getElementById("tab-panel-setup");
     const panelScores = document.getElementById("tab-panel-scores");
     const panelUsers = document.getElementById("tab-panel-users");
-    const panelInvites = document.getElementById("tab-panel-invites");
+    if (panelHome) panelHome.style.display = tab === "home" ? "" : "none";
     if (panelSoal) panelSoal.style.display = tab === "soal" ? "" : "none";
     if (panelSetup) panelSetup.style.display = tab === "setup" ? "" : "none";
     if (panelScores) panelScores.style.display = tab === "scores" ? "" : "none";
     if (panelUsers) panelUsers.style.display = tab === "users" ? "" : "none";
-    if (panelInvites) panelInvites.style.display = tab === "invites" ? "" : "none";
 
     const categoryWrap = document.querySelector("#admin-category-select")?.parentElement;
     const statsWrap = document.querySelector(".stats-summary");
@@ -207,103 +216,87 @@ async function switchAdminTab(tab) {
     } else if (tab === "scores") {
         await renderScoresTable();
     } else if (tab === "users") {
+        await renderRegistrationGroups();
         await renderProfilesTable();
-    } else if (tab === "invites") {
-        await renderInvitesTable();
     }
 }
 
-async function renderInvitesTable() {
-    const tbody = document.getElementById("invites-tbody");
-    const emptyState = document.getElementById("empty-invites-state");
+async function renderRegistrationGroups() {
+    const tbody = document.getElementById("registration-groups-tbody");
+    const emptyState = document.getElementById("empty-registration-groups-state");
     if (!tbody || !currentAdminProfile?.is_admin) return;
     try {
-        const [invites, profiles] = await Promise.all([
-            fetchInviteGroupsForAdmin(),
+        const [groups, profiles] = await Promise.all([
+            fetchRegistrationGroupsForAdmin(),
             fetchPendingProfilesForAdmin(),
         ]);
-        const usageByGroup = profiles.reduce((usage, profile) => {
-            if (profile.approval_status === "pending" || profile.approval_status === "approved") {
-                usage[profile.group_name] = (usage[profile.group_name] || 0) + 1;
-            }
-            return usage;
+        cachedGroups = groups;
+        cachedProfiles = profiles;
+        profilesPage = 1;
+        selectedProfileIds.clear();
+        populateProfileGroupSelect(groups);
+        const countByGroup = profiles.reduce((counts, profile) => {
+            const key = (profile.group_name || "").trim().toLowerCase();
+            if (key) counts[key] = (counts[key] || 0) + 1;
+            return counts;
         }, {});
         tbody.innerHTML = "";
-        if (!invites.length) {
+        if (!groups.length) {
             tbody.style.display = "none";
             emptyState.style.display = "block";
             return;
         }
         tbody.style.display = "";
         emptyState.style.display = "none";
-        invites.forEach((invite) => {
+        groups.forEach((group) => {
             const tr = document.createElement("tr");
-            const created = invite.created_at
-                ? new Date(invite.created_at).toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" })
-                : "—";
-            const appPath = window.location.pathname.replace(/admin\.html$/, "index.html");
-            const link = `${window.location.origin}${appPath}?invite=${encodeURIComponent(invite.code)}`;
-            const status = invite.active
-                ? '<span style="color:#15803d;font-weight:700;">Aktif</span>'
-                : '<span style="color:#b91c1c;font-weight:700;">Ditutup</span>';
-            tr.innerHTML = `<td><strong>${escapeHtml(String(invite.code || "—"))}</strong><br><small>${escapeHtml(link)}</small></td>
-                <td>${escapeHtml(String(invite.group_name || "—"))}</td>
-                <td>${usageByGroup[invite.group_name] || 0} / ${Number(invite.max_users) || 0}</td>
-                <td>${status}</td><td style="font-size:.85rem;">${created}</td>
-                <td><button class="btn ${invite.active ? "btn-danger" : "btn-success"}" data-action="toggle">${invite.active ? "Tutup" : "Aktifkan"}</button>
-                <button class="btn btn-secondary" data-action="copy">Salin Link</button></td>`;
+            const count = countByGroup[(group.name || "").trim().toLowerCase()] || 0;
+            const members = profiles
+                .filter((profile) => (profile.group_name || "").trim().toLowerCase() === (group.name || "").trim().toLowerCase())
+                .sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+            const memberList = members.length
+                ? `<details class="group-members-details"><summary>Lihat ${members.length} user</summary><div class="group-members-list">${members.map((member) => `<div><strong>${escapeHtml(member.name || "—")}</strong><span>${escapeHtml(member.email || "—")}</span></div>`).join("")}</div></details>`
+                : '<span class="muted-text">Belum ada user</span>';
+            tr.innerHTML = `<td><strong>${escapeHtml(group.name)}</strong></td>
+                <td>${count} user</td>
+                <td>${group.active ? '<span style="color:#15803d;font-weight:700;">Aktif</span>' : '<span style="color:#b91c1c;font-weight:700;">Nonaktif</span>'}</td>
+                <td>${memberList}<button class="btn ${group.active ? "btn-danger" : "btn-success"}" data-action="toggle">${group.active ? "Nonaktifkan Grup" : "Aktifkan Grup"}</button></td>`;
             tr.querySelector('[data-action="toggle"]').addEventListener("click", async () => {
+                const action = group.active ? "menonaktifkan" : "mengaktifkan";
+                if (!confirm(`Yakin ingin ${action} grup "${group.name}"?\n\nPerubahan ini berlaku untuk semua user dalam grup.`)) return;
                 try {
-                    await updateInviteGroupActive(invite.id, !invite.active);
-                    showToast(invite.active ? "Undangan ditutup." : "Undangan diaktifkan.");
-                    await renderInvitesTable();
+                    await updateRegistrationGroupActive(group.id, !group.active);
+                    showToast(group.active ? "⛔ Grup dinonaktifkan." : "✅ Grup diaktifkan.");
+                    await renderRegistrationGroups();
+                    await renderProfilesTable();
                 } catch (error) {
-                    showToast(`Gagal mengubah undangan: ${error.message}`);
-                }
-            });
-            tr.querySelector('[data-action="copy"]').addEventListener("click", async () => {
-                try {
-                    await navigator.clipboard.writeText(link);
-                    showToast("🔗 Link undangan disalin.");
-                } catch (error) {
-                    showToast("Gagal menyalin link. Salin link yang tampil di tabel.");
+                    showToast(`Gagal mengubah grup: ${error.message}`);
                 }
             });
             tbody.appendChild(tr);
         });
     } catch (error) {
-        tbody.innerHTML = `<tr><td colspan="6">Gagal memuat undangan: ${escapeHtml(error.message)}</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="4">Gagal memuat grup: ${escapeHtml(error.message)}</td></tr>`;
     }
 }
 
-function generateInviteCode() {
-    const random = Math.random().toString(36).slice(2, 8).toUpperCase();
-    return `UJIAN-${new Date().getFullYear()}-${random}`;
-}
-
-async function handleInviteSubmit(event) {
+async function handleRegistrationGroupSubmit(event) {
     event.preventDefault();
-    if (!currentAdminProfile?.is_admin) {
-        showToast("🔒 Login admin diperlukan.");
-        return;
-    }
+    const nameInput = document.getElementById("registration-group-name");
     const button = event.target.querySelector('button[type="submit"]');
-    const groupName = document.getElementById("invite-group-name").value.trim();
-    const code = (document.getElementById("invite-code").value.trim() || generateInviteCode()).toUpperCase();
-    const maxUsers = Number(document.getElementById("invite-max-users").value);
-    if (!groupName || !Number.isInteger(maxUsers) || maxUsers < 1) {
-        showToast("Isi grup dan kuota dengan benar.");
+    const name = nameInput.value.trim();
+    if (name.length < 2) {
+        showToast("Nama grup minimal 2 karakter.");
         return;
     }
     button.disabled = true;
     try {
-        await createInviteGroup({ code, groupName, maxUsers });
+        await createRegistrationGroup(name);
         event.target.reset();
-        document.getElementById("invite-max-users").value = "12";
-        showToast(`✅ Undangan ${code} berhasil dibuat.`);
-        await renderInvitesTable();
+        showToast("✅ Grup pendaftaran berhasil ditambahkan.");
+        await renderRegistrationGroups();
     } catch (error) {
-        showToast(`Gagal membuat undangan: ${error.message}`);
+        showToast(`Gagal menambahkan grup: ${error.message}`);
     } finally {
         button.disabled = false;
     }
@@ -314,45 +307,126 @@ async function renderProfilesTable() {
     const emptyState = document.getElementById("empty-profiles-state");
     if (!tbody || !currentAdminProfile?.is_admin) return;
     try {
-        const profiles = await fetchPendingProfilesForAdmin();
+        const profiles = cachedProfiles.length ? cachedProfiles : await fetchPendingProfilesForAdmin();
+        const groups = cachedGroups.length ? cachedGroups : await fetchRegistrationGroupsForAdmin();
+        const activeByGroup = groups.reduce((statuses, group) => {
+            statuses[group.name.trim().toLowerCase()] = group.active;
+            return statuses;
+        }, {});
         tbody.innerHTML = "";
         if (!profiles.length) {
+            visibleProfileIds = [];
+            updateProfileSelectionUI();
             tbody.style.display = "none";
             emptyState.style.display = "block";
+            renderProfilesPagination(0, 1);
             return;
         }
         tbody.style.display = "";
         emptyState.style.display = "none";
-        profiles.forEach((profile) => {
-            const statusLabels = { pending: "Menunggu", approved: "Disetujui", rejected: "Ditolak" };
-            const statusColors = { pending: "#b45309", approved: "#15803d", rejected: "#b91c1c" };
+        const totalPages = Math.max(1, Math.ceil(profiles.length / profilesPageSize));
+        profilesPage = Math.min(profilesPage, totalPages);
+        const pageProfiles = profiles.slice((profilesPage - 1) * profilesPageSize, profilesPage * profilesPageSize);
+        visibleProfileIds = pageProfiles.filter((profile) => !profile.is_admin).map((profile) => profile.id);
+        pageProfiles.forEach((profile) => {
             const tr = document.createElement("tr");
             const created = profile.created_at ? new Date(profile.created_at).toLocaleString("id-ID", { dateStyle: "medium", timeStyle: "short" }) : "—";
             const actions = profile.is_admin
                 ? `<span style="color:#64748b;font-size:.85rem;">Admin</span>`
-                : profile.approval_status === "approved"
-                ? `<button class="btn btn-danger" data-action="reject">Tolak</button>`
-                : `<button class="btn btn-success" data-action="approve">Setujui</button>`;
-            tr.innerHTML = `<td><strong>${escapeHtml(profile.name || "—")}</strong></td>
+                    : "<span style=\"color:#64748b;font-size:.85rem;\">Diatur oleh status grup</span>";
+            const groupStatus = profile.is_admin || activeByGroup[(profile.group_name || "").trim().toLowerCase()] === true;
+            tr.innerHTML = `<td>${profile.is_admin ? "" : `<input type="checkbox" class="profile-checkbox" data-profile-id="${escapeHtml(String(profile.id))}" ${selectedProfileIds.has(profile.id) ? "checked" : ""} />`}</td>
+                <td><strong>${escapeHtml(profile.name || "—")}</strong></td>
                 <td>${escapeHtml(profile.email || "—")}</td>
                 <td>${escapeHtml(profile.group_name || "—")}</td>
-                <td style="font-weight:700;color:${statusColors[profile.approval_status] || "#475569"};">${statusLabels[profile.approval_status] || profile.approval_status}</td>
+                <td style="font-weight:700;color:${groupStatus ? "#15803d" : "#b91c1c"};">${groupStatus ? "Aktif" : "Grup Nonaktif"}</td>
                 <td style="font-size:.85rem;">${created}</td><td>${actions}</td>`;
-            tr.querySelector("button")?.addEventListener("click", async () => {
-                const nextStatus = profile.approval_status === "approved" ? "rejected" : "approved";
-                try {
-                    await updateProfileApproval(profile.id, nextStatus);
-                    showToast(nextStatus === "approved" ? "✅ User disetujui." : "User ditolak.");
-                    await renderProfilesTable();
-                } catch (error) {
-                    showToast(`Gagal memperbarui user: ${error.message}`);
-                }
+            tr.querySelector(".profile-checkbox")?.addEventListener("change", (event) => {
+                if (event.target.checked) selectedProfileIds.add(profile.id);
+                else selectedProfileIds.delete(profile.id);
+                updateProfileSelectionUI();
             });
             tbody.appendChild(tr);
         });
+        updateProfileSelectionUI();
+        renderProfilesPagination(profiles.length, totalPages);
     } catch (error) {
-        tbody.innerHTML = `<tr><td colspan="6">Gagal memuat pendaftar: ${escapeHtml(error.message)}</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="7">Gagal memuat pendaftar: ${escapeHtml(error.message)}</td></tr>`;
     }
+}
+
+function populateProfileGroupSelect(groups) {
+    const select = document.getElementById("profile-target-group");
+    if (!select) return;
+    select.innerHTML = '<option value="">Pilih grup tujuan...</option>';
+    groups.forEach((group) => {
+        const option = document.createElement("option");
+        option.value = group.id;
+        option.textContent = `${group.name}${group.active ? "" : " (Nonaktif)"}`;
+        select.appendChild(option);
+    });
+}
+
+function updateProfileSelectionUI() {
+    const selectAll = document.getElementById("select-all-profiles");
+    const button = document.getElementById("move-selected-profiles");
+    const count = selectedProfileIds.size;
+    if (selectAll) {
+        selectAll.checked = visibleProfileIds.length > 0 && visibleProfileIds.every((id) => selectedProfileIds.has(id));
+        selectAll.indeterminate = visibleProfileIds.some((id) => selectedProfileIds.has(id)) && !selectAll.checked;
+    }
+    if (button) {
+        button.disabled = count === 0;
+        button.textContent = count ? `👥 Pindahkan ${count} User` : "👥 Pindahkan User Terpilih";
+    }
+}
+
+function toggleAllProfiles(checked) {
+    visibleProfileIds.forEach((id) => {
+        if (checked) selectedProfileIds.add(id);
+        else selectedProfileIds.delete(id);
+    });
+    document.querySelectorAll(".profile-checkbox").forEach((checkbox) => {
+        checkbox.checked = checked;
+    });
+    updateProfileSelectionUI();
+}
+
+async function moveSelectedProfiles() {
+    const groupId = document.getElementById("profile-target-group")?.value;
+    const ids = Array.from(selectedProfileIds);
+    const group = cachedGroups.find((item) => item.id === groupId);
+    if (!ids.length || !group) {
+        showToast("Pilih user dan grup tujuan terlebih dahulu.");
+        return;
+    }
+    if (!confirm(`Pindahkan ${ids.length} user ke grup "${group.name}"?`)) return;
+    try {
+        const changedCount = await moveProfilesToRegistrationGroup(ids, groupId);
+        selectedProfileIds.clear();
+        showToast(`✅ ${changedCount || ids.length} user berhasil dipindahkan.`);
+        await renderRegistrationGroups();
+        await renderProfilesTable();
+    } catch (error) {
+        showToast(`Gagal memindahkan user: ${error.message}`);
+    }
+}
+
+function renderProfilesPagination(totalProfiles, totalPages) {
+    const pagination = document.getElementById("profiles-pagination");
+    if (!pagination) return;
+    pagination.innerHTML = `<span>Menampilkan ${totalProfiles ? ((profilesPage - 1) * profilesPageSize + 1) : 0}–${Math.min(profilesPage * profilesPageSize, totalProfiles)} dari ${totalProfiles} user</span>
+        <button class="btn btn-secondary" ${profilesPage <= 1 ? "disabled" : ""} data-page="prev">← Sebelumnya</button>
+        <strong>Halaman ${profilesPage} / ${totalPages}</strong>
+        <button class="btn btn-secondary" ${profilesPage >= totalPages ? "disabled" : ""} data-page="next">Berikutnya →</button>`;
+    pagination.querySelector('[data-page="prev"]')?.addEventListener("click", async () => {
+        profilesPage -= 1;
+        await renderProfilesTable();
+    });
+    pagination.querySelector('[data-page="next"]')?.addEventListener("click", async () => {
+        profilesPage += 1;
+        await renderProfilesTable();
+    });
 }
 
 async function switchAdminCategory(catId) {
@@ -771,9 +845,12 @@ async function renderScoresTable() {
             }
             return true;
         });
+        visibleScoreIds = filtered.map((score) => score.id);
 
         tbody.innerHTML = "";
         if (filtered.length === 0) {
+            visibleScoreIds = [];
+            updateScoreSelectionUI();
             tbody.style.display = "none";
             emptyState.style.display = "block";
             emptyState.querySelector("h3").textContent = "Belum ada riwayat skor";
@@ -794,20 +871,78 @@ async function renderScoresTable() {
             else if (pct >= 60) scoreColor = "#f59e0b";
             const tr = document.createElement("tr");
             tr.innerHTML = `
-                <td class="td-id">#${idx + 1}</td>
+                <td class="td-id"><input type="checkbox" class="score-checkbox" data-score-id="${escapeHtml(String(r.id))}" ${selectedScoreIds.has(r.id) ? "checked" : ""} /> #${idx + 1}</td>
                 <td><div style="font-weight:700;color:#1e40af;">${escapeHtml(r.username || "—")}</div><div style="font-size:0.82rem;color:#64748b;">${escapeHtml(r.name || "")}</div></td>
                 <td><div style="font-size:0.85rem;">${escapeHtml(catName)}</div><div style="font-size:0.78rem;color:#64748b;margin-top:2px;">${levelText} • ${escapeHtml(String(yearText))}</div></td>
                 <td><div style="font-weight:800;font-size:1.2rem;color:${scoreColor};">${pct}%</div></td>
                 <td><div style="font-size:0.85rem;">✅ ${r.correct} / ${r.total}</div><div style="font-size:0.78rem;color:#64748b;">❌ ${r.wrong} salah</div></td>
-                <td><div style="font-size:0.85rem;">${time}</div></td>`;
+                <td><div style="font-size:0.85rem;">${time}</div><button class="btn btn-danger score-delete-button" type="button">Hapus</button></td>`;
+            tr.querySelector(".score-checkbox").addEventListener("change", (event) => {
+                if (event.target.checked) selectedScoreIds.add(r.id);
+                else selectedScoreIds.delete(r.id);
+                updateScoreSelectionUI();
+            });
+            tr.querySelector(".score-delete-button").addEventListener("click", () => deleteSingleScore(r));
             tbody.appendChild(tr);
         });
+        updateScoreSelectionUI();
     } catch (err) {
         tbody.innerHTML = "";
         tbody.style.display = "none";
         emptyState.style.display = "block";
         emptyState.querySelector("h3").textContent = "Gagal memuat skor";
         emptyState.querySelector("p").textContent = err.message || "Periksa RLS dan konfigurasi Supabase.";
+    }
+}
+
+function updateScoreSelectionUI() {
+    const count = selectedScoreIds.size;
+    const button = document.getElementById("delete-selected-scores");
+    const selectAll = document.getElementById("select-all-scores");
+    if (button) {
+        button.disabled = count === 0;
+        button.textContent = count ? `🗑️ Hapus Terpilih (${count})` : "🗑️ Hapus Terpilih";
+    }
+    if (selectAll) {
+        selectAll.checked = visibleScoreIds.length > 0 && visibleScoreIds.every((id) => selectedScoreIds.has(id));
+        selectAll.indeterminate = visibleScoreIds.some((id) => selectedScoreIds.has(id)) && !selectAll.checked;
+    }
+}
+
+function toggleAllScores(checked) {
+    visibleScoreIds.forEach((id) => {
+        if (checked) selectedScoreIds.add(id);
+        else selectedScoreIds.delete(id);
+    });
+    document.querySelectorAll(".score-checkbox").forEach((checkbox) => {
+        checkbox.checked = checked;
+    });
+    updateScoreSelectionUI();
+}
+
+async function deleteSingleScore(score) {
+    if (!confirm(`Hapus skor ${score.username || score.name || "user ini"} sebesar ${score.percentage || 0}%?`)) return;
+    try {
+        await deleteScoreForAdmin(score.id);
+        selectedScoreIds.delete(score.id);
+        showToast("🗑️ Skor berhasil dihapus.");
+        await renderScoresTable();
+    } catch (error) {
+        showToast(`Gagal menghapus skor: ${error.message}`);
+    }
+}
+
+async function deleteSelectedScores() {
+    const ids = Array.from(selectedScoreIds);
+    if (!ids.length) return;
+    if (!confirm(`Hapus ${ids.length} skor yang dipilih? Tindakan ini tidak dapat dibatalkan.`)) return;
+    try {
+        await deleteScoresForAdmin(ids);
+        selectedScoreIds.clear();
+        showToast(`🗑️ ${ids.length} skor berhasil dihapus.`);
+        await renderScoresTable();
+    } catch (error) {
+        showToast(`Gagal menghapus skor: ${error.message}`);
     }
 }
 
@@ -857,4 +992,4 @@ window.importQuestionsJSON = importQuestionsJSON;
 window.resetToDefault = resetToDefault;
 window.syncCurrentQuestionBank = syncCurrentQuestionBank;
 window.syncAllQuestionBanks = syncAllQuestionBanks;
-window.renderInvitesTable = renderInvitesTable;
+window.deleteSelectedScores = deleteSelectedScores;

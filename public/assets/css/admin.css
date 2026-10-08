@@ -118,6 +118,58 @@ body {
     color: #ffffff;
 }
 
+.admin-home-panel {
+    margin-bottom: 24px;
+}
+
+.admin-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    padding: 14px 24px 28px;
+}
+
+.admin-menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    min-height: 138px;
+    padding: 18px;
+    border: 1px solid #dbe4ef;
+    border-radius: 14px;
+    background: #fff;
+    color: var(--text-main);
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.admin-menu-card:hover {
+    transform: translateY(-2px);
+    border-color: #93c5fd;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, .10);
+}
+
+.admin-menu-card span {
+    font-size: 1.65rem;
+}
+
+.admin-menu-card strong {
+    color: #1e40af;
+    font-size: 1rem;
+}
+
+.admin-menu-card small {
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+
+.admin-menu-card-danger strong {
+    color: #b91c1c;
+}
+
 /* Quick Stats Bar */
 .stats-summary {
     display: grid;
@@ -207,26 +259,79 @@ body {
     cursor: pointer;
 }
 
-.invite-form {
-    display: grid;
-    grid-template-columns: 1.4fr 1.2fr 120px auto;
+.registration-group-form {
+    display: flex;
     gap: 10px;
     margin: 18px 0 12px;
+    flex-wrap: wrap;
 }
 
-.invite-form .form-control {
-    width: 100%;
+.registration-group-form .form-control {
+    flex: 1;
+    min-width: 240px;
     padding: 10px 12px;
     border: 1px solid #cbd5e1;
     border-radius: 10px;
     font-size: .95rem;
 }
 
-@media (max-width: 760px) {
-    .invite-form {
-        grid-template-columns: 1fr;
-    }
+.group-members-details {
+    margin-bottom: 10px;
+    font-size: .86rem;
 }
+
+.group-members-details summary {
+    color: #1d4ed8;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.group-members-list {
+    display: grid;
+    gap: 5px;
+    margin: 8px 0 12px;
+    padding: 9px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.group-members-list div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.group-members-list span,
+.muted-text {
+    color: var(--text-muted);
+    font-size: .8rem;
+}
+
+.admin-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 16px 24px 24px;
+    color: var(--text-muted);
+    font-size: .88rem;
+}
+
+.profile-bulk-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 16px 0 8px;
+}
+
+.bulk-help-text {
+    color: var(--text-muted);
+    font-size: .84rem;
+}
+
 
 .action-buttons-group {
     display: flex;

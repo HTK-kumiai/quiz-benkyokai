@@ -111,22 +111,11 @@ Script ini membuat akun di Supabase Auth, lalu mengisi tabel `profiles`. Jika `i
 
 Jangan simpan `SUPABASE_SERVICE_ROLE_KEY` di repository, `.env` frontend, atau file yang ikut deploy. Key ini hanya untuk terminal lokal/server aman.
 
-## 7. Pendaftaran User dengan Kode Undangan
+## 7. Pendaftaran User Tanpa Kode Undangan
 
-Jalankan schema terbaru `sql/supabase-schema.sql` di Supabase SQL Editor. Setelah itu buat grup ujian, misalnya:
+Jalankan schema terbaru `sql/supabase-schema.sql` di Supabase SQL Editor. Admin harus menambahkan grup aktif dari tab **Grup & User** di `/admin.html` terlebih dahulu. Semua orang dapat membuat akun dari tombol **Daftar Akun** dengan memasukkan nama grup. Nama grup harus cocok dengan grup aktif. Akun yang grupnya valid langsung dapat digunakan.
 
-```sql
-insert into public.invite_groups (code, group_name, max_users)
-values ('UJIAN-115-KENSETU', 'Ujian 11/5 Kensetsu', 12);
-```
-
-Bagikan link berikut kepada peserta:
-
-```text
-https://ALAMAT-APLIKASI.com/?invite=UJIAN-115-KENSETU
-```
-
-Peserta mengisi nama asli, email, password, dan kode undangan. Akunnya akan berstatus `pending` dan belum dapat membuka kuis sampai admin menyetujuinya dari tab **Persetujuan User** di `/admin.html`. Jumlah status `pending` dan `approved` dihitung bersama, sehingga kuota 12 tidak dapat dilewati. Setelah schema terbaru diterapkan, admin dapat membuat kode dan link undangan langsung dari tab **Undangan** di dashboard admin, tanpa memasukkan SQL manual.
+Admin dapat menonaktifkan satu grup. Semua user dalam grup tersebut langsung kehilangan akses, dan pendaftar baru dari grup itu juga ditolak. Mengaktifkan grup kembali memulihkan akses seluruh anggotanya.
 
 Di Supabase buka **Authentication → Providers → Email**, lalu matikan **Confirm email** agar peserta bisa langsung mendaftar tanpa alur verifikasi email.
 

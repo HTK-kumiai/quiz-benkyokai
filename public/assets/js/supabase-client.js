@@ -50,10 +50,11 @@ export function normalizeProfile(authUser, profile = {}) {
         is_admin: Boolean(profile.is_admin),
         approval_status: profile.approval_status || "pending",
         group_name: profile.group_name || "",
+        group_active: profile.group_active !== false,
     };
 }
 
-export async function signUpWithInvite(email, password, name, inviteCode) {
+export async function signUpUser(email, password, name, groupName) {
     const client = assertSupabaseReady();
     const { data, error } = await client.auth.signUp({
         email,
@@ -67,9 +68,9 @@ export async function signUpWithInvite(email, password, name, inviteCode) {
         throw new Error("Pendaftaran berhasil, tetapi sesi belum tersedia. Pastikan Confirm email dimatikan di Supabase.");
     }
 
-    const { error: registrationError } = await client.rpc("register_with_invite", {
-        p_code: inviteCode,
+    const { error: registrationError } = await client.rpc("register_profile", {
         p_name: name,
+        p_group_name: groupName,
     });
     if (registrationError) {
         await client.auth.signOut().catch(() => {});
@@ -100,13 +101,11 @@ export async function getAuthUser() {
 
 export async function fetchOwnProfile(userId) {
     const client = assertSupabaseReady();
-    const { data, error } = await client
-        .from("profiles")
-        .select("id, email, username, name, is_admin, approval_status, group_name")
-        .eq("id", userId)
-        .maybeSingle();
+    const { data, error } = await client.rpc("get_profile_access", {
+        p_user_id: userId,
+    });
     if (error) throw error;
-    return data;
+    return Array.isArray(data) ? data[0] || null : data;
 }
 
 export async function ensureOwnProfile(authUser) {
@@ -221,54 +220,63 @@ export async function fetchAllScoresForAdmin() {
     return data || [];
 }
 
+export async function deleteScoreForAdmin(scoreId) {
+    const client = assertSupabaseReady();
+    const { error } = await client.from("scores").delete().eq("id", scoreId);
+    if (error) throw error;
+}
+
+export async function deleteScoresForAdmin(scoreIds) {
+    if (!scoreIds.length) return;
+    const client = assertSupabaseReady();
+    const { error } = await client.from("scores").delete().in("id", scoreIds);
+    if (error) throw error;
+}
+
 export async function fetchPendingProfilesForAdmin() {
     const client = assertSupabaseReady();
     const { data, error } = await client
         .from("profiles")
         .select("id, email, username, name, is_admin, group_name, approval_status, created_at, approved_at")
-        .order("created_at", { ascending: true });
-    if (error) throw error;
-    return data || [];
-}
-
-export async function updateProfileApproval(userId, approvalStatus) {
-    const client = assertSupabaseReady();
-    const { error } = await client
-        .from("profiles")
-        .update({
-            approval_status: approvalStatus,
-            approved_at: approvalStatus === "approved" ? new Date().toISOString() : null,
-        })
-        .eq("id", userId);
-    if (error) throw error;
-}
-
-export async function fetchInviteGroupsForAdmin() {
-    const client = assertSupabaseReady();
-    const { data, error } = await client
-        .from("invite_groups")
-        .select("id, code, group_name, max_users, active, created_at")
         .order("created_at", { ascending: false });
     if (error) throw error;
     return data || [];
 }
 
-export async function createInviteGroup({ code, groupName, maxUsers }) {
+export async function fetchRegistrationGroupsForAdmin() {
     const client = assertSupabaseReady();
-    const { data, error } = await client.rpc("create_invite_group", {
-        p_code: code,
-        p_group_name: groupName,
-        p_max_users: maxUsers,
+    const { data, error } = await client
+        .from("registration_groups")
+        .select("id, name, active, created_at")
+        .order("name", { ascending: true });
+    if (error) throw error;
+    return data || [];
+}
+
+export async function createRegistrationGroup(name) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client.rpc("create_registration_group", {
+        p_name: name,
     });
     if (error) throw error;
     return data;
 }
 
-export async function updateInviteGroupActive(id, active) {
+export async function updateRegistrationGroupActive(id, active) {
     const client = assertSupabaseReady();
-    const { data, error } = await client.rpc("set_invite_group_active", {
+    const { data, error } = await client.rpc("set_registration_group_active", {
         p_id: id,
         p_active: active,
+    });
+    if (error) throw error;
+    return data;
+}
+
+export async function moveProfilesToRegistrationGroup(userIds, groupId) {
+    const client = assertSupabaseReady();
+    const { data, error } = await client.rpc("move_profiles_to_group", {
+        p_user_ids: userIds,
+        p_group_id: groupId,
     });
     if (error) throw error;
     return data;

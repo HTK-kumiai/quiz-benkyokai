@@ -41,7 +41,7 @@
                     <div id="login-error" class="login-error">Email atau password salah!</div>
                     <button type="submit" class="btn-login">Masuk →</button>
                 </form>
-                <p class="login-note">Belum punya akun? <button type="button" class="link-button" onclick="showSignupScreen()">Daftar dengan kode undangan</button><br />Silakan hubungi sensei kumiai.</p>
+                <p class="login-note">Belum punya akun? <button type="button" class="link-button" onclick="showSignupScreen()">Daftar akun</button><br />Pendaftaran akan diperiksa admin.</p>
             </div>
         </div>
 
@@ -49,11 +49,15 @@
             <div class="login-card">
                 <div class="login-logo">📝</div>
                 <h2>Daftar Akun</h2>
-                <p class="login-subtitle">Isi nama asli dan kode undangan grup Anda</p>
+                <p class="login-subtitle">Isi nama asli untuk membuat akun</p>
                 <form id="user-signup-form" class="login-form" onsubmit="handleUserSignup(event)">
                     <div class="login-field">
                         <label for="signup-name">Nama asli</label>
                         <input type="text" id="signup-name" placeholder="Nama lengkap sesuai identitas" autocomplete="name" required maxlength="100" />
+                    </div>
+                    <div class="login-field">
+                        <label for="signup-group">Nama grup</label>
+                        <input type="text" id="signup-group" placeholder="Masukkan nama grup Anda" autocomplete="organization" required maxlength="100" />
                     </div>
                     <div class="login-field">
                         <label for="signup-email">Email</label>
@@ -63,14 +67,10 @@
                         <label for="signup-password">Password</label>
                         <input type="password" id="signup-password" placeholder="Minimal 6 karakter" autocomplete="new-password" minlength="6" required />
                     </div>
-                    <div class="login-field">
-                        <label for="signup-invite">Kode undangan</label>
-                        <input type="text" id="signup-invite" placeholder="Contoh: UJIAN-115-KENSETU" required maxlength="80" />
-                    </div>
                     <div id="signup-error" class="login-error"></div>
                     <button type="submit" class="btn-login">Daftar akun</button>
                 </form>
-                <p class="login-note">Akun baru harus disetujui admin sebelum dapat digunakan.</p>
+                <p class="login-note">Semua pendaftaran harus disetujui admin sebelum dapat digunakan.</p>
                 <button type="button" class="link-button" onclick="showLoginScreen()">← Kembali ke login</button>
             </div>
         </div>

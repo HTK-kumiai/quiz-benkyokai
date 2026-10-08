@@ -4,7 +4,7 @@ import {
     getCurrentSessionProfile,
     insertScore,
     isSupabaseConfigured,
-    signUpWithInvite,
+    signUpUser,
     signInWithEmail,
     signOutUser,
 } from "./supabase-client.js";
@@ -101,10 +101,12 @@ async function checkUserSession() {
     try {
         currentUser = await getCurrentSessionProfile();
         if (currentUser) {
-            if (!currentUser.is_admin && currentUser.approval_status !== "approved") {
+            if (!currentUser.is_admin && (currentUser.approval_status !== "approved" || currentUser.group_active === false)) {
                 await signOutUser().catch(() => {});
                 showLoginScreen();
-                showLoginError(currentUser.approval_status === "rejected"
+                showLoginError(currentUser.group_active === false
+                    ? "Grup Anda sedang dinonaktifkan. Silakan hubungi admin."
+                    : currentUser.approval_status === "rejected"
                     ? "Pendaftaran Anda belum disetujui. Silakan hubungi sensei kumiai."
                     : "Pendaftaran Anda masih menunggu persetujuan admin.");
                 return;
@@ -146,9 +148,11 @@ async function handleUserLogin(event) {
         await signInWithEmail(usernameInput, passwordInput);
         currentUser = await getCurrentSessionProfile();
         if (!currentUser) throw new Error("Profil user tidak ditemukan.");
-        if (!currentUser.is_admin && currentUser.approval_status !== "approved") {
+        if (!currentUser.is_admin && (currentUser.approval_status !== "approved" || currentUser.group_active === false)) {
             await signOutUser().catch(() => {});
-            throw new Error(currentUser.approval_status === "rejected"
+            throw new Error(currentUser.group_active === false
+                ? "Grup Anda sedang dinonaktifkan. Silakan hubungi admin."
+                : currentUser.approval_status === "rejected"
                 ? "Pendaftaran Anda belum disetujui. Silakan hubungi sensei kumiai."
                 : "Pendaftaran Anda masih menunggu persetujuan admin.");
         }
@@ -171,20 +175,19 @@ async function handleUserSignup(event) {
     event.preventDefault();
     const form = event.target;
     const name = document.getElementById("signup-name").value.trim();
+    const groupName = document.getElementById("signup-group").value.trim();
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-password").value;
-    const inviteCode = document.getElementById("signup-invite").value.trim();
     const errorEl = document.getElementById("signup-error");
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = "Mendaftarkan...";
     errorEl.style.display = "none";
     try {
-        await signUpWithInvite(email, password, name, inviteCode);
-        await signOutUser().catch(() => {});
+        await signUpUser(email, password, name, groupName);
+        currentUser = await getCurrentSessionProfile();
         form.reset();
-        showLoginScreen();
-        showLoginError("Pendaftaran berhasil. Silakan tunggu persetujuan admin sebelum login.");
+        showMainApp();
     } catch (e) {
         errorEl.textContent = e.message || "Pendaftaran gagal.";
         errorEl.style.display = "block";
@@ -197,8 +200,6 @@ async function handleUserSignup(event) {
 function showSignupScreen() {
     document.getElementById("screen-login").style.display = "none";
     document.getElementById("screen-signup").style.display = "flex";
-    const invite = new URLSearchParams(window.location.search).get("invite");
-    if (invite) document.getElementById("signup-invite").value = invite;
 }
 
 function showLoginScreen() {

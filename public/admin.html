@@ -13,10 +13,13 @@
             <header class="admin-header">
                 <div class="header-top">
                     <div class="header-title-wrap">
-                        <h1>⚙️ Kelola Bank Soal</h1>
-                        <p>Ubah, tambah, atau hapus soal kuis untuk setiap bidang, tingkatan (level), dan tahun.</p>
+                        <h1>⚙️ Dashboard Admin</h1>
+                        <p>Kelola bank soal, user, grup pendaftaran, dan riwayat skor.</p>
                     </div>
                     <div class="header-actions-right">
+                        <button class="btn-header btn-tab-nav" id="tab-btn-home" onclick="switchAdminTab('home')">
+                            🏠 Dashboard
+                        </button>
                         <button class="btn-header btn-tab-nav active" id="tab-btn-soal" onclick="switchAdminTab('soal')">
                             📋 Kelola Soal
                         </button>
@@ -27,10 +30,7 @@
                             📊 Riwayat Skor
                         </button>
                         <button class="btn-header btn-tab-nav" id="tab-btn-users" onclick="switchAdminTab('users')">
-                            👥 Persetujuan User
-                        </button>
-                        <button class="btn-header btn-tab-nav" id="tab-btn-invites" onclick="switchAdminTab('invites')">
-                            🔗 Undangan
+                            👥 Grup & User
                         </button>
                         <button class="btn-header" onclick="logoutAdmin()" title="Kunci Dashboard">
                             🔒 Logout
@@ -63,6 +63,22 @@
                     </div>
                 </div>
             </header>
+
+            <!-- Admin Dashboard Home -->
+            <main class="table-card admin-home-panel" id="tab-panel-home">
+                <div style="padding: 28px 24px 10px;">
+                    <h2 style="margin: 0 0 8px;">Dashboard Admin</h2>
+                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Pilih bagian yang ingin Anda kelola.</p>
+                </div>
+                <div class="admin-menu-grid">
+                    <button class="admin-menu-card" onclick="switchAdminTab('soal')"><span>📋</span><strong>Kelola Soal</strong><small>Tambah, edit, hapus, dan sinkronkan bank soal.</small></button>
+                    <button class="admin-menu-card" onclick="switchAdminTab('setup')"><span>🧭</span><strong>Setup</strong><small>Periksa konfigurasi Supabase dan sinkronisasi.</small></button>
+                    <button class="admin-menu-card" onclick="switchAdminTab('scores')"><span>📊</span><strong>Riwayat Skor</strong><small>Lihat dan hapus skor user.</small></button>
+                    <button class="admin-menu-card" onclick="switchAdminTab('users')"><span>👥</span><strong>Grup & User</strong><small>Atur grup pendaftaran dan anggota.</small></button>
+                    <a class="admin-menu-card" href="./index.html"><span>▶️</span><strong>Buka Halaman Kuis</strong><small>Lihat aplikasi sebagai user.</small></a>
+                    <button class="admin-menu-card admin-menu-card-danger" onclick="logoutAdmin()"><span>🔒</span><strong>Logout</strong><small>Keluar dari dashboard admin.</small></button>
+                </div>
+            </main>
 
             <!-- Toolbar Section -->
             <section class="toolbar-card">
@@ -190,13 +206,14 @@
                     <select id="filter-score-category" class="filter-select">
                         <option value="all">Semua Bidang</option>
                     </select>
+                    <button id="delete-selected-scores" class="btn btn-danger" type="button" onclick="deleteSelectedScores()" disabled>🗑️ Hapus Terpilih</button>
                 </div>
 
                 <div class="table-responsive">
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 70px; text-align: center;">No.</th>
+                                <th style="width: 70px; text-align: center;"><input id="select-all-scores" type="checkbox" title="Pilih semua skor yang tampil" /></th>
                                 <th>User</th>
                                 <th>Bidang & Level</th>
                                 <th style="width: 100px;">Nilai</th>
@@ -219,41 +236,44 @@
             <!-- User Approval Tab -->
             <main class="table-card" id="tab-panel-users" style="display: none;">
                 <div style="padding: 24px 24px 8px;">
-                    <h2 style="margin: 0 0 8px;">Persetujuan User</h2>
-                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Periksa nama asli dan setujui peserta sebelum mereka dapat membuka kuis.</p>
+                    <h2 style="margin: 0 0 8px;">Grup Pendaftaran</h2>
+                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Tambahkan grup yang boleh mendaftar. Menonaktifkan grup akan menonaktifkan akses semua user di dalamnya.</p>
+                    <form id="registration-group-form" class="registration-group-form">
+                        <input id="registration-group-name" class="form-control" type="text" placeholder="Nama grup, contoh: Kensetsu 2026" required maxlength="100" />
+                        <button class="btn btn-primary" type="submit">➕ Tambah Grup</button>
+                    </form>
                 </div>
                 <div class="table-responsive">
                     <table>
-                        <thead><tr><th>Nama asli</th><th>Email</th><th>Grup</th><th>Status</th><th>Daftar</th><th>Aksi</th></tr></thead>
+                        <thead><tr><th>Nama Grup</th><th>Jumlah User</th><th>Status</th><th>Aksi</th></tr></thead>
+                        <tbody id="registration-groups-tbody"></tbody>
+                    </table>
+                </div>
+                <div id="empty-registration-groups-state" class="empty-state" style="display: none;">
+                    <h3>Belum ada grup</h3><p>Tambahkan minimal satu grup agar user dapat mendaftar.</p>
+                </div>
+                <div style="padding: 24px 24px 8px;">
+                    <h2 style="margin: 0 0 8px;">User Terdaftar</h2>
+                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Status user mengikuti status grupnya. Tidak perlu menonaktifkan user satu per satu.</p>
+                    <div class="profile-bulk-toolbar">
+                        <select id="profile-target-group" class="filter-select">
+                            <option value="">Pilih grup tujuan...</option>
+                        </select>
+                        <button id="move-selected-profiles" class="btn btn-primary" type="button" disabled>👥 Pindahkan User Terpilih</button>
+                        <span class="bulk-help-text">Pilih user di tabel, lalu tentukan grup tujuan.</span>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead><tr><th><input id="select-all-profiles" type="checkbox" title="Pilih semua user di halaman ini" /></th><th>Nama asli</th><th>Email</th><th>Grup</th><th>Status</th><th>Daftar</th><th>Keterangan</th></tr></thead>
                         <tbody id="profiles-tbody"></tbody>
                     </table>
                 </div>
                 <div id="empty-profiles-state" class="empty-state" style="display: none;">
                     <h3>Tidak ada pendaftar</h3><p>Belum ada user yang mendaftar.</p>
                 </div>
+                <div id="profiles-pagination" class="admin-pagination"></div>
              </main>
-            <!-- Invite Management Tab -->
-            <main class="table-card" id="tab-panel-invites" style="display: none;">
-                <div style="padding: 24px 24px 8px;">
-                    <h2 style="margin: 0 0 8px;">Kelola Undangan</h2>
-                    <p style="color: #64748b; line-height: 1.6; margin-top: 0;">Buat kode undangan, tentukan grup dan kuota, lalu bagikan link kepada peserta.</p>
-                    <form id="invite-form" class="invite-form">
-                        <input id="invite-group-name" class="form-control" type="text" placeholder="Nama grup / ujian" required />
-                        <input id="invite-code" class="form-control" type="text" placeholder="Kode (kosong = otomatis)" />
-                        <input id="invite-max-users" class="form-control" type="number" min="1" value="12" placeholder="Kuota" required />
-                        <button class="btn btn-primary" type="submit">➕ Buat Undangan</button>
-                    </form>
-                </div>
-                <div class="table-responsive">
-                    <table>
-                        <thead><tr><th>Kode & Link</th><th>Grup</th><th>Kuota</th><th>Status</th><th>Dibuat</th><th>Aksi</th></tr></thead>
-                        <tbody id="invites-tbody"></tbody>
-                    </table>
-                </div>
-                <div id="empty-invites-state" class="empty-state" style="display: none;">
-                    <h3>Belum ada undangan</h3><p>Buat undangan pertama dari formulir di atas.</p>
-                </div>
-            </main>
          </div>
 
         <!-- Modal Form Tambah / Edit Soal -->

@@ -61,6 +61,7 @@ Aplikasi sudah memiliki fitur utama untuk latihan kuis, autentikasi user dan adm
 - Menambahkan 100 soal Kensetsu level `shokyu` ID 596-695 dari sumber 2017-2020.
 - Mengisi reading, jawaban, dan terjemahan Kensetsu 2017-2020 serta mencatatnya di `butuh-konfirmasi.md` untuk koreksi sambil jalan.
 - Memindahkan empat sumber Kensetsu 2017-2020 dari `soal-asli/` ke `sudah-proses/`.
+- Menormalisasi seluruh 200 soal Kensetsu level `shokyu` (ID 496-695) menjadi hiragana penuh dan memperjelas spasi pada reading romaji.
 - Menambahkan kategori `kunsei` ke manifest bank soal.
 - Menambahkan file `public/data/question-bank/questions-kunsei.json`.
 - Memasukkan 35 soal Kunsei level `senmonkyu` dari sumber 2025 setelah dikonfirmasi user.
