@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "き木あしば足場のたてじ建地のきゃくぶ脚部にしきばん敷盤（さらいた皿板）をしく敷くのは、たてじ建地のまくらした枕下をふせぐ防ぐためである。",
+    "reading": "mokuzou ashiba no tateji no kyakubu ni shikiban (saraita) wo shiku no wa, tateji no makurashita wo fusegu tame de aru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Papan alas dipasang di kaki tiang perancah kayu untuk mencegah bagian bawah tiang tertekan.",
+    "explanation": "Papan alas membantu menyebarkan beban dan mencegah kaki tiang perancah amblas atau tertekan."
+  },
+  {
+    "id": 2,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "こうかん鋼管あしば足場は、すじ筋かいでほきょう補強しなければならない。",
+    "reading": "koukan ashiba wa, sujikai de hokyou shinakereba naranai.",
+    "image": "",
+    "answer": "○",
+    "translation": "Perancah pipa baja harus diperkuat dengan penyangga diagonal.",
+    "explanation": "Penyangga diagonal memperkuat perancah pipa baja dan membantu mencegah perubahan bentuk."
+  },
+  {
+    "id": 3,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ためしぼり試し掘りとは、ちひょう地表からつぼぼり掘りをおこない行い、ちょくせつ直接ちそう地層のかんさつ観察をしたり、ちか地下まいせつぶつ埋設物のかくにん確認など等をおこな行うことをいう。",
+    "reading": "tameshibori to wa, chihyou kara tsubobori wo okonai, chokusetsu chisou no kansatsu wo shitari, chika maisetsubutsu no kakunin nado wo okonau koto wo iu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Penggalian percobaan berarti menggali lubang uji dari permukaan untuk mengamati lapisan tanah dan memeriksa benda yang tertanam di bawah tanah.",
+    "explanation": "Penggalian uji dilakukan untuk mengamati kondisi lapisan tanah dan memastikan adanya utilitas atau benda tertanam."
+  },
+  {
+    "id": 4,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "てっきん鉄筋こんくりーとコンクリートこうじ工事は、かたわく型枠こうじ工事、てっきん鉄筋こうじ工事および及びこんくりーとコンクリートこうじ工事がいったい一体になってすす進められる。",
+    "reading": "tekkin konkurii to kouji wa, katawaku kouji, tekkin kouji oyobi konkurii to kouji ga ittai ni natte susumerareru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Pekerjaan beton bertulang dilaksanakan sebagai satu kesatuan yang mencakup bekisting, tulangan, dan beton.",
+    "explanation": "Ketiga pekerjaan tersebut saling berkaitan dalam pelaksanaan konstruksi beton bertulang."
+  },
+  {
+    "id": 5,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "もくぞう木造ひらしつ平室たてかた建て方として、つぎ次のじゅんじょ順序はただしい正しい。①どだい土台　→　②こむろぐみ小室組　→　③じくぐみ軸組",
+    "reading": "mokuzou hirashitsu tatekata to shite, tsugi no junjo wa tadashii. (ichi) dodai, (ni) komurogumi, (san) jikugumi.",
+    "image": "",
+    "answer": "×",
+    "translation": "Urutan pembangunan rumah kayu yang ditampilkan adalah benar.",
+    "explanation": "Urutan pada pernyataan tidak sesuai dengan urutan pekerjaan konstruksi rumah kayu yang benar."
+  },
+  {
+    "id": 6,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "てこをりよう利用してじゅうりょうぶつ重量物をもちあげる持ち上げるばあい場合、じゅうりょうぶつ重量物としてん支点とのきょり距離はながい長いほう方がよい。",
+    "reading": "teko wo riyou shite juuryoubutsu wo mochiageru baai, juuryoubutsu to shiten to no kyori wa nagai hou ga yoi.",
+    "image": "",
+    "answer": "×",
+    "translation": "Saat mengangkat benda berat dengan tuas, jarak antara benda dan titik tumpu sebaiknya lebih panjang.",
+    "explanation": "Untuk memperoleh keuntungan mekanis, jarak beban dari titik tumpu perlu dibuat lebih pendek daripada sisi gaya."
+  },
+  {
+    "id": 7,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "かいたい解体などでしよう使用するあっさいき圧砕機は、すいちょく垂直たたきにてき適している。",
+    "reading": "kaitai nado de shiyou suru asshai ki wa, suichoku tataki ni tekishite iru.",
+    "image": "",
+    "answer": "×",
+    "translation": "Mesin penghancur yang digunakan untuk pembongkaran cocok untuk pemukulan vertikal.",
+    "explanation": "Mesin penghancur digunakan untuk meremukkan material dengan cara menjepit atau menghancurkan, bukan untuk pemukulan vertikal."
+  },
+  {
+    "id": 8,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "かいたい解体さぎょうちゅう作業中のそうおん騒音ぼうし防止めっしゅしーとメッシュシートをしよう使用するのがよい。",
+    "reading": "kaitai sagyou chuu no souon boushi meshushii to wo shiyou suru no ga yoi.",
+    "image": "",
+    "answer": "×",
+    "translation": "Sebaiknya menggunakan lembaran mesh untuk mencegah kebisingan selama pembongkaran.",
+    "explanation": "Mesh sheet terutama berfungsi mencegah benda jatuh dan mengurangi debu; pernyataan tersebut keliru dalam fungsi utamanya sebagai pencegah kebisingan."
+  },
+  {
+    "id": 9,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "もくざい木材をでんどう電動まる丸のこでせつだん切断するばあい場合、安全カバーをこてい固定してさぎょう作業をおこな行うのがよい。",
+    "reading": "mokuzai wo dendou marunoko de setsudan suru baai, anzen kabaa wo kotei shite sagyou wo okonau no ga yoi.",
+    "image": "",
+    "answer": "×",
+    "translation": "Saat memotong kayu dengan gergaji bundar listrik, sebaiknya pelindung keselamatan dikunci tetap.",
+    "explanation": "Pelindung keselamatan tidak boleh dikunci tetap karena harus bergerak menutup mata gergaji dan melindungi pekerja."
+  },
+  {
+    "id": 10,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "あんぜんたい安全帯のふっくフックは、こし腰よりたかい高いいち位置にか掛けるのがよい。",
+    "reading": "anzentai no fukku wa, koshi yori takai ichi ni kakeru no ga yoi.",
+    "image": "",
+    "answer": "○",
+    "translation": "Pengait sabuk keselamatan sebaiknya dipasang pada posisi yang lebih tinggi dari pinggang.",
+    "explanation": "Pemasangan pengait pada posisi yang lebih tinggi membantu mengurangi jarak jatuh dan risiko cedera."
+  },
+  {
+    "id": 11,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "タワークレーンは、こうそう高層びるビルにおけるてっこつ鉄骨のたてかた建方など等にはてき適していない。",
+    "reading": "tawa kureen wa, kousou biru ni okeru tekkotsu no tatekata nado ni wa tekishite inai.",
+    "image": "",
+    "answer": "×",
+    "translation": "Tower crane tidak cocok untuk pemasangan rangka baja pada gedung tinggi.",
+    "explanation": "Tower crane justru banyak digunakan untuk mengangkat dan memasang material pada gedung tinggi."
+  },
+  {
+    "id": 12,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "バックホウは、パワーショベルとくらべ比べ、じ地ばんめん盤面よりもひくい低いところのくっさく掘削さぎょう作業にてき適している。",
+    "reading": "bakku hou wa, pawaa shoberu to kurabe, jibanmen yori mo hikui tokoro no kussaku sagyou ni tekishite iru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Dibandingkan power shovel, backhoe lebih cocok untuk menggali tempat yang lebih rendah dari permukaan tanah.",
+    "explanation": "Backhoe dirancang untuk penggalian di bawah posisi mesin atau di bawah permukaan tanah."
+  },
+  {
+    "id": 13,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ジブクレーンのつりあげ上げのうりょく能力は、ジブのけいしゃ傾斜かくど角度とはかんけい関係しない。",
+    "reading": "jibu kureen no tsuriage nouryoku wa, jibu no keisha kakudo to wa kankei shinai.",
+    "image": "",
+    "answer": "×",
+    "translation": "Kapasitas angkat jib crane tidak berhubungan dengan sudut kemiringan jib.",
+    "explanation": "Kapasitas angkat berubah sesuai sudut jib dan radius kerja."
+  },
+  {
+    "id": 14,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "たんかん単管あしば足場のくみたて組み立てにおいて、たてじ建地とぬの布のきんけつ緊結にしよう使用するクランプは、いっぱん一般に、じざいがた自在型クランプである。",
+    "reading": "tankan ashiba no kumitate ni oite, tateji to nuno no kinketsu ni shiyou suru kuranpu wa, ippan ni, jizaigata kuranpu de aru.",
+    "image": "",
+    "answer": "×",
+    "translation": "Dalam pemasangan perancah pipa tunggal, klem untuk menyambung tiang dan batang horizontal umumnya adalah klem putar.",
+    "explanation": "Sambungan tiang dan batang horizontal umumnya memakai klem siku, bukan klem putar."
+  },
+  {
+    "id": 15,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "たまがけ玉掛けようほ用捕じょう助ぐ具にはあてもの当物、まくらざい枕材、つりぶくろつり袋とう等がある。",
+    "reading": "tamagake youho jojo gu ni wa atemono, makurazai, tsuribukuro nado ga aru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Perlengkapan pembantu pengikatan beban mencakup pelindung, bantalan, dan kantong angkat.",
+    "explanation": "Perlengkapan tersebut digunakan untuk melindungi beban dan membantu pengikatan saat pemindahan."
+  },
+  {
+    "id": 16,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "ひらい飛来らっか落下ぼうご防護せつび設備のこうじよう工事用はんぷ帆布シートは、メッシュシートにくらべて比べてつうきせい通気性がよい。",
+    "reading": "hirai rakka bougo setsubi no kouji you hanpu shiito wa, mesh shiito ni kurabete tsuukisei ga yoi.",
+    "image": "",
+    "answer": "×",
+    "translation": "Lembaran terpal untuk perlindungan benda terbang dan jatuh memiliki ventilasi lebih baik daripada mesh sheet.",
+    "explanation": "Mesh sheet memiliki lubang sehingga umumnya lebih baik dalam sirkulasi udara daripada terpal."
+  },
+  {
+    "id": 17,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "Hがたこう形鋼は、いっぱん一般に、けんちく建築こうぞうざい構造材としてしよう使用されている。",
+    "reading": "H gata koukei kou wa, ippan ni, kenchiku kouzouzai to shite shiyou sarete iru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Baja berbentuk H umumnya digunakan sebagai material struktur bangunan.",
+    "explanation": "Baja profil H banyak digunakan sebagai kolom dan balok pada struktur bangunan."
+  },
+  {
+    "id": 18,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "じょうおん常温じょうあつ常圧において、てっきん鉄筋のねつぼうちょうりつ熱膨張率は、ふつう普通コンクリートよりもたか高い。",
+    "reading": "jouon jouatsu ni oite, tekkin no netsu bouchouritsu wa, futsuu konkurii to yori mo takai.",
+    "image": "",
+    "answer": "×",
+    "translation": "Pada suhu dan tekanan normal, koefisien muai panas tulangan baja lebih tinggi daripada beton biasa.",
+    "explanation": "Koefisien muai panas baja dan beton relatif mirip; pernyataan bahwa tulangan jauh lebih tinggi adalah keliru."
+  },
+  {
+    "id": 19,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "いっぱん一般に、なましてっせん鉄線は、ばんて番手のすうち数値がおお大きいものほど、そのけい径はふと太くなる。",
+    "reading": "ippan ni, namashi tessen wa, bante no suuchi ga ookii mono hodo, sono kei wa futoku naru.",
+    "image": "",
+    "answer": "×",
+    "translation": "Pada kawat besi lunak, semakin besar nomor ukuran, semakin besar diameternya.",
+    "explanation": "Pada penomoran kawat, angka yang lebih besar umumnya menunjukkan diameter yang lebih kecil."
+  },
+  {
+    "id": 20,
+    "level": "shokyu",
+    "year": 2020,
+    "question": "にうけ荷受けこう構だい台とは、しざい資材やはいきぶつ廃棄物とう等をはん搬しゅつにゅう出入するためにもうける設けるかせつぶつ仮設物である。",
+    "reading": "niuke koudai to wa, shizai ya haikibutsu nado wo hanshutsunyuu suru tame ni moukeru kasetsubutsu de aru.",
+    "image": "",
+    "answer": "○",
+    "translation": "Platform penerimaan barang adalah bangunan sementara untuk keluar-masuk material dan limbah.",
+    "explanation": "Platform tersebut membantu pemindahan material dan limbah ke dalam atau keluar area kerja."
+  }
+]

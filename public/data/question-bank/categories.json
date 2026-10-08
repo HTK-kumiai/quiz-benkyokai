@@ -88,5 +88,155 @@
     "description": "Latihan pemeliharaan babi, pakan, kesehatan ternak, reproduksi, kebersihan kandang, dan keselamatan kerja.",
     "icon": "🐖",
     "filename": "questions-youton.json"
+  },
+  {
+    "id": "tobi",
+    "title": "とび",
+    "name": "🏗️ とび (Tobi)",
+    "shortName": "🏗️ とび",
+    "subtitle": "Tobi (Pekerjaan Struktur dan Perancah)",
+    "description": "Latihan pekerjaan perancah, pembongkaran, pengangkatan, konstruksi, alat kerja, dan keselamatan kerja.",
+    "icon": "🏗️",
+    "filename": "questions-tobi.json"
+  },
+  {
+    "id": "katawaku-koji",
+    "title": "型枠工事",
+    "name": "🧱 型枠工事 (Katawaku Kouji)",
+    "shortName": "🧱 型枠工事",
+    "subtitle": "Katawaku Kouji (Pekerjaan Bekisting)",
+    "description": "Latihan pemasangan dan pembongkaran bekisting, material, alat kerja, beton, serta keselamatan kerja.",
+    "icon": "🧱",
+    "filename": "questions-katawaku-koji.json"
+  },
+  {
+    "id": "tekkin-kumitate",
+    "title": "鉄筋組立",
+    "name": "🔩 鉄筋組立",
+    "shortName": "🔩 鉄筋組立",
+    "subtitle": "鉄筋組立 (Bidang Ujian)",
+    "description": "Pekerjaan perakitan tulangan beton dan keselamatan kerja.",
+    "icon": "🔩",
+    "filename": "questions-tekkin-kumitate.json"
+  },
+  {
+    "id": "yousetsu",
+    "title": "溶接",
+    "name": "🔥 溶接",
+    "shortName": "🔥 溶接",
+    "subtitle": "溶接 (Bidang Ujian)",
+    "description": "Teknik pengelasan, peralatan, material, dan keselamatan kerja.",
+    "icon": "🔥",
+    "filename": "questions-yousetsu.json"
+  },
+  {
+    "id": "pan-seizou",
+    "title": "パン製造",
+    "name": "🍞 パン製造",
+    "shortName": "🍞 パン製造",
+    "subtitle": "パン製造 (Bidang Ujian)",
+    "description": "Proses produksi roti, bahan, fermentasi, pemanggangan, dan higiene.",
+    "icon": "🍞",
+    "filename": "questions-pan-seizou.json"
+  },
+  {
+    "id": "kanetsu-nama-suisan-kako",
+    "title": "加熱生水産加工",
+    "name": "🐟 加熱生水産加工",
+    "shortName": "🐟 加熱生水産加工",
+    "subtitle": "加熱生水産加工 (Bidang Ujian)",
+    "description": "Pengolahan hasil laut segar dengan pemanasan, higiene, dan keselamatan kerja.",
+    "icon": "🐟",
+    "filename": "questions-kanetsu-nama-suisan-kako.json"
+  },
+  {
+    "id": "choumi-kakouhin-seizou",
+    "title": "調味加工品製造",
+    "name": "🧂 調味加工品製造",
+    "shortName": "🧂 調味加工品製造",
+    "subtitle": "調味加工品製造 (Bidang Ujian)",
+    "description": "Produksi makanan berbumbu, pengolahan bahan, sanitasi, dan mutu.",
+    "icon": "🧂",
+    "filename": "questions-choumi-kakouhin-seizou.json"
+  },
+  {
+    "id": "kanzume",
+    "title": "缶詰",
+    "name": "🥫 缶詰",
+    "shortName": "🥫 缶詰",
+    "subtitle": "缶詰 (Bidang Ujian)",
+    "description": "Produksi makanan kaleng, sterilisasi, pengisian, penutupan, dan keamanan pangan.",
+    "icon": "🥫",
+    "filename": "questions-kanzume.json"
+  },
+  {
+    "id": "gyuuton-bubun-niku-seizou",
+    "title": "牛豚部分肉製造",
+    "name": "🥩 牛豚部分肉製造",
+    "shortName": "🥩 牛豚部分肉製造",
+    "subtitle": "牛豚部分肉製造 (Bidang Ujian)",
+    "description": "Pemotongan dan pengolahan bagian daging sapi dan babi serta higiene kerja.",
+    "icon": "🥩",
+    "filename": "questions-gyuuton-bubun-niku-seizou.json"
+  },
+  {
+    "id": "shokucho-shori-kako",
+    "title": "食鳥処理加工",
+    "name": "🍗 食鳥処理加工",
+    "shortName": "🍗 食鳥処理加工",
+    "subtitle": "食鳥処理加工 (Bidang Ujian)",
+    "description": "Pemrosesan unggas, higiene, sanitasi, dan keselamatan kerja.",
+    "icon": "🍗",
+    "filename": "questions-shokucho-shori-kako.json"
+  },
+  {
+    "id": "kaigo",
+    "title": "介護",
+    "name": "🤝 介護",
+    "shortName": "🤝 介護",
+    "subtitle": "介護 (Bidang Ujian)",
+    "description": "Perawatan lansia, bantuan aktivitas harian, komunikasi, dan keselamatan.",
+    "icon": "🤝",
+    "filename": "questions-kaigo.json"
+  },
+  {
+    "id": "kikai-seizai",
+    "title": "機械製材",
+    "name": "🪵 機械製材",
+    "shortName": "🪵 機械製材",
+    "subtitle": "機械製材 (Bidang Ujian)",
+    "description": "Penggergajian kayu dengan mesin, material, mutu, dan keselamatan kerja.",
+    "icon": "🪵",
+    "filename": "questions-kikai-seizai.json"
+  },
+  {
+    "id": "jidousha-seibi",
+    "title": "自動車整備",
+    "name": "🚗 自動車整備",
+    "shortName": "🚗 自動車整備",
+    "subtitle": "自動車整備 (Bidang Ujian)",
+    "description": "Perawatan dan perbaikan kendaraan, alat, pemeriksaan, dan keselamatan kerja.",
+    "icon": "🚗",
+    "filename": "questions-jidousha-seibi.json"
+  },
+  {
+    "id": "shashutsu-seikei",
+    "title": "射出成形",
+    "name": "⚙️ 射出成形",
+    "shortName": "⚙️ 射出成形",
+    "subtitle": "射出成形 (Bidang Ujian)",
+    "description": "Proses injection molding, bahan plastik, mesin, mutu, dan keselamatan kerja.",
+    "icon": "⚙️",
+    "filename": "questions-shashutsu-seikei.json"
+  },
+  {
+    "id": "seihon",
+    "title": "製本",
+    "name": "📚 製本",
+    "shortName": "📚 製本",
+    "subtitle": "製本 (Bidang Ujian)",
+    "description": "Penjilidan buku, pemotongan, pelipatan, finishing, dan keselamatan kerja.",
+    "icon": "📚",
+    "filename": "questions-seihon.json"
   }
 ]

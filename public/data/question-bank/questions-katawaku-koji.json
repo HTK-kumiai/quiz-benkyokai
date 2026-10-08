@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "これはフォームタイです。",
+    "reading": "kore wa foomu tai desu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Ini adalah form tie.",
+    "explanation": "Pernyataan sesuai dengan nama alat bekisting yang ditunjukkan."
+  },
+  {
+    "id": 2,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "これはねがらみクランプです。",
+    "reading": "kore wa negarami kuranpu desu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Ini adalah klem negarami.",
+    "explanation": "Pernyataan menyebut nama klem yang ditunjukkan."
+  },
+  {
+    "id": 3,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "レベルはかたにかついでもちます。",
+    "reading": "reberu wa kata ni katsuite mochimasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Level dibawa dengan dipanggul di bahu.",
+    "explanation": "Alat ukur level harus dibawa dan digunakan dengan aman, bukan dipanggul sembarangan di bahu."
+  },
+  {
+    "id": 4,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "これはわくぐみあしばです。",
+    "reading": "kore wa wakugumi ashiba desu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Ini adalah perancah rangka.",
+    "explanation": "Pernyataan sesuai dengan nama jenis perancah yang ditunjukkan."
+  },
+  {
+    "id": 5,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ごうはんせいかたわくはくりかえしつかいません。",
+    "reading": "gouhan sei katawaku wa kurikaeshi tsukaimasen.",
+    "image": "",
+    "answer": "×",
+    "translation": "Bekisting kayu lapis tidak digunakan berulang kali.",
+    "explanation": "Bekisting kayu lapis dapat digunakan kembali apabila kondisinya masih baik dan dirawat dengan benar."
+  },
+  {
+    "id": 6,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "きんぞくせいかたわくにははくりざいをぬらなくてもよいです。",
+    "reading": "kinzoku sei katawaku ni wa hakurizai wo nuranakute mo ii desu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Pada bekisting logam, tidak perlu mengoleskan bahan pelepas.",
+    "explanation": "Bahan pelepas membantu beton tidak melekat dan memudahkan pembongkaran bekisting."
+  },
+  {
+    "id": 7,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ごうはんパネルの５×６とは、はば900mm、ながさ1,800mmのすんぽうをいいます。",
+    "reading": "gouhan paneru no go kakeru roku to wa, haba kyuu hyaku mirimeetoru, nagasa sen happyaku mirimeetoru no sunpou wo iimasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Ukuran 5×6 panel kayu lapis berarti lebar 900 mm dan panjang 1.800 mm.",
+    "explanation": "Ukuran 900 mm × 1.800 mm dikenal sebagai ukuran 3×6, bukan 5×6."
+  },
+  {
+    "id": 8,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "おおがたパネルのしたごしらえはくぎをすくなくしてうちます。",
+    "reading": "oogata paneru no shitagoshirae wa kugi wo sukunakushite uchimasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Persiapan panel besar dilakukan dengan memakunya lebih sedikit.",
+    "explanation": "Panel harus dipaku sesuai gambar kerja dan kebutuhan kekuatan, bukan sengaja mengurangi jumlah paku."
+  },
+  {
+    "id": 9,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "はくりざいをぬるときはゆかにシートなどをしきます。",
+    "reading": "hakurizai wo nuru toki wa yuka ni shiito nado wo shikimasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Saat mengoleskan bahan pelepas, letakkan lembaran pelindung di lantai.",
+    "explanation": "Lembaran pelindung mencegah lantai terkena dan tercemar bahan pelepas."
+  },
+  {
+    "id": 10,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "かたわくはすきまがあるようにくみたてます。",
+    "reading": "katawaku wa sukima ga aru you ni kumitatemasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Bekisting dipasang dengan sengaja menyisakan celah.",
+    "explanation": "Bekisting harus rapat agar pasta semen tidak bocor dan bentuk beton sesuai rencana."
+  },
+  {
+    "id": 11,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "パイプサポートはちょくせつコンパネ（かたわくごうはん）をささえます。",
+    "reading": "paipu sapooto wa chokusetsu konpane (katawaku gouhan) wo sasaemasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Penyangga pipa menopang panel bekisting secara langsung.",
+    "explanation": "Penyangga pipa bekerja melalui balok atau komponen penyangga yang sesuai, bukan dipasang sembarangan langsung pada panel."
+  },
+  {
+    "id": 12,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "がいへきパネルのしたにはしきばたをつかいます。",
+    "reading": "gaiheki paneru no shita ni wa shikibata wo tsukaimasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Gunakan shikibata di bawah panel dinding luar.",
+    "explanation": "Shikibata digunakan sebagai alas dan penopang bagian bawah panel bekisting dinding."
+  },
+  {
+    "id": 13,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "パイプサポートをななめにたてるときはあしもとがうごかないようにします。",
+    "reading": "paipu sapooto wo naname ni tateru toki wa ashimoto ga ugokanai you ni shimasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Saat memasang penyangga pipa secara miring, pastikan bagian bawahnya tidak bergerak.",
+    "explanation": "Pijakan penyangga miring harus diam dan aman agar penyangga tidak tergelincir atau roboh."
+  },
+  {
+    "id": 14,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "かいたいでさんぎはおってもかまいません。",
+    "reading": "kaitai de sangi wa otte mo kamaimasen.",
+    "image": "",
+    "answer": "×",
+    "translation": "Saat pembongkaran, balok sangi boleh dipatahkan.",
+    "explanation": "Komponen bekisting harus dibongkar dengan aman dan tidak boleh dipatahkan sembarangan karena dapat menimbulkan bahaya."
+  },
+  {
+    "id": 15,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "コンクリートはこおらせてはいけません。",
+    "reading": "konkurii to wa koorasete wa ikemasen.",
+    "image": "",
+    "answer": "○",
+    "translation": "Beton tidak boleh dibiarkan membeku.",
+    "explanation": "Pembekuan selama pengerasan dapat mengganggu hidrasi dan menurunkan mutu beton."
+  },
+  {
+    "id": 16,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "コンパネ（ごうはんパネル）は2×6（600mm×1800mm）と3×6（900mm×1800mm）がおおくつかわれます。",
+    "reading": "konpane (gouhan paneru) wa ni kakeru roku (roppyaku mirimeetoru kakeru sen happyaku mirimeetoru) to san kakeru roku (kyuu hyaku mirimeetoru kakeru sen happyaku mirimeetoru) ga ooku tsukawaremasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Panel bekisting yang sering digunakan berukuran 2×6 (600×1.800 mm) dan 3×6 (900×1.800 mm).",
+    "explanation": "Ukuran tersebut merupakan ukuran umum panel kayu lapis bekisting."
+  },
+  {
+    "id": 17,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "かたわくをくみたてるときはほごぼうをかぶります。",
+    "reading": "katawaku wo kumitateru toki wa hogobou wo kaburimasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Saat merakit bekisting, kenakan pelindung kepala.",
+    "explanation": "Pelindung kepala wajib digunakan untuk mengurangi risiko cedera akibat benturan atau benda jatuh."
+  },
+  {
+    "id": 18,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "まるのこばんをつかうときはてぶくろをします。",
+    "reading": "marunokoban wo tsukau toki wa tebukuro wo shimasu.",
+    "image": "",
+    "answer": "×",
+    "translation": "Saat menggunakan gergaji bundar, kenakan sarung tangan.",
+    "explanation": "Sarung tangan yang longgar dapat tersangkut pada gergaji; penggunaan APD harus mengikuti petunjuk keselamatan alat."
+  },
+  {
+    "id": 19,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "けいたいようまるのこはじぶんのものであればしようまえてんけんはひつようありません。",
+    "reading": "keitai you marunoko wa jibun no mono de areba shiyou mae tenken wa hitsuyou arimasen.",
+    "image": "",
+    "answer": "×",
+    "translation": "Jika gergaji bundar portabel milik sendiri, pemeriksaan sebelum digunakan tidak diperlukan.",
+    "explanation": "Pemeriksaan sebelum penggunaan wajib dilakukan apa pun kepemilikan alatnya."
+  },
+  {
+    "id": 20,
+    "level": "shokyu",
+    "year": 2019,
+    "question": "ほごぐをつけてさぎょうがしにくいときでもほごぐはつけてさぎょうします。",
+    "reading": "hogogu wo tsukete sagyou ga shinikui toki demo hogogu wa tsukete sagyou shimasu.",
+    "image": "",
+    "answer": "○",
+    "translation": "Meskipun pekerjaan sulit dilakukan dengan alat pelindung, tetap bekerja dengan mengenakannya.",
+    "explanation": "Kesulitan bekerja bukan alasan untuk melepas alat pelindung yang diwajibkan."
+  }
+]
