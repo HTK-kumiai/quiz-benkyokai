@@ -38,6 +38,7 @@ Repo aktif:
 
 ## Status Terbaru
 
+- Kunsei: 50 soal `shokyu` tahun 2024 ditambahkan dari teks tiga PDF yang dikirim user; 35 soal `senmonkyu` tetap. Duplikat antar-PDF dicegah. PDF asli tidak ditemukan di `soal-asli/`, sehingga belum dapat dipindahkan ke `sudah-proses/`. Validator question bank dan Cloudflare build lulus.
 - とび: 20 soal shokyu dimasukkan ke `questions-tobi.json`; sumber belum dipindahkan karena masih ada berkas DOC/PDF dan draf perlu audit.
 - 型枠工事: 20 soal shokyu dimasukkan ke `questions-katawaku-koji.json`; empat sumber tetap di `soal-asli/` karena tiga set tambahan belum diproses penuh dan perlu audit transkripsi.
 - 13 bidang resmi yang belum memiliki kategori telah ditambahkan ke `categories.json` beserta file JSON kosong: 鉄筋組立、溶接、パン製造、加熱生水産加工、調味加工品製造、缶詰、牛豚部分肉製造、食鳥処理加工、介護、機械製材、自動車整備、射出成形、製本.

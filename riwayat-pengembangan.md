@@ -1,6 +1,6 @@
 # Riwayat Pengembangan
 
-Tanggal pembaruan terakhir: 8 Oktober 2026
+Tanggal pembaruan terakhir: 9 November 2026
 
 ## Kondisi Saat Ini
 
@@ -26,12 +26,19 @@ Aplikasi kuis berjalan dengan frontend di `public/`, server lokal di `server/`, 
 | `shisetsu-engei-kinoko` | 106 |
 | `hatasaku-yasai` | 83 |
 | `sozai-kako` | 56 |
-| `kunsei` | 35 |
+| `kunsei` | 85 (35 `senmonkyu`, 50 `shokyu`) |
 | `youton` | 80 |
 | `ikurin` | 43 |
 | `tobi` | 20 draf |
 | `katawaku-koji` | 20 draf |
-| **Total soal lengkap** | **1.382** |
+| **Total soal lengkap** | **1.432** |
+
+## Pembaruan 9 November 2026
+
+- Menambahkan 50 soal `shokyu` tahun 2024 ke `questions-kunsei.json` dari teks tiga PDF yang dikirim user; pertanyaan duplikat antar-PDF tidak dimasukkan berulang.
+- Jawaban untuk dua PDF pertama ditentukan berdasarkan isi soal. Kunci pada PDF ketiga mengikuti tanda jawaban yang tampak pada hasil parsing.
+- PDF asli tidak tersedia di `soal-asli/`, jadi belum ada sumber yang dipindahkan ke `sudah-proses/`.
+- `bash scripts/validate-question-bank.sh` dan `bash scripts/cloudflare-build.sh`: lulus.
 
 Catatan:
 
